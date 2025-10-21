@@ -35,9 +35,3 @@
   font-size: 0.95rem;
 }
 .footer-links a:hover { color: var(--btn1); }
-
-.footer-disclosure {
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.8);
-  margin-top: 8px;
-}

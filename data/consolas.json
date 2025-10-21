@@ -22,6 +22,7 @@
         "store": "MercadoLibre",
         "price": 4618,
         "link": "https://www.mercadolibre.com.mx/consola-nintendo-switch-oled-blanco-64gb-4gb-ram-portatil/p/MLM31000132",
+        "link-a": "https://www.mercadolibre.com.mx/consola-nintendo-switch-oled-blanco-64gb-4gb-ram-portatil/p/MLM31000132",
         "logo": "/img/resources/stores/mercado-libre-logo.webp"
       }
     ]
@@ -49,6 +50,8 @@
         "store": "MercadoLibre",
         "price": 9999,
         "link": "https://www.mercadolibre.com.mx/consola-nintendo-switch-2-mario-kart-world-bundle/p/MLM48922190",
+        "link-a": "https://www.mercadolibre.com.mx/consola-nintendo-switch-2-mario-kart-world-bundle/p/MLM48922190",
+
         "logo": "/img/resources/stores/mercado-libre-logo.webp"
       },
       {
@@ -60,7 +63,7 @@
     ]
   },
   "nintendo-switch-lite-yellow": {
-    "name": "Nintendo Switch Lite",
+    "name": "Nintendo Switch Lite - Yellow",
     "brand": "nintendo",
     "image": "/img/consolas/nintendo/nintendo-switch-lite-yellow.webp",
     "description": "Nintendo Switch Lite, compacto y portátil, perfecto para juegos en cualquier lugar. Compatible con todos los títulos de Switch en modo portátil.",
@@ -82,6 +85,8 @@
         "store": "MercadoLibre",
         "price": 2929,
         "link": "https://www.mercadolibre.com.mx/nintendo-lite-switch-lite-32gb-standard-color-amarillo-2019/p/MLM15191029",
+        "link-a": "https://www.mercadolibre.com.mx/nintendo-lite-switch-lite-32gb-standard-color-amarillo-2019/p/MLM15191029",
+
         "logo": "/img/resources/stores/mercado-libre-logo.webp"
       }
     ]
@@ -111,6 +116,7 @@
         "store": "MercadoLibre",
         "price": 8999,
         "link": "https://www.mercadolibre.com.mx/consola-playstation-5-sony-slim-standard-1tb/p/MLM28726294",
+        "link-a": "https://www.mercadolibre.com.mx/consola-playstation-5-sony-slim-standard-1tb/p/MLM28726294",
         "logo": "/img/resources/stores/mercado-libre-logo.webp",
         "available": true
       }
@@ -139,6 +145,7 @@
         "store": "MercadoLibre",
         "price": 16499,
         "link": "https://www.mercadolibre.com.mx/consola-sony-playstation-5-pro-digital-2-tb-blanco/p/MLM41975964",
+        "link-a": "https://www.mercadolibre.com.mx/consola-sony-playstation-5-pro-digital-2-tb-blanco/p/MLM41975964",
         "logo": "/img/resources/stores/mercado-libre-logo.webp"
       },
       {
@@ -172,6 +179,7 @@
         "store": "MercadoLibre",
         "price": 13044,
         "link": "https://www.mercadolibre.com.mx/consola-microsoft-xbox-series-x-1tb-ssd-4k-120hz-disco-negro/p/MLM16160759",
+        "link-a": "https://www.mercadolibre.com.mx/consola-microsoft-xbox-series-x-1tb-ssd-4k-120hz-disco-negro/p/MLM16160759",
         "logo": "/img/resources/stores/mercado-libre-logo.webp"
       },
       {
@@ -205,6 +213,7 @@
         "store": "MercadoLibre",
         "price": 12899,
         "link": "https://www.mercadolibre.com.mx/consola-xbox-series-x-edicion-digital-1tb-ssd-robot-white-blanco/p/MLM40162063",
+        "link-a": "https://www.mercadolibre.com.mx/consola-xbox-series-x-edicion-digital-1tb-ssd-robot-white-blanco/p/MLM40162063",
         "logo": "/img/resources/stores/mercado-libre-logo.webp"
       },
       {
@@ -238,6 +247,7 @@
         "store": "MercadoLibre",
         "price": 7759,
         "link": "https://www.mercadolibre.com.mx/consola-xbox-series-s-all-digital-512gb-color-blanco/p/MLM16650345",
+        "link-a": "https://www.mercadolibre.com.mx/consola-xbox-series-s-all-digital-512gb-color-blanco/p/MLM16650345",
         "logo": "/img/resources/stores/mercado-libre-logo.webp"
       },
       {

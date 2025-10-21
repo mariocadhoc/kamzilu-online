@@ -31,7 +31,7 @@
 .product-card img {
   width: 100%;
   height: auto;
-  max-height: 180px; /* Limita altura para uniformidad */
+  max-height: 180px;
   object-fit: contain;
   border-radius: 4px;
   margin-bottom: 10px;
@@ -48,14 +48,15 @@
   font-size: 1rem;
   color: var(--accent);
   font-weight: bold;
-  margin-top: auto; /* Empuja el precio al fondo */
+  margin-top: auto;
 }
 
 .grid-title {
   max-width: 1200px;
   margin: 40px auto 20px;
   font-size: 2rem;
+  font-family: var(--font4);
   font-weight: bold;
-  color: var(--text);
-  padding-left: 20px; /* Para alinear con el grid */
+  color: var(--black);
+  padding-left: 20px;
 }

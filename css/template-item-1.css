@@ -5,7 +5,6 @@ main.template-item-1 {
 }
 
 #last-updated {
-  font-style: italic;
   margin-bottom: 10px;
 }
 
@@ -151,7 +150,7 @@ main.template-item-1 {
 
 .price-inner-box .price-value {
   font-family: var(--font2);
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.6rem;
 }
 
@@ -294,6 +293,7 @@ main.template-item-1 {
 
 /* Ajustes de ícono y texto en tiendas sin precio */
 .price-card.unavailable .price-value.unavailable {
+  font-size: 1.3rem;
   color: #777;
   font-style: italic;
 }

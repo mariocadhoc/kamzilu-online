@@ -61,14 +61,17 @@ function loadConsoleData() {
           // Formato "$ XX,XXX"
           const formattedPrice = `$ ${price.price.toLocaleString("es-MX")}`;
 
+          // 🔹 Nueva línea aquí
+          const finalLink = price["link-a"] || price.link;
+
           card.innerHTML = `
             <div class="price-left">
               <img src="${price.logo}" alt="${price.store}">
             </div>
-            <a href="${price.link}" target="_blank" rel="noopener noreferrer" class="price-right-link">
+            <a href="${finalLink}" target="_blank" rel="noopener noreferrer" class="price-right-link">
               <div class="price-inner-box">
                 <span class="${priceClass}">
-                  ${formattedPrice}${isLowest ? ' ✅ <br>Precio más bajo' : ''}
+                  ${formattedPrice}${isLowest ? ' 🔥 Precio más bajo' : ''}
                 </span>
                 <span class="view-button">Ver ></span>
               </div>
@@ -76,7 +79,6 @@ function loadConsoleData() {
           `;
           priceCards.appendChild(card);
         });
-
 
         // === Sección 2: Tiendas sin precio ===
         if (unavailableStores.length > 0) {
@@ -98,7 +100,7 @@ function loadConsoleData() {
               </div>
               <a href="${price.link}" target="_blank" rel="noopener noreferrer" class="price-right-link unavailable">
                 <div class="price-inner-box">
-                  <span class="price-value unavailable">Precio en tienda No Disponible</span>
+                  <span class="price-value unavailable">Precio en tienda no disponible</span>
                   <span class="view-button">Ir a tienda ></span>
                 </div>
               </a>

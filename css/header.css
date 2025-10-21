@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 110px;
+  height: 10vh;
   padding: 0 20px;
   background-color: var(--blue1);
   z-index: 1000;
@@ -60,6 +60,7 @@
 .header-nav-desktop a,
 .header-dropdown > a,
 .header-dropdown > span.nav-link {
+  font-family: var(--font3);
   color: var(--white);
   text-decoration: none;
   font-size: 1.8rem;
@@ -73,7 +74,7 @@
 .header-nav-desktop a:hover,
 .header-dropdown > a:hover,
 .header-dropdown > span.nav-link:hover {
-  color: var(--mid-grey);
+  color: var(--accent1);
 }
 
 /* Dropdown y submenú */
@@ -109,7 +110,7 @@
 
 .header-submenu a:hover {
   transform: translateY(-10px);
-  color: var(--mid-grey);
+  color: var(--accent1);
 }
 
 .header-dropdown:hover > .header-submenu {
