@@ -1,0 +1,46 @@
+.horizontal-scroll-section {
+    height: 200vh; /* 3 slides = 3 pasos de scroll */
+    position: relative;
+  }
+  .horizontal-scroll-section ~ .arquitectura-main {
+    margin-top: 5vh;
+  }  
+  .sticky-wrapper {
+    position: sticky;
+    top: 15vh;
+    height: 50vh; /* total debajo del header */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Parte superior fija: "DISEÑO" */
+  .titulo-fijo {
+    padding-top: 23vh;
+    padding-bottom: 4vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(3rem, 6vw, 6rem);
+  }
+  
+  /* Track horizontal */
+  .scroll-track {
+    height: 20vh;
+    display: flex;
+    width: 300vw; /* 3 slides */
+    will-change: transform;
+    transition: transform 0.4s ease-out;
+  }
+  
+  /* Cada slide */
+  .slide {
+    width: 100vw;
+    height: 20vh;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /consolas/
+Allow: /consolas/*
+Allow: /legal/
+Allow: /legal/*
+Disallow: /sandbox/
+Disallow: /backend/
+Disallow: /*temp/
+Disallow: /*tmp/
+
+Sitemap: https://www.kamzilu.com/sitemap.xml

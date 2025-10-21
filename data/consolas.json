@@ -1,0 +1,251 @@
+{
+  "nintendo-switch-oled-blanco": {
+    "name": "Nintendo Switch OLED - Blanco",
+    "brand": "nintendo",
+    "image": "/img/consolas/nintendo/nintendo-switch-oled-white-joy-con-std-edition-internacional.webp",
+    "description": "Nintendo Switch OLED con pantalla vibrante y sonido mejorado. Ideal para gaming en casa o en movimiento.",
+    "lastUpdated": "2025-10-20T18:30:27",
+    "prices": [
+      {
+        "store": "Amazon",
+        "price": 5099,
+        "link": "https://www.amazon.com.mx/Nintendo-Switch-OLED-White-Joy/dp/B0B1NC16VR/",
+        "logo": "/img/resources/stores/amazon-com-mx-logo.webp"
+      },
+      {
+        "store": "Walmart",
+        "price": 4999,
+        "link": "https://www.walmart.com.mx/ip/consola-nintendo-switch-modelo-oled-blanco-version-nacional/00004549688338",
+        "logo": "/img/resources/stores/walmart_logo.webp"
+      },
+      {
+        "store": "MercadoLibre",
+        "price": 4618,
+        "link": "https://www.mercadolibre.com.mx/consola-nintendo-switch-oled-blanco-64gb-4gb-ram-portatil/p/MLM31000132",
+        "logo": "/img/resources/stores/mercado-libre-logo.webp"
+      }
+    ]
+  },
+  "nintendo-switch-2+mario-kart-bundle": {
+    "name": "Nintendo Switch 2 + Mario Kart World Bundle",
+    "brand": "nintendo",
+    "image": "/img/consolas/nintendo/nintendo-switch-2+mario-kart-bundle.webp",
+    "description": "Nintendo Switch 2. Paquete que incluye un sistema y una descarga completa del juego para el juego Mario Kart World, exclusivo de Nintendo Switch 2",
+    "lastUpdated": "2025-10-20T18:30:27",
+    "prices": [
+      {
+        "store": "Amazon",
+        "price": 9674,
+        "link": "https://www.amazon.com.mx/Nintendo-Mario-World-Bundle-internacional/dp/B0F3HFQ5SY/",
+        "logo": "/img/resources/stores/amazon-com-mx-logo.webp"
+      },
+      {
+        "store": "Walmart",
+        "price": 9668,
+        "link": "https://www.walmart.com.mx/ip/consola-nintendo-switch-2-mario-kart-bundle/00471127951341",
+        "logo": "/img/resources/stores/walmart_logo.webp"
+      },
+      {
+        "store": "MercadoLibre",
+        "price": 9999,
+        "link": "https://www.mercadolibre.com.mx/consola-nintendo-switch-2-mario-kart-world-bundle/p/MLM48922190",
+        "logo": "/img/resources/stores/mercado-libre-logo.webp"
+      },
+      {
+        "store": "Liverpool",
+        "price": 13499,
+        "link": "https://www.liverpool.com.mx/tienda/pdp/consola-nintendo-switch-2-de-256-gb-edici%C3%B3n-bundle/1177646331?skuid=1177646331",
+        "logo": "/img/resources/stores/liverpool_logo.webp"
+      }
+    ]
+  },
+  "nintendo-switch-lite-yellow": {
+    "name": "Nintendo Switch Lite",
+    "brand": "nintendo",
+    "image": "/img/consolas/nintendo/nintendo-switch-lite-yellow.webp",
+    "description": "Nintendo Switch Lite, compacto y portátil, perfecto para juegos en cualquier lugar. Compatible con todos los títulos de Switch en modo portátil.",
+    "lastUpdated": "2025-10-20T18:30:27",
+    "prices": [
+      {
+        "store": "Amazon",
+        "price": 4250,
+        "link": "https://www.amazon.com.mx/Nintendo-Switch-Lite-Amarillo-Est%C3%A1ndar/dp/B07V3G6C1F",
+        "logo": "/img/resources/stores/amazon-com-mx-logo.webp"
+      },
+      {
+        "store": "Walmart",
+        "price": 2849,
+        "link": "https://www.walmart.com.mx/ip/consola-nintendo-switch-lite-amarilla/00004549688230",
+        "logo": "/img/resources/stores/walmart_logo.webp"
+      },
+      {
+        "store": "MercadoLibre",
+        "price": 2929,
+        "link": "https://www.mercadolibre.com.mx/nintendo-lite-switch-lite-32gb-standard-color-amarillo-2019/p/MLM15191029",
+        "logo": "/img/resources/stores/mercado-libre-logo.webp"
+      }
+    ]
+  },
+  "playstation-5-slim-blanco-estandar-1tb": {
+    "name": "Playstation 5 Slim - Blanco - Estándar 1TB",
+    "brand": "playstation",
+    "image": "/img/consolas/playstation/ps5-slim-pack-2-juegos-std.webp",
+    "description": "Playstation 5 Slim, con diseño más compacto, potencia de última generación y compatibilidad total con juegos PS5 y PS4.",
+    "lastUpdated": "2025-10-20T18:30:27",
+    "prices": [
+      {
+        "store": "Amazon",
+        "price": null,
+        "link": "https://www.amazon.com.mx/Sony-Playstation-Digital-Version-Internacional/dp/B0CL5KNB9M?th=1",
+        "logo": "/img/resources/stores/amazon-com-mx-logo.webp",
+        "available": true
+      },
+      {
+        "store": "Walmart",
+        "price": 8999,
+        "link": "https://www.walmart.com.mx/ip/consola-playstation-5-slim-estandar-1tb/00071171957944",
+        "logo": "/img/resources/stores/walmart_logo.webp",
+        "available": true
+      },
+      {
+        "store": "MercadoLibre",
+        "price": 8999,
+        "link": "https://www.mercadolibre.com.mx/consola-playstation-5-sony-slim-standard-1tb/p/MLM28726294",
+        "logo": "/img/resources/stores/mercado-libre-logo.webp",
+        "available": true
+      }
+    ]
+  },
+  "playstation-5-pro-digital-2tb": {
+    "name": "Playstation 5 PRO - Digital - 2TB",
+    "brand": "playstation",
+    "image": "/img/consolas/playstation/playstation-5-pro-digital.webp",
+    "description": "Playstation 5 PRO con potencia mejorada, resolución 4K y rendimiento optimizado para experiencias gaming de última generación.",
+    "lastUpdated": "2025-10-20T18:30:27",
+    "prices": [
+      {
+        "store": "Amazon",
+        "price": 18599,
+        "link": "https://www.amazon.com.mx/PlayStation-5-Pro-Consola-Digital/dp/B0DJ1WMMQC",
+        "logo": "/img/resources/stores/amazon-com-mx-logo.webp"
+      },
+      {
+        "store": "Walmart",
+        "price": 16499,
+        "link": "https://www.walmart.com.mx/ip/consola-de-videojuegos-sony-playstation-5-pro-2tb-cfi-7019/00063790274870",
+        "logo": "/img/resources/stores/walmart_logo.webp"
+      },
+      {
+        "store": "MercadoLibre",
+        "price": 16499,
+        "link": "https://www.mercadolibre.com.mx/consola-sony-playstation-5-pro-digital-2-tb-blanco/p/MLM41975964",
+        "logo": "/img/resources/stores/mercado-libre-logo.webp"
+      },
+      {
+        "store": "Liverpool",
+        "price": 20099,
+        "link": "https://www.liverpool.com.mx/tienda/pdp/consola-ps5-de-2-tb-edici%C3%B3n-digital/1164967618?skuid=1164967618",
+        "logo": "/img/resources/stores/liverpool_logo.webp"
+      }
+    ]
+  },
+  "xbox-series-x-negro-1tb": {
+    "name": "Xbox Series X - Negro - 1TB",
+    "brand": "xbox",
+    "image": "/img/consolas/xbox/xbox-series-x-1tb-internacional.webp",
+    "description": "Xbox Series X con rendimiento ultra rápido, gráficos en 4K y compatibilidad con generaciones anteriores para la mejor experiencia de juego.",
+    "lastUpdated": "2025-10-20T18:30:27",
+    "prices": [
+      {
+        "store": "Amazon",
+        "price": 13774,
+        "link": "https://www.amazon.com.mx/Consola-Xbox-X-1-TB/dp/B08H75RTZ8",
+        "logo": "/img/resources/stores/amazon-com-mx-logo.webp"
+      },
+      {
+        "store": "Walmart",
+        "price": 12597,
+        "link": "https://www.walmart.com.mx/ip/consola-xbox-series-x-de-1-tb-negra-xbox-xbox-series-x/00088984264072",
+        "logo": "/img/resources/stores/walmart_logo.webp"
+      },
+      {
+        "store": "MercadoLibre",
+        "price": 13044,
+        "link": "https://www.mercadolibre.com.mx/consola-microsoft-xbox-series-x-1tb-ssd-4k-120hz-disco-negro/p/MLM16160759",
+        "logo": "/img/resources/stores/mercado-libre-logo.webp"
+      },
+      {
+        "store": "Liverpool",
+        "price": 15699,
+        "link": "https://www.liverpool.com.mx/tienda/pdp/consola-xbox-series-x-de-1-tb-edici%C3%B3n-stand-alone/1100132318?skuid=1100132318",
+        "logo": "/img/resources/stores/liverpool_logo.webp"
+      }
+    ]
+  },
+  "xbox-series-x-blanco-1tb": {
+    "name": "Xbox Series X - Blanco - 1TB",
+    "brand": "xbox",
+    "image": "/img/consolas/xbox/xbox-series-x-blanco.webp",
+    "description": "Xbox Series X Blanco con rendimiento ultra rápido, gráficos en 4K y compatibilidad con generaciones anteriores para la mejor experiencia de juego.",
+    "lastUpdated": "2025-10-20T18:30:27",
+    "prices": [
+      {
+        "store": "Amazon",
+        "price": 11039,
+        "link": "https://www.amazon.com.mx/Xbox-MSEP200692-X-1TB-Digital/dp/B0DCD9LGHY",
+        "logo": "/img/resources/stores/amazon-com-mx-logo.webp"
+      },
+      {
+        "store": "Walmart",
+        "price": 13039,
+        "link": "https://www.walmart.com.mx/ip/consola-xbox-serie-x-1-tb-microsoft/00019638836380",
+        "logo": "/img/resources/stores/walmart_logo.webp"
+      },
+      {
+        "store": "MercadoLibre",
+        "price": 12899,
+        "link": "https://www.mercadolibre.com.mx/consola-xbox-series-x-edicion-digital-1tb-ssd-robot-white-blanco/p/MLM40162063",
+        "logo": "/img/resources/stores/mercado-libre-logo.webp"
+      },
+      {
+        "store": "Liverpool",
+        "price": 13999,
+        "link": "https://www.liverpool.com.mx/tienda/pdp/consola-xbox-series-x-de-1-tb-edici%C3%B3n-digital/1163093606?skuid=1163093606",
+        "logo": "/img/resources/stores/liverpool_logo.webp"
+      }
+    ]
+  },
+  "xbox-series-s": {
+    "name": "Xbox Series S",
+    "brand": "xbox",
+    "image": "/img/consolas/xbox/xbox-series-s-512gb-internacional.webp",
+    "description": "Xbox Series S, la opción digital de nueva generación, con alto rendimiento y diseño compacto. Perfecta para jugar a tus títulos favoritos.",
+    "lastUpdated": "2025-10-20T18:30:27",
+    "prices": [
+      {
+        "store": "Amazon",
+        "price": null,
+        "link": "https://www.amazon.com.mx/Xbox-Series-S-512GB-Console/dp/B08G9J44ZN",
+        "logo": "/img/resources/stores/amazon-com-mx-logo.webp"
+      },
+      {
+        "store": "Walmart",
+        "price": 7890,
+        "link": "https://www.walmart.com.mx/ip/consola-xbox-series-s-microsoft-512-gb-digital-version-nacional/00019638842140",
+        "logo": "/img/resources/stores/walmart_logo.webp"
+      },
+      {
+        "store": "MercadoLibre",
+        "price": 7759,
+        "link": "https://www.mercadolibre.com.mx/consola-xbox-series-s-all-digital-512gb-color-blanco/p/MLM16650345",
+        "logo": "/img/resources/stores/mercado-libre-logo.webp"
+      },
+      {
+        "store": "Liverpool",
+        "price": 8009,
+        "link": "https://www.liverpool.com.mx/tienda/pdp/consola-xbox-series-s-de-512-gb-edici%C3%B3n-stand-alone/1100132300?skuid=1100132300",
+        "logo": "/img/resources/stores/liverpool_logo.webp"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+.footer {
+  background-color: rgba(39, 47, 65, 0.95);
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  line-height: 1.6;
+}
+
+.footer .kamzilu-logo-text {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer .kamzilu-logo-text:hover {
+  opacity: 0.8;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  font-family: var(--font1);
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--light-grey);
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  margin: 0 6px;
+  font-size: 0.95rem;
+}
+.footer-links a:hover { color: var(--btn1); }
+
+.footer-disclosure {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+  margin-top: 8px;
+}

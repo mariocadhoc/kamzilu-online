@@ -1,0 +1,48 @@
+:root {
+  --scrollpx: 50px;
+}
+
+/* Estado inicial para animaciones */
+.scrollup,
+.scrolldown,
+.scrollleft,
+.scrollright,
+.fadein,
+.zoom {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Presets de desplazamiento */
+.scrollup    { transform: translateY(var(--scrollpx)); }
+.scrolldown  { transform: translateY(calc(var(--scrollpx) * -1)); }
+.scrollleft  { transform: translateX(calc(var(--scrollpx) * -1)); }
+.scrollright { transform: translateX(var(--scrollpx)); }
+
+/* Fade-in puro */
+.fadein {
+  transform: none;
+}
+
+/* Zoom */
+.zoomin {
+  transform: scale(0.95);
+}
+
+/* Estado final común */
+.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Delays */
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }
+
+@media (max-width: 768px) {
+  :root {
+    --scrollpx: 30px;
+  }
+}

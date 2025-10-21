@@ -1,0 +1,25 @@
+<footer class="footer">
+  <div class="footer-container">
+
+    <a href="/index.html" class="kamzilu-logo-text">KAMZILU</a>
+
+    <p>© <span id="year"></span> Kamzilu. Todos los derechos reservados.</p>
+
+    <nav class="footer-links">
+      <a href="/legal/aviso-legal.html">Aviso Legal</a> ·
+      <a href="/legal/politica-privacidad.html">Privacidad</a> ·
+      <a href="/legal/politica-cookies.html">Cookies</a>
+    </nav>
+
+    <p class="footer-disclosure">
+      Como afiliado de Amazon México, Kamzilu obtiene ingresos por las compras calificadas.
+    </p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const year = document.getElementById("year");
+      if (year) year.textContent = new Date().getFullYear();
+    });
+  </script>
+</footer>

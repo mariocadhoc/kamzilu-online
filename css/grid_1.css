@@ -1,0 +1,61 @@
+/* ===== GRID HOME - Kamzilu ===== */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--bg);
+}
+
+.product-card {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 180px; /* Limita altura para uniformidad */
+  object-fit: contain;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0 5px;
+  color: var(--text);
+}
+
+.product-card .price {
+  font-size: 1rem;
+  color: var(--accent);
+  font-weight: bold;
+  margin-top: auto; /* Empuja el precio al fondo */
+}
+
+.grid-title {
+  max-width: 1200px;
+  margin: 40px auto 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text);
+  padding-left: 20px; /* Para alinear con el grid */
+}
