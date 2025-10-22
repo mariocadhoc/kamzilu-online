@@ -93,6 +93,7 @@
   z-index: 1001;
   flex-direction: column;
   overflow: visible;
+  border-radius: 20px;
 }
 
 .header-submenu a {

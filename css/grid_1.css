@@ -10,16 +10,17 @@
   background-color: var(--bg);
 }
 
+/* ==== CARD ==== */
 .product-card {
   background-color: var(--white);
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 16px;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   height: 100%;
 }
 
@@ -28,15 +29,22 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+/* ==== IMAGEN ==== */
 .product-card img {
   width: 100%;
-  height: auto;
-  max-height: 180px;
+  height: 180px;
   object-fit: contain;
   border-radius: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  transition: transform 0.35s cubic-bezier(0.25, 0.1, 0.25, 1), filter 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
+.product-card:hover img {
+  transform: scale(1.05) translateY(-4px);
+  filter: drop-shadow(0 5px 6px rgba(0, 0, 0, 0.25));
+}
+
+/* ==== TEXTO ==== */
 .product-card h3 {
   font-size: 1.2rem;
   font-weight: 600;
@@ -44,13 +52,17 @@
   color: var(--text);
 }
 
-.product-card .price {
-  font-size: 1rem;
-  color: var(--accent);
-  font-weight: bold;
+/* ==== PRECIO ==== */
+.product-card p.price {
+  text-align: center;
+  font-family: var(--font1);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--blue1);
   margin-top: auto;
 }
 
+/* ==== TÍTULO DE SECCIÓN ==== */
 .grid-title {
   max-width: 1200px;
   margin: 40px auto 20px;

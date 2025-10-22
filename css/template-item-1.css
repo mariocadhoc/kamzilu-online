@@ -259,6 +259,13 @@ main.template-item-1 {
   }
 }
 
+.lowest-text {
+  color: var(--accent1);
+  font-weight: 500;
+  font-family: var(--font1);
+  text-shadow: 0 .5px .5px rgba(0,0,0,0.35);
+}
+
 /* --- NUEVA SECCIÓN: divisiones de precios --- */
 
 .price-section-title {
@@ -317,7 +324,7 @@ main.template-item-1 {
 }
 
 .price-card.lowest {
-  border: 2px solid var(--accent1);
+  border: 3px solid var(--accent1);
   border-radius: 8px;
 }
 .price-value.lowest {

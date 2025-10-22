@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       const href = `/consolas/${brand}/${slug}/index.html`;
 
       card.innerHTML = `
-        <a href="${href}">
+        <a href="${href}" class="card-link">
           <img src="${image}" alt="${name}">
+          <h3>${name}</h3>
+          <p class="price">Precio más bajo: ${minPrice}</p>
         </a>
-        <h3>${name}</h3>
-        <p class="price">Precio más bajo: ${minPrice}</p>
       `;
     });
   } catch (error) {

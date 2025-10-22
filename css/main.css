@@ -2,7 +2,7 @@
 main {
   max-width: 100%;
   margin: 0 auto;
-  padding: 15vh 0 10vh;
+  padding: 10vh 0 10vh;
 }
 
 img {
@@ -126,6 +126,9 @@ ul, ol, li {
   width: 100%;
   padding: 70px 10%;
   border-radius: 0;
+  background-image: url('/img/resources/kamzilu/bg-1.webp');
+  background-repeat: repeat;
+  background-size: 350px;
 }
 
 /* === Hero Grid (sección informativa del banner) === */
@@ -202,17 +205,19 @@ ul, ol, li {
 /* --- Sección superior con fondo blanco --- */
 .hero-top {
   text-align: center;
-  padding: 40px 20px 80px;
+  padding: 70px 20px 80px;
+  background: url('/img/resources/kamzilu/bg-1.webp') repeat;
+  background-size: 200px;
 }
 
 .hero-top h1 {
   font-family: 'Ranchers', sans-serif;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
   color: var(--black);
   font-size: 2.8rem;
-  line-height: 1.2;
+  line-height: 1.3;
   max-width: 900px;
   margin: 0 auto;
   font-weight: 700;
@@ -225,8 +230,7 @@ ul, ol, li {
   margin-bottom: 1rem;
   filter: brightness(0) invert(1);
   opacity: 0.9;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
+  transition: transform 0.3s ease, opacity 0.3s ease, rotate 0.3s ease;}
 
 .feature-item h3 {
   font-family: var(--font1);
@@ -244,7 +248,8 @@ ul, ol, li {
 }
 
 .feature-item:hover .feature-icon {
-  transform: scale(1.08);
+  transform: scale(1.1);
+  rotate: 12deg;
   opacity: 1;
 }
 
@@ -256,11 +261,14 @@ ul, ol, li {
 }
 
 /* --- Responsive --- */
-@media (max-width: 992px) {
+@media (max-width: 1366px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+  .hero-features {
+  padding: 40px 10%;
+}
 }
 
 @media (max-width: 768px) {
