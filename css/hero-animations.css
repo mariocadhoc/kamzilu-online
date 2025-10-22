@@ -1,0 +1,191 @@
+/* Animaciones para el hero principal */
+
+/* Contenedor del título con efectos */
+.hero-top h1 {
+  display: inline-block;
+}
+
+/* Wrapper para los emojis animados */
+.hero-top h1 .emoji {
+  display: inline-block;
+  font-size: 1.1em;
+  margin: 0 8px;
+  animation: float-emoji 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Animaciones específicas por emoji */
+
+/* 🔍 LUPA - Empieza chica, se agranda (zoom in para buscar) */
+.hero-top h1 .emoji:nth-child(1) {
+  animation: zoom-in-float 3s ease-in-out infinite;
+}
+
+@keyframes zoom-in-float {
+  0% {
+    transform: translateY(0) scale(0.7);
+  }
+  33% {
+    transform: translateY(-12px) scale(0.75);
+  }
+  66% {
+    transform: translateY(-8px) scale(1.2);
+  }
+  100% {
+    transform: translateY(0) scale(0.7);
+  }
+}
+
+/* ✅ PALOMITA - Flotación normal */
+.hero-top h1 .emoji:nth-child(2) {
+  animation: float-emoji 3s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes float-emoji {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(5deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(-3deg);
+  }
+}
+
+/* 💰 BOLSITA - Empieza grande, se achica (zoom out para ahorrar) */
+.hero-top h1 .emoji:nth-child(3) {
+  animation: zoom-out-float 3s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes zoom-out-float {
+  0% {
+    transform: translateY(0) scale(1.2);
+  }
+  33% {
+    transform: translateY(-12px) scale(1.15);
+  }
+  66% {
+    transform: translateY(-8px) scale(0.7);
+  }
+  100% {
+    transform: translateY(0) scale(1.2);
+  }
+}
+
+/* 🎮 CONTROL - Flotación normal */
+.hero-top h1 .emoji:nth-child(4) {
+  animation: float-emoji 3s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+/* Efecto de brillo/pulso en hover para emojis */
+.hero-top h1 .emoji:hover {
+  animation: pulse-emoji 0.6s ease-in-out;
+  cursor: default;
+}
+
+@keyframes pulse-emoji {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3) rotate(15deg);
+  }
+}
+
+/* Efecto de aparición escalonada para el texto */
+.hero-top h1 .text-part {
+  display: inline-block;
+  animation: fade-in-up 1s ease-out forwards;
+  opacity: 0;
+}
+
+.hero-top h1 .text-part:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.hero-top h1 .text-part:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.hero-top h1 .text-part:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.hero-top h1 .text-part:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto de destello sutil en el fondo */
+.hero-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(233, 174, 46, 0.1) 50%, 
+    transparent 100%);
+  animation: shimmer 8s infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+/* Asegurar que hero-top sea relativo para el pseudo-elemento */
+.hero-top {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Responsive: reducir animaciones en móvil */
+@media (max-width: 768px) {
+  .hero-top h1 .emoji {
+    animation-duration: 4s;
+  }
+  
+  @keyframes float-emoji {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-top h1 .emoji,
+  .hero-top h1 .text-part,
+  .hero-top::before {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

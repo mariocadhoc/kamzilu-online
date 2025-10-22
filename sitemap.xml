@@ -1,52 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- HOME -->
   <url>
-    <loc>https://www.kamzilu.com/</loc>
-    <lastmod>2025-10-20</lastmod>
-  </url>
-
-  <!-- CONSOLAS -->
-  <url>
-    <loc>https://www.kamzilu.com/consolas/nintendo/nintendo-switch-lite/index.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <loc>https://kamzilu.com/</loc>
+    <lastmod>2025-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.kamzilu.com/consolas/nintendo/nintendo-switch-oled/index.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <loc>https://kamzilu.com/consolas/nintendo/nintendo-switch-2+mario-kart-bundle</loc>
+    <lastmod>2025-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.kamzilu.com/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/index.html</loc>
-    <lastmod>2025-10-20</lastmod>
-  </url>
-
-  <url>
-    <loc>https://www.kamzilu.com/consolas/playstation/playstation-5-slim/index.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <loc>https://kamzilu.com/consolas/nintendo/nintendo-switch-lite-yellow</loc>
+    <lastmod>2025-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.kamzilu.com/consolas/playstation/playstation-5-pro/index.html</loc>
-    <lastmod>2025-10-20</lastmod>
-  </url>
-
-  <url>
-    <loc>https://www.kamzilu.com/consolas/xbox/xbox-series-s/index.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <loc>https://kamzilu.com/consolas/nintendo/nintendo-switch-oled-blanco</loc>
+    <lastmod>2025-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.kamzilu.com/consolas/xbox/xbox-series-x/index.html</loc>
-    <lastmod>2025-10-20</lastmod>
-  </url>
-
-  <!-- LEGALES -->
-  <url>
-    <loc>https://www.kamzilu.com/legal/aviso-legal.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <loc>https://kamzilu.com/consolas/playstation/playstation-5-pro-digital-2tb</loc>
+    <lastmod>2025-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.kamzilu.com/legal/politica-privacidad.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <loc>https://kamzilu.com/consolas/playstation/playstation-5-slim-blanco-estandar-1tb</loc>
+    <lastmod>2025-10-22</lastmod>
   </url>
-
+  <url>
+    <loc>https://kamzilu.com/consolas/xbox/xbox-series-s</loc>
+    <lastmod>2025-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://kamzilu.com/consolas/xbox/xbox-series-x-blanco-1tb</loc>
+    <lastmod>2025-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://kamzilu.com/consolas/xbox/xbox-series-x-negro-1tb</loc>
+    <lastmod>2025-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://kamzilu.com/legal/aviso-legal.html</loc>
+    <lastmod>2025-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://kamzilu.com/legal/politica-privacidad.html</loc>
+    <lastmod>2025-10-22</lastmod>
+  </url>
 </urlset>

@@ -1,0 +1,123 @@
+{
+  "data": [
+    {
+      "path": "consolas/nintendo/nintendo-switch-2+mario-kart-bundle/index.html",
+      "rel": "nintendo/nintendo-switch-2+mario-kart-bundle/index.html",
+      "titles": [
+        "Nintendo Switch 2 + Mario Kart World Bundle | Kamzilu México"
+      ],
+      "descs": [
+        "Compara precios de la Nintendo Switch 2 + Mario Kart World Bundle en México. Encuentra ofertas reales en tiendas como Amazon, Walmart, Liverpool y Mercado Libre. Consola de videojuegos nueva, ideal para jugar en casa o portátil."
+      ],
+      "canonicals": [
+        "https://kamzilu.com/consolas/nintendo-switch-2+mario-kart-bundle"
+      ]
+    },
+    {
+      "path": "consolas/nintendo/nintendo-switch-lite-yellow/index.html",
+      "rel": "nintendo/nintendo-switch-lite-yellow/index.html",
+      "titles": [
+        "Nintendo Switch Lite Yellow | Kamzilu México"
+      ],
+      "descs": [
+        "Compara precios de la Nintendo Switch Lite Yellow en México. Consola portátil de videojuegos ideal para jugar en cualquier lugar. Encuentra la mejor oferta entre Amazon, Walmart, Mercado Libre y más."
+      ],
+      "canonicals": [
+        "https://kamzilu.com/consolas/nintendo-switch-lite-yellow"
+      ]
+    },
+    {
+      "path": "consolas/nintendo/nintendo-switch-oled-blanco/index.html",
+      "rel": "nintendo/nintendo-switch-oled-blanco/index.html",
+      "titles": [
+        "Nintendo Switch OLED Blanco | Kamzilu México"
+      ],
+      "descs": [
+        "Compara precios de la Nintendo Switch OLED Blanco en México. Consola de videojuegos con pantalla OLED de 7″, 64 GB de almacenamiento y modo portátil o sobremesa. Encuentra la mejor oferta en tiendas oficiales como Amazon, Walmart, Liverpool y Mercado Libre."
+      ],
+      "canonicals": [
+        "https://kamzilu.com/consolas/nintendo-switch-oled-blanco"
+      ]
+    },
+    {
+      "path": "consolas/playstation/playstation-5-pro-digital-2tb/index.html",
+      "rel": "playstation/playstation-5-pro-digital-2tb/index.html",
+      "titles": [
+        "PlayStation 5 Pro Digital 2TB | Kamzilu México"
+      ],
+      "descs": [
+        "Compara precios de la PlayStation 5 Pro Digital 2TB en México. Consola de videojuegos de alto rendimiento con SSD de 2 TB y soporte para gráficos avanzados. Encuentra la mejor oferta entre Amazon, Walmart, Liverpool y Mercado Libre."
+      ],
+      "canonicals": [
+        "https://kamzilu.com/consolas/playstation-5-pro-digital-2tb"
+      ]
+    },
+    {
+      "path": "consolas/playstation/playstation-5-slim-blanco-estandar-1tb/index.html",
+      "rel": "playstation/playstation-5-slim-blanco-estandar-1tb/index.html",
+      "titles": [
+        "PlayStation 5 Slim Blanco Estándar 1TB | Kamzilu México"
+      ],
+      "descs": [
+        "Compara precios de la PlayStation 5 Slim Blanco Estándar 1TB en México. Consola más compacta de Sony con SSD de 1 TB, diseño elegante y rendimiento ideal para gaming en 4K. Encuentra la mejor oferta en Amazon, Walmart, Liverpool y Mercado Libre."
+      ],
+      "canonicals": [
+        "https://kamzilu.com/consolas/playstation-5-slim-blanco-estandar-1tb"
+      ]
+    },
+    {
+      "path": "consolas/template-item-1.html",
+      "rel": "template-item-1.html",
+      "titles": [
+        "***"
+      ],
+      "descs": [
+        "***"
+      ],
+      "canonicals": [
+        "***"
+      ]
+    },
+    {
+      "path": "consolas/xbox/xbox-series-s/index.html",
+      "rel": "xbox/xbox-series-s/index.html",
+      "titles": [
+        "Xbox Series S | Kamzilu México"
+      ],
+      "descs": [
+        "Compara precios de la Xbox Series S en México. Consola digital compacta de Microsoft con almacenamiento SSD y acceso a Xbox Game Pass. Encuentra la mejor oferta entre Amazon, Walmart, Liverpool y Mercado Libre."
+      ],
+      "canonicals": [
+        "https://kamzilu.com/consolas/xbox-series-s"
+      ]
+    },
+    {
+      "path": "consolas/xbox/xbox-series-x-blanco-1tb/index.html",
+      "rel": "xbox/xbox-series-x-blanco-1tb/index.html",
+      "titles": [
+        "Xbox Series X Blanco 1TB | Kamzilu México"
+      ],
+      "descs": [
+        "Compara precios de la Xbox Series X Blanco 1TB en México. Consola de alto rendimiento con gráficos 4K hasta 120 FPS, SSD ultrarrápido y compatibilidad con generaciones anteriores. Encuentra la mejor oferta entre Amazon, Walmart, Liverpool y Mercado Libre."
+      ],
+      "canonicals": [
+        "https://kamzilu.com/consolas/xbox-series-x-blanco-1tb"
+      ]
+    },
+    {
+      "path": "consolas/xbox/xbox-series-x-negro-1tb/index.html",
+      "rel": "xbox/xbox-series-x-negro-1tb/index.html",
+      "titles": [
+        "Xbox Series X Negro 1TB | Kamzilu México"
+      ],
+      "descs": [
+        "Compara precios de la Xbox Series X Negro 1TB en México. Consola premium de Microsoft con rendimiento 4K hasta 120 FPS, SSD de 1 TB y compatibilidad con generaciones anteriores. Encuentra ofertas en Amazon, Walmart, Liverpool y Mercado Libre."
+      ],
+      "canonicals": [
+        "https://kamzilu.com/consolas/xbox-series-x-negro-1tb"
+      ]
+    }
+  ],
+  "titles": {},
+  "descs": {}
+}
