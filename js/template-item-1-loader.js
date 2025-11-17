@@ -13,39 +13,12 @@ function loadConsoleData() {
         const nameEl = document.getElementById('product-name');
         const imgEl = document.getElementById('product-image-src');
         const descEl = document.getElementById('product-description');
-        const lastUpdatedEl = document.getElementById('last-updated');
         const priceCards = document.getElementById('price-cards');
 
         if (breadcrumb) breadcrumb.textContent = product.name;
         if (nameEl) nameEl.textContent = product.name;
         if (imgEl) imgEl.src = product.image;
         if (descEl) descEl.textContent = product.description;
-
-        // --- Fecha ---
-        const scrapeDate = new Date(product.lastUpdated);
-        const now = new Date();
-        const diffMs = now - scrapeDate;
-        const diffMins = Math.floor(diffMs / (1000 * 60));
-        const diffHours = Math.floor(diffMins / 60);
-        const diffDays = Math.floor(diffHours / 24);
-
-        let timeAgo = "";
-        if (diffDays > 0) timeAgo = `hace ${diffDays} día${diffDays > 1 ? "s" : ""}`;
-        else if (diffHours > 0) timeAgo = `hace ${diffHours} hora${diffHours > 1 ? "s" : ""}`;
-        else if (diffMins > 0) timeAgo = `hace ${diffMins} minuto${diffMins > 1 ? "s" : ""}`;
-        else timeAgo = "hace unos segundos";
-
-        const options = {
-          day: "2-digit",
-          month: "2-digit",
-          year: "2-digit",
-          hour: "numeric",
-          minute: "2-digit"
-        };
-        const formattedDate = scrapeDate.toLocaleDateString("es-MX", options);
-        if (lastUpdatedEl)
-          lastUpdatedEl.textContent = `Actualizado ${timeAgo}: ${formattedDate}`;
-        // --- Fin fecha ---
 
         if (priceCards) {
           priceCards.innerHTML = ""; // limpia previo
@@ -69,9 +42,31 @@ function loadConsoleData() {
             const formattedPrice = `$ ${price.price.toLocaleString("es-MX")}`;
             const finalLink = price["link-a"] || price.link;
 
+            // Cálculo del texto de actualización
+            let updatedText = "Sin datos recientes";
+            if (price.lastUpdated) {
+              const last = new Date(price.lastUpdated);
+              const now = new Date();
+              const diffMs = now - last;
+              const diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
+
+              if (diffHrs < 1) {
+                const diffMin = Math.floor(diffMs / (1000 * 60));
+                updatedText = `Actualizado hace ${diffMin} min`;
+              } else if (diffHrs < 24) {
+                updatedText = `Actualizado hace ${diffHrs} h`;
+              } else if (diffHrs < 48) {
+                updatedText = "Ayer";
+              } else {
+                const diffDays = Math.floor(diffHrs / 24);
+                updatedText = `Hace ${diffDays} días`;
+              }
+            }
+
             card.innerHTML = `
               <div class="price-left">
                 <img src="${price.logo}" alt="${price.store}">
+                <p class="price-updated">${updatedText}</p>
               </div>
               <a href="${finalLink}" target="_blank" rel="noopener noreferrer" class="price-right-link">
                 <div class="price-inner-box">
@@ -93,7 +88,7 @@ function loadConsoleData() {
 
             const unavailableHeader = document.createElement("h3");
             unavailableHeader.textContent =
-              "🕓 Las siguientes tiendas no mostraron su precio en nuestro último escaneo:";
+              "🕓 Las siguientes tiendas no proporcionaron su precio en nuestro último escaneo:";
             unavailableHeader.className = "price-section-title no-price";
             priceCards.appendChild(unavailableHeader);
 
@@ -103,10 +98,11 @@ function loadConsoleData() {
               card.innerHTML = `
                 <div class="price-left">
                   <img src="${price.logo}" alt="${price.store}">
+                  <p class="price-updated">La tienda no proporcionó su precio en nuestro último escaneo</p>
                 </div>
                 <a href="${price.link}" target="_blank" rel="noopener noreferrer" class="price-right-link unavailable">
                   <div class="price-inner-box">
-                    <span class="price-value unavailable">Precio en tienda no disponible</span>
+                    <span class="price-value unavailable">Precio no disponible</span>
                     <span class="view-button">Ir a tienda ></span>
                   </div>
                 </a>

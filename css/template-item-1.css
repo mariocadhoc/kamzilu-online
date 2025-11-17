@@ -178,6 +178,32 @@ main.template-item-1 {
   background-color: var(--accent1);
 }
 
+.price-card.unavailable .price-updated {
+  color: #999;
+  font-style: italic;
+}
+
+.price-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price-left img {
+  display: block;
+  margin: 0 0 4px 20px;
+}
+
+.price-updated {
+  font-family: var(--font1);
+  font-size: 1rem;
+  color: var(--mid-grey);
+  font-weight: 400;
+  margin: 0 0 0 20px;
+  line-height: 1.3;
+}
+
+
 .unavailable .price-value {
   color: #999;
   font-style: italic;
