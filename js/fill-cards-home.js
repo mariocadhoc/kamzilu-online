@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const response = await fetch("/data/consolas.json");
+    const response = await fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`);
     const data = await response.json();
 
     document.querySelectorAll(".product-card").forEach(card => {
@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       const item = data[slug];
       if (!item || !item.prices) return;
 
-      // Filtra precios válidos y busca el menor
       const precios = item.prices
         .map(p => p.price)
         .filter(p => p !== null && !isNaN(p));

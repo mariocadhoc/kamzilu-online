@@ -1,5 +1,5 @@
 function loadConsoleData() {
-  fetch(`/data/consolas.json?v=${Date.now()}`)
+  fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`)
     .then(res => {
       if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
       return res.json();
