@@ -86,9 +86,6 @@ main.template-item-1 {
   gap: 20px;
 }
 
-/* ========================================
-   TARJETAS DE PRECIO - Base
-   ======================================== */
 .price-card {
   background: var(--white);
   border-radius: 8px;
@@ -97,84 +94,27 @@ main.template-item-1 {
   gap: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   align-items: center;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
 }
 
-/* Tarjeta con precio más bajo (solo para recientes) */
-.price-card.lowest {
-  border: 3px solid var(--accent1);
-  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+.price-card.lowest-card {
+  border: 2px solid var(--accent1);
 }
 
-/* Tarjetas de precios desactualizados */
-.price-card.outdated {
-  border: 2px solid #e0e0e0;
-  opacity: 0.9;
-  background: #fefefe;
-}
-
-.price-card.outdated:hover {
-  border-color: #ffc107;
-  opacity: 1;
-}
-
-/* Tarjetas sin precio */
-.price-card.unavailable {
-  opacity: 0.75;
-  background-color: #f8f8f8;
-  border: 2px dashed #ccc;
-}
-
-.price-card.unavailable:hover {
-  opacity: 1;
-  border-color: #999;
-}
-
-/* ========================================
-   CONTENIDO DE LAS TARJETAS
-   ======================================== */
 .price-left {
   flex: 1 1 50%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  gap: 10px;
 }
 
 .price-left img {
   width: 150px;
   height: auto;
-  display: block;
-  margin: 0 0 4px 20px;
+  margin-left: 20px;
 }
 
 .price-left p {
   font-weight: bold;
-}
-
-.price-updated {
-  font-family: var(--font1);
-  font-size: 1rem;
-  color: var(--mid-grey);
-  font-weight: 400;
-  margin: 0 0 0 20px;
-  line-height: 1.3;
-}
-
-/* Advertencia para precios desactualizados */
-.price-updated.outdated-warning {
-  color: #856404;
-  font-weight: 500;
-  background-color: #fff3cd;
-  padding: 4px 8px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.price-card.unavailable .price-updated {
-  color: #999;
-  font-style: italic;
 }
 
 .price-right-link {
@@ -201,14 +141,24 @@ main.template-item-1 {
   font-weight: 700;
   line-height: 1.2;
   white-space: normal;
-  font-family: var(--font2);
 }
 
-/* Precio más bajo - solo para recientes */
-.price-value.lowest {
+.price-inner-box img {
+  width: 100%;
+  height: auto;
+}
+
+.price-inner-box .price-value {
+  font-family: var(--font2);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.price-inner-box .price-value.lowest-price {
+  font-family: var(--font2);
+  font-weight: bold;
+  font-size: 1.15em;
   color: var(--accent1);
-  font-weight: 800;
-  font-size: 1.8rem;
 }
 
 .price-inner-box .view-button {
@@ -224,90 +174,53 @@ main.template-item-1 {
   white-space: nowrap;
 }
 
-/* Botón especial para el precio más bajo */
-.price-card.lowest .price-inner-box .view-button {
+.price-card.lowest-card .price-inner-box .view-button {
   background-color: var(--accent1);
-  color: #000;
-  font-weight: 700;
 }
 
-/* Estilos para tarjetas sin precio */
+.price-card.unavailable .price-updated {
+  color: #999;
+  font-style: italic;
+}
+
+.price-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price-left img {
+  display: block;
+  margin: 0 0 4px 20px;
+}
+
+.price-updated {
+  font-family: var(--font1);
+  font-size: 1rem;
+  color: var(--mid-grey);
+  font-weight: 400;
+  margin: 0 0 0 20px;
+  line-height: 1.3;
+}
+
+
 .unavailable .price-value {
   color: #999;
   font-style: italic;
-  font-size: 1.3rem;
 }
 
 .unavailable .view-button {
-  background-color: transparent !important;
-  color: #128ee6 !important;
-  font-weight: 600;
-  border: 2px solid #128ee6;
-}
-
-.lowest-text {
-  color: var(--accent1);
-  font-weight: 500;
-  font-family: var(--font1);
-  text-shadow: 0 .5px .5px rgba(0,0,0,0.35);
-  font-size: 0.85em;
-  margin-left: 8px;
-}
-
-/* ========================================
-   SECCIONES Y SEPARADORES
-   ======================================== */
-.price-separator {
-  border: none;
-  border-top: 2px solid var(--light-grey);
-  margin: 30px 0 15px 0;
-}
-
-.price-section-title {
-  font-family: var(--font1);
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--text);
-  margin: 25px 0 15px 0;
-  text-align: left;
-  padding: 12px 16px;
-  border-radius: 8px;
-  line-height: 1.4;
-}
-
-/* Encabezado para precios desactualizados */
-.price-section-title.outdated {
-  color: #856404;
-  background-color: #fff3cd;
-  border-left: 4px solid #ffc107;
+  color: #128ee6;
   font-weight: 600;
 }
 
-/* Encabezado para precios no disponibles */
-.price-section-title.no-price {
-  color: #6c757d;
-  background-color: #f8f9fa;
-  border-left: 4px solid #6c757d;
-  font-weight: 500;
-}
-
-/* ========================================
-   HOVER EFFECTS
-   ======================================== */
 @media (hover: hover) and (pointer: fine) {
   .price-inner-box:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
-  
-  .price-card.lowest:hover {
-    box-shadow: 0 6px 16px rgba(255, 193, 7, 0.5);
-  }
 }
 
-/* ========================================
-   RESPONSIVE - MOBILE
-   ======================================== */
 @media (max-width: 768px) {
   #product-main {
     flex-direction: column;
@@ -338,7 +251,6 @@ main.template-item-1 {
   #last-updated {
     font-size: 1rem;
   }
-
   .price-card {
     flex-direction: column;
   }
@@ -356,6 +268,11 @@ main.template-item-1 {
     align-items: center;
   }
 
+  .price-inner-box img {
+    max-width: 110px;
+    margin: 0 auto;
+  }
+
   .price-inner-box .price-value {
     font-size: 1.6rem;
     font-weight: bold;
@@ -366,26 +283,76 @@ main.template-item-1 {
     width: 70%;
     margin: 0 auto;
   }
+}
 
+.lowest-text {
+  color: var(--accent1);
+  font-weight: 500;
+  font-family: var(--font1);
+  text-shadow: 0 .5px .5px rgba(0,0,0,0.35);
+}
+
+/* --- NUEVA SECCIÓN: divisiones de precios --- */
+
+.price-section-title {
+  font-family: var(--font1);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 25px 0 10px 0;
+  text-align: left;
+}
+
+.price-section-title.no-price {
+  color: var(--mid-grey);
+  font-weight: 500;
+}
+
+.price-separator {
+  border: none;
+  border-top: 1px solid var(--light-grey);
+  margin: 30px 0 15px 0;
+}
+
+/* Tarjetas de tiendas sin precio */
+.price-card.unavailable {
+  opacity: 0.8;
+  background-color: #f8f8f8;
+}
+
+.price-card.unavailable:hover {
+  opacity: 1;
+}
+
+/* Ajustes de ícono y texto en tiendas sin precio */
+.price-card.unavailable .price-value.unavailable {
+  font-size: 1.3rem;
+  color: #777;
+  font-style: italic;
+}
+
+.price-card.unavailable .view-button {
+  background-color: transparent;
+  color: #128ee6;
+  font-weight: 600;
+  border: 1px solid #128ee6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .price-section-title {
     text-align: center;
     font-size: 1.1rem;
   }
-
   .price-separator {
     margin: 20px 0 10px 0;
   }
+}
 
-  .price-left img {
-    margin: 0 auto 8px auto;
-  }
-
-  .price-updated {
-    text-align: center;
-    margin: 0;
-  }
-
-  .price-updated.outdated-warning {
-    margin: 0 auto;
-  }
+.price-card.lowest {
+  border: 3px solid var(--accent1);
+  border-radius: 8px;
+}
+.price-value.lowest {
+  font-weight: 700;
 }
