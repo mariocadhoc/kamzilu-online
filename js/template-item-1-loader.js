@@ -180,7 +180,7 @@ function loadConsoleData() {
     // ========================================
     // CASO: Con precio (recent u outdated)
     // ========================================
-    const formattedPrice = `$ ${price.price.toLocaleString("es-MX")}`;
+    const formattedPrice = `$ ${price.price.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
     const priceClass = (category === 'recent' && isLowest) ? "price-value lowest" : "price-value";
 
     // Calcular texto de actualización
