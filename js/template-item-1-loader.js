@@ -1,3 +1,11 @@
+function formatPrice(value) {
+  const hasDecimals = !Number.isInteger(value);
+  return value.toLocaleString("es-MX", {
+    minimumFractionDigits: hasDecimals ? 2 : 0,
+    maximumFractionDigits: hasDecimals ? 2 : 0
+  });
+}
+
 function loadConsoleData() {
   // Define el umbral de tiempo para considerar un precio "reciente" (en milisegundos)
   // 24 horas = 24 * 60 * 60 * 1000
@@ -180,7 +188,7 @@ function loadConsoleData() {
     // ========================================
     // CASO: Con precio (recent u outdated)
     // ========================================
-    const formattedPrice = `$ ${price.price.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    const formattedPrice = `$ ${formatPrice(price.price)}`;
     const priceClass = (category === 'recent' && isLowest) ? "price-value lowest" : "price-value";
 
     // Calcular texto de actualización
