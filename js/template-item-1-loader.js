@@ -56,16 +56,17 @@ function loadConsoleData() {
               const lastUpdate = new Date(p.lastUpdated);
               const diffMs = now - lastUpdate;
 
+              // Precio reciente (válido)
               if (diffMs <= RECENT_THRESHOLD_MS) {
-                // Categoría 1: Precio reciente
                 recentPrices.push(p);
               } else {
-                // Categoría 2: Precio desactualizado (fecha vieja)
-                outdatedPrices.push(p);
+                // Precio viejo → tratar como SIN precio
+                noPrices.push(p);
               }
+
             } else {
-              // Categoría 2: Sin fecha de actualización = desactualizado
-              outdatedPrices.push(p);
+              // Sin fecha → tratar como SIN precio
+              noPrices.push(p);
             }
           });
 
