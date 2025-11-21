@@ -1,391 +1,468 @@
-main.template-item-1 {
+/* ===== PRODUCT DETAIL PAGE (PDP) v2.0 - MOBILE FIRST ===== */
+
+.pdp-wrapper {
   max-width: 1300px;
-  margin-top: 30px;
-  padding: 100px 20px 20px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 80px;
+  /* Mobile header space */
 }
 
-#last-updated {
-  margin-bottom: 10px;
+/* === BREADCRUMB === */
+.pdp-breadcrumb {
+  font-family: var(--font-tech);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-#breadcrumb {
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  color: var(--mid-grey);
-  display: none;
+.pdp-breadcrumb a:hover {
+  color: var(--primary);
 }
 
-#breadcrumb p {
-  font-size: 1.2rem;
+.pdp-breadcrumb .sep {
+  margin: 0 8px;
+  color: var(--border-subtle);
 }
 
-#breadcrumb a {
-  font-size: 1.2rem;
-  color: var(--mid-grey);
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
+.pdp-breadcrumb .current {
+  color: var(--text-main);
+  font-weight: 600;
 }
 
-#breadcrumb a:hover {
-  color: var(--dark-grey);
+/* === LAYOUT GRID (Mobile Default: Stacked) === */
+.pdp-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  align-items: start;
 }
 
-#extra-info {
-  display: none;
-}
-
-#historical-data {
-  display: none;
-}
-
-#breadcrumb span {
-  font-size: 1.2rem;
-  color: var(--text);
-}
-
-#product-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-#product-gallery {
-  flex: 1 1 40%;
-}
-
-#product-gallery img {
-  max-width: 100%;
-  max-height: 400px;
-  object-fit: contain;
-  display: block;
+/* === COLUMNA IZQ: VISUALS (Mobile Default) === */
+.pdp-image-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+  position: static;
+  max-width: 400px;
   margin: 0 auto;
 }
 
-#product-info {
-  flex: 1 1 50%;
+.pdp-image-container {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdp-image-container img.main-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.pdp-image-container:hover img.main-img {
+  transform: scale(1.05);
+}
+
+/* === COLUMNA DER: INFO === */
+.pdp-header-block {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 20px;
+}
+
+.pdp-badge-brand {
+  display: inline-block;
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-family: var(--font-tech);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+#product-name {
+  font-family: var(--font-tech);
+  font-size: 2rem;
+  /* Mobile size */
+  line-height: 1.2;
+  color: var(--text-main);
+  margin-bottom: 16px;
 }
 
 #product-description {
-  font-size: 1rem;
-  color: var(--text);
-  margin-top: 10px;
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 100%;
 }
 
-#price-grid {
-  padding: 20px;
-}
-
-#price-grid h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#price-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* ========================================
-   TARJETAS DE PRECIO - Base
-   ======================================== */
-.price-card {
-  background: var(--white);
-  border-radius: 8px;
-  padding: 15px;
-  display: flex;
-  gap: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  align-items: center;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-
-/* Tarjeta con precio más bajo (solo para recientes) */
-.price-card.lowest {
-  border: 3px solid var(--accent1);
-  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
-}
-
-/* Tarjetas de precios desactualizados */
-.price-card.outdated {
-  border: 2px solid #e0e0e0;
-  opacity: 0.9;
-  background: #fefefe;
-}
-
-.price-card.outdated:hover {
-  border-color: #ffc107;
-  opacity: 1;
-}
-
-/* Tarjetas sin precio */
-.price-card.unavailable {
-  opacity: 0.75;
-  background-color: #f8f8f8;
-  border: 2px dashed #ccc;
-}
-
-.price-card.unavailable:hover {
-  opacity: 1;
-  border-color: #999;
-}
-
-/* ========================================
-   CONTENIDO DE LAS TARJETAS
-   ======================================== */
-.price-left {
-  flex: 1 1 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.price-left img {
-  width: 150px;
-  height: auto;
-  display: block;
-  margin: 0 0 4px 20px;
-}
-
-.price-left p {
-  font-weight: bold;
-}
-
-.price-updated {
-  font-family: var(--font1);
-  font-size: 1rem;
-  color: var(--mid-grey);
-  font-weight: 400;
-  margin: 0 0 0 20px;
-  line-height: 1.3;
-}
-
-/* Advertencia para precios desactualizados */
-.price-updated.outdated-warning {
-  color: #856404;
-  font-weight: 500;
-  background-color: #fff3cd;
-  padding: 4px 8px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.price-card.unavailable .price-updated {
-  color: #999;
-  font-style: italic;
-}
-
-.price-right-link {
-  flex: 1 1 50%;
-  text-decoration: none;
-}
-
-.price-inner-box {
-  background: var(--light-grey);
-  border-radius: 6px;
-  padding: 10px 20px;
+/* === HERO PRICE BLOCK (Mobile Default) === */
+.pdp-hero-price-block {
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+  padding: 18px;
   display: grid;
   grid-template-columns: 1fr auto;
+  /* Price | Button */
+  grid-template-rows: auto auto;
+  /* Store | Price/Btn */
+  gap: 16px;
   align-items: center;
-  gap: 20px;
-  text-decoration: none;
-  color: var(--text);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+  position: relative;
+  overflow: hidden;
 }
 
-.price-value {
-  display: block;
-  font-size: 1.6rem;
+.pdp-hero-price-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--primary);
+}
+
+/* Mobile Layout Specifics */
+.pdp-hero-price-block .col-store {
+  grid-column: 1 / -1;
+  /* Full width row 1 */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 12px;
+}
+
+.pdp-hero-price-block .col-price {
+  text-align: left;
+}
+
+.pdp-hero-price-block .col-action {
+  text-align: right;
+}
+
+/* Hero Elements */
+.hero-price-label-small {
+  font-family: var(--font-tech);
+  text-transform: uppercase;
   font-weight: 700;
-  line-height: 1.2;
-  white-space: normal;
-  font-family: var(--font2);
+  color: var(--text-main);
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-/* Precio más bajo - solo para recientes */
-.price-value.lowest {
-  color: var(--accent1);
-  font-weight: 800;
-  font-size: 1.8rem;
+.hero-price-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
 }
 
-.price-inner-box .view-button {
-  background-color: var(--btn1);
-  color: var(--white);
-  padding: 12px 28px;
-  border-radius: 8px;
-  font-weight: 600;
+.hero-price-wrapper .currency {
+  font-family: var(--font-mono);
   font-size: 1.5rem;
-  margin-right: 16px;
-  text-align: center;
-  min-width: 110px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.hero-price-wrapper .big-number {
+  font-family: var(--font-mono);
+  font-size: 2.3rem;
+  /* Mobile size */
+  color: var(--primary);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero-cta-btn {
+  background-color: var(--primary);
+  color: white !important;
+  padding: 14px 24px;
+  /* Touch target friendly */
+  border-radius: 8px;
+  font-family: var(--font-tech);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
   white-space: nowrap;
 }
 
-/* Botón especial para el precio más bajo */
-.price-card.lowest .price-inner-box .view-button {
-  background-color: var(--accent1);
-  color: #000;
-  font-weight: 700;
+.hero-cta-btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
 }
 
-/* Estilos para tarjetas sin precio */
-.unavailable .price-value {
-  color: #999;
-  font-style: italic;
+/* === PRICES LIST (Mobile Default) === */
+.section-label {
   font-size: 1.3rem;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
 }
 
-.unavailable .view-button {
-  background-color: transparent !important;
-  color: #128ee6 !important;
+.pdp-price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.price-row {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  /* Info | Button */
+  grid-template-rows: auto auto;
+  /* Store | Price */
+  gap: 12px;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.price-row:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-card);
+  background-color: #fafafa;
+}
+
+.price-row.unavailable {
+  opacity: 0.6;
+  background-color: #f8f9fa;
+}
+
+/* Mobile Row Layout */
+.col-store {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.col-price {
+  grid-column: 1 / 2;
+  text-align: left;
+  padding: 0;
+}
+
+.col-action {
+  grid-column: 2 / 3;
+  text-align: right;
+}
+
+/* Store Info */
+.store-logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: white;
+  padding: 2px;
+  border: 1px solid var(--border-subtle);
+}
+
+.store-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.store-name-text {
   font-weight: 600;
-  border: 2px solid #128ee6;
+  color: var(--text-main);
+  font-size: 1.1rem;
 }
 
-.lowest-text {
-  color: var(--accent1);
+.update-time {
+  font-size: 1rem;
   font-weight: 500;
-  font-family: var(--font1);
-  text-shadow: 0 .5px .5px rgba(0,0,0,0.35);
-  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+.update-time.fresh {
+  color: var(--success);
+}
+
+.update-time.old {
+  color: var(--warning);
+}
+
+/* Price Styling */
+.price-val-row {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  /* Mobile size */
+  font-weight: 600;
+  color: var(--text-main);
+  display: block;
+}
+
+.price-decimals {
+  font-size: 0.7em;
+  vertical-align: top;
+  position: relative;
+  top: 0.1em;
+  display: inline-block;
+  padding-left: 2px;
+}
+
+.price-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
   margin-left: 8px;
 }
 
-/* ========================================
-   SECCIONES Y SEPARADORES
-   ======================================== */
-.price-separator {
-  border: none;
-  border-top: 2px solid var(--light-grey);
-  margin: 30px 0 15px 0;
+.price-tag.best {
+  background: var(--accent);
+  color: #000;
 }
 
-.price-section-title {
-  font-family: var(--font1);
-  font-size: 1.2rem;
+.btn-go-store {
+  border: 1px solid var(--border-subtle);
+  background: transparent;
+  color: var(--text-main);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: var(--font-tech);
+  font-size: 0.9rem;
   font-weight: 600;
-  color: var(--text);
-  margin: 25px 0 15px 0;
-  text-align: left;
-  padding: 12px 16px;
-  border-radius: 8px;
-  line-height: 1.4;
+  text-transform: uppercase;
+  cursor: pointer;
+  min-height: 44px;
+  /* Accessible touch target */
+  display: inline-flex;
+  align-items: center;
 }
 
-/* Encabezado para precios desactualizados */
-.price-section-title.outdated {
-  color: #856404;
-  background-color: #fff3cd;
-  border-left: 4px solid #ffc107;
-  font-weight: 600;
+.price-row:hover .btn-go-store {
+  background: var(--text-main);
+  color: white;
+  border-color: var(--text-main);
 }
 
-/* Encabezado para precios no disponibles */
-.price-section-title.no-price {
-  color: #6c757d;
-  background-color: #f8f9fa;
-  border-left: 4px solid #6c757d;
-  font-weight: 500;
+.separator-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin: 20px 0 10px;
+  font-family: var(--font-tech);
+  opacity: 0.7;
 }
 
-/* ========================================
-   HOVER EFFECTS
-   ======================================== */
-@media (hover: hover) and (pointer: fine) {
-  .price-inner-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .price-card.lowest:hover {
-    box-shadow: 0 6px 16px rgba(255, 193, 7, 0.5);
-  }
-}
-
-/* ========================================
-   RESPONSIVE - MOBILE
-   ======================================== */
-@media (max-width: 768px) {
-  #product-main {
-    flex-direction: column;
+/* =========================================
+   DESKTOP OVERRIDES (min-width: 900px)
+   ========================================= */
+@media (min-width: 900px) {
+  .pdp-wrapper {
+    padding-top: 100px;
   }
 
-  #product-gallery {
-    order: 3;
+  /* Grid Layout */
+  .pdp-layout-grid {
+    grid-template-columns: 45% 1fr;
+    gap: 50px;
   }
 
-  #product-gallery img {
-    max-height: 300px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+  /* Sticky Image */
+  .pdp-image-card {
+    position: sticky;
+    top: 110px;
+    max-width: none;
+    margin: 0;
+    padding: 30px;
   }
 
-  #product-info {
-    order: 1;
-    text-align: center;
+  /* Typography Scaling */
+  #product-name {
+    font-size: 2.8rem;
   }
 
   #product-description {
-    order: 2;
-    font-size: 1rem;
-    margin-top: 10px;
+    max-width: 90%;
   }
 
-  #last-updated {
-    font-size: 1rem;
+  /* Hero Desktop */
+  .pdp-hero-price-block {
+    grid-template-columns: 2fr 1.5fr auto;
+    grid-template-rows: auto;
+    padding: 24px;
   }
 
-  .price-card {
-    flex-direction: column;
+  .pdp-hero-price-block .col-store {
+    grid-column: auto;
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
-  .price-right-link {
-    width: 100%;
+  .pdp-hero-price-block .col-price {
+    text-align: right;
+    padding-right: 24px;
   }
 
-  .price-inner-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 10px;
-    text-align: center;
-    align-items: center;
+  .pdp-hero-price-block .col-action {
+    text-align: right;
+    /* Keep right aligned */
   }
 
-  .price-inner-box .price-value {
-    font-size: 1.6rem;
-    font-weight: bold;
+  .hero-price-label-small {
+    justify-content: flex-end;
   }
 
-  .price-inner-box .view-button {
-    grid-column: 1 / -1;
-    width: 70%;
-    margin: 0 auto;
+  .hero-price-wrapper {
+    justify-content: flex-end;
   }
 
-  .price-section-title {
-    text-align: center;
-    font-size: 1.1rem;
+  .hero-price-wrapper .big-number {
+    font-size: 3.5rem;
   }
 
-  .price-separator {
-    margin: 20px 0 10px 0;
+  /* Price List Desktop */
+  .price-row {
+    grid-template-columns: 2fr 1.5fr auto;
+    /* Info | Price | Button */
+    grid-template-rows: auto;
+    padding: 16px 24px;
   }
 
-  .price-left img {
-    margin: 0 auto 8px auto;
+  .col-store {
+    grid-column: auto;
   }
 
-  .price-updated {
-    text-align: center;
-    margin: 0;
+  .col-price {
+    grid-column: auto;
+    text-align: right;
+    padding-right: 24px;
   }
 
-  .price-updated.outdated-warning {
-    margin: 0 auto;
+  .col-action {
+    grid-column: auto;
+  }
+
+  .price-val-row {
+    font-size: 1.8rem;
   }
 }

@@ -1,32 +1,81 @@
-<main class="template-item-1">
-  <section id="breadcrumb" class="fadein delay-1">
-    <p><a href="/">Home</a> / <a href="/consolas/">Consolas</a> / <span id="breadcrumb-product">Cargando...</span></p>
-  </section>
+<main class="pdp-wrapper template-item-1">
 
-  <section id="product-main" class="scrollup delay-2">
-    <div id="product-gallery">
-      <img id="product-image-src" class="scrollleft delay-1" src="" alt="Imagen del producto">
-    </div>
-    <div id="product-info" class="scrollright delay-1">
-      <h1 id="product-name">Cargando...</h1>
-      <p id="product-description">Descripción del producto.</p>
-    </div>
-  </section>
+  <!-- Breadcrumb Minimalista -->
+  <!-- <section id="breadcrumb" class="pdp-breadcrumb fadein delay-1">
+    <a href="/">Home</a> <span class="sep">/</span> 
+    <a href="/consolas/">Consolas</a> <span class="sep">/</span> 
+    <span id="breadcrumb-product" class="current">Cargando...</span>
+  </section> -->
 
-  <section id="price-grid" class="scrollup delay-2">
-    <h2>Mejores precios</h2>
-    <div id="price-cards"></div>
-  </section>
+  <div class="pdp-layout-grid">
 
-  <section id="historical-data" class="fadein delay-1">
-    <h2>Historial de precios</h2>
-    <p>Próximamente...</p>
-  </section>
+    <!-- COLUMNA IZQUIERDA: Visuals -->
+    <section class="pdp-left-col scrollleft delay-1">
+      <div class="pdp-image-card">
+        <div class="pdp-image-container">
+          <img id="product-image-src" src="" alt="Cargando..." class="main-img">
+        </div>
+        <!-- Placeholder para miniaturas si se agregan después -->
+      </div>
+    </section>
 
-  <section id="extra-info" class="fadein delay-2">
-    <h2>Información adicional</h2>
-    <p>Próximamente...</p>
-  </section>
+    <!-- COLUMNA DERECHA: Info & Precios -->
+    <section class="pdp-right-col scrollright delay-1">
 
-  <div class="spacer-15vh"></div>
+      <!-- Encabezado de Producto -->
+      <div class="pdp-header-block">
+        <span class="pdp-badge-brand" id="pdp-brand-display">CONSOLA</span>
+        <h1 id="product-name">Cargando Producto...</h1>
+        <p id="product-description">Obteniendo especificaciones...</p>
+      </div>
+
+      <!-- Bloque HERO: Mejor Precio -->
+      <div class="pdp-hero-price-block scrollup delay-2" id="hero-price-container" style="display:none;">
+
+        <!-- Col Store: Logo + Meta -->
+        <div class="col-store">
+          <img id="hero-store-logo" src="" alt="" class="store-logo-img">
+          <div class="store-meta">
+            <span id="hero-store-name" class="store-name-text">...</span>
+            <span id="hero-update-time" class="update-time">...</span>
+          </div>
+        </div>
+
+        <!-- Col Price -->
+        <div class="col-price hero-col-price">
+          <div class="hero-price-label-small"><span class="icon">🔥</span> MEJOR PRECIO ACTUAL</div>
+          <div class="hero-price-wrapper">
+            <span class="currency">$</span>
+            <span id="hero-best-price-val" class="big-number">---</span>
+          </div>
+        </div>
+
+        <!-- Col Action -->
+        <div class="col-action">
+          <a href="#" id="hero-btn-link" target="_blank" class="hero-cta-btn">IR A LA TIENDA <span
+              class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <!-- Lista de Precios (Data Table) -->
+      <div class="pdp-prices-section scrollup delay-2">
+        <h2 class="section-label">Comparativa de Tiendas</h2>
+
+        <!-- Contenedor de la lista (se llena con JS) -->
+        <div id="price-cards" class="pdp-price-list">
+          <!-- Rows inyectados por JS -->
+        </div>
+      </div>
+
+      <!-- Extra Info -->
+      <div id="extra-info" class="pdp-extra fadein delay-3">
+        <div class="info-note">
+          <p><strong>Nota:</strong> Puede haber variaciones en el precio y la disponibilidad sin previo aviso.</p>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="spacer-10vh"></div>
 </main>

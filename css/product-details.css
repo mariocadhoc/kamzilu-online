@@ -1,0 +1,200 @@
+
+/* ===== PRODUCT DETAIL PAGE (PDP) v2.0 ===== */
+
+/* Layout Principal */
+.pdp-container {
+    max-width: 1200px;
+    margin: 120px auto 60px; /* Espacio para header fixed */
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; /* Imagen | Info */
+    gap: 40px;
+    align-items: start;
+}
+
+/* === COLUMNA IZQUIERDA: GALERÍA === */
+.pdp-gallery {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 20px;
+    position: sticky;
+    top: 100px; /* Sticky al hacer scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.pdp-main-image {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+}
+
+/* === COLUMNA DERECHA: INFO & PRECIOS === */
+.pdp-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pdp-header {
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 20px;
+}
+
+.pdp-brand {
+    font-family: var(--font-tech);
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.pdp-title {
+    font-family: var(--font-tech);
+    font-size: 2.5rem;
+    line-height: 1.1;
+    color: var(--text-main);
+    margin: 0;
+}
+
+/* Bloque de "Mejor Precio Actual" destacado */
+.pdp-hero-price {
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1);
+}
+
+.hero-price-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.hero-price-val {
+    font-family: var(--font-mono);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+}
+
+/* === TABLA DE TIENDAS (DASHBOARD STYLE) === */
+.store-list-container {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+.store-list-header {
+    background-color: #f1f5f9;
+    padding: 12px 20px;
+    font-family: var(--font-tech);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.store-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto; /* Tienda | Precio | Botón */
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-subtle);
+    transition: background-color 0.2s ease;
+}
+
+.store-row:last-child {
+    border-bottom: none;
+}
+
+.store-row:hover {
+    background-color: #f8fafc;
+}
+
+.store-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.store-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.store-price {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.store-price.best-deal {
+    color: var(--primary); /* Destacar el mejor */
+}
+
+.store-btn {
+    background-color: var(--text-main);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-family: var(--font-tech);
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.store-btn:hover {
+    background-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pdp-container {
+        grid-template-columns: 1fr;
+        margin-top: 100px;
+    }
+    
+    .pdp-gallery {
+        position: static; /* Quitar sticky en móvil */
+        min-height: 250px;
+    }
+    
+    .pdp-title {
+        font-size: 1.8rem;
+    }
+
+    .store-row {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        gap: 12px;
+    }
+    
+    .store-name {
+        grid-column: 1 / -1;
+    }
+}

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -43,13 +44,10 @@
   <link rel="apple-touch-icon" href="/img/resources/kamzilu/favicon-192.png">
 
   <!-- Google Fonts -->
-   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+  <!-- Nuevas fuentes: Chakra Petch (Headers Tech) y Space Grotesk (Body Moderno) -->
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&family=Handjet:wght@400;600;800&display=swap" rel="stylesheet">
 
   <!-- CSS Globales -->
   <link rel="stylesheet" href="/css/base.css">
@@ -80,8 +78,13 @@
 
     <main>
         <section class="hero-top scrollup">
-          <h1>El Mejor Sitio para Comparar 🔍, Elegir ✅ <br>y Ahorrar 💰 en Consolas de Videojuegos 🎮</h1>
-          <h2 class="grid-title fadein delay-1">🔥 Lo más buscado</h2>
+          <!-- Estructura modificada ligeramente para mejor control CSS del título -->
+          <div class="hero-badge">🕹️ Comparador de Precios Gamer</div>
+          <h1>El Mejor Sitio para <span class="highlight-text">Comparar</span>, <span class="highlight-text">Elegir</span> <br>y <span class="highlight-text">Ahorrar</span> en Consolas 🎮</h1>
+          
+          <h2 class="grid-title fadein delay-1">
+            <span class="icon">🔥</span> Lo Más Buscado
+          </h2>
 
           <section class="product-grid fadein delay-1">
             <div class="product-card" data-slug="nintendo-switch-2+mario-kart-bundle"></div>
@@ -95,31 +98,39 @@
           </section>
         </section>
 
-                <section class="hero-features scrollup delay-1">
+        <section class="hero-features scrollup delay-1">
           <div class="features-grid">
 
             <div class="feature-item">
-              <img src="/img/resources/icons/shopping-bag.png" alt="Tiendas de confianza" class="feature-icon">
-              <h3>Tiendas de Confianza</h3>
-              <p>Comparamos precios de los mayores players del e-commerce en México: <strong>Amazon</strong>, <strong>Mercado Libre</strong>, <strong>Liverpool</strong>, <strong>Walmart</strong> y más. Solo fuentes <em>100% verificadas</em>.</p>
+              <div class="feature-icon-wrapper">
+                <img src="/img/resources/icons/shopping-bag.png" alt="Tiendas de confianza" class="feature-icon">
+              </div>
+              <h3>Tiendas Oficiales</h3>
+              <p>Monitoreamos Precios de <strong>Amazon</strong>, <strong>Mercado Libre</strong>, <strong>Liverpool</strong>, <strong>Walmart</strong>, y <strong>muchas más</strong>. Solo entra, selecciona el precio más bajo y ve directo a la tienda oficial ✅</p>
             </div>
 
             <div class="feature-item">
-              <img src="/img/resources/icons/gamepad.png" alt="Solo consolas originales" class="feature-icon">
-              <h3>Solo Consolas Nuevas</h3>
-              <p>Nos enfocamos exclusivamente en <strong>consolas nuevas y originales</strong>. Olvídate de equipo reacondicionado, usado o pirata.</p>
+              <div class="feature-icon-wrapper">
+                <img src="/img/resources/icons/gamepad.png" alt="Solo consolas originales" class="feature-icon">
+              </div>
+              <h3>Consolas originales</h3>
+              <p>Filtramos el ruido para ti. Solo mostramos <strong>Consolas Nuevas</strong>. Cero refurbished, usados, open-box, <strong> cero riesgos</strong>🏅</p>
             </div>
 
             <div class="feature-item">
-              <img src="/img/resources/icons/calendar.png" alt="Actualizado a diario" class="feature-icon">
-              <h3>Actualización Frecuente</h3>
-              <p>Rastreamos los precios <strong>varias veces al día</strong>. Toda la información consolidada en <em>un solo sitio</em> para que tomes la mejor decisión de compra al instante.</p>
+              <div class="feature-icon-wrapper">
+                <img src="/img/resources/icons/calendar.png" alt="Actualizado a diario" class="feature-icon">
+              </div>
+              <h3>Precios Actualizados</h3>
+              <p>Escaneamos los precios <strong>a Cada Rato</strong>. Relájate y confía que nosotros cotizamos para ti <strong>24/7 los 365 días del año</strong> ♨️</p>
             </div>
 
             <div class="feature-item">
-              <img src="/img/resources/icons/secure-payment.png" alt="Compra directa" class="feature-icon">
-              <h3>Compra Directa</h3>
-              <p>Somos un <strong>puente, no un vendedor</strong>. Nunca intermediamos. Te facilitamos el enlace directo a la tienda que elijas, asegurando una experiencia de compra <em>transparente y a tu medida</em>.</p>
+              <div class="feature-icon-wrapper">
+                <img src="/img/resources/icons/secure-payment.png" alt="Compra directa" class="feature-icon">
+              </div>
+              <h3>Enlace Directo</h3>
+              <p>Somos tu HUD de compras. Te llevamos directo a la tienda oficial. <strong>Sin comisiones ocultas ni intermediarios</strong> 💸</p>
             </div>
 
           </div>

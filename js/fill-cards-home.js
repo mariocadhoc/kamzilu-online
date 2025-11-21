@@ -1,47 +1,41 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  // Define el umbral de tiempo para considerar un precio "reciente" (24 horas)
   const RECENT_THRESHOLD_MS = 24 * 60 * 60 * 1000;
 
   try {
-    const response = await fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`);
+    // 🔒 API OFF (temporal para pruebas internas)
+    // const response = await fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`);
+
+    // 🧪 Local test mode
+    const response = await fetch(`/data/consolas.json`);
+
     const data = await response.json();
+
 
     document.querySelectorAll(".product-card").forEach(card => {
       const slug = card.dataset.slug;
       const item = data[slug];
 
-      if (!item || !item.prices) return;
-
-      const now = new Date();
-
-      // ========================================
-      // FILTRAR SOLO PRECIOS RECIENTES
-      // ========================================
-      const recentPrices = item.prices.filter(p => {
-        // Debe tener precio válido
-        if (!(typeof p.price === "number" && !isNaN(p.price))) {
-          return false;
-        }
-
-        // Debe tener fecha de actualización
-        if (!p.lastUpdated) {
-          return false;
-        }
-
-        // Verificar que sea reciente
-        const lastUpdate = new Date(p.lastUpdated);
-        const diffMs = now - lastUpdate;
-
-        return diffMs <= RECENT_THRESHOLD_MS;
-      });
-
-      // Si no hay precios recientes, no mostrar en home
-      if (!recentPrices.length) {
-        card.style.display = "none"; // Opcional: ocultar productos sin precios recientes
+      if (!item || !item.prices) {
+        // Si no hay datos, opcionalmente ocultar o mostrar skeleton
+        card.style.display = "none";
         return;
       }
 
-      // Calcular el precio mínimo solo de los precios recientes
+      const now = new Date();
+
+      // Filtrar precios recientes
+      const recentPrices = item.prices.filter(p => {
+        if (!(typeof p.price === "number" && !isNaN(p.price))) return false;
+        if (!p.lastUpdated) return false;
+        const lastUpdate = new Date(p.lastUpdated);
+        return (now - lastUpdate) <= RECENT_THRESHOLD_MS;
+      });
+
+      if (!recentPrices.length) {
+        card.style.display = "none";
+        return;
+      }
+
       const minPrice = Math.min(...recentPrices.map(p => p.price)).toLocaleString("es-MX", {
         style: "currency",
         currency: "MXN",
@@ -54,11 +48,18 @@ document.addEventListener("DOMContentLoaded", async () => {
       const name = item.name;
       const href = `/consolas/${brand}/${slug}/index.html`;
 
+      // Nueva estructura HTML Tech
       card.innerHTML = `
         <a href="${href}">
-          <img src="${image}" alt="${name}">
+          <div class="deal-badge">Oferta</div>
+          <div class="card-image-wrapper">
+            <img src="${image}" alt="${name}" loading="lazy">
+          </div>
           <h3>${name}</h3>
-          <p class="price-badge">Precio más bajo: ${minPrice}</p>
+          <div class="price-container">
+            <span class="price-label">Mejor Precio</span>
+            <span class="price-value">${minPrice}</span>
+          </div>
         </a>
       `;
     });
