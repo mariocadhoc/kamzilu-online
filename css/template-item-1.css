@@ -49,7 +49,7 @@
   box-shadow: var(--shadow-card);
   position: static;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .pdp-image-container {
@@ -215,31 +215,38 @@
 
 /* === PRICES LIST (Mobile Default) === */
 .section-label {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-  border-left: 4px solid var(--accent);
-  padding-left: 12px;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  border-left: 5px solid var(--accent);
+  padding-left: 16px;
+  margin-top: 30px;
+  /* Reduced spacing since Hero is now above */
+  font-family: var(--font-tech);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .pdp-price-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
 
 .price-row {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 16px;
+  padding: 20px 24px;
   display: grid;
   grid-template-columns: 1fr auto;
   /* Info | Button */
   grid-template-rows: auto auto;
   /* Store | Price */
-  gap: 12px;
+  gap: 16px;
   align-items: center;
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
 }
 
 .price-row:hover {
@@ -274,7 +281,7 @@
 
 /* Store Info */
 .store-logo-img {
-  width: 40px;
+  width: 100px;
   height: 40px;
   object-fit: contain;
   border-radius: 6px;
@@ -392,7 +399,7 @@
     position: sticky;
     top: 110px;
     max-width: none;
-    margin: 0;
+    margin: 0 0 40px 0;
     padding: 30px;
   }
 

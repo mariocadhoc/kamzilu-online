@@ -12,10 +12,10 @@ function loadConsoleData() {
   const RECENT_THRESHOLD_MS = 24 * 60 * 60 * 1000; // 24 horas
 
   // 🔒 API OFF (temporal para pruebas internas)
-  fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`)
+  // fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`)
 
   // 🧪 Local test mode
-  // fetch(`/data/consolas.json`)
+  fetch(`/data/consolas.json`)
     .then(res => {
       if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
       return res.json();
@@ -98,7 +98,7 @@ function loadConsoleData() {
 
           // === GENERAR LISTA (ROWS) ===
 
-          // 1. Recientes
+          // 1. Recientes (Excluyendo el mejor precio que ya está en el Hero)
           recentPrices.slice(1).forEach(price => {
             const isLowest = price.price === minRecentPrice;
             elements.priceList.appendChild(createPriceRow(price, isLowest, 'recent'));

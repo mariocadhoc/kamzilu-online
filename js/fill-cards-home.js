@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     // 🔒 API OFF (temporal para pruebas internas)
-    const response = await fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`);
+    // const response = await fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`);
 
     // 🧪 Local test mode
-    // const response = await fetch(`/data/consolas.json`);
+    const response = await fetch(`/data/consolas.json`);
 
     const data = await response.json();
 

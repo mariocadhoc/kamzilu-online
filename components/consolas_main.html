@@ -29,53 +29,59 @@
         <p id="product-description">Obteniendo especificaciones...</p>
       </div>
 
-      <!-- Bloque HERO: Mejor Precio -->
-      <div class="pdp-hero-price-block scrollup delay-2" id="hero-price-container" style="display:none;">
 
-        <!-- Col Store: Logo + Meta -->
-        <div class="col-store">
-          <img id="hero-store-logo" src="" alt="" class="store-logo-img">
-          <div class="store-meta">
-            <span id="hero-store-name" class="store-name-text">...</span>
-            <span id="hero-update-time" class="update-time">...</span>
-          </div>
-        </div>
 
-        <!-- Col Price -->
-        <div class="col-price hero-col-price">
-          <div class="hero-price-label-small"><span class="icon">🔥</span> MEJOR PRECIO ACTUAL</div>
-          <div class="hero-price-wrapper">
-            <span class="currency">$</span>
-            <span id="hero-best-price-val" class="big-number">---</span>
-          </div>
-        </div>
 
-        <!-- Col Action -->
-        <div class="col-action">
-          <a href="#" id="hero-btn-link" target="_blank" class="hero-cta-btn">IR A LA TIENDA <span
-              class="arrow">→</span></a>
-        </div>
-      </div>
-
-      <!-- Lista de Precios (Data Table) -->
-      <div class="pdp-prices-section scrollup delay-2">
-        <h2 class="section-label">Comparativa de Tiendas</h2>
-
-        <!-- Contenedor de la lista (se llena con JS) -->
-        <div id="price-cards" class="pdp-price-list">
-          <!-- Rows inyectados por JS -->
-        </div>
-      </div>
-
-      <!-- Extra Info -->
-      <div id="extra-info" class="pdp-extra fadein delay-3">
-        <div class="info-note">
-          <p><strong>Nota:</strong> Puede haber variaciones en el precio y la disponibilidad sin previo aviso.</p>
-        </div>
-      </div>
 
     </section>
   </div>
+
+  <!-- Bloque HERO: Mejor Precio (Full Width) -->
+  <div class="pdp-hero-price-block scrollup delay-1" id="hero-price-container" style="display:none;">
+
+    <!-- Col Store: Logo + Meta -->
+    <div class="col-store">
+      <img id="hero-store-logo" src="" alt="" class="store-logo-img">
+      <div class="store-meta">
+        <span id="hero-store-name" class="store-name-text">...</span>
+        <span id="hero-update-time" class="update-time">...</span>
+      </div>
+    </div>
+
+    <!-- Col Price -->
+    <div class="col-price hero-col-price">
+      <div class="hero-price-label-small"><span class="icon">🔥</span> MEJOR PRECIO ACTUAL</div>
+      <div class="hero-price-wrapper">
+        <span class="currency">$</span>
+        <span id="hero-best-price-val" class="big-number">---</span>
+      </div>
+    </div>
+
+    <!-- Col Action -->
+    <div class="col-action">
+      <a href="#" id="hero-btn-link" target="_blank" class="hero-cta-btn">IR A LA TIENDA <span
+          class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <!-- SECCIÓN INFERIOR: Lista de Precios (Full Width) -->
+  <div class="pdp-prices-section scrollup delay-2">
+    <h2 class="section-label">Comparativa de Tiendas</h2>
+
+    <!-- Contenedor de la lista (se llena con JS) -->
+    <div id="price-cards" class="pdp-price-list">
+      <!-- Rows inyectados por JS -->
+    </div>
+  </div>
+
+  <!-- Extra Info -->
+  <div id="extra-info" class="pdp-extra fadein delay-2">
+    <div class="info-note">
+      <p><strong>Nota:</strong> Puede haber variaciones en el precio y la disponibilidad sin previo aviso.</p>
+    </div>
+  </div>
+
+
 
   <div class="spacer-10vh"></div>
 </main>
