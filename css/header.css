@@ -40,19 +40,17 @@
 }
 
 .kamzilu-logo-text {
-  font-family: var(--font-tech);
-  font-weight: 700;
-  font-style: italic;
+  font-family: var(--font-logo);
+  font-weight: 600;
   text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 3.5rem;
   color: var(--primary);
-  letter-spacing: -0.03em;
+  letter-spacing: 0.02em;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   transform-origin: center;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  /* Efecto rebote/gelatina */
 }
 
 .header-logo:hover .kamzilu-logo-text {

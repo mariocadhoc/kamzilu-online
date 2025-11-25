@@ -15,7 +15,7 @@ function loadConsoleData() {
   fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`)
 
   // 🧪 Local test mode
-  //fetch(`/data/consolas.json`)
+  // fetch(`/data/consolas.json`)
     .then(res => {
       if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
       return res.json();

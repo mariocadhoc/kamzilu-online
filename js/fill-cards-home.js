@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
      const response = await fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`);
 
     // 🧪 Local test mode
-    //const response = await fetch(`/data/consolas.json`);
+    // const response = await fetch(`/data/consolas.json`);
 
     const data = await response.json();
 

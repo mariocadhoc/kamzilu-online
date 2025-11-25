@@ -1,97 +1,115 @@
-
 :root {
-    /* === FUENTES === */
-    /* Tech/Titulos: Cuadrada, futurista */
-    --font-tech: 'Chakra Petch', sans-serif; 
-    /* Cuerpo: Geométrica, legible, muy 'startup tech' */
-    --font-body: 'Space Grotesk', sans-serif; 
-    /* Datos/Precios: Pixelada/Display */
-    --font-mono: 'Handjet', sans-serif;
-  
-    /* === PALETA 'CLEAN TECH' 2025 === */
-    
-    /* Fondos */
-    --bg-body: #F8F9FA;     /* Casi blanco, muy limpio */
-    --bg-card: #FFFFFF;     /* Blanco puro para tarjetas */
-    --bg-glass: rgba(255, 255, 255, 0.85); /* Para el header */
-  
-    /* Textos */
-    --text-main: #0f172a;   /* Azul muy oscuro (Slate 900) */
-    --text-muted: #64748b;  /* Slate 500 */
-    --text-light: #cbd5e1;  /* Slate 300 */
-  
-    /* Marca / Acentos */
-    --primary: #2563EB;     /* Azul eléctrico (Blue 600) */
-    --primary-dark: #1e40af;
-    --accent: #FACC15;      /* Amarillo Intenso */
-    --success: #10b981;     /* Verde datos frescos */
-    --warning: #f59e0b;     /* Naranja datos viejos */
-    
-    /* Gamer / UI */
-    --border-subtle: #e2e8f0; 
-    --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    
-    /* Glows */
-    --glow-bg: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.08) 0%, transparent 60%);
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-    font-size: 16px; 
-  }
-  
-  body {
-    font-family: var(--font-body);
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--text-main);
-    background-color: var(--bg-body);
-    /* Fondo Tech: Glow superior + Grid sutil */
-    background-image: 
-      var(--glow-bg),
-      linear-gradient(#e2e8f0 1px, transparent 1px),
-      linear-gradient(90deg, #e2e8f0 1px, transparent 1px);
-    background-size: 100% 100%, 40px 40px, 40px 40px; /* Grid de 40px */
-    background-position: 0 0, -1px -1px, -1px -1px;
-    background-attachment: scroll;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
-  }
+  /* === FUENTES === */
+  /* Tech/Titulos: Cuadrada, futurista */
+  --font-tech: 'Chakra Petch', sans-serif;
+  /* Cuerpo: Geométrica, legible, muy 'startup tech' */
+  --font-body: 'Space Grotesk', sans-serif;
+  /* Datos/Precios: Pixelada/Display */
+  --font-mono: 'Handjet', sans-serif;
+  /* Logo: Jersey 25 */
+  --font-logo: 'Jersey 25', sans-serif;
 
-  /* Títulos Globales */
-  h1, h2, h3, h4 {
-    font-family: var(--font-tech);
-    font-weight: 600;
-    color: var(--text-main);
-    letter-spacing: -0.02em; 
-  }
+  /* === PALETA 'CLEAN TECH' 2025 === */
 
-  /* Enlaces */
-  a {
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.2s ease;
-  }
+  /* Fondos */
+  --bg-body: #F8F9FA;
+  /* Casi blanco, muy limpio */
+  --bg-card: #FFFFFF;
+  /* Blanco puro para tarjetas */
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  /* Para el header */
 
-  /* Scrollbar customizada */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  ::-webkit-scrollbar-track {
-    background: var(--bg-body);
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--text-muted);
-    border-radius: 4px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary);
-  }
+  /* Textos */
+  --text-main: #0f172a;
+  /* Azul muy oscuro (Slate 900) */
+  --text-muted: #64748b;
+  /* Slate 500 */
+  --text-light: #cbd5e1;
+  /* Slate 300 */
+
+  /* Marca / Acentos */
+  --primary: #2563EB;
+  /* Azul eléctrico (Blue 600) */
+  --primary-dark: #1e40af;
+  --accent: #FACC15;
+  /* Amarillo Intenso */
+  --success: #10b981;
+  /* Verde datos frescos */
+  --warning: #f59e0b;
+  /* Naranja datos viejos */
+
+  /* Gamer / UI */
+  --border-subtle: #e2e8f0;
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Glows */
+  --glow-bg: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.08) 0%, transparent 60%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-main);
+  background-color: var(--bg-body);
+  /* Fondo Tech: Glow superior + Grid sutil */
+  background-image:
+    var(--glow-bg),
+    linear-gradient(#e2e8f0 1px, transparent 1px),
+    linear-gradient(90deg, #e2e8f0 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  /* Grid de 40px */
+  background-position: 0 0, -1px -1px, -1px -1px;
+  background-attachment: scroll;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Títulos Globales */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-tech);
+  font-weight: 600;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-body);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
