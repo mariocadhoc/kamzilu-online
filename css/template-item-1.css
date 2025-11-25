@@ -255,7 +255,8 @@
   background-color: #fafafa;
 }
 
-.price-row.unavailable {
+.price-row.unavailable,
+.price-row.outdated {
   opacity: 0.6;
   background-color: #f8f9fa;
 }

@@ -1,4 +1,3 @@
-
 function formatPrice(value) {
   const formatted = value.toLocaleString("es-MX", {
     minimumFractionDigits: 2,
@@ -12,10 +11,10 @@ function loadConsoleData() {
   const RECENT_THRESHOLD_MS = 24 * 60 * 60 * 1000; // 24 horas
 
   // 🔒 API OFF (temporal para pruebas internas)
-  fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`)
+  // fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`)
 
   // 🧪 Local test mode
-  // fetch(`/data/consolas.json`)
+  fetch(`/data/consolas.json`)
     .then(res => {
       if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
       return res.json();
@@ -140,7 +139,14 @@ function createPriceRow(price, isLowest, category) {
   const timeClass = timeInfo.class;
 
   // Formato precio
-  const displayPrice = (typeof price.price === 'number') ? `$${formatPrice(price.price)}` : "---";
+  let displayPrice;
+  
+  // APLICACIÓN DE LA CORRECCIÓN: Si es desactualizado o no disponible, mostramos "---"
+  if (category === 'outdated' || category === 'unavailable') {
+    displayPrice = "---";
+  } else {
+    displayPrice = (typeof price.price === 'number') ? `$${formatPrice(price.price)}` : "---";
+  }
 
   row.innerHTML = `
     <div class="col-store">
@@ -177,6 +183,12 @@ function getUpdateTimeInfo(lastUpdated, category = 'recent') {
   if (category === 'unavailable') {
     return { text: "Sin stock", class: "" };
   }
+  
+  // AÑADIDO: Forzar el texto "Hace tiempo" y la clase "old" para precios obsoletos
+  if (category === 'outdated') {
+    return { text: "Hace tiempo", class: "old" };
+  }
+  
   if (!lastUpdated) {
     return { text: "Hace tiempo", class: "old" };
   }
