@@ -474,3 +474,86 @@
     font-size: 1.8rem;
   }
 }
+
+/* ============================================================
+   ACTUALIZACIONES PARA EL NUEVO LOADER / PRICE ORCHESTRATOR
+   ============================================================ */
+
+/* ===== NUEVAS CLASES DE ESTADO PARA update-time ===== */
+.update-time {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  opacity: 0.9;
+}
+
+.update-time.status-fresh {
+  color: var(--success);
+}
+
+.update-time.status-old {
+  color: var(--warning);
+}
+
+.update-time.status-unavailable {
+  color: #cc0000;
+}
+
+.update-time.status-unknown {
+  color: #c28c00;
+}
+
+/* ===== PRECIO ANTIGUO (OUTDATED) - Atenuación elegante ===== */
+.price-val-row.old-data {
+  opacity: 0.55;
+  filter: grayscale(0.8);
+}
+
+/* ===== Estado unificado para filas no vigentes ===== */
+.price-row.outdated {
+  opacity: 0.65;
+}
+
+.price-row.unavailable {
+  opacity: 0.55;
+  background-color: #f2f2f2;
+}
+
+/* ===== Decimales del precio con mejor contraste ===== */
+.price-decimals {
+  font-size: 0.7em;
+  vertical-align: top;
+  position: relative;
+  top: 0.1em;
+  padding-left: 2px;
+  display: inline-block;
+  opacity: 0.85;
+}
+
+/* ===== Mensajes/Separadores ===== */
+.separator-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin: 25px 0 14px;
+  font-family: var(--font-tech);
+  opacity: 0.7;
+}
+
+/* ===== HERO: casos con precio viejo ===== */
+#hero-update-time.status-warning {
+  color: var(--warning);
+  font-weight: 600;
+}
+
+/* ===== En hover, mantiene jerarquía visual ===== */
+.price-row:hover {
+  background-color: #fafafa;
+  opacity: 1;
+}
+
+/* ===== Compatibilidad con estados ===== */
+.price-row.outdated:hover,
+.price-row.unavailable:hover {
+  opacity: 0.75;
+}
