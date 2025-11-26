@@ -7,7 +7,7 @@
     'use strict';
 
     const CONFIG = {
-        endpoint: 'http://rp5.local:8002/collect',
+        endpoint: 'https://metrics.kamzilu.com/collect',
         batchSize: 5,
         batchInterval: 5000, // 5 seconds
         maxRetries: 3
