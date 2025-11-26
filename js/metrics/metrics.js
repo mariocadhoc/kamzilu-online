@@ -7,7 +7,7 @@
     'use strict';
 
     const CONFIG = {
-        endpoint: 'http://localhost:8001/collect', // Adjust in production
+        endpoint: 'http://rp5.local:8002/collect',
         batchSize: 5,
         batchInterval: 5000, // 5 seconds
         maxRetries: 3
