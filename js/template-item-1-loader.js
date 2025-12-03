@@ -50,8 +50,13 @@ async function loadConsoleData() {
   const RECENT_THRESHOLD_MS = 24 * 60 * 60 * 1000;
 
   try {
-    const parts = window.location.pathname.split("/").filter(Boolean);
-    const productId = parts[parts.length - 2];
+    function getSlug() {
+      const parts = window.location.pathname.split("/").filter(Boolean);
+      if (parts[parts.length - 1].includes(".html")) parts.pop();
+      return parts[parts.length - 1];
+    }
+
+    const productId = getSlug();
 
     const isLocal =
       location.hostname === "localhost" ||
