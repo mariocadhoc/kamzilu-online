@@ -1,4 +1,4 @@
-﻿/* Base global */
+/* Base global */
 main {
   max-width: 100%;
   margin: 0 auto;
@@ -66,7 +66,151 @@ ul, ol, li {
   line-height: 1.6;
 }
 
-/* Componentes hero */
+/* ===== HERO SECTION TECH ===== */
+.hero-top {
+  text-align: center;
+  padding: 140px 20px 60px; /* Más padding top por el header fixed */
+  background: transparent;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-block;
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-family: var(--font-tech);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Título Principal */
+.hero-top h1 {
+  font-family: var(--font-tech);
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+  letter-spacing: -0.03em;
+}
+
+.hero-top h1 .highlight-text {
+  color: var(--primary);
+  position: relative;
+  display: inline-block;
+}
+
+/* Subrayado creativo */
+.hero-top h1 .highlight-text::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(250, 204, 21, 0.4);
+  z-index: -1;
+  transform: skewX(-12deg);
+}
+
+/* Subtítulo de sección */
+.grid-title {
+  font-family: var(--font-tech);
+  font-size: 2rem;
+  color: var(--text-main);
+  margin: 60px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.grid-title .icon {
+  font-size: 1.8rem;
+}
+
+/* ===== HERO FEATURES (background full-width) ===== */
+.hero-features {
+  background-color: var(--blue1);
+  color: var(--white);
+  width: 100%;
+  padding: 70px 0; /* Sin padding lateral para que el background llegue a los extremos */
+  border-radius: 0;
+  background-image: url('/img/resources/kamzilu/bg-1.webp');
+  background-repeat: repeat;
+  background-size: 350px;
+}
+
+/* Grid de features (contenido centrado) */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 1400px; /* El contenido sí tiene max-width */
+  margin: 0 auto; /* Centrado */
+  padding: 0 20px; /* Padding lateral solo en el contenido */
+}
+
+/* Feature items */
+.feature-item {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.feature-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--primary);
+}
+
+.feature-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(37, 99, 235, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.feature-icon {
+  width: 24px;
+  height: 24px;
+  filter: none;
+  opacity: 1;
+}
+
+.feature-item h3 {
+  font-family: var(--font-tech);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.feature-item p {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* ===== HERO BANNER (sección antigua) ===== */
 .hero-banner {
   background-color: rgba(39, 47, 65, 0.95);
   padding: 40px 40px;
@@ -78,11 +222,9 @@ ul, ol, li {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
 }
 
-/* === Fuente exclusiva para el banner principal === */
 .hero-banner .hero-headline,
 .hero-banner .hero-subline {
   font-family: var(--font4);
-
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.5px;
@@ -119,19 +261,7 @@ ul, ol, li {
   margin: 0 auto;
 }
 
-/* --- Banner horizontal de características --- */
-.hero-features {
-  background-color: var(--blue1);
-  color: var(--white);
-  width: 100%;
-  padding: 70px 10%;
-  border-radius: 0;
-  background-image: url('/img/resources/kamzilu/bg-1.webp');
-  background-repeat: repeat;
-  background-size: 350px;
-}
-
-/* === Hero Grid (sección informativa del banner) === */
+/* ===== HERO GRID (sección antigua) ===== */
 .hero-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -202,76 +332,99 @@ ul, ol, li {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
-/* --- Sección superior con fondo blanco --- */
-.hero-top {
-  text-align: center;
-  padding: 70px 20px 80px;
-  background: url('/img/resources/kamzilu/bg-1.webp') repeat;
-  background-size: 200px;
+/* ===== BRANDS SECTION ===== */
+.brands-section {
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 0 2rem;
 }
 
-.hero-top h1 {
-  font-family: 'Ranchers', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 2px;
-  color: var(--black);
-  font-size: 2.8rem;
-  line-height: 1.3;
-  max-width: 900px;
-  margin: 0 auto;
-  font-weight: 700;
-}
-
-/* Componentes feature */
-.feature-icon {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 1rem;
-  filter: brightness(0) invert(1);
-  opacity: 0.9;
-  transition: transform 0.3s ease, opacity 0.3s ease, rotate 0.3s ease;}
-
-.feature-item h3 {
-  font-family: var(--font1);
-  font-weight: 700;
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
-  color: var(--white);
-}
-
-.feature-item p {
-  font-family: var(--font2);
-  font-size: 1.1rem;
-  color: var(--light-grey);
-  line-height: 1.4;
-}
-
-.feature-item:hover .feature-icon {
-  transform: scale(1.1);
-  rotate: 12deg;
-  opacity: 1;
-}
-
-.features-grid {
+.brands-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
-  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-/* --- Responsive --- */
+.brand-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.75) 100%);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* .brand-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+} */
+
+.brand-logo {
+  width: 100%;
+  max-width: 200px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  filter: brightness(0.9);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: filter 0.3s ease;
+}
+
+.brand-card:hover .brand-logo {
+  filter: brightness(1.2);
+}
+
+.brand-name {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.brand-subtitle {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  color: #111;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 1366px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-  .hero-features {
-  padding: 40px 10%;
-}
 }
 
 @media (max-width: 768px) {
+  .hero-top {
+    padding-top: 120px;
+  }
+
+  .hero-top h1 {
+    font-size: 2.4rem;
+  }
+
+  .grid-title {
+    font-size: 1.6rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr; /* Una columna en móvil */
+    gap: 16px;
+    padding: 0 15px; /* Menos padding en móvil */
+  }
+
   .hero-grid {
     gap: 1.5rem;
   }

@@ -1,28 +1,30 @@
 <header class="header-navbar">
   <div class="header-container">
-    <a href="/index.html" class="header-logo">
+    <a href="/" class="header-logo" aria-label="Kamzilu - Página principal">
       <span class="kamzilu-logo-text">KAMZILU</span>
     </a>
 
-    <nav class="header-nav-desktop" id="navbar">
+    <nav class="header-nav-desktop" id="navbar" aria-label="Navegación principal">
       <div class="header-dropdown">
-        <span class="nav-link">Nintendo</span>
-        <div class="header-submenu">
+        <span class="nav-link" role="button" tabindex="0">Nintendo</span>
+        <div class="header-submenu" aria-label="Submenú Nintendo">
           <a href="/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/index.html">Nintendo Switch 2</a>
           <a href="/consolas/nintendo/nintendo-switch-lite-yellow/index.html">Nintendo Switch Lite</a>
           <a href="/consolas/nintendo/nintendo-switch-oled-blanco/index.html">Nintendo Switch OLED</a>
         </div>
       </div>
+
       <div class="header-dropdown">
-        <span class="nav-link">Playstation</span>
-        <div class="header-submenu">
+        <span class="nav-link" role="button" tabindex="0">Playstation</span>
+        <div class="header-submenu" aria-label="Submenú Playstation">
           <a href="/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/index.html">Playstation 5 Slim</a>
           <a href="/consolas/playstation/playstation-5-pro-digital-2tb/index.html">Playstation 5 PRO</a>
         </div>
       </div>
+
       <div class="header-dropdown">
-        <span class="nav-link">Xbox</span>
-        <div class="header-submenu">
+        <span class="nav-link" role="button" tabindex="0">Xbox</span>
+        <div class="header-submenu" aria-label="Submenú Xbox">
           <a href="/consolas/xbox/xbox-series-s/index.html">Xbox Series S</a>
           <a href="/consolas/xbox/xbox-series-x-negro-1tb/index.html">Xbox Series X Negro</a>
           <a href="/consolas/xbox/xbox-series-x-blanco-1tb/index.html">Xbox Series X Blanco</a>
@@ -30,8 +32,8 @@
       </div>
     </nav>
 
-    <button class="burger-toggler" id="burger-btn" aria-label="Menú" aria-expanded="false"
-      aria-controls="header-nav-mobile">
+    <button class="burger-toggler" id="burger-btn"
+      aria-label="Abrir menú" aria-expanded="false" aria-controls="header-nav-mobile">
       <div class="burger-animated-icon"><span></span><span></span><span></span></div>
     </button>
   </div>
@@ -39,8 +41,8 @@
 
 <div class="header-nav-mobile" id="header-nav-mobile">
   <div class="header-mobile-dropdown">
-    <button class="header-mobile-parent">Nintendo</button>
-    <div class="header-mobile-submenu">
+    <button class="header-mobile-parent" aria-expanded="false">Nintendo</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Nintendo">
       <div class="header-mobile-submenu-inner">
         <a href="/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/index.html">Nintendo Switch 2</a>
         <a href="/consolas/nintendo/nintendo-switch-lite-yellow/index.html">Nintendo Switch Lite</a>
@@ -48,18 +50,20 @@
       </div>
     </div>
   </div>
+
   <div class="header-mobile-dropdown">
-    <button class="header-mobile-parent">Playstation</button>
-    <div class="header-mobile-submenu">
+    <button class="header-mobile-parent" aria-expanded="false">Playstation</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Playstation">
       <div class="header-mobile-submenu-inner">
         <a href="/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/index.html">Playstation 5 Slim</a>
         <a href="/consolas/playstation/playstation-5-pro-digital-2tb/index.html">Playstation 5 PRO</a>
       </div>
     </div>
   </div>
+
   <div class="header-mobile-dropdown">
-    <button class="header-mobile-parent">Xbox</button>
-    <div class="header-mobile-submenu">
+    <button class="header-mobile-parent" aria-expanded="false">Xbox</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Xbox">
       <div class="header-mobile-submenu-inner">
         <a href="/consolas/xbox/xbox-series-s/index.html">Xbox Series S</a>
         <a href="/consolas/xbox/xbox-series-x-negro-1tb/index.html">Xbox Series X Negro</a>

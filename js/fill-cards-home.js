@@ -2,14 +2,17 @@ document.addEventListener("DOMContentLoaded", async () => {
   const RECENT_THRESHOLD_MS = 24 * 60 * 60 * 1000;
 
   try {
-    // 🔒 API OFF (temporal para pruebas internas)
-     const response = await fetch(`https://api.kamzilu.com/api/consolas?v=${Date.now()}`);
+    const isLocal =
+      location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1" ||
+      location.protocol === "file:";
 
-    // 🧪 Local test mode
-    // const response = await fetch(`/data/consolas.json`);
+    const API_URL = isLocal
+      ? `/data/consolas.json?v=${Date.now()}`
+      : `https://api.kamzilu.com/api/consolas?v=${Date.now()}`;
 
+    const response = await fetch(API_URL);
     const data = await response.json();
-
 
     document.querySelectorAll(".product-card").forEach(card => {
       const slug = card.dataset.slug;

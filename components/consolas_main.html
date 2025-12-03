@@ -1,87 +1,122 @@
-<main class="pdp-wrapper template-item-1">
+<main class="pdp-wrapper template-item-1"
+      itemscope
+      itemtype="https://schema.org/Product">
 
-  <!-- Breadcrumb Minimalista -->
-  <!-- <section id="breadcrumb" class="pdp-breadcrumb fadein delay-1">
-    <a href="/">Home</a> <span class="sep">/</span> 
-    <a href="/consolas/">Consolas</a> <span class="sep">/</span> 
+  <!-- Breadcrumb -->
+  <nav class="pdp-breadcrumb fadein delay-1" aria-label="Ruta de navegación">
+    <a href="/">Inicio</a> <span class="sep">/</span>
+    <a href="/consolas/">Consolas</a> <span class="sep">/</span>
     <span id="breadcrumb-product" class="current">Cargando...</span>
-  </section> -->
+  </nav>
 
   <div class="pdp-layout-grid">
 
-    <!-- COLUMNA IZQUIERDA: Visuals -->
+    <!-- COLUMNA IZQUIERDA -->
     <section class="pdp-left-col scrollleft delay-1">
       <div class="pdp-image-card">
         <div class="pdp-image-container">
-          <img id="product-image-src" src="" alt="Cargando..." class="main-img">
+          <img id="product-image-src"
+               src=""
+               alt="Cargando imagen del producto"
+               class="main-img"
+               itemprop="image">
         </div>
-        <!-- Placeholder para miniaturas si se agregan después -->
       </div>
     </section>
 
-    <!-- COLUMNA DERECHA: Info & Precios -->
+    <!-- COLUMNA DERECHA -->
     <section class="pdp-right-col scrollright delay-1">
 
-      <!-- Encabezado de Producto -->
       <div class="pdp-header-block">
-        <span class="pdp-badge-brand" id="pdp-brand-display">CONSOLA</span>
-        <h1 id="product-name">Cargando Producto...</h1>
-        <p id="product-description">Obteniendo especificaciones...</p>
+
+        <!-- Marca -->
+        <span class="pdp-badge-brand"
+              id="pdp-brand-display"
+              itemprop="brand">CONSOLA</span>
+
+        <!-- Nombre -->
+        <h1 id="product-name" itemprop="name">Cargando Producto...</h1>
+
+        <!-- Descripción -->
+        <p id="product-description" itemprop="description">
+          Obteniendo especificaciones y mejores ofertas...
+        </p>
+
       </div>
-
-
-
-
 
     </section>
   </div>
 
-  <!-- Bloque HERO: Mejor Precio (Full Width) -->
-  <div class="pdp-hero-price-block scrollup delay-1" id="hero-price-container" style="display:none;">
+  <!-- HERO MEJOR PRECIO -->
+  <div class="pdp-hero-price-block scrollup delay-1"
+       id="hero-price-container"
+       style="display:none;"
+       itemprop="offers"
+       itemscope
+       itemtype="https://schema.org/AggregateOffer">
 
-    <!-- Col Store: Logo + Meta -->
+    <!-- Col Store -->
     <div class="col-store">
-      <img id="hero-store-logo" src="" alt="" class="store-logo-img">
+      <img id="hero-store-logo"
+           src=""
+           alt="Tienda con mejor precio"
+           class="store-logo-img">
+
       <div class="store-meta">
-        <span id="hero-store-name" class="store-name-text">...</span>
-        <span id="hero-update-time" class="update-time">...</span>
+        <span id="hero-store-name" class="store-name-text"></span>
+        <span id="hero-update-time" class="update-time"></span>
       </div>
     </div>
 
     <!-- Col Price -->
     <div class="col-price hero-col-price">
-      <div class="hero-price-label-small"><span class="icon">🔥</span> MEJOR PRECIO ACTUAL</div>
+      <div class="hero-price-label-small">
+        <span class="icon">🔥</span> MEJOR PRECIO ACTUAL
+      </div>
+
       <div class="hero-price-wrapper">
         <span class="currency">$</span>
-        <span id="hero-best-price-val" class="big-number">---</span>
+        <span id="hero-best-price-val"
+              class="big-number"
+              itemprop="lowPrice">---</span>
       </div>
+
+      <meta itemprop="priceCurrency" content="MXN">
     </div>
 
-    <!-- Col Action -->
+    <!-- Col CTA -->
     <div class="col-action">
-      <a href="#" id="hero-btn-link" target="_blank" class="hero-cta-btn">IR A LA TIENDA <span
-          class="arrow">→</span></a>
+      <a href="#"
+         id="hero-btn-link"
+         target="_blank"
+         rel="nofollow noopener"
+         class="hero-cta-btn"
+         aria-label="Ir a la tienda para ver la oferta">
+         IR A LA TIENDA <span class="arrow">→</span>
+      </a>
     </div>
+
   </div>
 
-  <!-- SECCIÓN INFERIOR: Lista de Precios (Full Width) -->
+  <!-- LISTA DE PRECIOS -->
   <div class="pdp-prices-section scrollup delay-2">
-    <h2 class="section-label">Comparativa de Tiendas</h2>
+    <h2 class="section-label">
+      Comparativa de Precios de <span id="h2-product-name">en otras tiendas</span>
+    </h2>
 
-    <!-- Contenedor de la lista (se llena con JS) -->
     <div id="price-cards" class="pdp-price-list">
-      <!-- Rows inyectados por JS -->
+      <!-- Inyectado por JS -->
     </div>
   </div>
 
   <!-- Extra Info -->
   <div id="extra-info" class="pdp-extra fadein delay-2">
     <div class="info-note">
-      <p><strong>Nota:</strong> Puede haber variaciones en el precio y la disponibilidad sin previo aviso.</p>
+      <p>
+        <p><strong><em>Nota:</em></strong><em> Kamzilu actualiza los precios varias veces al día, aún así puede haber variaciones en la tienda final.</em></p>
+      </p>
     </div>
   </div>
-
-
 
   <div class="spacer-10vh"></div>
 </main>

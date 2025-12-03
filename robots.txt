@@ -1,8 +1,14 @@
 User-agent: *
 Allow: /
+
 Disallow: /sandbox/
 Disallow: /backend/
 Disallow: /*temp/
 Disallow: /*tmp/
+
+Disallow: /consolas_main.html
+Disallow: /template-item-1.html
+
+Disallow: /*index.html$
 
 Sitemap: https://kamzilu.com/sitemap.xml

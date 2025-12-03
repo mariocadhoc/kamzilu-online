@@ -8,7 +8,7 @@
   /* Mobile header space */
 }
 
-/* === BREADCRUMB === */
+/* ===== BREADCRUMB ===== */
 .pdp-breadcrumb {
   font-family: var(--font-tech);
   font-size: 0.9rem;
@@ -16,6 +16,16 @@
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+
+/* Especificidad aumentada para evitar conflictos */
+.pdp-breadcrumb a {
+  font-family: var(--font-tech) !important;
+  font-size: 0.9rem !important; /* Sobreescribe el 1.8rem global */
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .pdp-breadcrumb a:hover {
@@ -25,12 +35,15 @@
 .pdp-breadcrumb .sep {
   margin: 0 8px;
   color: var(--border-subtle);
+  font-size: 0.9rem;
 }
 
 .pdp-breadcrumb .current {
   color: var(--text-main);
   font-weight: 600;
+  font-size: 0.9rem;
 }
+
 
 /* === LAYOUT GRID (Mobile Default: Stacked) === */
 .pdp-layout-grid {

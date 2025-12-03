@@ -49,16 +49,24 @@ function getUpdateTimeInfo(lastUpdated, category) {
 function loadConsoleData() {
   const RECENT_THRESHOLD_MS = 24 * 60 * 60 * 1000;
 
-  const segments = window.location.pathname.split("/");
-  const productId = segments.pop() || segments.pop();
+  const parts = window.location.pathname.split("/").filter(Boolean);
+  const productId = parts[parts.length - 2];
 
-  const API_URL = `https://api.kamzilu.com/api/consolas?v=${Date.now()}`;
+  const isLocal =
+    location.hostname === "localhost" ||
+    location.hostname === "127.0.0.1" ||
+    location.protocol === "file:";
+
+  const API_URL = isLocal
+    ? `/data/consolas.json?v=${Date.now()}`
+    : `https://api.kamzilu.com/api/consolas?v=${Date.now()}`;
 
   fetch(API_URL)
     .then(res => {
       if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
       return res.json();
     })
+
     .then(data => {
       const product = data[productId];
       if (!product) return;
