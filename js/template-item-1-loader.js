@@ -46,121 +46,120 @@ function getUpdateTimeInfo(lastUpdated, category) {
 // MAIN LOADER
 // =========================================================
 
-function loadConsoleData() {
+async function loadConsoleData() {
   const RECENT_THRESHOLD_MS = 24 * 60 * 60 * 1000;
 
-  const parts = window.location.pathname.split("/").filter(Boolean);
-  const productId = parts[parts.length - 2];
+  try {
+    const parts = window.location.pathname.split("/").filter(Boolean);
+    const productId = parts[parts.length - 2];
 
-  const isLocal =
-    location.hostname === "localhost" ||
-    location.hostname === "127.0.0.1" ||
-    location.protocol === "file:";
+    const isLocal =
+      location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1" ||
+      location.protocol === "file:";
 
-  const API_URL = isLocal
-    ? `/data/consolas.json?v=${Date.now()}`
-    : `https://api.kamzilu.com/api/consolas?v=${Date.now()}`;
+    const API_URL = isLocal
+      ? `/data/consolas.json?v=${Date.now()}`
+      : `https://api.kamzilu.com/api/consolas?v=${Date.now()}`;
 
-  fetch(API_URL)
-    .then(res => {
-      if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
-      return res.json();
-    })
+    const res = await fetch(API_URL);
+    if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
+    const data = await res.json();
 
-    .then(data => {
-      const product = data[productId];
-      if (!product) return;
+    const product = data[productId];
+    if (!product) return;
 
-      const ui = {
-        breadcrumb: document.getElementById("breadcrumb-product"),
-        name: document.getElementById("product-name"),
-        desc: document.getElementById("product-description"),
-        img: document.getElementById("product-image-src"),
-        brand: document.getElementById("pdp-brand-display"),
-        priceList: document.getElementById("price-cards"),
+    const ui = {
+      breadcrumb: document.getElementById("breadcrumb-product"),
+      name: document.getElementById("product-name"),
+      desc: document.getElementById("product-description"),
+      img: document.getElementById("product-image-src"),
+      brand: document.getElementById("pdp-brand-display"),
+      priceList: document.getElementById("price-cards"),
 
-        heroBlock: document.getElementById("hero-price-container"),
-        heroPrice: document.getElementById("hero-best-price-val"),
-        heroStoreLogo: document.getElementById("hero-store-logo"),
-        heroStoreName: document.getElementById("hero-store-name"),
-        heroUpdateTime: document.getElementById("hero-update-time"),
-        heroLink: document.getElementById("hero-btn-link")
-      };
+      heroBlock: document.getElementById("hero-price-container"),
+      heroPrice: document.getElementById("hero-best-price-val"),
+      heroStoreLogo: document.getElementById("hero-store-logo"),
+      heroStoreName: document.getElementById("hero-store-name"),
+      heroUpdateTime: document.getElementById("hero-update-time"),
+      heroLink: document.getElementById("hero-btn-link")
+    };
 
-      // ----------------------------
-      // Datos estáticos
-      // ----------------------------
-      if (ui.breadcrumb) ui.breadcrumb.textContent = product.name;
-      if (ui.name) ui.name.textContent = product.name;
-      if (ui.desc) ui.desc.textContent = product.description;
-      if (ui.img) ui.img.src = product.image;
-      if (ui.brand) ui.brand.textContent = product.brand || "VIDEOJUEGOS";
+    // ----------------------------
+    // Datos estáticos
+    // ----------------------------
+    if (ui.breadcrumb) ui.breadcrumb.textContent = product.name;
+    if (ui.name) ui.name.textContent = product.name;
+    if (ui.desc) ui.desc.textContent = product.description;
+    if (ui.img) ui.img.src = product.image;
+    if (ui.brand) ui.brand.textContent = product.brand || "VIDEOJUEGOS";
 
-      // =====================================================
-      // PROCESAMIENTO EN UNA SOLA PASADA
-      // =====================================================
+    // =====================================================
+    // PROCESAMIENTO EN UNA SOLA PASADA
+    // =====================================================
 
-      const now = new Date();
-      const valid = [];
-      const unavailable = [];
+    const now = new Date();
+    const valid = [];
+    const unavailable = [];
 
-      for (const p of product.prices) {
-        if (typeof p.price === "number" && !isNaN(p.price)) {
-          const d = p.lastUpdated ? new Date(p.lastUpdated) : new Date(0);
-          p._date = d;
-          p._isRecent = now - d <= RECENT_THRESHOLD_MS;
-          valid.push(p);
-        } else {
-          unavailable.push(p);
-        }
-      }
-
-      valid.sort((a, b) => a.price - b.price);
-
-      const heroItem = valid.length > 0 ? valid[0] : null;
-
-      // =====================================================
-      // RENDER HERO
-      // =====================================================
-      if (heroItem) {
-        ui.heroBlock.style.display = "grid";
-        ui.heroPrice.innerHTML = formatPrice(heroItem.price);
-        ui.heroStoreLogo.src = heroItem.logo;
-        ui.heroStoreName.textContent = heroItem.store;
-        ui.heroLink.href = heroItem["link-a"] || heroItem.link;
-
-        const cat = heroItem._isRecent ? "recent" : "outdated";
-        const info = getUpdateTimeInfo(heroItem.lastUpdated, cat);
-        ui.heroUpdateTime.textContent = info.text;
-        ui.heroUpdateTime.className = `update-time ${info.class}`;
+    for (const p of product.prices) {
+      if (typeof p.price === "number" && !isNaN(p.price)) {
+        const d = p.lastUpdated ? new Date(p.lastUpdated) : new Date(0);
+        p._date = d;
+        p._isRecent = now - d <= RECENT_THRESHOLD_MS;
+        valid.push(p);
       } else {
-        ui.heroBlock.style.display = "none";
+        unavailable.push(p);
       }
+    }
 
-      // =====================================================
-      // LISTA DE PRECIOS
-      // =====================================================
-      const list = ui.priceList;
-      list.innerHTML = "";
+    valid.sort((a, b) => a.price - b.price);
 
-      const listCandidates = valid.filter(p => p !== heroItem);
-      const recent = listCandidates.filter(p => p._isRecent);
-      const outdated = listCandidates.filter(p => !p._isRecent);
+    const heroItem = valid.length > 0 ? valid[0] : null;
 
-      recent.forEach(p => list.appendChild(createPriceRow(p, "recent")));
-      outdated.length > 0 && addSeparator(list, "Precios anteriores");
-      outdated.forEach(p => list.appendChild(createPriceRow(p, "outdated")));
+    // =====================================================
+    // RENDER HERO
+    // =====================================================
+    if (heroItem && ui.heroBlock) {
+      ui.heroBlock.style.display = "grid";
+      ui.heroPrice.innerHTML = formatPrice(heroItem.price);
+      ui.heroStoreLogo.src = heroItem.logo;
+      ui.heroStoreName.textContent = heroItem.store;
+      ui.heroLink.href = heroItem["link-a"] || heroItem.link;
 
-      if (unavailable.length > 0) {
-        addSeparator(list, "Sin disponibilidad detectada");
-        unavailable.forEach(p =>
-          list.appendChild(createPriceRow(p, "unavailable"))
-        );
-      }
+      const cat = heroItem._isRecent ? "recent" : "outdated";
+      const info = getUpdateTimeInfo(heroItem.lastUpdated, cat);
+      ui.heroUpdateTime.textContent = info.text;
+      ui.heroUpdateTime.className = `update-time ${info.class}`;
+    } else if (ui.heroBlock) {
+      ui.heroBlock.style.display = "none";
+    }
 
-      handleScrollAnimations();
-    })
-    .catch(err => console.error("🔥 Error Orquestador:", err));
+    // =====================================================
+    // LISTA DE PRECIOS
+    // =====================================================
+    const list = ui.priceList;
+    list.innerHTML = "";
+
+    const listCandidates = valid.filter(p => p !== heroItem);
+    const recent = listCandidates.filter(p => p._isRecent);
+    const outdated = listCandidates.filter(p => !p._isRecent);
+
+    recent.forEach(p => list.appendChild(createPriceRow(p, "recent")));
+    if (outdated.length > 0) addSeparator(list, "Precios anteriores");
+    outdated.forEach(p => list.appendChild(createPriceRow(p, "outdated")));
+
+    if (unavailable.length > 0) {
+      addSeparator(list, "Sin disponibilidad detectada");
+      unavailable.forEach(p =>
+        list.appendChild(createPriceRow(p, "unavailable"))
+      );
+    }
+
+    handleScrollAnimations();
+  } catch (err) {
+    console.error("🔥 Error Orquestador PDP:", err);
+  }
 }
 
 // =========================================================

@@ -19,14 +19,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       const item = data[slug];
 
       if (!item || !item.prices) {
-        // Si no hay datos, opcionalmente ocultar o mostrar skeleton
         card.style.display = "none";
         return;
       }
 
       const now = new Date();
 
-      // Filtrar precios recientes
       const recentPrices = item.prices.filter(p => {
         if (!(typeof p.price === "number" && !isNaN(p.price))) return false;
         if (!p.lastUpdated) return false;
@@ -51,7 +49,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       const name = item.name;
       const href = `/consolas/${brand}/${slug}/index.html`;
 
-      // Nueva estructura HTML Tech
       card.innerHTML = `
         <a href="${href}">
           <div class="deal-badge">Oferta</div>
