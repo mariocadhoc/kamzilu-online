@@ -18,7 +18,7 @@ function formatPrice(value) {
 
 function getUpdateTimeInfo(lastUpdated, category) {
   if (category === "unavailable")
-    return { text: "Sin stock", class: "status-unavailable" };
+    return { text: "Podría no haber en stock", class: "status-unavailable" };
 
   if (!lastUpdated)
     return { text: "Hace tiempo", class: "status-old" };
