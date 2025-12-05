@@ -64,8 +64,8 @@ async function loadConsoleData() {
       location.protocol === "file:";
 
     const API_URL = isLocal
-      ? `/data/consolas.json?v=${Date.now()}`
-      : `https://api.kamzilu.com/api/consolas?v=${Date.now()}`;
+      ? "/data/consolas.json"
+      : "https://api.kamzilu.com/api/consolas";
 
     const res = await fetch(API_URL);
     if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
@@ -96,7 +96,16 @@ async function loadConsoleData() {
     if (ui.breadcrumb) ui.breadcrumb.textContent = product.name;
     if (ui.name) ui.name.textContent = product.name;
     if (ui.desc) ui.desc.textContent = product.description;
-    if (ui.img) ui.img.src = product.image;
+    if (ui.img) {
+      ui.img.src = product.image;
+      ui.img.alt = product.name;
+
+      ui.img.onload = () => {
+        ui.img.style.display = "block";
+        const sk = document.getElementById("product-image-skeleton");
+        if (sk) sk.remove();
+      };
+    }
     if (ui.brand) ui.brand.textContent = product.brand || "VIDEOJUEGOS";
 
     // =====================================================
@@ -129,6 +138,7 @@ async function loadConsoleData() {
       ui.heroBlock.style.display = "grid";
       ui.heroPrice.innerHTML = formatPrice(heroItem.price);
       ui.heroStoreLogo.src = heroItem.logo;
+      ui.heroStoreLogo.alt = `Logo de ${heroItem.store}`;
       ui.heroStoreName.textContent = heroItem.store;
       ui.heroLink.href = heroItem["link-a"] || heroItem.link;
 
@@ -188,7 +198,7 @@ function createPriceRow(price, category) {
 
   row.innerHTML = `
     <div class="col-store">
-      <img src="${price.logo}" class="store-logo-img">
+      <img src="${price.logo}" alt="Logo de ${price.store}" class="store-logo-img">
       <div class="store-meta">
         <span class="store-name-text">${price.store}</span>
         <span class="update-time ${info.class}">${info.text}</span>

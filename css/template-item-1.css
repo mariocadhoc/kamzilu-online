@@ -570,3 +570,26 @@
 .price-row.unavailable:hover {
   opacity: 0.75;
 }
+
+/* ===== SKELETON LOADER ===== */
+.skeleton {
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 37%, #2a2a2a 63%);
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+  border-radius: 16px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+/* Skeleton específico para el contenedor cuadrado 1:1 */
+.pdp-image-skeleton {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}

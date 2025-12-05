@@ -116,3 +116,36 @@
   border-radius: 4px;
   text-transform: uppercase;
 }
+
+/* ===== Skeletons para Home ===== */
+.skeleton {
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 37%, #2a2a2a 63%);
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+  border-radius: 10px;
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+/* Imagen placeholder (cuadrada) */
+.home-skel-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+/* Fila simulando título */
+.home-skel-line {
+  height: 18px;
+  width: 70%;
+  margin-top: 12px;
+}
+
+/* Fila simulando precio */
+.home-skel-price {
+  height: 24px;
+  width: 40%;
+  margin-top: 8px;
+}
