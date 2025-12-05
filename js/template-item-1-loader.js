@@ -180,7 +180,7 @@ function createPriceRow(price, category) {
 
   let displayPrice =
     category === "unavailable"
-      ? "Agotado"
+      ? "Stock No Detectado"
       : `$${formatPrice(price.price)}`;
 
   const priceClass =
