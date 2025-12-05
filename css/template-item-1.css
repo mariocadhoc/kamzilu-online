@@ -22,7 +22,8 @@
 /* Especificidad aumentada para evitar conflictos */
 .pdp-breadcrumb a {
   font-family: var(--font-tech) !important;
-  font-size: 0.9rem !important; /* Sobreescribe el 1.8rem global */
+  font-size: 0.9rem !important;
+  /* Sobreescribe el 1.8rem global */
   color: var(--text-muted);
   text-decoration: none;
   transition: color 0.3s ease;
@@ -583,13 +584,249 @@
   0% {
     background-position: 100% 0;
   }
+
   100% {
     background-position: -100% 0;
   }
 }
 
-/* Skeleton específico para el contenedor cuadrado 1:1 */
-.pdp-image-skeleton {
+/* =========================================
+   STICKY HERO PRICE CARD
+   ========================================= */
+
+/* Base Sticky State (Desktop & Mobile Common) */
+.pdp-hero-price-block.is-sticky {
+  position: fixed;
+  top: 80px;
+  /* Header safe zone */
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  aspect-ratio: 1 / 1;
+  max-width: 1300px;
+  margin: 0;
+  border-radius: 12px;
+  border: 1px solid var(--primary);
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+  /* Requirement: Scale Animation */
+  transform-origin: top center;
+  animation: stickyScaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Exit Animation Class (Controlled by JS) */
+.pdp-hero-price-block.is-unsticking {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 100%;
+  max-width: 1300px;
+  transform-origin: top center;
+  animation: stickyScaleOut 0.3s ease-in forwards;
+  pointer-events: none;
+  /* Prevent clicks during exit */
+}
+
+/* Ensure wrapper doesn't interfere */
+#sticky-hero-wrapper {
+  transition: height 0.1s linear;
+}
+
+/* SCALE ANIMATIONS (No Slides) */
+@keyframes stickyScaleIn {
+  0% {
+    transform: translateX(-50%) scale(1.1);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes stickyScaleOut {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) scale(1.1);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================
+   MOBILE COMPACT STICKY MODE (< 900px)
+   ========================================= */
+@media (max-width: 899px) {
+
+  .pdp-hero-price-block.is-sticky {
+    width: calc(100% - 24px);
+    top: 90px;
+
+    /* Increased height via padding */
+    padding: 16px 20px;
+
+    /* Grid Layout: 3 Columns */
+    display: grid;
+    gap: 8px;
+    grid-template-columns: auto 1fr auto;
+    /* Logo | Price (Flexible) | CTA */
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+
+  /* 1. Remove Desktop Decorations */
+  .pdp-hero-price-block.is-sticky::before {
+    display: none;
+  }
+
+  /* 2. Logo Section */
+  .pdp-hero-price-block.is-sticky .col-store {
+    grid-column: 1 / 2;
+    padding: 0;
+    border: none;
+    width: auto;
+    display: flex;
+    align-items: center;
+    /* No gap needed if meta is hidden */
+  }
+
+  .pdp-hero-price-block.is-sticky .store-logo-img {
+    width: auto;
+    height: 48px;
+    max-width: 110px;
+    border-radius: 6px;
+    padding: 0;
+    border: none;
+    object-fit: contain;
+  }
+
+  /* Hide Text Store Name */
+  .pdp-hero-price-block.is-sticky .store-name-text {
+    display: none;
+  }
+
+  /* Hide Update Time */
+  .pdp-hero-price-block.is-sticky .update-time {
+    display: none !important;
+  }
+
+  /* Hide Meta entirely (Removes Flame & spacing) */
+  .pdp-hero-price-block.is-sticky .store-meta {
+    display: none !important;
+  }
+
+  /* 3. Price Section: More Space, Centered Vertically */
+  .pdp-hero-price-block.is-sticky .col-price {
+    grid-column: 2 / 3;
+    /* Middle Flexible Column */
+    padding: 0;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertical Center */
+    align-items: flex-end;
+    padding-right: 12px;
+    /* Separation from CTA */
+  }
+
+  .pdp-hero-price-block.is-sticky .hero-price-label-small {
+    display: none;
+    /* Hide Label completely */
+  }
+
+  .pdp-hero-price-block.is-sticky .hero-price-wrapper {
+    gap: 2px;
+    justify-content: flex-end;
+  }
+
+  .pdp-hero-price-block.is-sticky .hero-price-wrapper .currency {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .pdp-hero-price-block.is-sticky .hero-price-wrapper .big-number {
+    font-size: 2rem;
+    /* Increased size */
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+  }
+
+  /* 4. CTA: Adjustment with right margin */
+  .pdp-hero-price-block.is-sticky .col-action {
+    grid-column: 3 / 4;
+    padding: 0;
+    text-align: right;
+    margin-right: 8px;
+    /* Clean right-side margin */
+  }
+
+  .pdp-hero-price-block.is-sticky .hero-cta-btn {
+    padding: 8px 18px;
+    height: 44px;
+    font-size: 0 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+
+  /* Insert new text "VER" - Reduced size 20% */
+  .pdp-hero-price-block.is-sticky .hero-cta-btn::before {
+    content: "VER";
+    font-size: 0.8rem;
+    /* Reduced from 1rem */
+    font-weight: 700;
+  }
+
+  .pdp-hero-price-block.is-sticky .hero-cta-btn .arrow {
+    display: inline-block;
+    font-size: 1rem;
+    /* Reduced from 1.2rem */
+  }
+}
+
+/* =========================================
+   DESKTOP STICKY REFINEMENTS (min-width: 900px)
+   ========================================= */
+@media (min-width: 900px) {
+  .pdp-hero-price-block.is-sticky {
+    grid-template-columns: 2fr 1.5fr auto;
+    padding: 20px 30px;
+    /* Slight increase */
+    border-radius: 12px;
+    width: 100%;
+    max-width: 1300px;
+  }
+
+  /* Desktop CTA Text override as well? "This must apply to both... everywhere" */
+  .pdp-hero-price-block.is-sticky .hero-cta-btn {
+    font-size: 0 !important;
+  }
+
+  .pdp-hero-price-block.is-sticky .hero-cta-btn::before {
+    content: "VER";
+    font-size: 1.1rem;
+  }
+
+  .pdp-hero-price-block.is-sticky .hero-cta-btn .arrow {
+    font-size: 1.2rem;
+  }
+
+  /* Hide Update Time on Desktop Sticky too per "Remove... entirely in sticky mode" */
+  .pdp-hero-price-block.is-sticky .update-time {
+    display: none !important;
+  }
 }

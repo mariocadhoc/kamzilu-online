@@ -172,6 +172,9 @@ async function loadConsoleData() {
     }
 
     handleScrollAnimations();
+
+    // Dispatch event to signal that content is ready and hero card exists
+    document.dispatchEvent(new Event("ConsolaTemplateLoaded"));
   } catch (err) {
     console.error("🔥 Error Orquestador PDP:", err);
   }
@@ -260,5 +263,7 @@ window.addEventListener("scroll", () => {
 if (document.getElementById("breadcrumb-product")) {
   loadConsoleData();
 } else {
+  // If content not yet injected, wait for the generic loader signal
   document.addEventListener("consolas-main-loaded", loadConsoleData);
 }
+
