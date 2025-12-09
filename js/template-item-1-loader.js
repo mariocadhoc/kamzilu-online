@@ -100,6 +100,38 @@ async function loadConsoleData() {
       ui.img.src = product.image;
       ui.img.alt = product.name;
 
+      // Configuración de optimización de imágenes para Lighthouse (PDP)
+      const imgConfig = {
+        "nintendo-switch-2": {
+          w: 1244, h: 1278, renderMobile: 300,
+          mobileSrc: "/img/consolas/nintendo/nintendo-switch-2-mobile.webp"
+        },
+        "playstation-5-slim-blanco-estandar-1tb": {
+          w: 1500, h: 1234, renderMobile: 380,
+          mobileSrc: "/img/consolas/playstation/ps5-slim-pack-2-juegos-std-mobile.webp"
+        },
+        "playstation-5-digital-1tb-astrobot-gt7": {
+          w: 1500, h: 1278, renderMobile: 370,
+          mobileSrc: "/img/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7-mobile.webp"
+        },
+        "nintendo-switch-oled-blanco": {
+          w: 1110, h: 1436, renderMobile: 240,
+          mobileSrc: "/img/consolas/nintendo/nintendo-switch-oled-white-joy-con-std-edition-internacional-mobile.webp"
+        },
+        "xbox-series-x-negro-1tb": {
+          w: 1046, h: 1500, renderMobile: 220,
+          mobileSrc: "/img/consolas/xbox/xbox-series-x-1tb-internacional-mobile.webp"
+        }
+      };
+
+      if (imgConfig[productId]) {
+        const cfg = imgConfig[productId];
+        ui.img.srcset = `${cfg.mobileSrc} 400w, ${product.image} ${cfg.w}w`;
+        ui.img.sizes = `(max-width: 600px) ${cfg.renderMobile}px, ${cfg.w}px`;
+        ui.img.width = cfg.w;
+        ui.img.height = cfg.h;
+      }
+
       ui.img.onload = () => {
         ui.img.style.display = "block";
         const sk = document.getElementById("product-image-skeleton");
@@ -137,7 +169,14 @@ async function loadConsoleData() {
     if (heroItem && ui.heroBlock) {
       ui.heroBlock.style.display = "grid";
       ui.heroPrice.innerHTML = formatPrice(heroItem.price);
-      ui.heroStoreLogo.src = heroItem.logo;
+      
+      // --- FIX: Usar logo mobile y definir dimensiones explícitas ---
+      ui.heroStoreLogo.src = heroItem.logo.replace(/(\.[\w\d]+)$/i, "-mobile.webp");
+      ui.heroStoreLogo.width = 100; // Define espacio para evitar saltos (CLS)
+      ui.heroStoreLogo.height = 50; 
+      ui.heroStoreLogo.setAttribute("loading", "eager"); // El Hero debe cargar rápido (eager), no lazy
+      // -----------------------------------------------------------
+
       ui.heroStoreLogo.alt = `Logo de ${heroItem.store}`;
       ui.heroStoreName.textContent = heroItem.store;
       ui.heroLink.href = heroItem["link-a"] || heroItem.link;
@@ -199,9 +238,17 @@ function createPriceRow(price, category) {
   const priceClass =
     category === "outdated" ? "price-val-row old-data" : "price-val-row";
 
+  // Lógica para usar logo optimizado (-mobile.webp)
+  // Reemplaza la extensión (.webp, .png, etc.) por -mobile.webp
+  const logoSrc = price.logo.replace(/(\.[\w\d]+)$/i, "-mobile.webp");
+
   row.innerHTML = `
     <div class="col-store">
-      <img src="${price.logo}" alt="Logo de ${price.store}" class="store-logo-img">
+      <img src="${logoSrc}" 
+           alt="Logo de ${price.store}" 
+           class="store-logo-img"
+           width="100" height="50"
+           loading="lazy">
       <div class="store-meta">
         <span class="store-name-text">${price.store}</span>
         <span class="update-time ${info.class}">${info.text}</span>

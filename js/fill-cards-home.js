@@ -49,11 +49,49 @@ document.addEventListener("DOMContentLoaded", async () => {
       const name = item.name;
       const href = `/consolas/${brand}/${slug}/index.html`;
 
+      // Configuración de optimización de imágenes para Lighthouse
+      const imgConfig = {
+        "nintendo-switch-2": {
+          w: 1244, h: 1278, renderMobile: 300,
+          mobileSrc: "/img/consolas/nintendo/nintendo-switch-2-mobile.webp"
+        },
+        "playstation-5-slim-blanco-estandar-1tb": {
+          w: 1500, h: 1234, renderMobile: 380,
+          mobileSrc: "/img/consolas/playstation/ps5-slim-pack-2-juegos-std-mobile.webp"
+        },
+        "playstation-5-digital-1tb-astrobot-gt7": {
+          w: 1500, h: 1278, renderMobile: 370,
+          mobileSrc: "/img/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7-mobile.webp"
+        },
+        "nintendo-switch-oled-blanco": {
+          w: 1110, h: 1436, renderMobile: 240,
+          mobileSrc: "/img/consolas/nintendo/nintendo-switch-oled-white-joy-con-std-edition-internacional-mobile.webp"
+        },
+        "xbox-series-x-negro-1tb": {
+          w: 1046, h: 1500, renderMobile: 220,
+          mobileSrc: "/img/consolas/xbox/xbox-series-x-1tb-internacional-mobile.webp"
+        }
+      };
+
+      let imgAttrs = `src="${image}" alt="${name}" loading="lazy"`;
+
+      if (imgConfig[slug]) {
+        const { w, h, renderMobile, mobileSrc } = imgConfig[slug];
+        // Plantilla estricta requerida por el usuario
+        // srcset: [RUTA_MOVIL] 400w, [RUTA_ORIGINAL] [ANCHO_ORIGINAL]w
+        // sizes: (max-width: 600px) [RENDER_MOVIL_APROX]px, [ANCHO_ORIGINAL]px
+        imgAttrs = `src="${image}" 
+                    srcset="${mobileSrc} 400w, ${image} ${w}w" 
+                    sizes="(max-width: 600px) ${renderMobile}px, ${w}px" 
+                    width="${w}" height="${h}" 
+                    alt="${name}" loading="lazy"`;
+      }
+
       card.innerHTML = `
         <a href="${href}">
           <div class="deal-badge">Oferta</div>
           <div class="card-image-wrapper">
-            <img src="${image}" alt="${name}" loading="lazy">
+            <img ${imgAttrs}>
           </div>
           <h3>${name}</h3>
           <div class="price-container">
