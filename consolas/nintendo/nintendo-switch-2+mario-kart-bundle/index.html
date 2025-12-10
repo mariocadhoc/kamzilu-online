@@ -70,46 +70,55 @@
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "Nintendo Switch 2 + Mario Kart World Bundle",
-        "image": "https://kamzilu.com/img/consolas/nintendo/nintendo-switch-2+mario-kart-bundle.webp",
-        "description": "Nintendo Switch 2 con Mario Kart World Bundle: consola híbrida de nueva generación con pantalla mejorada, mayor rendimiento y juego Mario Kart World incluido. Ideal para empezar a jugar desde el primer día.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Nintendo"
-        },
-        "sku": "nintendo-switch-2+mario-kart-bundle",
-        "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Nintendo Switch 2 + Mario Kart World Bundle",
+      "image": "https://kamzilu.com/img/consolas/nintendo/nintendo-switch-2+mario-kart-bundle.webp",
+      "description": "Nintendo Switch 2 con Mario Kart World Bundle: consola híbrida de nueva generación con pantalla mejorada, mayor rendimiento y juego Mario Kart World incluido. Ideal para empezar a jugar desde el primer día.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Nintendo"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Inicio",
-            "item": "https://kamzilu.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Nintendo",
-            "item": "https://kamzilu.com/consolas/nintendo/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Nintendo Switch 2 + Mario Kart World Bundle",
-            "item": "https://kamzilu.com/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/"
-          }
-        ]
+      "sku": "nintendo-switch-2+mario-kart-bundle",
+      "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "MXN",
+        "lowPrice": "0",
+        "highPrice": "0",
+        "offerCount": "0",
+        "availability": "https://schema.org/InStock",
+        "url": "https://kamzilu.com/consolas/{BRAND_SLUG}/{PRODUCT_SLUG}/"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://kamzilu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nintendo",
+          "item": "https://kamzilu.com/consolas/nintendo/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Nintendo Switch 2 + Mario Kart World Bundle",
+          "item": "https://kamzilu.com/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 
 </head>

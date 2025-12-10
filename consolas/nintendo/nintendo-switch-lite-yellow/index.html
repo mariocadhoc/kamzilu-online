@@ -70,46 +70,55 @@
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "Nintendo Switch Lite Yellow",
-        "image": "https://kamzilu.com/img/consolas/nintendo/nintendo-switch-lite-yellow.webp",
-        "description": "Nintendo Switch Lite Yellow: consola portátil ligera con pantalla de 5.5 pulgadas, controles integrados y compatibilidad con juegos en modo portátil. Ideal para jugar en cualquier lugar.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Nintendo"
-        },
-        "sku": "nintendo-switch-lite-yellow",
-        "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-lite-yellow/"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Nintendo Switch Lite Yellow",
+      "image": "https://kamzilu.com/img/consolas/nintendo/nintendo-switch-lite-yellow.webp",
+      "description": "Nintendo Switch Lite Yellow: consola portátil ligera con pantalla de 5.5 pulgadas, controles integrados y compatibilidad con juegos en modo portátil. Ideal para jugar en cualquier lugar.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Nintendo"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Inicio",
-            "item": "https://kamzilu.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Nintendo",
-            "item": "https://kamzilu.com/consolas/nintendo/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Nintendo Switch Lite Yellow",
-            "item": "https://kamzilu.com/consolas/nintendo/nintendo-switch-lite-yellow/"
-          }
-        ]
+      "sku": "nintendo-switch-lite-yellow",
+      "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-lite-yellow/",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "MXN",
+        "lowPrice": "0",
+        "highPrice": "0",
+        "offerCount": "0",
+        "availability": "https://schema.org/InStock",
+        "url": "https://kamzilu.com/consolas/{BRAND_SLUG}/{PRODUCT_SLUG}/"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://kamzilu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nintendo",
+          "item": "https://kamzilu.com/consolas/nintendo/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Nintendo Switch Lite Yellow",
+          "item": "https://kamzilu.com/consolas/nintendo/nintendo-switch-lite-yellow/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 
 

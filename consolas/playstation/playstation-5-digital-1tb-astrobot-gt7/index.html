@@ -70,46 +70,55 @@
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "PS5 Digital Edition 1TB con Astro Bot y Gran Turismo 7",
-        "image": "https://kamzilu.com/img/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7.webp",
-        "description": "PS5 Digital Edition 1TB sin lector, con SSD rápido, retroalimentación háptica, gatillos adaptativos y audio 3D. Incluye Astro Bot y Gran Turismo 7 en versión digital.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Sony"
-        },
-        "sku": "playstation-5-digital-1tb-astrobot-gt7",
-        "url": "https://kamzilu.com/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "PS5 Digital Edition 1TB con Astro Bot y Gran Turismo 7",
+      "image": "https://kamzilu.com/img/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7.webp",
+      "description": "PS5 Digital Edition 1TB sin lector, con SSD rápido, retroalimentación háptica, gatillos adaptativos y audio 3D. Incluye Astro Bot y Gran Turismo 7 en versión digital.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Sony"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Inicio",
-            "item": "https://kamzilu.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "PlayStation",
-            "item": "https://kamzilu.com/consolas/playstation/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "PS5 Digital Edition 1TB con Astro Bot y Gran Turismo 7",
-            "item": "https://kamzilu.com/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/"
-          }
-        ]
+      "sku": "playstation-5-digital-1tb-astrobot-gt7",
+      "url": "https://kamzilu.com/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "MXN",
+        "lowPrice": "0",
+        "highPrice": "0",
+        "offerCount": "0",
+        "availability": "https://schema.org/InStock",
+        "url": "https://kamzilu.com/consolas/{BRAND_SLUG}/{PRODUCT_SLUG}/"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://kamzilu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "PlayStation",
+          "item": "https://kamzilu.com/consolas/playstation/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "PS5 Digital Edition 1TB con Astro Bot y Gran Turismo 7",
+          "item": "https://kamzilu.com/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 
 </head>

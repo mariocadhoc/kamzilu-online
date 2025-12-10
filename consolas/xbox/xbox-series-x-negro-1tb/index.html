@@ -70,46 +70,55 @@
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "Xbox Series X Negro 1TB",
-        "image": "https://kamzilu.com/img/consolas/xbox/xbox-series-x-negro-1tb.webp",
-        "description": "Xbox Series X Negro 1TB: la consola más potente de Microsoft con gráficos nativos en 4K, hasta 120 FPS, SSD de 1 TB de alta velocidad, arquitectura Xbox Velocity y retrocompatibilidad con miles de juegos.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Microsoft"
-        },
-        "sku": "xbox-series-x-negro-1tb",
-        "url": "https://kamzilu.com/consolas/xbox/xbox-series-x-negro-1tb/"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Xbox Series X Negro 1TB",
+      "image": "https://kamzilu.com/img/consolas/xbox/xbox-series-x-negro-1tb.webp",
+      "description": "Xbox Series X Negro 1TB: la consola más potente de Microsoft con gráficos nativos en 4K, hasta 120 FPS, SSD de 1 TB de alta velocidad, arquitectura Xbox Velocity y retrocompatibilidad con miles de juegos.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Microsoft"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Inicio",
-            "item": "https://kamzilu.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Xbox",
-            "item": "https://kamzilu.com/consolas/xbox/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Xbox Series X Negro 1TB",
-            "item": "https://kamzilu.com/consolas/xbox/xbox-series-x-negro-1tb/"
-          }
-        ]
+      "sku": "xbox-series-x-negro-1tb",
+      "url": "https://kamzilu.com/consolas/xbox/xbox-series-x-negro-1tb/",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "MXN",
+        "lowPrice": "0",
+        "highPrice": "0",
+        "offerCount": "0",
+        "availability": "https://schema.org/InStock",
+        "url": "https://kamzilu.com/consolas/{BRAND_SLUG}/{PRODUCT_SLUG}/"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://kamzilu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Xbox",
+          "item": "https://kamzilu.com/consolas/xbox/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Xbox Series X Negro 1TB",
+          "item": "https://kamzilu.com/consolas/xbox/xbox-series-x-negro-1tb/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 
 </head>
