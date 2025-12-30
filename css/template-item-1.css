@@ -5,7 +5,6 @@
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 80px;
-  /* Mobile header space */
 }
 
 /* ===== BREADCRUMB ===== */
@@ -19,11 +18,9 @@
   line-height: 1.5;
 }
 
-/* Especificidad aumentada para evitar conflictos */
 .pdp-breadcrumb a {
   font-family: var(--font-tech) !important;
   font-size: 0.9rem !important;
-  /* Sobreescribe el 1.8rem global */
   color: var(--text-muted);
   text-decoration: none;
   transition: color 0.3s ease;
@@ -109,7 +106,6 @@
 #product-name {
   font-family: var(--font-tech);
   font-size: 2rem;
-  /* Mobile size */
   line-height: 1.2;
   color: var(--text-main);
   margin-bottom: 16px;
@@ -131,9 +127,7 @@
   padding: 18px;
   display: grid;
   grid-template-columns: 1fr auto;
-  /* Price | Button */
   grid-template-rows: auto auto;
-  /* Store | Price/Btn */
   gap: 16px;
   align-items: center;
   margin-bottom: 40px;
@@ -155,7 +149,6 @@
 /* Mobile Layout Specifics */
 .pdp-hero-price-block .col-store {
   grid-column: 1 / -1;
-  /* Full width row 1 */
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding-bottom: 12px;
 }
@@ -197,7 +190,6 @@
 .hero-price-wrapper .big-number {
   font-family: var(--font-mono);
   font-size: 2.3rem;
-  /* Mobile size */
   color: var(--primary);
   font-weight: 700;
   line-height: 1;
@@ -207,7 +199,6 @@
   background-color: var(--primary);
   color: white !important;
   padding: 14px 24px;
-  /* Touch target friendly */
   border-radius: 8px;
   font-family: var(--font-tech);
   font-weight: 600;
@@ -234,7 +225,6 @@
   border-left: 5px solid var(--accent);
   padding-left: 16px;
   margin-top: 30px;
-  /* Reduced spacing since Hero is now above */
   font-family: var(--font-tech);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -253,9 +243,7 @@
   padding: 20px 24px;
   display: grid;
   grid-template-columns: 1fr auto;
-  /* Info | Button */
   grid-template-rows: auto auto;
-  /* Store | Price */
   gap: 16px;
   align-items: center;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -334,7 +322,6 @@
 .price-val-row {
   font-family: var(--font-mono);
   font-size: 2rem;
-  /* Mobile size */
   font-weight: 600;
   color: var(--text-main);
   display: block;
@@ -375,7 +362,6 @@
   text-transform: uppercase;
   cursor: pointer;
   min-height: 44px;
-  /* Accessible touch target */
   display: inline-flex;
   align-items: center;
 }
@@ -447,7 +433,6 @@
 
   .pdp-hero-price-block .col-action {
     text-align: right;
-    /* Keep right aligned */
   }
 
   .hero-price-label-small {
@@ -465,7 +450,6 @@
   /* Price List Desktop */
   .price-row {
     grid-template-columns: 2fr 1.5fr auto;
-    /* Info | Price | Button */
     grid-template-rows: auto;
     padding: 16px 24px;
   }
@@ -598,8 +582,7 @@
 .pdp-hero-price-block.is-sticky {
   position: fixed;
   top: 80px;
-  /* Header safe zone */
-  z-index: 900;
+  z-index: 6;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -610,8 +593,6 @@
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(8px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-
-  /* Requirement: Scale Animation */
   transform-origin: top center;
   animation: stickyScaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -622,16 +603,14 @@
   top: 80px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 900;
+  z-index: 6;
   width: 100%;
   max-width: 1300px;
   transform-origin: top center;
   animation: stickyScaleOut 0.3s ease-in forwards;
   pointer-events: none;
-  /* Prevent clicks during exit */
 }
 
-/* Ensure wrapper doesn't interfere */
 #sticky-hero-wrapper {
   transition: height 0.1s linear;
 }
@@ -670,15 +649,10 @@
   .pdp-hero-price-block.is-sticky {
     width: calc(100% - 24px);
     top: 90px;
-
-    /* Increased height via padding */
     padding: 16px 20px;
-
-    /* Grid Layout: 3 Columns */
     display: grid;
     gap: 8px;
     grid-template-columns: auto 1fr auto;
-    /* Logo | Price (Flexible) | CTA */
     grid-template-rows: 1fr;
     align-items: center;
   }
@@ -696,7 +670,6 @@
     width: auto;
     display: flex;
     align-items: center;
-    /* No gap needed if meta is hidden */
   }
 
   .pdp-hero-price-block.is-sticky .store-logo-img {
@@ -727,21 +700,17 @@
   /* 3. Price Section: More Space, Centered Vertically */
   .pdp-hero-price-block.is-sticky .col-price {
     grid-column: 2 / 3;
-    /* Middle Flexible Column */
     padding: 0;
     text-align: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Vertical Center */
     align-items: flex-end;
     padding-right: 12px;
-    /* Separation from CTA */
   }
 
   .pdp-hero-price-block.is-sticky .hero-price-label-small {
     display: none;
-    /* Hide Label completely */
   }
 
   .pdp-hero-price-block.is-sticky .hero-price-wrapper {
@@ -756,7 +725,6 @@
 
   .pdp-hero-price-block.is-sticky .hero-price-wrapper .big-number {
     font-size: 2rem;
-    /* Increased size */
     font-weight: 800;
     color: var(--primary);
     line-height: 1;
@@ -768,7 +736,6 @@
     padding: 0;
     text-align: right;
     margin-right: 8px;
-    /* Clean right-side margin */
   }
 
   .pdp-hero-price-block.is-sticky .hero-cta-btn {
@@ -787,14 +754,12 @@
   .pdp-hero-price-block.is-sticky .hero-cta-btn::before {
     content: "VER";
     font-size: 0.8rem;
-    /* Reduced from 1rem */
     font-weight: 700;
   }
 
   .pdp-hero-price-block.is-sticky .hero-cta-btn .arrow {
     display: inline-block;
     font-size: 1rem;
-    /* Reduced from 1.2rem */
   }
 }
 
@@ -805,13 +770,11 @@
   .pdp-hero-price-block.is-sticky {
     grid-template-columns: 2fr 1.5fr auto;
     padding: 20px 30px;
-    /* Slight increase */
     border-radius: 12px;
     width: 100%;
     max-width: 1300px;
   }
 
-  /* Desktop CTA Text override as well? "This must apply to both... everywhere" */
   .pdp-hero-price-block.is-sticky .hero-cta-btn {
     font-size: 0 !important;
   }
@@ -825,7 +788,6 @@
     font-size: 1.2rem;
   }
 
-  /* Hide Update Time on Desktop Sticky too per "Remove... entirely in sticky mode" */
   .pdp-hero-price-block.is-sticky .update-time {
     display: none !important;
   }
@@ -864,7 +826,7 @@
 
     opacity: 0;
     visibility: hidden;
-    z-index: 9999;
+    z-index: 7;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     pointer-events: none;
 
@@ -889,7 +851,7 @@
 
     opacity: 0;
     visibility: hidden;
-    z-index: 9999;
+    z-index: 7;
 
     transition:
         opacity 0.2s ease-out,
@@ -906,7 +868,6 @@
    TOOLTIP STACKING CONTEXT FIXES
    ============================================================ */
 
-/* 1. Unlock overflow on parent containers */
 .price-row,
 .col-store,
 .store-meta {
@@ -914,35 +875,27 @@
     contain: none !important;
 }
 
-/* 2. Elevate Active Row */
-/* Ensures the hovered row sits above subsequent rows so the tooltip isn't covered */
 .price-row:hover {
     position: relative;
-    z-index: 100;
+    z-index: 5;
 }
-
-/* 3. Tooltip Body Adjustments */
-/* Prevent text wrapping and ensure max-content width within limits */
 .freq-badge::before {
-    z-index: 9999;
+    z-index: 7;
     width: max-content;
     max-width: 250px;
-    /* Safety cap */
     min-width: 200px;
 }/* ============================================================
    STICKY HEADER TOOLTIP UNBLOCK
    ============================================================ */
 
-/* 1. Force Hero Container Overflow */
 #hero-price-container,
 #hero-price-container.pdp-hero-price-block {
     overflow: visible !important;
     clip-path: none !important;
 }
 
-/* 2. Elevate User Store Column (where badge lives) */
 #hero-price-container .col-store {
     overflow: visible !important;
     position: relative;
-    z-index: 50;
+    z-index: 5;
 }
