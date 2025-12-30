@@ -34,12 +34,23 @@ function getUpdateTimeInfo(lastUpdated, category) {
   const diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
   const diffDays = Math.floor(diffMs / (24 * 60 * 60 * 1000));
 
+  // --- LÓGICA HUMANIZADA ---
   if (diffMins < 5) return { text: "¡Justo ahora!", class: "status-fresh" };
   if (diffMins < 60) return { text: `Hace ${diffMins} min`, class: "status-fresh" };
   if (diffHrs < 24) return { text: `Hace ${diffHrs} h`, class: "status-fresh" };
-  if (diffDays >= 1) return { text: `Hace ${diffDays} días`, class: "status-old" };
 
-  return { text: "Hace tiempo", class: "status-old" };
+  // Manejo de días (Evita "Hace 1 días")
+  if (diffDays === 1) return { text: "Ayer", class: "status-old" };
+  if (diffDays < 7) return { text: `Hace ${diffDays} días`, class: "status-old" };
+
+  // Manejo de semanas y meses (Para tiendas muy estables)
+  if (diffDays < 30) {
+      const weeks = Math.floor(diffDays / 7);
+      return { text: `Hace ${weeks} sem`, class: "status-old" };
+  }
+
+  const months = Math.floor(diffDays / 30);
+  return { text: `Hace ${months} ${months === 1 ? 'mes' : 'meses'}`, class: "status-old" };
 }
 
 // =========================================================
@@ -47,7 +58,10 @@ function getUpdateTimeInfo(lastUpdated, category) {
 // =========================================================
 
 async function loadConsoleData() {
-  const RECENT_THRESHOLD_MS = 24 * 60 * 60 * 1000;
+  // AUMENTADO A 7 DÍAS:
+  // Como el backend ahora solo actualiza la fecha si cambia el precio,
+  // permitimos que un dato de hace 3 o 4 días siga considerándose "Vigente/Reciente".
+  const RECENT_THRESHOLD_MS = 7 * 24 * 60 * 60 * 1000;
 
   try {
     function getSlug() {
@@ -239,7 +253,6 @@ function createPriceRow(price, category) {
     category === "outdated" ? "price-val-row old-data" : "price-val-row";
 
   // Lógica para usar logo optimizado (-mobile.webp)
-  // Reemplaza la extensión (.webp, .png, etc.) por -mobile.webp
   const logoSrc = price.logo.replace(/(\.[\w\d]+)$/i, "-mobile.webp");
 
   row.innerHTML = `
@@ -313,4 +326,3 @@ if (document.getElementById("breadcrumb-product")) {
   // If content not yet injected, wait for the generic loader signal
   document.addEventListener("consolas-main-loaded", loadConsoleData);
 }
-
