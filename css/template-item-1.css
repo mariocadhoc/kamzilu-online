@@ -599,7 +599,7 @@
   position: fixed;
   top: 80px;
   /* Header safe zone */
-  z-index: 1000;
+  z-index: 900;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -622,7 +622,7 @@
   top: 80px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1000;
+  z-index: 900;
   width: 100%;
   max-width: 1300px;
   transform-origin: top center;
@@ -829,4 +829,77 @@
   .pdp-hero-price-block.is-sticky .update-time {
     display: none !important;
   }
+}
+
+/* =========================================
+   TOOLTIP FOR HIGH FREQUENCY BADGE (FIXED)
+   ========================================= */
+
+.freq-badge {
+    position: relative;
+    cursor: help;
+    display: inline-block;
+}
+
+.freq-badge::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    
+    top: calc(100% + 12px); 
+    bottom: auto;
+    
+    left: 50%;
+    transform: translateX(-50%) translateY(-4px);
+
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 8px 12px;
+    border-radius: 6px;
+    white-space: normal;
+    min-width: 180px;
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+
+    transition:
+        opacity 0.2s ease-out,
+        transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+        visibility 0.2s;
+}
+
+.freq-badge::after {
+    content: '';
+    position: absolute;
+    
+    top: calc(100% + 2px); 
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%) translateY(-4px);
+
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #1a1a1a transparent;
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+
+    transition:
+        opacity 0.2s ease-out,
+        transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+        visibility 0.2s;
+}
+
+.freq-badge:hover::before,
+.freq-badge:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
 }

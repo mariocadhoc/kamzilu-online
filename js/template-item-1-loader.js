@@ -2,6 +2,17 @@
 // UTILITIES
 // =========================================================
 
+// TIENDAS DE ALTA FRECUENCIA (Tier 1)
+const HIGH_FREQ_STORES = ["Amazon", "MercadoLibre", "Walmart"];
+
+function getHighFreqBadge(storeName) {
+  if (HIGH_FREQ_STORES.includes(storeName)) {
+    // Usamos data-tooltip para que CSS lo pueda leer sin conflicto
+    return ` <span class="freq-badge" data-tooltip="El precio de esta tienda cambia varias veces al día." style="cursor: help; font-size: 1.1em;">⚡</span>`;
+  }
+  return "";
+}
+
 function formatPrice(value) {
   if (typeof value !== "number" || isNaN(value)) return "---";
 
@@ -39,11 +50,11 @@ function getUpdateTimeInfo(lastUpdated, category) {
   if (diffMins < 60) return { text: `Hace ${diffMins} min`, class: "status-fresh" };
   if (diffHrs < 24) return { text: `Hace ${diffHrs} h`, class: "status-fresh" };
 
-  // Manejo de días (Evita "Hace 1 días")
+  // Manejo de días
   if (diffDays === 1) return { text: "Ayer", class: "status-old" };
   if (diffDays < 7) return { text: `Hace ${diffDays} días`, class: "status-old" };
 
-  // Manejo de semanas y meses (Para tiendas muy estables)
+  // Manejo de semanas y meses
   if (diffDays < 30) {
       const weeks = Math.floor(diffDays / 7);
       return { text: `Hace ${weeks} sem`, class: "status-old" };
@@ -58,10 +69,7 @@ function getUpdateTimeInfo(lastUpdated, category) {
 // =========================================================
 
 async function loadConsoleData() {
-  // AUMENTADO A 7 DÍAS:
-  // Como el backend ahora solo actualiza la fecha si cambia el precio,
-  // permitimos que un dato de hace 3 o 4 días siga considerándose "Vigente/Reciente".
-  const RECENT_THRESHOLD_MS = 7 * 24 * 60 * 60 * 1000;
+  const RECENT_THRESHOLD_MS = 7 * 24 * 60 * 60 * 1000; // 7 días de vigencia
 
   try {
     function getSlug() {
@@ -114,7 +122,7 @@ async function loadConsoleData() {
       ui.img.src = product.image;
       ui.img.alt = product.name;
 
-      // Configuración de optimización de imágenes para Lighthouse (PDP)
+      // Configuración de optimización de imágenes (PDP)
       const imgConfig = {
         "nintendo-switch-2": {
           w: 1244, h: 1278, renderMobile: 300,
@@ -155,7 +163,7 @@ async function loadConsoleData() {
     if (ui.brand) ui.brand.textContent = product.brand || "VIDEOJUEGOS";
 
     // =====================================================
-    // PROCESAMIENTO EN UNA SOLA PASADA
+    // PROCESAMIENTO
     // =====================================================
 
     const now = new Date();
@@ -184,15 +192,16 @@ async function loadConsoleData() {
       ui.heroBlock.style.display = "grid";
       ui.heroPrice.innerHTML = formatPrice(heroItem.price);
       
-      // --- FIX: Usar logo mobile y definir dimensiones explícitas ---
       ui.heroStoreLogo.src = heroItem.logo.replace(/(\.[\w\d]+)$/i, "-mobile.webp");
-      ui.heroStoreLogo.width = 100; // Define espacio para evitar saltos (CLS)
+      ui.heroStoreLogo.width = 100; 
       ui.heroStoreLogo.height = 50; 
-      ui.heroStoreLogo.setAttribute("loading", "eager"); // El Hero debe cargar rápido (eager), no lazy
-      // -----------------------------------------------------------
+      ui.heroStoreLogo.setAttribute("loading", "eager");
 
       ui.heroStoreLogo.alt = `Logo de ${heroItem.store}`;
-      ui.heroStoreName.textContent = heroItem.store;
+      
+      // AQUI INSERTAMOS EL BADGE EN EL HERO
+      ui.heroStoreName.innerHTML = heroItem.store + getHighFreqBadge(heroItem.store);
+
       ui.heroLink.href = heroItem["link-a"] || heroItem.link;
 
       const cat = heroItem._isRecent ? "recent" : "outdated";
@@ -225,8 +234,6 @@ async function loadConsoleData() {
     }
 
     handleScrollAnimations();
-
-    // Dispatch event to signal that content is ready and hero card exists
     document.dispatchEvent(new Event("ConsolaTemplateLoaded"));
   } catch (err) {
     console.error("🔥 Error Orquestador PDP:", err);
@@ -252,8 +259,10 @@ function createPriceRow(price, category) {
   const priceClass =
     category === "outdated" ? "price-val-row old-data" : "price-val-row";
 
-  // Lógica para usar logo optimizado (-mobile.webp)
   const logoSrc = price.logo.replace(/(\.[\w\d]+)$/i, "-mobile.webp");
+
+  // Inyectamos el badge si corresponde
+  const badgeHTML = getHighFreqBadge(price.store);
 
   row.innerHTML = `
     <div class="col-store">
@@ -263,7 +272,7 @@ function createPriceRow(price, category) {
            width="100" height="50"
            loading="lazy">
       <div class="store-meta">
-        <span class="store-name-text">${price.store}</span>
+        <span class="store-name-text">${price.store}${badgeHTML}</span>
         <span class="update-time ${info.class}">${info.text}</span>
       </div>
     </div>
@@ -323,6 +332,5 @@ window.addEventListener("scroll", () => {
 if (document.getElementById("breadcrumb-product")) {
   loadConsoleData();
 } else {
-  // If content not yet injected, wait for the generic loader signal
   document.addEventListener("consolas-main-loaded", loadConsoleData);
 }
