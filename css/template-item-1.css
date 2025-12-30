@@ -902,4 +902,47 @@
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
+}/* ============================================================
+   TOOLTIP STACKING CONTEXT FIXES
+   ============================================================ */
+
+/* 1. Unlock overflow on parent containers */
+.price-row,
+.col-store,
+.store-meta {
+    overflow: visible !important;
+    contain: none !important;
+}
+
+/* 2. Elevate Active Row */
+/* Ensures the hovered row sits above subsequent rows so the tooltip isn't covered */
+.price-row:hover {
+    position: relative;
+    z-index: 100;
+}
+
+/* 3. Tooltip Body Adjustments */
+/* Prevent text wrapping and ensure max-content width within limits */
+.freq-badge::before {
+    z-index: 9999;
+    width: max-content;
+    max-width: 250px;
+    /* Safety cap */
+    min-width: 200px;
+}/* ============================================================
+   STICKY HEADER TOOLTIP UNBLOCK
+   ============================================================ */
+
+/* 1. Force Hero Container Overflow */
+#hero-price-container,
+#hero-price-container.pdp-hero-price-block {
+    overflow: visible !important;
+    clip-path: none !important;
+}
+
+/* 2. Elevate User Store Column (where badge lives) */
+#hero-price-container .col-store {
+    overflow: visible !important;
+    position: relative;
+    z-index: 50;
 }

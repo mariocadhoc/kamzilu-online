@@ -8,7 +8,7 @@ const HIGH_FREQ_STORES = ["Amazon", "MercadoLibre", "Walmart"];
 function getHighFreqBadge(storeName) {
   if (HIGH_FREQ_STORES.includes(storeName)) {
     // Usamos data-tooltip para que CSS lo pueda leer sin conflicto
-    return ` <span class="freq-badge" data-tooltip="El precio de esta tienda cambia varias veces al día." style="cursor: help; font-size: 1.1em;">⚡</span>`;
+    return ` <span class="freq-badge" data-tooltip="⚡️ El precio de esta tienda cambia varias veces al día." style="cursor: help; font-size: 1.1em;">⚡</span>`;
   }
   return "";
 }
