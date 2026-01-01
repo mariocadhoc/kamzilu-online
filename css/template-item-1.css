@@ -657,12 +657,10 @@
     align-items: center;
   }
 
-  /* 1. Remove Desktop Decorations */
   .pdp-hero-price-block.is-sticky::before {
     display: none;
   }
 
-  /* 2. Logo Section */
   .pdp-hero-price-block.is-sticky .col-store {
     grid-column: 1 / 2;
     padding: 0;
@@ -682,22 +680,17 @@
     object-fit: contain;
   }
 
-  /* Hide Text Store Name */
   .pdp-hero-price-block.is-sticky .store-name-text {
     display: none;
   }
 
-  /* Hide Update Time */
   .pdp-hero-price-block.is-sticky .update-time {
     display: none !important;
   }
-
-  /* Hide Meta entirely (Removes Flame & spacing) */
   .pdp-hero-price-block.is-sticky .store-meta {
     display: none !important;
   }
 
-  /* 3. Price Section: More Space, Centered Vertically */
   .pdp-hero-price-block.is-sticky .col-price {
     grid-column: 2 / 3;
     padding: 0;
@@ -898,4 +891,54 @@
     overflow: visible !important;
     position: relative;
     z-index: 5;
+}
+
+/* ============================================================
+   FIX: PREVENCIÓN DE SCROLL LATERAL (MOBILE OVERFLOW)
+   ============================================================ */
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.pdp-wrapper {
+  overflow-x: hidden; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@keyframes stickyScaleIn {
+  0% {
+    transform: translateX(-50%) scale(0.95); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes stickyScaleOut {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) scale(0.95); 
+    opacity: 0;
+  }
+}
+
+@media (max-width: 899px) {
+  .freq-badge::before,
+  .freq-badge::after {
+    display: none !important;
+  }
+  
+  .pdp-hero-price-block.is-sticky {
+    width: calc(100% - 40px);
+    max-width: 100vw;
+  }
 }
