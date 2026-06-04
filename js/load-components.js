@@ -8,12 +8,17 @@ document.addEventListener("DOMContentLoaded", () => {
   includes.forEach(({ id, url, event }) => {
     const el = document.getElementById(id);
     if (el) {
-      fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          el.innerHTML = html;
-          document.dispatchEvent(new Event(event));
-        });
+      if (el.innerHTML.trim() !== "") {
+        // content pre-inlined at build time — fire event, skip fetch
+        document.dispatchEvent(new Event(event));
+      } else {
+        fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            el.innerHTML = html;
+            document.dispatchEvent(new Event(event));
+          });
+      }
     }
   });
 

@@ -67,28 +67,196 @@
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Kamzilu",
-        "url": "https://kamzilu.com/",
-        "logo": "https://kamzilu.com/og-image.jpg"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://kamzilu.com/consolas/#webpage",
+      "name": "Consolas | Comparador de precios de consolas en México",
+      "url": "https://kamzilu.com/consolas/",
+      "description": "Compara consolas Nintendo Switch, PlayStation 5 y Xbox Series X|S disponibles en tiendas de México.",
+      "inLanguage": "es-MX",
+      "isPartOf": {
+        "@id": "https://kamzilu.com/#website"
       },
-      {
-        "@type": "WebSite",
-        "name": "Kamzilu - Comparador de Consolas",
-        "url": "https://kamzilu.com/consolas/"
+      "about": {
+        "@id": "https://kamzilu.com/consolas/#itemlist"
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://kamzilu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Consolas",
+          "item": "https://kamzilu.com/consolas/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://kamzilu.com/consolas/#itemlist",
+      "name": "Consolas comparadas en Kamzilu",
+      "numberOfItems": 10,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Nintendo Switch 2",
+          "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-2/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nintendo Switch 2 + Mario Kart World Bundle",
+          "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Nintendo Switch Lite - Yellow",
+          "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-lite-yellow/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Nintendo Switch OLED - Blanco",
+          "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-oled-blanco/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "PlayStation 5 Digital Edition 1TB + Astro Bot + Gran Turismo 7",
+          "url": "https://kamzilu.com/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Playstation 5 PRO - Digital - 2TB",
+          "url": "https://kamzilu.com/consolas/playstation/playstation-5-pro-digital-2tb/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Playstation 5 Slim - Blanco - Estándar 1TB",
+          "url": "https://kamzilu.com/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Xbox Series S",
+          "url": "https://kamzilu.com/consolas/xbox/xbox-series-s/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Xbox Series X - Blanco - 1TB",
+          "url": "https://kamzilu.com/consolas/xbox/xbox-series-x-blanco-1tb/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Xbox Series X - Negro - 1TB",
+          "url": "https://kamzilu.com/consolas/xbox/xbox-series-x-negro-1tb/"
+        }
+      ]
+    }
+  ]
+}
+</script>
 
 </head>
 
 <body>
-  <div id="header"></div>
+  <div id="header">
+<header class="header-navbar">
+  <div class="header-container">
+    <a href="/" class="header-logo" aria-label="Kamzilu - Página principal">
+      <span class="kamzilu-logo-text">KAMZILU</span>
+    </a>
+
+    <nav class="header-nav-desktop" id="navbar" aria-label="Navegación principal">
+      <div class="header-dropdown">
+        <span class="nav-link" role="button" tabindex="0">Nintendo</span>
+        <div class="header-submenu" aria-label="Submenú Nintendo">
+          <a href="/consolas/nintendo/nintendo-switch-2/">Nintendo Switch 2</a>
+          <a href="/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/">Nintendo Switch 2 + Mario Kart</a>
+          <a href="/consolas/nintendo/nintendo-switch-lite-yellow/">Nintendo Switch Lite</a>
+          <a href="/consolas/nintendo/nintendo-switch-oled-blanco/">Nintendo Switch OLED</a>
+        </div>
+      </div>
+
+      <div class="header-dropdown">
+        <span class="nav-link" role="button" tabindex="0">Playstation</span>
+        <div class="header-submenu" aria-label="Submenú Playstation">
+          <a href="/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/">PS5 Slim</a>
+          <a href="/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/">PS5 Astro Bot + GT7</a>
+          <a href="/consolas/playstation/playstation-5-pro-digital-2tb/">PS5 PRO</a>
+        </div>
+      </div>
+
+      <div class="header-dropdown">
+        <span class="nav-link" role="button" tabindex="0">Xbox</span>
+        <div class="header-submenu" aria-label="Submenú Xbox">
+          <a href="/consolas/xbox/xbox-series-s/">Xbox Series S</a>
+          <a href="/consolas/xbox/xbox-series-x-negro-1tb/">Xbox Series X Negro</a>
+          <a href="/consolas/xbox/xbox-series-x-blanco-1tb/">Xbox Series X Blanco</a>
+        </div>
+      </div>
+    </nav>
+
+    <button class="burger-toggler" id="burger-btn"
+      aria-label="Abrir menú" aria-expanded="false" aria-controls="header-nav-mobile">
+      <div class="burger-animated-icon"><span></span><span></span><span></span></div>
+    </button>
+  </div>
+</header>
+
+<div class="header-nav-mobile" id="header-nav-mobile">
+  <div class="header-mobile-dropdown">
+    <button class="header-mobile-parent" aria-expanded="false">Nintendo</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Nintendo">
+      <div class="header-mobile-submenu-inner">
+        <a href="/consolas/nintendo/nintendo-switch-2/">Nintendo Switch 2</a>
+        <a href="/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/">Nintendo Switch 2 + Mario Kart</a>
+        <a href="/consolas/nintendo/nintendo-switch-lite-yellow/">Nintendo Switch Lite</a>
+        <a href="/consolas/nintendo/nintendo-switch-oled-blanco/">Nintendo Switch OLED</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-mobile-dropdown">
+    <button class="header-mobile-parent" aria-expanded="false">Playstation</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Playstation">
+      <div class="header-mobile-submenu-inner">
+        <a href="/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/">PS5 Slim</a>
+        <a href="/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/">PS5 Astro Bot + GT7</a>
+        <a href="/consolas/playstation/playstation-5-pro-digital-2tb/">PS5 PRO</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-mobile-dropdown">
+    <button class="header-mobile-parent" aria-expanded="false">Xbox</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Xbox">
+      <div class="header-mobile-submenu-inner">
+        <a href="/consolas/xbox/xbox-series-s/">Xbox Series S</a>
+        <a href="/consolas/xbox/xbox-series-x-negro-1tb/">Xbox Series X Negro</a>
+        <a href="/consolas/xbox/xbox-series-x-blanco-1tb/">Xbox Series X Blanco</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 
   <main>
     <section class="hero-top scrollup">
@@ -132,6 +300,29 @@
       </div>
     </section>
 
+    <section class="scrollup delay-2" aria-label="Índice de consolas disponibles">
+      <nav>
+        <h2>Nintendo Switch</h2>
+        <ul>
+          <li><a href="/consolas/nintendo/nintendo-switch-2/">Nintendo Switch 2</a></li>
+          <li><a href="/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/">Nintendo Switch 2 + Mario Kart World Bundle</a></li>
+          <li><a href="/consolas/nintendo/nintendo-switch-lite-yellow/">Nintendo Switch Lite - Yellow</a></li>
+          <li><a href="/consolas/nintendo/nintendo-switch-oled-blanco/">Nintendo Switch OLED - Blanco</a></li>
+        </ul>
+        <h2>PlayStation</h2>
+        <ul>
+          <li><a href="/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/">PlayStation 5 Digital Edition 1TB + Astro Bot + Gran Turismo 7</a></li>
+          <li><a href="/consolas/playstation/playstation-5-pro-digital-2tb/">Playstation 5 PRO - Digital - 2TB</a></li>
+          <li><a href="/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/">Playstation 5 Slim - Blanco - Estándar 1TB</a></li>
+        </ul>
+        <h2>Xbox</h2>
+        <ul>
+          <li><a href="/consolas/xbox/xbox-series-s/">Xbox Series S</a></li>
+          <li><a href="/consolas/xbox/xbox-series-x-blanco-1tb/">Xbox Series X - Blanco - 1TB</a></li>
+          <li><a href="/consolas/xbox/xbox-series-x-negro-1tb/">Xbox Series X - Negro - 1TB</a></li>
+        </ul>
+      </nav>
+    </section>
     <section class="hero-features scrollup delay-1">
       <div class="features-grid">
 
@@ -180,7 +371,31 @@
 
   </main>
 
-  <div id="footer"></div>
+  <div id="footer">
+<footer class="footer">
+  <div class="footer-container">
+
+    <a href="/" class="kamzilu-logo-text" aria-label="Kamzilu - Inicio">KAMZILU</a>
+
+    <p>© <span id="year"></span> Kamzilu México. Todos los derechos reservados.</p>
+
+    <nav class="footer-links" aria-label="Enlaces legales">
+      <a href="/legal/aviso-legal.html">Aviso Legal</a> ·
+      <a href="/legal/politica-privacidad.html">Privacidad</a> ·
+      <a href="/legal/politica-cookies.html">Cookies</a>
+    </nav>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const year = document.getElementById("year");
+      if (year) year.textContent = new Date().getFullYear();
+    });
+  </script>
+</footer>
+
+</div>
 
   <!-- 🚀 Scripts -->
   <script src="/js/load-components.js"></script>

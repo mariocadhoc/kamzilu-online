@@ -8,6 +8,7 @@ Disallow: /*tmp/
 
 Disallow: /consolas_main.html
 Disallow: /template-item-1.html
+Disallow: /consolas/template-item-1.html
 
 Disallow: /*index.html$
 

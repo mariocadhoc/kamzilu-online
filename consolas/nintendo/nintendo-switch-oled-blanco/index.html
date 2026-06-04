@@ -87,11 +87,11 @@
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "MXN",
-        "lowPrice": "0",
-        "highPrice": "0",
-        "offerCount": "0",
+        "lowPrice": 5990.0,
+        "highPrice": 14549.0,
+        "offerCount": 8,
         "availability": "https://schema.org/InStock",
-        "url": "https://kamzilu.com/consolas/{BRAND_SLUG}/{PRODUCT_SLUG}/"
+        "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-oled-blanco/"
       }
     },
     {
@@ -119,17 +119,224 @@
     }
   ]
 }
-  </script>
+</script>
 
 </head>
 
 <body>
 
-  <div id="header"></div>
+  <div id="header">
+<header class="header-navbar">
+  <div class="header-container">
+    <a href="/" class="header-logo" aria-label="Kamzilu - Página principal">
+      <span class="kamzilu-logo-text">KAMZILU</span>
+    </a>
 
-  <div id="consolas_main"></div>
+    <nav class="header-nav-desktop" id="navbar" aria-label="Navegación principal">
+      <div class="header-dropdown">
+        <span class="nav-link" role="button" tabindex="0">Nintendo</span>
+        <div class="header-submenu" aria-label="Submenú Nintendo">
+          <a href="/consolas/nintendo/nintendo-switch-2/">Nintendo Switch 2</a>
+          <a href="/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/">Nintendo Switch 2 + Mario Kart</a>
+          <a href="/consolas/nintendo/nintendo-switch-lite-yellow/">Nintendo Switch Lite</a>
+          <a href="/consolas/nintendo/nintendo-switch-oled-blanco/">Nintendo Switch OLED</a>
+        </div>
+      </div>
 
-  <div id="footer"></div>
+      <div class="header-dropdown">
+        <span class="nav-link" role="button" tabindex="0">Playstation</span>
+        <div class="header-submenu" aria-label="Submenú Playstation">
+          <a href="/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/">PS5 Slim</a>
+          <a href="/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/">PS5 Astro Bot + GT7</a>
+          <a href="/consolas/playstation/playstation-5-pro-digital-2tb/">PS5 PRO</a>
+        </div>
+      </div>
+
+      <div class="header-dropdown">
+        <span class="nav-link" role="button" tabindex="0">Xbox</span>
+        <div class="header-submenu" aria-label="Submenú Xbox">
+          <a href="/consolas/xbox/xbox-series-s/">Xbox Series S</a>
+          <a href="/consolas/xbox/xbox-series-x-negro-1tb/">Xbox Series X Negro</a>
+          <a href="/consolas/xbox/xbox-series-x-blanco-1tb/">Xbox Series X Blanco</a>
+        </div>
+      </div>
+    </nav>
+
+    <button class="burger-toggler" id="burger-btn"
+      aria-label="Abrir menú" aria-expanded="false" aria-controls="header-nav-mobile">
+      <div class="burger-animated-icon"><span></span><span></span><span></span></div>
+    </button>
+  </div>
+</header>
+
+<div class="header-nav-mobile" id="header-nav-mobile">
+  <div class="header-mobile-dropdown">
+    <button class="header-mobile-parent" aria-expanded="false">Nintendo</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Nintendo">
+      <div class="header-mobile-submenu-inner">
+        <a href="/consolas/nintendo/nintendo-switch-2/">Nintendo Switch 2</a>
+        <a href="/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/">Nintendo Switch 2 + Mario Kart</a>
+        <a href="/consolas/nintendo/nintendo-switch-lite-yellow/">Nintendo Switch Lite</a>
+        <a href="/consolas/nintendo/nintendo-switch-oled-blanco/">Nintendo Switch OLED</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-mobile-dropdown">
+    <button class="header-mobile-parent" aria-expanded="false">Playstation</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Playstation">
+      <div class="header-mobile-submenu-inner">
+        <a href="/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/">PS5 Slim</a>
+        <a href="/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/">PS5 Astro Bot + GT7</a>
+        <a href="/consolas/playstation/playstation-5-pro-digital-2tb/">PS5 PRO</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-mobile-dropdown">
+    <button class="header-mobile-parent" aria-expanded="false">Xbox</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Xbox">
+      <div class="header-mobile-submenu-inner">
+        <a href="/consolas/xbox/xbox-series-s/">Xbox Series S</a>
+        <a href="/consolas/xbox/xbox-series-x-negro-1tb/">Xbox Series X Negro</a>
+        <a href="/consolas/xbox/xbox-series-x-blanco-1tb/">Xbox Series X Blanco</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  <main class="pdp-wrapper template-item-1" itemscope itemtype="https://schema.org/Product">
+
+  <!-- Breadcrumb -->
+  <nav class="pdp-breadcrumb fadein delay-1" aria-label="Ruta de navegación">
+    <a href="/">Inicio</a> <span class="sep">/</span>
+    <a href="/consolas/">Consolas</a> <span class="sep">/</span>
+    <span id="breadcrumb-product" class="current">Nintendo Switch OLED - Blanco</span>
+  </nav>
+
+  <div class="pdp-layout-grid">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <section class="pdp-left-col scrollleft delay-1">
+      <div class="pdp-image-card">
+        <div class="pdp-image-container">
+          <div id="product-image-skeleton" class="pdp-image-skeleton skeleton"></div>
+          <img id="product-image-src" src="/img/consolas/nintendo/nintendo-switch-oled-white-joy-con-std-edition-internacional.webp" alt="Nintendo Switch OLED - Blanco" class="main-img" style="display:none;" itemprop="image" srcset="/img/consolas/nintendo/nintendo-switch-oled-white-joy-con-std-edition-internacional-mobile.webp 400w, /img/consolas/nintendo/nintendo-switch-oled-white-joy-con-std-edition-internacional.webp 1110w" sizes="(max-width: 600px) 240px, 1110px" width="1110" height="1436">
+        </div>
+      </div>
+    </section>
+
+    <!-- COLUMNA DERECHA -->
+    <section class="pdp-right-col scrollright delay-1">
+
+      <div class="pdp-header-block">
+
+        <!-- Marca -->
+        <span class="pdp-badge-brand" id="pdp-brand-display" itemprop="brand">nintendo</span>
+
+        <!-- Nombre -->
+        <h1 id="product-name" itemprop="name">Nintendo Switch OLED - Blanco</h1>
+
+        <!-- Descripción -->
+        <p id="product-description" itemprop="description">La Nintendo Switch OLED en blanco es el modelo premium de la generación anterior de Nintendo. Su pantalla OLED de 7 pulgadas ofrece colores más vivos, contrastes profundos y negros más precisos que los paneles LCD de los otros modelos Switch. Funciona como consola híbrida con Joy-Con desmontables, 64 GB de almacenamiento interno, soporte trasero ajustable, audio optimizado para el modo portátil y puerto de red LAN en la base para conexiones estables en televisor. Aunque la Switch 2 ya está disponible, la OLED sigue siendo una alternativa sólida para quienes priorizan calidad visual portátil a un precio menor que la nueva generación. Ideal para jugadores que pasan la mayor parte del tiempo en modo portátil. Compara las mejores ofertas disponibles en México en Kamzilu.</p>
+
+      </div>
+
+    </section>
+  </div>
+
+  <!-- HERO MEJOR PRECIO -->
+  <div class="pdp-hero-price-block scrollup delay-1" id="hero-price-container" style="display:none;" itemprop="offers"
+    itemscope itemtype="https://schema.org/AggregateOffer">
+
+    <!-- Col Store -->
+    <div class="col-store">
+      <img id="hero-store-logo" src="" alt="Tienda con mejor precio" class="store-logo-img">
+
+      <div class="store-meta">
+        <span id="hero-store-name" class="store-name-text"></span>
+        <span id="hero-update-time" class="update-time"></span>
+      </div>
+    </div>
+
+    <!-- Col Price -->
+    <div class="col-price hero-col-price">
+      <div class="hero-price-label-small">
+        <span class="icon">🔥</span> MEJOR PRECIO ACTUAL
+      </div>
+
+      <div class="hero-price-wrapper">
+        <span class="currency">$</span>
+        <span id="hero-best-price-val" class="big-number" itemprop="lowPrice">---</span>
+      </div>
+
+      <meta itemprop="priceCurrency" content="MXN">
+    </div>
+
+    <!-- Col CTA -->
+    <div class="col-action">
+      <a href="#" id="hero-btn-link" target="_blank" rel="nofollow noopener" class="hero-cta-btn"
+        aria-label="Ir a la tienda para ver la oferta">
+        VER <span class="arrow">→</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- LISTA DE PRECIOS -->
+  <div class="pdp-prices-section scrollup delay-2">
+    <h2 class="section-label">
+      Comparativa de Tiendas
+    </h2>
+
+    <div id="price-cards" class="pdp-price-list">
+      <!-- Inyectado por JS -->
+    </div>
+  </div>
+
+  <!-- Extra Info -->
+  <div id="extra-info" class="pdp-extra fadein delay-2">
+    <div class="info-note">
+      <p>
+      <p><strong><em>Nota:</em></strong><em> Kamzilu actualiza los precios varias veces al día, aún así puede haber
+          variaciones en la tienda final.</em></p>
+      </p>
+    </div>
+  </div>
+
+  <div class="spacer-10vh"></div>
+
+  <!-- Sticky Behavior -->
+  <script src="/js/sticky-hero.js" defer></script>
+</main>
+
+  <div id="footer">
+<footer class="footer">
+  <div class="footer-container">
+
+    <a href="/" class="kamzilu-logo-text" aria-label="Kamzilu - Inicio">KAMZILU</a>
+
+    <p>© <span id="year"></span> Kamzilu México. Todos los derechos reservados.</p>
+
+    <nav class="footer-links" aria-label="Enlaces legales">
+      <a href="/legal/aviso-legal.html">Aviso Legal</a> ·
+      <a href="/legal/politica-privacidad.html">Privacidad</a> ·
+      <a href="/legal/politica-cookies.html">Cookies</a>
+    </nav>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const year = document.getElementById("year");
+      if (year) year.textContent = new Date().getFullYear();
+    });
+  </script>
+</footer>
+
+</div>
 
   <!-- Global Scripts -->
   <script defer src="/js/load-components.js"></script>

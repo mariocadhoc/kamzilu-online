@@ -73,22 +73,108 @@
   "@graph": [
     {
       "@type": "Organization",
+      "@id": "https://kamzilu.com/#organization",
       "name": "Kamzilu",
       "url": "https://kamzilu.com/",
-      "logo": "https://kamzilu.com/og-image.jpg"
+      "logo": "https://kamzilu.com/og-image.jpg",
+      "description": "Comparador de precios de consolas en México."
     },
     {
       "@type": "WebSite",
+      "@id": "https://kamzilu.com/#website",
       "name": "Kamzilu",
       "url": "https://kamzilu.com/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://kamzilu.com/buscar?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
+      "inLanguage": "es-MX",
+      "publisher": {
+        "@id": "https://kamzilu.com/#organization"
       }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kamzilu.com/#webpage",
+      "name": "Kamzilu | Comparador de precios de consolas en México",
+      "url": "https://kamzilu.com/",
+      "isPartOf": {
+        "@id": "https://kamzilu.com/#website"
+      },
+      "about": {
+        "@id": "https://kamzilu.com/#consolas-list"
+      },
+      "description": "Compara precios actualizados de Nintendo Switch, PlayStation 5 y Xbox Series X|S en tiendas de México.",
+      "inLanguage": "es-MX",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://kamzilu.com/og-image.jpg"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://kamzilu.com/#consolas-list",
+      "name": "Consolas comparadas en Kamzilu",
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "numberOfItems": 10,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Nintendo Switch 2",
+          "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-2/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nintendo Switch 2 + Mario Kart World Bundle",
+          "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Nintendo Switch Lite - Yellow",
+          "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-lite-yellow/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Nintendo Switch OLED - Blanco",
+          "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-oled-blanco/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "PlayStation 5 Digital Edition 1TB + Astro Bot + Gran Turismo 7",
+          "url": "https://kamzilu.com/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Playstation 5 PRO - Digital - 2TB",
+          "url": "https://kamzilu.com/consolas/playstation/playstation-5-pro-digital-2tb/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Playstation 5 Slim - Blanco - Estándar 1TB",
+          "url": "https://kamzilu.com/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Xbox Series S",
+          "url": "https://kamzilu.com/consolas/xbox/xbox-series-s/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Xbox Series X - Blanco - 1TB",
+          "url": "https://kamzilu.com/consolas/xbox/xbox-series-x-blanco-1tb/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Xbox Series X - Negro - 1TB",
+          "url": "https://kamzilu.com/consolas/xbox/xbox-series-x-negro-1tb/"
+        }
+      ]
     }
   ]
 }
@@ -97,7 +183,87 @@
 </head>
 
 <body>
-  <div id="header"></div>
+  <div id="header">
+<header class="header-navbar">
+  <div class="header-container">
+    <a href="/" class="header-logo" aria-label="Kamzilu - Página principal">
+      <span class="kamzilu-logo-text">KAMZILU</span>
+    </a>
+
+    <nav class="header-nav-desktop" id="navbar" aria-label="Navegación principal">
+      <div class="header-dropdown">
+        <span class="nav-link" role="button" tabindex="0">Nintendo</span>
+        <div class="header-submenu" aria-label="Submenú Nintendo">
+          <a href="/consolas/nintendo/nintendo-switch-2/">Nintendo Switch 2</a>
+          <a href="/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/">Nintendo Switch 2 + Mario Kart</a>
+          <a href="/consolas/nintendo/nintendo-switch-lite-yellow/">Nintendo Switch Lite</a>
+          <a href="/consolas/nintendo/nintendo-switch-oled-blanco/">Nintendo Switch OLED</a>
+        </div>
+      </div>
+
+      <div class="header-dropdown">
+        <span class="nav-link" role="button" tabindex="0">Playstation</span>
+        <div class="header-submenu" aria-label="Submenú Playstation">
+          <a href="/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/">PS5 Slim</a>
+          <a href="/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/">PS5 Astro Bot + GT7</a>
+          <a href="/consolas/playstation/playstation-5-pro-digital-2tb/">PS5 PRO</a>
+        </div>
+      </div>
+
+      <div class="header-dropdown">
+        <span class="nav-link" role="button" tabindex="0">Xbox</span>
+        <div class="header-submenu" aria-label="Submenú Xbox">
+          <a href="/consolas/xbox/xbox-series-s/">Xbox Series S</a>
+          <a href="/consolas/xbox/xbox-series-x-negro-1tb/">Xbox Series X Negro</a>
+          <a href="/consolas/xbox/xbox-series-x-blanco-1tb/">Xbox Series X Blanco</a>
+        </div>
+      </div>
+    </nav>
+
+    <button class="burger-toggler" id="burger-btn"
+      aria-label="Abrir menú" aria-expanded="false" aria-controls="header-nav-mobile">
+      <div class="burger-animated-icon"><span></span><span></span><span></span></div>
+    </button>
+  </div>
+</header>
+
+<div class="header-nav-mobile" id="header-nav-mobile">
+  <div class="header-mobile-dropdown">
+    <button class="header-mobile-parent" aria-expanded="false">Nintendo</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Nintendo">
+      <div class="header-mobile-submenu-inner">
+        <a href="/consolas/nintendo/nintendo-switch-2/">Nintendo Switch 2</a>
+        <a href="/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/">Nintendo Switch 2 + Mario Kart</a>
+        <a href="/consolas/nintendo/nintendo-switch-lite-yellow/">Nintendo Switch Lite</a>
+        <a href="/consolas/nintendo/nintendo-switch-oled-blanco/">Nintendo Switch OLED</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-mobile-dropdown">
+    <button class="header-mobile-parent" aria-expanded="false">Playstation</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Playstation">
+      <div class="header-mobile-submenu-inner">
+        <a href="/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/">PS5 Slim</a>
+        <a href="/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/">PS5 Astro Bot + GT7</a>
+        <a href="/consolas/playstation/playstation-5-pro-digital-2tb/">PS5 PRO</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-mobile-dropdown">
+    <button class="header-mobile-parent" aria-expanded="false">Xbox</button>
+    <div class="header-mobile-submenu" aria-label="Submenú Xbox">
+      <div class="header-mobile-submenu-inner">
+        <a href="/consolas/xbox/xbox-series-s/">Xbox Series S</a>
+        <a href="/consolas/xbox/xbox-series-x-negro-1tb/">Xbox Series X Negro</a>
+        <a href="/consolas/xbox/xbox-series-x-blanco-1tb/">Xbox Series X Blanco</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 
   <main>
     <section class="hero-top scrollup">
@@ -115,61 +281,151 @@
       <section class="product-grid fadein">
 
         <div class="product-card" data-slug="nintendo-switch-2">
-          <div class="skeleton home-skel-img"></div>
+          <a href="/consolas/nintendo/nintendo-switch-2/">
+            <div class="deal-badge">Oferta</div>
+            <div class="card-image-wrapper">
+              <img src="/img/consolas/nintendo/nintendo-switch-2.webp"
+                    srcset="/img/consolas/nintendo/nintendo-switch-2-mobile.webp 400w, /img/consolas/nintendo/nintendo-switch-2.webp 1244w"
+                    sizes="(max-width: 600px) 300px, 1244px"
+                    width="1244" height="1278"
+                    alt="Nintendo Switch 2" loading="lazy">
+            </div>
+            <h3>Nintendo Switch 2</h3>
+          </a>
+        </div>
           <div class="skeleton home-skel-line"></div>
           <div class="skeleton home-skel-price"></div>
         </div>
 
         <div class="product-card" data-slug="nintendo-switch-2+mario-kart-bundle">
-          <div class="skeleton home-skel-img"></div>
+          <a href="/consolas/nintendo/nintendo-switch-2+mario-kart-bundle/">
+            <div class="deal-badge">Oferta</div>
+            <div class="card-image-wrapper">
+              <img src="/img/consolas/nintendo/nintendo-switch-2+mario-kart-bundle.webp" alt="Nintendo Switch 2 + Mario Kart World Bundle" loading="lazy">
+            </div>
+            <h3>Nintendo Switch 2 + Mario Kart World Bundle</h3>
+          </a>
+        </div>
           <div class="skeleton home-skel-line"></div>
           <div class="skeleton home-skel-price"></div>
         </div>
 
         <div class="product-card" data-slug="nintendo-switch-lite-yellow">
-          <div class="skeleton home-skel-img"></div>
+          <a href="/consolas/nintendo/nintendo-switch-lite-yellow/">
+            <div class="deal-badge">Oferta</div>
+            <div class="card-image-wrapper">
+              <img src="/img/consolas/nintendo/nintendo-switch-lite-yellow.webp" alt="Nintendo Switch Lite - Yellow" loading="lazy">
+            </div>
+            <h3>Nintendo Switch Lite - Yellow</h3>
+          </a>
+        </div>
           <div class="skeleton home-skel-line"></div>
           <div class="skeleton home-skel-price"></div>
         </div>
 
         <div class="product-card" data-slug="nintendo-switch-oled-blanco">
-          <div class="skeleton home-skel-img"></div>
+          <a href="/consolas/nintendo/nintendo-switch-oled-blanco/">
+            <div class="deal-badge">Oferta</div>
+            <div class="card-image-wrapper">
+              <img src="/img/consolas/nintendo/nintendo-switch-oled-white-joy-con-std-edition-internacional.webp"
+                    srcset="/img/consolas/nintendo/nintendo-switch-oled-white-joy-con-std-edition-internacional-mobile.webp 400w, /img/consolas/nintendo/nintendo-switch-oled-white-joy-con-std-edition-internacional.webp 1110w"
+                    sizes="(max-width: 600px) 240px, 1110px"
+                    width="1110" height="1436"
+                    alt="Nintendo Switch OLED - Blanco" loading="lazy">
+            </div>
+            <h3>Nintendo Switch OLED - Blanco</h3>
+          </a>
+        </div>
           <div class="skeleton home-skel-line"></div>
           <div class="skeleton home-skel-price"></div>
         </div>
 
         <div class="product-card" data-slug="playstation-5-slim-blanco-estandar-1tb">
-          <div class="skeleton home-skel-img"></div>
+          <a href="/consolas/playstation/playstation-5-slim-blanco-estandar-1tb/">
+            <div class="deal-badge">Oferta</div>
+            <div class="card-image-wrapper">
+              <img src="/img/consolas/playstation/ps5-slim-pack-2-juegos-std.webp"
+                    srcset="/img/consolas/playstation/ps5-slim-pack-2-juegos-std-mobile.webp 400w, /img/consolas/playstation/ps5-slim-pack-2-juegos-std.webp 1500w"
+                    sizes="(max-width: 600px) 380px, 1500px"
+                    width="1500" height="1234"
+                    alt="Playstation 5 Slim - Blanco - Estándar 1TB" loading="lazy">
+            </div>
+            <h3>Playstation 5 Slim - Blanco - Estándar 1TB</h3>
+          </a>
+        </div>
           <div class="skeleton home-skel-line"></div>
           <div class="skeleton home-skel-price"></div>
         </div>
 
         <div class="product-card" data-slug="playstation-5-digital-1tb-astrobot-gt7">
-          <div class="skeleton home-skel-img"></div>
+          <a href="/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7/">
+            <div class="deal-badge">Oferta</div>
+            <div class="card-image-wrapper">
+              <img src="/img/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7.webp"
+                    srcset="/img/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7-mobile.webp 400w, /img/consolas/playstation/playstation-5-digital-1tb-astrobot-gt7.webp 1500w"
+                    sizes="(max-width: 600px) 370px, 1500px"
+                    width="1500" height="1278"
+                    alt="PlayStation 5 Digital Edition 1TB + Astro Bot + Gran Turismo 7" loading="lazy">
+            </div>
+            <h3>PlayStation 5 Digital Edition 1TB + Astro Bot + Gran Turismo 7</h3>
+          </a>
+        </div>
           <div class="skeleton home-skel-line"></div>
           <div class="skeleton home-skel-price"></div>
         </div>
 
         <div class="product-card" data-slug="playstation-5-pro-digital-2tb">
-          <div class="skeleton home-skel-img"></div>
+          <a href="/consolas/playstation/playstation-5-pro-digital-2tb/">
+            <div class="deal-badge">Oferta</div>
+            <div class="card-image-wrapper">
+              <img src="/img/consolas/playstation/playstation-5-pro-digital.webp" alt="Playstation 5 PRO - Digital - 2TB" loading="lazy">
+            </div>
+            <h3>Playstation 5 PRO - Digital - 2TB</h3>
+          </a>
+        </div>
           <div class="skeleton home-skel-line"></div>
           <div class="skeleton home-skel-price"></div>
         </div>
 
         <div class="product-card" data-slug="xbox-series-x-negro-1tb">
-          <div class="skeleton home-skel-img"></div>
+          <a href="/consolas/xbox/xbox-series-x-negro-1tb/">
+            <div class="deal-badge">Oferta</div>
+            <div class="card-image-wrapper">
+              <img src="/img/consolas/xbox/xbox-series-x-1tb-internacional.webp"
+                    srcset="/img/consolas/xbox/xbox-series-x-1tb-internacional-mobile.webp 400w, /img/consolas/xbox/xbox-series-x-1tb-internacional.webp 1046w"
+                    sizes="(max-width: 600px) 220px, 1046px"
+                    width="1046" height="1500"
+                    alt="Xbox Series X - Negro - 1TB" loading="lazy">
+            </div>
+            <h3>Xbox Series X - Negro - 1TB</h3>
+          </a>
+        </div>
           <div class="skeleton home-skel-line"></div>
           <div class="skeleton home-skel-price"></div>
         </div>
 
         <div class="product-card" data-slug="xbox-series-x-blanco-1tb">
-          <div class="skeleton home-skel-img"></div>
+          <a href="/consolas/xbox/xbox-series-x-blanco-1tb/">
+            <div class="deal-badge">Oferta</div>
+            <div class="card-image-wrapper">
+              <img src="/img/consolas/xbox/xbox-series-x-blanco.webp" alt="Xbox Series X - Blanco - 1TB" loading="lazy">
+            </div>
+            <h3>Xbox Series X - Blanco - 1TB</h3>
+          </a>
+        </div>
           <div class="skeleton home-skel-line"></div>
           <div class="skeleton home-skel-price"></div>
         </div>
 
         <div class="product-card" data-slug="xbox-series-s">
-          <div class="skeleton home-skel-img"></div>
+          <a href="/consolas/xbox/xbox-series-s/">
+            <div class="deal-badge">Oferta</div>
+            <div class="card-image-wrapper">
+              <img src="/img/consolas/xbox/xbox-series-s-512gb-internacional.webp" alt="Xbox Series S" loading="lazy">
+            </div>
+            <h3>Xbox Series S</h3>
+          </a>
+        </div>
           <div class="skeleton home-skel-line"></div>
           <div class="skeleton home-skel-price"></div>
         </div>
@@ -227,7 +483,31 @@
   </main>
 
 
-  <div id="footer"></div>
+  <div id="footer">
+<footer class="footer">
+  <div class="footer-container">
+
+    <a href="/" class="kamzilu-logo-text" aria-label="Kamzilu - Inicio">KAMZILU</a>
+
+    <p>© <span id="year"></span> Kamzilu México. Todos los derechos reservados.</p>
+
+    <nav class="footer-links" aria-label="Enlaces legales">
+      <a href="/legal/aviso-legal.html">Aviso Legal</a> ·
+      <a href="/legal/politica-privacidad.html">Privacidad</a> ·
+      <a href="/legal/politica-cookies.html">Cookies</a>
+    </nav>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const year = document.getElementById("year");
+      if (year) year.textContent = new Date().getFullYear();
+    });
+  </script>
+</footer>
+
+</div>
 
   <!-- 🚀 Scripts -->
   <script src="/js/load-components.js"></script>
