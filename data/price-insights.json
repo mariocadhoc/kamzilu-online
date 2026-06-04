@@ -1,0 +1,1123 @@
+{
+  "generatedAt": "2026-06-03T19:32:11",
+  "source": {
+    "history": "frontend/data/price-history.json",
+    "events": "common/retail-events.json"
+  },
+  "seriesStats": {
+    "nintendo-switch-2+mario-kart-bundle": {
+      "allTimeMinPrice": 9649.0,
+      "allTimeMinDate": "2026-02-16",
+      "allTimeMinStore": "Amazon",
+      "allTimeMaxPrice": 11919.2,
+      "allTimeMaxDate": "2025-11-18",
+      "allTimeMaxStore": "Liverpool",
+      "allTimeAvgPrice": 10821.49,
+      "mostFrequentStore": "Amazon"
+    },
+    "xbox-series-x-blanco-1tb": {
+      "allTimeMinPrice": 9882.0,
+      "allTimeMinDate": "2026-05-11",
+      "allTimeMinStore": "Amazon",
+      "allTimeMaxPrice": 13999.0,
+      "allTimeMaxDate": "2025-11-18",
+      "allTimeMaxStore": "Liverpool",
+      "allTimeAvgPrice": 11722.9,
+      "mostFrequentStore": "Amazon"
+    },
+    "xbox-series-s": {
+      "allTimeMinPrice": 6299.0,
+      "allTimeMinDate": "2025-11-19",
+      "allTimeMinStore": "Coppel",
+      "allTimeMaxPrice": 8009.1,
+      "allTimeMaxDate": "2025-11-18",
+      "allTimeMaxStore": "Liverpool",
+      "allTimeAvgPrice": 6922.75,
+      "mostFrequentStore": "GamePlanet"
+    },
+    "xbox-series-x-negro-1tb": {
+      "allTimeMinPrice": 10499.0,
+      "allTimeMinDate": "2026-02-02",
+      "allTimeMinStore": "Amazon",
+      "allTimeMaxPrice": 15699.0,
+      "allTimeMaxDate": "2025-11-18",
+      "allTimeMaxStore": "Liverpool",
+      "allTimeAvgPrice": 12778.01,
+      "mostFrequentStore": "Amazon"
+    },
+    "playstation-5-digital-1tb-astrobot-gt7": {
+      "allTimeMinPrice": 7954.0,
+      "allTimeMinDate": "2026-01-06",
+      "allTimeMinStore": "Amazon",
+      "allTimeMaxPrice": 10979.0,
+      "allTimeMaxDate": "2026-03-15",
+      "allTimeMaxStore": "Amazon",
+      "allTimeAvgPrice": 9018.72,
+      "mostFrequentStore": "Amazon"
+    },
+    "nintendo-switch-oled-blanco": {
+      "allTimeMinPrice": 4498.0,
+      "allTimeMinDate": "2025-12-10",
+      "allTimeMinStore": "Walmart",
+      "allTimeMaxPrice": 7299.99,
+      "allTimeMaxDate": "2026-04-24",
+      "allTimeMaxStore": "GamePlanet",
+      "allTimeAvgPrice": 5803.5,
+      "mostFrequentStore": "Amazon"
+    },
+    "playstation-5-slim-blanco-estandar-1tb": {
+      "allTimeMinPrice": 7225.0,
+      "allTimeMinDate": "2026-03-26",
+      "allTimeMinStore": "Amazon",
+      "allTimeMaxPrice": 11999.99,
+      "allTimeMaxDate": "2026-04-07",
+      "allTimeMaxStore": "GamePlanet",
+      "allTimeAvgPrice": 10206.09,
+      "mostFrequentStore": "GamePlanet"
+    },
+    "nintendo-switch-lite-yellow": {
+      "allTimeMinPrice": 2799.0,
+      "allTimeMinDate": "2025-11-25",
+      "allTimeMinStore": "Walmart",
+      "allTimeMaxPrice": 4640.0,
+      "allTimeMaxDate": "2026-05-26",
+      "allTimeMaxStore": "Amazon",
+      "allTimeAvgPrice": 4120.25,
+      "mostFrequentStore": "GamePlanet"
+    },
+    "nintendo-switch-2": {
+      "allTimeMinPrice": 8998.0,
+      "allTimeMinDate": "2026-05-26",
+      "allTimeMinStore": "Amazon",
+      "allTimeMaxPrice": 10879.0,
+      "allTimeMaxDate": "2026-01-14",
+      "allTimeMaxStore": "Sanborns",
+      "allTimeAvgPrice": 9895.2,
+      "mostFrequentStore": "Amazon"
+    },
+    "playstation-5-pro-digital-2tb": {
+      "allTimeMinPrice": 13924.0,
+      "allTimeMinDate": "2026-01-28",
+      "allTimeMinStore": "Amazon",
+      "allTimeMaxPrice": 19299.99,
+      "allTimeMaxDate": "2026-02-02",
+      "allTimeMaxStore": "GamePlanet",
+      "allTimeAvgPrice": 18169.88,
+      "mostFrequentStore": "GamePlanet"
+    }
+  },
+  "events": {
+    "nintendo-switch-2+mario-kart-bundle": [
+      {
+        "eventId": "hot-sale-2025",
+        "eventName": "Hot Sale México 2025",
+        "start": "2025-05-26",
+        "end": "2025-06-03",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2025",
+        "eventName": "Amazon Prime Day México 2025",
+        "start": "2025-07-15",
+        "end": "2025-07-21",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2025",
+        "eventName": "El Buen Fin 2025",
+        "start": "2025-11-13",
+        "end": "2025-11-17",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2025",
+        "eventName": "Black Friday 2025",
+        "start": "2025-11-28",
+        "end": "2025-11-28",
+        "dateStatus": "calendar_pattern",
+        "status": "relevant_drop",
+        "eventMinPrice": 9899.0,
+        "eventMinDate": "2025-11-28",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 9899.0,
+        "preEventAvgPrice": 10970.43,
+        "preEventLastPrice": 9999.0,
+        "changeVsPreEventAvgPercent": -8.52,
+        "changeVsPreEventLastPercent": -1.0
+      },
+      {
+        "eventId": "cyber-monday-2025",
+        "eventName": "Cyber Monday 2025",
+        "start": "2025-12-01",
+        "end": "2025-12-01",
+        "dateStatus": "calendar_pattern",
+        "status": "relevant_drop",
+        "eventMinPrice": 9999.0,
+        "eventMinDate": "2025-12-01",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 9999.0,
+        "preEventAvgPrice": 10234.71,
+        "preEventLastPrice": 9999.0,
+        "changeVsPreEventAvgPercent": -7.6,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "hot-sale-2026",
+        "eventName": "Hot Sale México 2026",
+        "start": "2026-05-25",
+        "end": "2026-06-02",
+        "dateStatus": "official",
+        "status": "relevant_drop",
+        "eventMinPrice": 10249.0,
+        "eventMinDate": "2026-05-25",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 10249.0,
+        "preEventAvgPrice": 10643.57,
+        "preEventLastPrice": 10249.0,
+        "changeVsPreEventAvgPercent": -5.29,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Amazon Prime Day México 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "El Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-16",
+        "dateStatus": "estimated",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2026",
+        "eventName": "Black Friday 2026",
+        "start": "2026-11-27",
+        "end": "2026-11-27",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2026",
+        "eventName": "Cyber Monday 2026",
+        "start": "2026-11-30",
+        "end": "2026-11-30",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      }
+    ],
+    "xbox-series-x-blanco-1tb": [
+      {
+        "eventId": "hot-sale-2025",
+        "eventName": "Hot Sale México 2025",
+        "start": "2025-05-26",
+        "end": "2025-06-03",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2025",
+        "eventName": "Amazon Prime Day México 2025",
+        "start": "2025-07-15",
+        "end": "2025-07-21",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2025",
+        "eventName": "El Buen Fin 2025",
+        "start": "2025-11-13",
+        "end": "2025-11-17",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2025",
+        "eventName": "Black Friday 2025",
+        "start": "2025-11-28",
+        "end": "2025-11-28",
+        "dateStatus": "calendar_pattern",
+        "status": "relevant_drop",
+        "eventMinPrice": 10449.0,
+        "eventMinDate": "2025-11-28",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 10449.0,
+        "preEventAvgPrice": 10255.86,
+        "preEventLastPrice": 10449.0,
+        "changeVsPreEventAvgPercent": -10.87,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "cyber-monday-2025",
+        "eventName": "Cyber Monday 2025",
+        "start": "2025-12-01",
+        "end": "2025-12-01",
+        "dateStatus": "calendar_pattern",
+        "status": "relevant_drop",
+        "eventMinPrice": 10449.0,
+        "eventMinDate": "2025-12-01",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 10449.0,
+        "preEventAvgPrice": 10448.71,
+        "preEventLastPrice": 10449.0,
+        "changeVsPreEventAvgPercent": -10.87,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "hot-sale-2026",
+        "eventName": "Hot Sale México 2026",
+        "start": "2026-05-25",
+        "end": "2026-06-02",
+        "dateStatus": "official",
+        "status": "price_increase",
+        "eventMinPrice": 12999.99,
+        "eventMinDate": "2026-05-25",
+        "eventMinStore": "GamePlanet",
+        "eventAvgPrice": 12999.99,
+        "preEventAvgPrice": 12771.28,
+        "preEventLastPrice": 12999.99,
+        "changeVsPreEventAvgPercent": 10.89,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Amazon Prime Day México 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "El Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-16",
+        "dateStatus": "estimated",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2026",
+        "eventName": "Black Friday 2026",
+        "start": "2026-11-27",
+        "end": "2026-11-27",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2026",
+        "eventName": "Cyber Monday 2026",
+        "start": "2026-11-30",
+        "end": "2026-11-30",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      }
+    ],
+    "xbox-series-s": [
+      {
+        "eventId": "hot-sale-2025",
+        "eventName": "Hot Sale México 2025",
+        "start": "2025-05-26",
+        "end": "2025-06-03",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2025",
+        "eventName": "Amazon Prime Day México 2025",
+        "start": "2025-07-15",
+        "end": "2025-07-21",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2025",
+        "eventName": "El Buen Fin 2025",
+        "start": "2025-11-13",
+        "end": "2025-11-17",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2025",
+        "eventName": "Black Friday 2025",
+        "start": "2025-11-28",
+        "end": "2025-11-28",
+        "dateStatus": "calendar_pattern",
+        "status": "relevant_drop",
+        "eventMinPrice": 6299.0,
+        "eventMinDate": "2025-11-28",
+        "eventMinStore": "Coppel",
+        "eventAvgPrice": 6299.0,
+        "preEventAvgPrice": 6299.0,
+        "preEventLastPrice": 6299.0,
+        "changeVsPreEventAvgPercent": -9.01,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "cyber-monday-2025",
+        "eventName": "Cyber Monday 2025",
+        "start": "2025-12-01",
+        "end": "2025-12-01",
+        "dateStatus": "calendar_pattern",
+        "status": "relevant_drop",
+        "eventMinPrice": 6299.0,
+        "eventMinDate": "2025-12-01",
+        "eventMinStore": "Coppel",
+        "eventAvgPrice": 6299.0,
+        "preEventAvgPrice": 6299.0,
+        "preEventLastPrice": 6299.0,
+        "changeVsPreEventAvgPercent": -9.01,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "hot-sale-2026",
+        "eventName": "Hot Sale México 2026",
+        "start": "2026-05-25",
+        "end": "2026-06-02",
+        "dateStatus": "official",
+        "status": "price_increase",
+        "eventMinPrice": 7559.0,
+        "eventMinDate": "2026-05-25",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 7579.0,
+        "preEventAvgPrice": 7593.29,
+        "preEventLastPrice": 7559.0,
+        "changeVsPreEventAvgPercent": 9.19,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Amazon Prime Day México 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "El Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-16",
+        "dateStatus": "estimated",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2026",
+        "eventName": "Black Friday 2026",
+        "start": "2026-11-27",
+        "end": "2026-11-27",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2026",
+        "eventName": "Cyber Monday 2026",
+        "start": "2026-11-30",
+        "end": "2026-11-30",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      }
+    ],
+    "xbox-series-x-negro-1tb": [
+      {
+        "eventId": "hot-sale-2025",
+        "eventName": "Hot Sale México 2025",
+        "start": "2025-05-26",
+        "end": "2025-06-03",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2025",
+        "eventName": "Amazon Prime Day México 2025",
+        "start": "2025-07-15",
+        "end": "2025-07-21",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2025",
+        "eventName": "El Buen Fin 2025",
+        "start": "2025-11-13",
+        "end": "2025-11-17",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2025",
+        "eventName": "Black Friday 2025",
+        "start": "2025-11-28",
+        "end": "2025-11-28",
+        "dateStatus": "calendar_pattern",
+        "status": "no_relevant_change",
+        "eventMinPrice": 12199.0,
+        "eventMinDate": "2025-11-28",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 12199.0,
+        "preEventAvgPrice": 12341.86,
+        "preEventLastPrice": 12199.0,
+        "changeVsPreEventAvgPercent": -4.53,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "cyber-monday-2025",
+        "eventName": "Cyber Monday 2025",
+        "start": "2025-12-01",
+        "end": "2025-12-01",
+        "dateStatus": "calendar_pattern",
+        "status": "no_relevant_change",
+        "eventMinPrice": 12199.0,
+        "eventMinDate": "2025-12-01",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 12199.0,
+        "preEventAvgPrice": 12256.14,
+        "preEventLastPrice": 12199.0,
+        "changeVsPreEventAvgPercent": -4.53,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "hot-sale-2026",
+        "eventName": "Hot Sale México 2026",
+        "start": "2026-05-25",
+        "end": "2026-06-02",
+        "dateStatus": "official",
+        "status": "price_increase",
+        "eventMinPrice": 13542.0,
+        "eventMinDate": "2026-05-25",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 13546.0,
+        "preEventAvgPrice": 12879.57,
+        "preEventLastPrice": 14999.99,
+        "changeVsPreEventAvgPercent": 5.98,
+        "changeVsPreEventLastPercent": -9.72
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Amazon Prime Day México 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "El Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-16",
+        "dateStatus": "estimated",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2026",
+        "eventName": "Black Friday 2026",
+        "start": "2026-11-27",
+        "end": "2026-11-27",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2026",
+        "eventName": "Cyber Monday 2026",
+        "start": "2026-11-30",
+        "end": "2026-11-30",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      }
+    ],
+    "playstation-5-digital-1tb-astrobot-gt7": [
+      {
+        "eventId": "hot-sale-2025",
+        "eventName": "Hot Sale México 2025",
+        "start": "2025-05-26",
+        "end": "2025-06-03",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2025",
+        "eventName": "Amazon Prime Day México 2025",
+        "start": "2025-07-15",
+        "end": "2025-07-21",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2025",
+        "eventName": "El Buen Fin 2025",
+        "start": "2025-11-13",
+        "end": "2025-11-17",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2025",
+        "eventName": "Black Friday 2025",
+        "start": "2025-11-28",
+        "end": "2025-11-28",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2025",
+        "eventName": "Cyber Monday 2025",
+        "start": "2025-12-01",
+        "end": "2025-12-01",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "hot-sale-2026",
+        "eventName": "Hot Sale México 2026",
+        "start": "2026-05-25",
+        "end": "2026-06-02",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Amazon Prime Day México 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "El Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-16",
+        "dateStatus": "estimated",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2026",
+        "eventName": "Black Friday 2026",
+        "start": "2026-11-27",
+        "end": "2026-11-27",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2026",
+        "eventName": "Cyber Monday 2026",
+        "start": "2026-11-30",
+        "end": "2026-11-30",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      }
+    ],
+    "nintendo-switch-oled-blanco": [
+      {
+        "eventId": "hot-sale-2025",
+        "eventName": "Hot Sale México 2025",
+        "start": "2025-05-26",
+        "end": "2025-06-03",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2025",
+        "eventName": "Amazon Prime Day México 2025",
+        "start": "2025-07-15",
+        "end": "2025-07-21",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2025",
+        "eventName": "El Buen Fin 2025",
+        "start": "2025-11-13",
+        "end": "2025-11-17",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2025",
+        "eventName": "Black Friday 2025",
+        "start": "2025-11-28",
+        "end": "2025-11-28",
+        "dateStatus": "calendar_pattern",
+        "status": "relevant_drop",
+        "eventMinPrice": 4990.0,
+        "eventMinDate": "2025-11-28",
+        "eventMinStore": "Soriana",
+        "eventAvgPrice": 4990.0,
+        "preEventAvgPrice": 4990.0,
+        "preEventLastPrice": 4990.0,
+        "changeVsPreEventAvgPercent": -14.02,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "cyber-monday-2025",
+        "eventName": "Cyber Monday 2025",
+        "start": "2025-12-01",
+        "end": "2025-12-01",
+        "dateStatus": "calendar_pattern",
+        "status": "no_relevant_change",
+        "eventMinPrice": 5699.0,
+        "eventMinDate": "2025-12-01",
+        "eventMinStore": "Walmart",
+        "eventAvgPrice": 5699.0,
+        "preEventAvgPrice": 4990.0,
+        "preEventLastPrice": 4990.0,
+        "changeVsPreEventAvgPercent": -1.8,
+        "changeVsPreEventLastPercent": 14.21
+      },
+      {
+        "eventId": "hot-sale-2026",
+        "eventName": "Hot Sale México 2026",
+        "start": "2026-05-25",
+        "end": "2026-06-02",
+        "dateStatus": "official",
+        "status": "no_relevant_change",
+        "eventMinPrice": 5799.0,
+        "eventMinDate": "2026-05-25",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 5799.0,
+        "preEventAvgPrice": 6204.29,
+        "preEventLastPrice": 5999.0,
+        "changeVsPreEventAvgPercent": -0.08,
+        "changeVsPreEventLastPercent": -3.33
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Amazon Prime Day México 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "El Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-16",
+        "dateStatus": "estimated",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2026",
+        "eventName": "Black Friday 2026",
+        "start": "2026-11-27",
+        "end": "2026-11-27",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2026",
+        "eventName": "Cyber Monday 2026",
+        "start": "2026-11-30",
+        "end": "2026-11-30",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      }
+    ],
+    "playstation-5-slim-blanco-estandar-1tb": [
+      {
+        "eventId": "hot-sale-2025",
+        "eventName": "Hot Sale México 2025",
+        "start": "2025-05-26",
+        "end": "2025-06-03",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2025",
+        "eventName": "Amazon Prime Day México 2025",
+        "start": "2025-07-15",
+        "end": "2025-07-21",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2025",
+        "eventName": "El Buen Fin 2025",
+        "start": "2025-11-13",
+        "end": "2025-11-17",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2025",
+        "eventName": "Black Friday 2025",
+        "start": "2025-11-28",
+        "end": "2025-11-28",
+        "dateStatus": "calendar_pattern",
+        "status": "strong_drop",
+        "eventMinPrice": 7989.0,
+        "eventMinDate": "2025-11-28",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 7989.0,
+        "preEventAvgPrice": 8999.0,
+        "preEventLastPrice": 8999.0,
+        "changeVsPreEventAvgPercent": -21.72,
+        "changeVsPreEventLastPercent": -11.22
+      },
+      {
+        "eventId": "cyber-monday-2025",
+        "eventName": "Cyber Monday 2025",
+        "start": "2025-12-01",
+        "end": "2025-12-01",
+        "dateStatus": "calendar_pattern",
+        "status": "relevant_drop",
+        "eventMinPrice": 8999.0,
+        "eventMinDate": "2025-12-01",
+        "eventMinStore": "Elektra",
+        "eventAvgPrice": 8999.0,
+        "preEventAvgPrice": 8854.71,
+        "preEventLastPrice": 8999.0,
+        "changeVsPreEventAvgPercent": -11.83,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "hot-sale-2026",
+        "eventName": "Hot Sale México 2026",
+        "start": "2026-05-25",
+        "end": "2026-06-02",
+        "dateStatus": "official",
+        "status": "strong_drop",
+        "eventMinPrice": 8165.0,
+        "eventMinDate": "2026-05-25",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 8165.0,
+        "preEventAvgPrice": 8165.0,
+        "preEventLastPrice": 8165.0,
+        "changeVsPreEventAvgPercent": -20.0,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Amazon Prime Day México 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "El Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-16",
+        "dateStatus": "estimated",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2026",
+        "eventName": "Black Friday 2026",
+        "start": "2026-11-27",
+        "end": "2026-11-27",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2026",
+        "eventName": "Cyber Monday 2026",
+        "start": "2026-11-30",
+        "end": "2026-11-30",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      }
+    ],
+    "nintendo-switch-lite-yellow": [
+      {
+        "eventId": "hot-sale-2025",
+        "eventName": "Hot Sale México 2025",
+        "start": "2025-05-26",
+        "end": "2025-06-03",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2025",
+        "eventName": "Amazon Prime Day México 2025",
+        "start": "2025-07-15",
+        "end": "2025-07-21",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2025",
+        "eventName": "El Buen Fin 2025",
+        "start": "2025-11-13",
+        "end": "2025-11-17",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2025",
+        "eventName": "Black Friday 2025",
+        "start": "2025-11-28",
+        "end": "2025-11-28",
+        "dateStatus": "calendar_pattern",
+        "status": "strong_drop",
+        "eventMinPrice": 2799.0,
+        "eventMinDate": "2025-11-28",
+        "eventMinStore": "Walmart",
+        "eventAvgPrice": 2799.0,
+        "preEventAvgPrice": 3775.57,
+        "preEventLastPrice": 2799.0,
+        "changeVsPreEventAvgPercent": -32.07,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "cyber-monday-2025",
+        "eventName": "Cyber Monday 2025",
+        "start": "2025-12-01",
+        "end": "2025-12-01",
+        "dateStatus": "calendar_pattern",
+        "status": "strong_drop",
+        "eventMinPrice": 2799.0,
+        "eventMinDate": "2025-12-01",
+        "eventMinStore": "Walmart",
+        "eventAvgPrice": 2799.0,
+        "preEventAvgPrice": 3043.14,
+        "preEventLastPrice": 2799.0,
+        "changeVsPreEventAvgPercent": -32.07,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "hot-sale-2026",
+        "eventName": "Hot Sale México 2026",
+        "start": "2026-05-25",
+        "end": "2026-06-02",
+        "dateStatus": "official",
+        "status": "relevant_drop",
+        "eventMinPrice": 3899.99,
+        "eventMinDate": "2026-05-25",
+        "eventMinStore": "GamePlanet",
+        "eventAvgPrice": 4269.99,
+        "preEventAvgPrice": 3613.99,
+        "preEventLastPrice": 3899.99,
+        "changeVsPreEventAvgPercent": -5.35,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Amazon Prime Day México 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "El Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-16",
+        "dateStatus": "estimated",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2026",
+        "eventName": "Black Friday 2026",
+        "start": "2026-11-27",
+        "end": "2026-11-27",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2026",
+        "eventName": "Cyber Monday 2026",
+        "start": "2026-11-30",
+        "end": "2026-11-30",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      }
+    ],
+    "nintendo-switch-2": [
+      {
+        "eventId": "hot-sale-2025",
+        "eventName": "Hot Sale México 2025",
+        "start": "2025-05-26",
+        "end": "2025-06-03",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2025",
+        "eventName": "Amazon Prime Day México 2025",
+        "start": "2025-07-15",
+        "end": "2025-07-21",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2025",
+        "eventName": "El Buen Fin 2025",
+        "start": "2025-11-13",
+        "end": "2025-11-17",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2025",
+        "eventName": "Black Friday 2025",
+        "start": "2025-11-28",
+        "end": "2025-11-28",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2025",
+        "eventName": "Cyber Monday 2025",
+        "start": "2025-12-01",
+        "end": "2025-12-01",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "hot-sale-2026",
+        "eventName": "Hot Sale México 2026",
+        "start": "2026-05-25",
+        "end": "2026-06-02",
+        "dateStatus": "official",
+        "status": "relevant_drop",
+        "eventMinPrice": 8998.0,
+        "eventMinDate": "2026-05-26",
+        "eventMinStore": "Amazon",
+        "eventAvgPrice": 8998.5,
+        "preEventAvgPrice": 9504.71,
+        "preEventLastPrice": 9289.0,
+        "changeVsPreEventAvgPercent": -9.07,
+        "changeVsPreEventLastPercent": -3.13
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Amazon Prime Day México 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "El Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-16",
+        "dateStatus": "estimated",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2026",
+        "eventName": "Black Friday 2026",
+        "start": "2026-11-27",
+        "end": "2026-11-27",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2026",
+        "eventName": "Cyber Monday 2026",
+        "start": "2026-11-30",
+        "end": "2026-11-30",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      }
+    ],
+    "playstation-5-pro-digital-2tb": [
+      {
+        "eventId": "hot-sale-2025",
+        "eventName": "Hot Sale México 2025",
+        "start": "2025-05-26",
+        "end": "2025-06-03",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2025",
+        "eventName": "Amazon Prime Day México 2025",
+        "start": "2025-07-15",
+        "end": "2025-07-21",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2025",
+        "eventName": "El Buen Fin 2025",
+        "start": "2025-11-13",
+        "end": "2025-11-17",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2025",
+        "eventName": "Black Friday 2025",
+        "start": "2025-11-28",
+        "end": "2025-11-28",
+        "dateStatus": "calendar_pattern",
+        "status": "no_relevant_change",
+        "eventMinPrice": 17755.99,
+        "eventMinDate": "2025-11-28",
+        "eventMinStore": "GamePlanet",
+        "eventAvgPrice": 17755.99,
+        "preEventAvgPrice": 17755.99,
+        "preEventLastPrice": 17755.99,
+        "changeVsPreEventAvgPercent": -2.28,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "cyber-monday-2025",
+        "eventName": "Cyber Monday 2025",
+        "start": "2025-12-01",
+        "end": "2025-12-01",
+        "dateStatus": "calendar_pattern",
+        "status": "no_relevant_change",
+        "eventMinPrice": 17755.99,
+        "eventMinDate": "2025-12-01",
+        "eventMinStore": "GamePlanet",
+        "eventAvgPrice": 17755.99,
+        "preEventAvgPrice": 17755.99,
+        "preEventLastPrice": 17755.99,
+        "changeVsPreEventAvgPercent": -2.28,
+        "changeVsPreEventLastPercent": 0.0
+      },
+      {
+        "eventId": "hot-sale-2026",
+        "eventName": "Hot Sale México 2026",
+        "start": "2026-05-25",
+        "end": "2026-06-02",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Amazon Prime Day México 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "El Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-16",
+        "dateStatus": "estimated",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "black-friday-2026",
+        "eventName": "Black Friday 2026",
+        "start": "2026-11-27",
+        "end": "2026-11-27",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      },
+      {
+        "eventId": "cyber-monday-2026",
+        "eventName": "Cyber Monday 2026",
+        "start": "2026-11-30",
+        "end": "2026-11-30",
+        "dateStatus": "calendar_pattern",
+        "status": "no_event_data"
+      }
+    ]
+  }
+}
