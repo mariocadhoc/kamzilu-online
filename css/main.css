@@ -96,7 +96,7 @@ ul, ol, li {
 .hero-top h1 {
   font-family: var(--font-tech);
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 4.375rem;
   line-height: 1.1;
   color: var(--text-main);
   margin-bottom: 2rem;
@@ -210,127 +210,7 @@ ul, ol, li {
   text-align: left;
 }
 
-/* ===== HERO BANNER (sección antigua) ===== */
-.hero-banner {
-  background-color: rgba(39, 47, 65, 0.95);
-  padding: 40px 40px;
-  text-align: left;
-  font-family: 'Barlow', sans-serif;
-  max-width: 1200px;
-  margin: 60px auto;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-}
 
-.hero-banner .hero-headline,
-.hero-banner .hero-subline {
-  font-family: var(--font4);
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0.5px;
-}
-
-.hero-banner .highlight {
-  color: #dab566;
-}
-
-.hero-banner h1 {
-  font-size: 2.6rem;
-  line-height: 1.2;
-  margin-bottom: 10px;
-  font-weight: 600;
-  color: var(--white);
-}
-
-.hero-banner h2 {
-  font-size: 2.1rem;
-  line-height: 1.2;
-  margin-bottom: 10px;
-  font-weight: 400;
-  color: var(--white);
-}
-
-.hero-banner p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
-
-.hero-content {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* ===== HERO GRID (sección antigua) ===== */
-.hero-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-  text-align: left;
-}
-
-.hero-headline {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.hero-icon {
-  width: 42px;
-  height: 42px;
-  margin-bottom: 0.8rem;
-  filter: brightness(1.1);
-}
-
-.hero-item {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-item h3 {
-  font-family: var(--font1);
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--white);
-  margin-bottom: 0.6rem;
-}
-
-.hero-item p {
-  font-family: var(--font2);
-  font-size: 1rem;
-  color: var(--light-grey);
-  line-height: 1.6;
-}
-
-.hero-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-}
-
-.hero-subline {
-  display: block;
-  font-weight: 400;
-  opacity: 0.95;
-  margin-bottom: 8px;
-}
-
-.hero-subtext {
-  font-size: 1rem;
-  opacity: 0.9;
-  color: var(--white);
-}
-
-.hero-subtext.emphasis {
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-top: 10px;
-  color: #f1f1f1;
-  font-family: 'Barlow Condensed', sans-serif;
-}
 
 /* ===== BRANDS SECTION ===== */
 .brands-section {
@@ -412,7 +292,7 @@ ul, ol, li {
   }
 
   .hero-top h1 {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 
   .grid-title {
@@ -425,22 +305,6 @@ ul, ol, li {
     padding: 0 15px; /* Menos padding en móvil */
   }
 
-  .hero-grid {
-    gap: 1.5rem;
-  }
-
-  .hero-item h3 {
-    font-size: 1.2rem;
-  }
-
-  .hero-item p {
-    font-size: 0.95rem;
-  }
-
-  .parallax-image {
-    position: static;
-    transform: none !important;
-  }
 
   h1 {
     font-size: 2.2rem;
@@ -477,7 +341,75 @@ ul, ol, li {
   }
 
   .hero-top h1 {
-    font-size: 1.8rem;
+    font-size: 2.25rem;
     padding: 60px 20px 10px;
   }
+}
+
+/* ===== SEO/GEO UPDATES ===== */
+.hero-description {
+  max-width: 680px;
+  margin: 0 auto 32px;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 1.375rem;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.hero-trust-line {
+  font-family: var(--font-tech);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-volatile {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 60px 0;
+  text-align: left;
+}
+
+.hero-volatile .main-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-volatile h2 {
+  font-family: var(--font-tech);
+  font-size: 1.8rem;
+  color: var(--text-main);
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.hero-volatile p {
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 12px;
+  max-width: 750px;
+}
+
+.hero-cf-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-family: var(--font-tech);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.hero-cf-link:hover {
+  text-decoration: underline;
+  color: var(--primary-dark);
 }

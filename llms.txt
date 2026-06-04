@@ -1,0 +1,137 @@
+# Kamzilu — Historial, estadísticas y comparador de precios de consolas en México
+
+## Descripción del sitio
+
+Kamzilu es un centro de información de precios de consolas de videojuegos para el mercado mexicano.
+Opera exclusivamente en México. Todos los precios están expresados en pesos mexicanos (MXN).
+
+Va más allá de comparar precios actuales: registra el historial de precios de cada consola en cada tienda
+monitoreada, presenta estadísticas (precio mínimo histórico, precio promedio, evolución reciente) y permite
+al usuario detectar si una oferta es genuina o fue precedida por un aumento artificial de precio.
+
+Kamzilu NO vende productos. NO es una tienda. NO procesa pagos. Es un servicio de información de precios
+que monitorea tiendas externas y presenta los resultados en un solo lugar.
+
+URL principal: https://kamzilu.com/
+Contacto: kamzilu.mc@gmail.com
+
+---
+
+## Propósito
+
+Kamzilu resuelve dos problemas del mercado mexicano:
+
+1. Los precios de consolas en línea son altamente volátiles. Amazon México y Mercado Libre ajustan
+   precios múltiples veces al día, generando diferencias de cientos o miles de pesos entre tiendas para
+   el mismo producto en el mismo momento. El sitio automatiza la comparación para que el usuario no
+   tenga que abrir múltiples pestañas manualmente.
+
+2. Las tiendas en línea suelen elevar el precio de un producto días antes de una fecha comercial
+   (Hot Sale, Buen Fin, temporada navideña) para luego bajarlo y presentarlo como "oferta". Sin un
+   historial que lo respalde, el usuario no puede saber si el descuento es real. Kamzilu registra ese
+   historial para dar contexto real a cada precio y cada supuesta oferta.
+
+---
+
+## Consolas cubiertas
+
+Nintendo:
+- Nintendo Switch 2 (Versión Estándar)
+- Nintendo Switch 2 + Mario Kart World Bundle
+- Nintendo Switch Lite (Amarillo)
+- Nintendo Switch OLED (Blanco)
+
+PlayStation:
+- PlayStation 5 Slim Estándar 1TB
+- PlayStation 5 Digital (Bundle Astro Bot + Gran Turismo 7)
+- PlayStation 5 Pro Digital 2TB
+
+Xbox:
+- Xbox Series S
+- Xbox Series X Negro 1TB
+- Xbox Series X Blanco 1TB
+
+---
+
+## Tiendas monitoreadas
+
+Todas las tiendas listadas tienen operación oficial en México:
+
+- Amazon México (amazon.com.mx)
+- Mercado Libre México (mercadolibre.com.mx)
+- Liverpool (liverpool.com.mx)
+- Walmart México (walmart.com.mx)
+- Otras tiendas según disponibilidad del producto
+
+---
+
+## Historial y estadísticas de precios
+
+Kamzilu registra el historial de precios de cada consola en cada tienda monitoreada. Esto permite:
+
+- Ver el precio mínimo histórico registrado por consola y por tienda.
+- Ver el precio promedio histórico como referencia de valor real.
+- Analizar la evolución reciente del precio (tendencia al alza, a la baja o estable).
+- Detectar patrones de "oferta trampa": aumento artificial previo seguido de una bajada presentada
+  como descuento.
+
+Esta información se presenta junto al precio actual en la página de cada consola.
+
+---
+
+## Frecuencia de actualización
+
+Los precios se escanean varias veces al día mediante un proceso automatizado.
+Cada página de consola muestra la hora de la última actualización por tienda.
+El precio definitivo válido para una compra es siempre el que aparece en la tienda en el momento
+del pago, ya que las tiendas pueden modificar precios en cualquier momento.
+
+---
+
+## Política de datos y privacidad
+
+Kamzilu no recopila datos personales de usuarios.
+No requiere registro ni creación de cuenta.
+No usa cookies de rastreo propias.
+Usa Google Analytics con datos anonimizados para estadísticas de visitas.
+Participa en programas de afiliados de tiendas (incluyendo Amazon México Associates).
+Los afiliados pueden generar una comisión por compras realizadas desde links del sitio,
+sin costo adicional para el usuario final.
+
+---
+
+## Modelo de negocio
+
+El sitio genera ingresos mediante comisiones de programas de afiliados.
+El uso del comparador es gratuito para el usuario final.
+
+---
+
+## Lo que Kamzilu NO es
+
+- No es una tienda
+- No vende consolas ni ningún producto
+- No cobra comisión al usuario
+- No actúa como intermediario en transacciones
+- No garantiza disponibilidad ni precio en tienda al momento de la compra
+- No cubre consolas usadas, refurbished ni open-box
+
+---
+
+## Páginas principales
+
+- / — Inicio: muestra las consolas más buscadas con precios actuales, historial y estadísticas
+- /consolas/ — Listado de todas las consolas por marca
+- /consolas/nintendo/ — Consolas Nintendo
+- /consolas/playstation/ — Consolas PlayStation
+- /consolas/xbox/ — Consolas Xbox
+- /como-funciona/ — Explicación detallada del servicio, historial de precios, FAQ y HowTo
+- /legal/aviso-legal.html — Aviso legal
+- /legal/politica-privacidad.html — Política de privacidad
+- /legal/politica-cookies.html — Política de cookies
+
+---
+
+## Jurisdicción
+
+México (Ciudad de Veracruz). Legislación aplicable: leyes vigentes en los Estados Unidos Mexicanos.

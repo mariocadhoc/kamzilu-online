@@ -15,12 +15,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicons -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/icons/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#0f0f0f">
 
@@ -40,7 +40,7 @@
   <meta property="og:title" content="Nintendo Switch OLED Blanco - Precio en México | Kamzilu">
   <meta property="og:description"
     content="Consulta precios actualizados de la Nintendo Switch OLED Blanco. Pantalla OLED de 7'', audio mejorado y base con puerto LAN.">
-  <meta property="og:image" content="https://kamzilu.com/og-image.jpg">
+  <meta property="og:image" content="https://kamzilu.com/assets/og-image.jpg">
   <meta property="og:url" content="https://kamzilu.com/consolas/nintendo/nintendo-switch-oled-blanco/">
 
   <!-- Twitter -->
@@ -48,7 +48,7 @@
   <meta name="twitter:title" content="Nintendo Switch OLED Blanco - Precio en México | Kamzilu">
   <meta name="twitter:description"
     content="Encuentra el mejor precio en México para la Nintendo Switch OLED Blanco. Compara tiendas oficiales.">
-  <meta name="twitter:image" content="https://kamzilu.com/og-image.jpg">
+  <meta name="twitter:image" content="https://kamzilu.com/assets/og-image.jpg">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,7 +77,7 @@
       "@type": "Product",
       "name": "Nintendo Switch OLED Blanco",
       "image": "https://kamzilu.com/img/consolas/nintendo/nintendo-switch-oled-blanco.webp",
-      "description": "Nintendo Switch OLED Blanco con pantalla OLED de 7 pulgadas, mayor contraste, audio mejorado y base con puerto LAN. Ideal para disfrutar juegos con colores intensos y portabilidad.",
+      "description": "La Nintendo Switch OLED en blanco es el modelo premium de la generación anterior de Nintendo. Su pantalla OLED de 7 pulgadas ofrece colores más vivos, contrastes profundos y negros más precisos que los paneles LCD de los otros modelos Switch. Funciona como consola híbrida con Joy-Con desmontables, 64 GB de almacenamiento interno, soporte trasero ajustable, audio optimizado para el modo portátil y puerto de red LAN en la base para conexiones estables en televisor. Aunque la Switch 2 ya está disponible, la OLED sigue siendo una alternativa sólida para quienes priorizan calidad visual portátil a un precio menor que la nueva generación. Ideal para jugadores que pasan la mayor parte del tiempo en modo portátil. Compara las mejores ofertas disponibles en México en Kamzilu.",
       "brand": {
         "@type": "Brand",
         "name": "Nintendo"
@@ -117,6 +117,18 @@
           "item": "https://kamzilu.com/consolas/nintendo/nintendo-switch-oled-blanco/"
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kamzilu.com/consolas/nintendo/nintendo-switch-oled-blanco/#webpage",
+      "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-oled-blanco/",
+      "name": "Nintendo Switch OLED Blanco - Precio en México | Kamzilu",
+      "inLanguage": "es-MX",
+      "dateModified": "2026-06-03",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://kamzilu.com/"
+      }
     }
   ]
 }
@@ -161,6 +173,7 @@
           <a href="/consolas/xbox/xbox-series-x-blanco-1tb/">Xbox Series X Blanco</a>
         </div>
       </div>
+      <a href="/como-funciona/" class="nav-link nav-link-plain">¿Cómo funciona?</a>
     </nav>
 
     <button class="burger-toggler" id="burger-btn"
@@ -203,6 +216,9 @@
         <a href="/consolas/xbox/xbox-series-x-blanco-1tb/">Xbox Series X Blanco</a>
       </div>
     </div>
+  </div>
+  <div class="header-mobile-plain-link">
+    <a href="/como-funciona/">¿Cómo funciona?</a>
   </div>
 </div>
 
@@ -297,20 +313,38 @@
     </div>
   </div>
 
-  <!-- Extra Info -->
-  <div id="extra-info" class="pdp-extra fadein delay-2">
-    <div class="info-note">
-      <p>
-      <p><strong><em>Nota:</em></strong><em> Kamzilu actualiza los precios varias veces al día, aún así puede haber
-          variaciones en la tienda final.</em></p>
-      </p>
+  <!-- HISTÓRICO DE PRECIOS -->
+  <div id="price-history-section" class="pdp-history-section scrollup delay-2" style="display: none;">
+    <h2 class="section-label">Historial del precio más bajo</h2>
+    <div class="pdp-history-card">
+      <div id="price-history-chart" class="history-chart-wrapper"></div>
+      <div class="history-chart-legend">
+        <span>Evolución diaria del mejor precio detectado en Kamzilu para esta consola (MXN).</span>
+        <span class="history-gap-legend">
+          <svg width="24" height="10" viewBox="0 0 24 10" aria-hidden="true" style="vertical-align:middle;margin-right:4px"><line x1="0" y1="5" x2="24" y2="5" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,4"/></svg>Sin registro ese periodo
+        </span>
+      </div>
+      <div class="history-chart-disclaimer">
+        Los precios mostrados son únicamente informativos y se generan automáticamente a partir de fuentes públicas. Kamzilu no garantiza que sean exactos, vigentes o disponibles al momento de la consulta. Esta información no constituye prueba comercial, legal ni contractual.
+      </div>
     </div>
   </div>
+
+  <!-- INSIGHTS DE EVENTOS COMERCIALES -->
+  <section id="price-insights-section" class="pdp-insights-section scrollup delay-2" style="display: none;" aria-label="Lo que pasa con el precio en Hot Sale, Black Friday y más">
+    <h2 class="section-label">Historial de precios en El buen Fin, Hot Sale, Black Friday, Cyber Monday, y más</h2>
+    <div id="price-insights-grid" class="pdp-insights-grid"></div>
+    <p class="pdp-insights-disclaimer">
+      Precios detectados automáticamente. Pueden existir variaciones.
+      <a href="/como-funciona">¿Cómo funciona Kamzilu?</a>
+    </p>
+  </section>
 
   <div class="spacer-10vh"></div>
 
   <!-- Sticky Behavior -->
   <script src="/js/sticky-hero.js" defer></script>
+  <!-- Insights de eventos comerciales -->
 </main>
 
   <div id="footer">
@@ -320,8 +354,10 @@
     <a href="/" class="kamzilu-logo-text" aria-label="Kamzilu - Inicio">KAMZILU</a>
 
     <p>© <span id="year"></span> Kamzilu México. Todos los derechos reservados.</p>
+    <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.4); margin-top: 4px; margin-bottom: 8px;">Sitio desarrollado por <a href="https://lazy.guru/" target="_blank" rel="noopener noreferrer" style="color: rgba(255, 255, 255, 0.4); font-size: 0.9rem; text-decoration: underline;">Lazy | Guru</a></p>
 
-    <nav class="footer-links" aria-label="Enlaces legales">
+    <nav class="footer-links" aria-label="Información y enlaces legales">
+      <a href="/como-funciona/">¿Cómo funciona?</a> ·
       <a href="/legal/aviso-legal.html">Aviso Legal</a> ·
       <a href="/legal/politica-privacidad.html">Privacidad</a> ·
       <a href="/legal/politica-cookies.html">Cookies</a>
@@ -348,6 +384,8 @@
   <!-- Page Scripts -->
   <script defer src="/js/smooth-scroll.js"></script>
   <script defer src="/js/template-item-1-loader.js"></script>
+  <script defer src="/js/price-history-chart.js"></script>
+  <script defer src="/js/price-insights.js"></script>
   <script defer src="/js/sticky-hero.js"></script>
 
 </body>

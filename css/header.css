@@ -412,3 +412,23 @@
     display: block;
   }
 }
+
+.header-mobile-plain-link {
+  padding: 4px 0;
+}
+
+.header-mobile-plain-link a {
+  font-size: 2rem;
+  font-family: var(--font-tech);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+}
+
+.header-mobile-plain-link a:hover {
+  color: var(--primary);
+}

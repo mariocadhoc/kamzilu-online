@@ -56,8 +56,8 @@ function getUpdateTimeInfo(lastUpdated, category) {
 
   // Manejo de semanas y meses
   if (diffDays < 30) {
-      const weeks = Math.floor(diffDays / 7);
-      return { text: `Hace ${weeks} sem`, class: "status-old" };
+    const weeks = Math.floor(diffDays / 7);
+    return { text: `Hace ${weeks} sem`, class: "status-old" };
   }
 
   const months = Math.floor(diffDays / 30);
@@ -116,6 +116,11 @@ async function loadConsoleData() {
     // Datos estáticos
     // ----------------------------
     if (ui.breadcrumb) ui.breadcrumb.textContent = product.name;
+    const brandLink = document.querySelector(".pdp-breadcrumb a[href='/consolas/']");
+    if (brandLink && product.brand) {
+      brandLink.textContent = product.brand.charAt(0).toUpperCase() + product.brand.slice(1);
+      brandLink.href = `/consolas/${product.brand}/`;
+    }
     if (ui.name) ui.name.textContent = product.name;
     if (ui.desc) ui.desc.textContent = product.description;
     if (ui.img) {
@@ -190,15 +195,17 @@ async function loadConsoleData() {
     // =====================================================
     if (heroItem && ui.heroBlock) {
       ui.heroBlock.style.display = "grid";
+      ui.heroBlock.offsetHeight; // Forzar reflow para disparar la animación de entrada
+      ui.heroBlock.classList.add("visible");
       ui.heroPrice.innerHTML = formatPrice(heroItem.price);
-      
+
       ui.heroStoreLogo.src = heroItem.logo.replace(/(\.[\w\d]+)$/i, "-mobile.webp");
-      ui.heroStoreLogo.width = 100; 
-      ui.heroStoreLogo.height = 50; 
+      ui.heroStoreLogo.width = 100;
+      ui.heroStoreLogo.height = 50;
       ui.heroStoreLogo.setAttribute("loading", "eager");
 
       ui.heroStoreLogo.alt = `Logo de ${heroItem.store}`;
-      
+
       // AQUI INSERTAMOS EL BADGE EN EL HERO
       ui.heroStoreName.innerHTML = heroItem.store + getHighFreqBadge(heroItem.store);
 
@@ -311,6 +318,9 @@ function handleScrollAnimations() {
   const vh = window.innerHeight;
 
   elements.forEach(el => {
+    // Ignorar elementos que estén temporalmente ocultos (ej. el hero block)
+    if (window.getComputedStyle(el).display === "none") return;
+
     if (el.getBoundingClientRect().top < vh - 50)
       el.classList.add("visible");
   });
