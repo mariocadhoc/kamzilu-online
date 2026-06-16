@@ -1,4 +1,48 @@
 document.addEventListener("DOMContentLoaded", () => {
+  function isMobileViewport() {
+    return window.matchMedia("(max-width: 767px)").matches;
+  }
+
+  function isMobileLandscape() {
+    return isMobileViewport() && window.matchMedia("(orientation: landscape)").matches;
+  }
+
+  function startOfWeek(date) {
+    const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    const day = (d.getDay() + 6) % 7; // Monday-based week
+    d.setDate(d.getDate() - day);
+    return d;
+  }
+
+  function aggregateWeekly(points) {
+    const buckets = new Map();
+
+    points.forEach((point) => {
+      const weekStart = startOfWeek(point.date);
+      const key = weekStart.toISOString().slice(0, 10);
+      const current = buckets.get(key);
+
+      if (!current || point.price < current.price) {
+        buckets.set(key, {
+          ...point,
+          date: weekStart,
+          timestamp: weekStart.getTime(),
+        });
+      }
+    });
+
+    return Array.from(buckets.values()).sort((a, b) => a.timestamp - b.timestamp);
+  }
+
+  function normalizeSeries(points) {
+    return points.map(pt => ({
+      date: new Date(pt.date),
+      timestamp: new Date(pt.date).getTime(),
+      price: parseFloat(pt.price),
+      store: pt.store || null
+    })).sort((a, b) => a.timestamp - b.timestamp);
+  }
   
   function initChart() {
     // Solo ejecutar si el contenedor de la gráfica está en el DOM
@@ -34,8 +78,20 @@ document.addEventListener("DOMContentLoaded", () => {
         // Mostrar sección
         section.style.display = "block";
 
-        // Renderizar gráfico
-        renderSVGChart(container, series);
+        const renderResponsiveChart = () => renderSVGChart(container, series);
+        renderResponsiveChart();
+
+        if (!container.dataset.responsiveChartBound) {
+          let resizeTimer = null;
+          const handleResize = () => {
+            window.clearTimeout(resizeTimer);
+            resizeTimer = window.setTimeout(renderResponsiveChart, 120);
+          };
+
+          window.addEventListener("resize", handleResize);
+          window.addEventListener("orientationchange", handleResize);
+          container.dataset.responsiveChartBound = "true";
+        }
       })
       .catch(err => {
         console.error("[Chart] Error cargando histórico:", err);
@@ -48,18 +104,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Limpiar contenedor previo
     wrapper.innerHTML = "";
 
+    const mobile = isMobileViewport();
+    const mobileLandscape = isMobileLandscape();
+
     // Dimensiones lógicas (viewBox)
-    const width = 800;
-    const height = 300;
-    const padding = { top: 56, right: 30, bottom: 40, left: 60 };
+    const width = mobile ? 800 : 800;
+    const height = mobile ? (mobileLandscape ? 340 : 430) : 300;
+    const padding = mobile
+      ? { top: 52, right: 18, bottom: 62, left: 68 }
+      : { top: 56, right: 30, bottom: 40, left: 60 };
 
     // Mapear puntos a tipos correctos y ordenar
-    const data = points.map(pt => ({
-      date: new Date(pt.date),
-      timestamp: new Date(pt.date).getTime(),
-      price: parseFloat(pt.price),
-      store: pt.store || null
-    })).sort((a, b) => a.timestamp - b.timestamp);
+    const normalizedData = normalizeSeries(points);
+    const data = mobile && !mobileLandscape ? aggregateWeekly(normalizedData) : normalizedData;
 
     // Valores extremos
     const prices = data.map(d => d.price);
@@ -123,13 +180,13 @@ document.addEventListener("DOMContentLoaded", () => {
       text.setAttribute("text-anchor", "end");
       text.setAttribute("fill", "#64748b");
       text.style.fontFamily = "var(--font-barlow, sans-serif)";
-      text.style.fontSize = "11px";
+      text.style.fontSize = mobile ? "13px" : "11px";
       text.textContent = `$${Math.round(priceVal).toLocaleString("es-MX")}`;
       svg.appendChild(text);
     }
 
     // Dibujar etiquetas de tiempo (X) - 3 puntos equidistantes
-    const xLabelCount = 3;
+    const xLabelCount = mobile ? 4 : 3;
     for (let i = 0; i < xLabelCount; i++) {
       const ts = xMin + (i / (xLabelCount - 1)) * (xMax - xMin);
       const x = getX(ts);
@@ -141,18 +198,21 @@ document.addEventListener("DOMContentLoaded", () => {
       text.setAttribute("text-anchor", i === 0 ? "start" : i === xLabelCount - 1 ? "end" : "middle");
       text.setAttribute("fill", "#64748b");
       text.style.fontFamily = "var(--font-barlow, sans-serif)";
-      text.style.fontSize = "11px";
+      text.style.fontSize = mobile ? "13px" : "11px";
 
       // Formato corto mes/año
       const months = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
-      text.textContent = `${months[date.getMonth()]} ${date.getFullYear().toString().slice(-2)}`;
+      text.textContent = mobile && !mobileLandscape
+        ? `${date.getDate()} ${months[date.getMonth()]}`
+        : `${months[date.getMonth()]} ${date.getFullYear().toString().slice(-2)}`;
       svg.appendChild(text);
     }
 
     // ── DIBUJAR LÍNEA Y ÁREA (con detección de gaps) ──
-    // Un gap es un intervalo de más de GAP_DAYS días sin dato registrado.
+    // En mobile portrait la serie se agrega por semanas, así que el umbral de
+    // gap debe ser mayor para no convertir toda la línea en conectores punteados.
     // En esos tramos se muestra un conector gris discontinuo y no se rellena el área.
-    const GAP_DAYS = 3;
+    const GAP_DAYS = mobile && !mobileLandscape ? 10 : 3;
     const MS_PER_DAY = 86400000;
 
     let solidPath = "";       // segmentos con datos reales (color)

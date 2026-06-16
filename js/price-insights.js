@@ -145,20 +145,20 @@
     </article>`;
   }
 
-  // ── Card resumen histórico (mín/máx de toda la serie) ───────────────────
+  // ── Card resumen histórico del último año ────────────────────────────────
   function buildSummaryCard(stats) {
     if (!stats) return '';
-    const minP = fmtPrice(stats.allTimeMinPrice);
-    const maxP = fmtPrice(stats.allTimeMaxPrice);
-    const avgP = fmtPrice(stats.allTimeAvgPrice);
-    const minD = fmtDateShort(stats.allTimeMinDate);
-    const maxD = fmtDateShort(stats.allTimeMaxDate);
+    const minP = fmtPrice(stats.yearMinPrice);
+    const maxP = fmtPrice(stats.yearMaxPrice);
+    const avgP = fmtPrice(stats.yearAvgPrice);
+    const minD = fmtDateShort(stats.yearMinDate);
+    const maxD = fmtDateShort(stats.yearMaxDate);
     const iconHistory = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>`;
     return `<article class="insight-card insight-card--summary" style="grid-column:1/-1">
       <div class="insight-header">
         <span class="insight-icon">${iconHistory}</span>
         <span class="insight-header-text">
-          <span class="insight-event-name">Lo más barato y lo más caro que hemos visto</span>
+          <span class="insight-event-name">Lo más caro y barato que hemos visto el último año</span>
         </span>
       </div>
       <div class="insight-body">
@@ -167,21 +167,21 @@
             <div class="insight-metric-label">⬇️ Precio más bajo</div>
             <div class="insight-metric-value" style="color:var(--success)">${minP}</div>
             <div class="insight-source-note" style="margin-top:4px">${minD}</div>
-            ${stats.allTimeMinStore ? `<div class="insight-source-note" style="margin-top:2px; font-weight: 500; color: var(--text-main);"><strong>${stats.allTimeMinStore}</strong></div>` : ''}
+            ${stats.yearMinStore ? `<div class="insight-source-note" style="margin-top:2px; font-weight: 500; color: var(--text-main);"><strong>${stats.yearMinStore}</strong></div>` : ''}
           </div>
           <div class="insight-metric">
             <div class="insight-metric-label">⬆️ Precio más alto</div>
             <div class="insight-metric-value">${maxP}</div>
             <div class="insight-source-note" style="margin-top:4px">${maxD}</div>
-            ${stats.allTimeMaxStore ? `<div class="insight-source-note" style="margin-top:2px; font-weight: 500; color: var(--text-main);"><strong>${stats.allTimeMaxStore}</strong></div>` : ''}
+            ${stats.yearMaxStore ? `<div class="insight-source-note" style="margin-top:2px; font-weight: 500; color: var(--text-main);"><strong>${stats.yearMaxStore}</strong></div>` : ''}
           </div>
           <div class="insight-metric">
-            <div class="insight-metric-label">Precio promedio</div>
+            <div class="insight-metric-label">Precio promedio del último año</div>
             <div class="insight-metric-value">${avgP}</div>
           </div>
           <div class="insight-metric">
             <div class="insight-metric-label">Tienda más barata habitualmente</div>
-            <div class="insight-metric-value"><strong>${stats.mostFrequentStore || '—'}</strong></div>
+            <div class="insight-metric-value"><strong>${stats.yearMostFrequentLowestStore || '—'}</strong></div>
           </div>
         </div>
       </div>
@@ -262,7 +262,7 @@
       })
       .then(function (data) {
         const insights = (data.events || {})[slug] || [];
-        const stats    = (data.seriesStats || {})[slug] || null;
+        const stats    = (data.stats || data.seriesStats || {})[slug] || null;
         if (!insights.length && !stats) {
           const section = document.getElementById('price-insights-section');
           if (section) section.style.display = 'none';

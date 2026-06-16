@@ -149,3 +149,18 @@
   width: 40%;
   margin-top: 8px;
 }
+
+@media (max-width: 768px) {
+  .home-skel-line,
+  .home-skel-price {
+    display: none;
+  }
+
+  .product-grid.fadein {
+    opacity: 1;
+  }
+
+  .product-card.home-card-reveal {
+    transition: opacity 0.35s ease-out, transform 0.35s ease-out, border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+}

@@ -1,6 +1,33 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const RECENT_THRESHOLD_MS = 24 * 60 * 60 * 1000; // 24 horas
 
+  function initMobileCardReveal() {
+    if (window.innerWidth > 768) return;
+
+    const grid = document.querySelector(".product-grid");
+    if (grid) {
+      grid.classList.remove("fadein");
+      grid.classList.add("visible");
+    }
+
+    const cards = document.querySelectorAll(".product-card");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.03,
+      rootMargin: "0px 0px 80px 0px",
+    });
+
+    cards.forEach((card) => {
+      card.classList.add("scrollup", "home-card-reveal");
+      observer.observe(card);
+    });
+  }
+
   try {
     const isLocal =
       location.hostname === "localhost" ||
@@ -101,6 +128,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         </a>
       `;
     });
+
+    initMobileCardReveal();
 
   } catch (error) {
     console.error("Error cargando consolas:", error);
