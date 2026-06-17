@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T01:10:02",
+  "generatedAt": "2026-06-17T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -210,62 +210,62 @@
       {
         "date": "2026-01-14",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-15",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-16",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-17",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-18",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-19",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-20",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-21",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-22",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-23",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-24",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-25",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-26",
@@ -280,12 +280,12 @@
       {
         "date": "2026-01-28",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-29",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Sanborns"
       },
       {
         "date": "2026-01-30",
@@ -310,7 +310,7 @@
       {
         "date": "2026-02-03",
         "price": 10879.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-02-04",
@@ -515,12 +515,12 @@
       {
         "date": "2026-03-21",
         "price": 10699.0,
-        "store": "Coppel"
+        "store": "Amazon"
       },
       {
         "date": "2026-03-22",
         "price": 10699.0,
-        "store": "Coppel"
+        "store": "Amazon"
       },
       {
         "date": "2026-03-23",
@@ -919,8 +919,13 @@
       },
       {
         "date": "2026-06-16",
-        "price": 9290.0,
-        "store": "Amazon"
+        "price": 8999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-06-17",
+        "price": 11290.0,
+        "store": "Soriana"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -1282,22 +1287,22 @@
       {
         "date": "2026-01-27",
         "price": 11499.0,
-        "store": "Elektra"
+        "store": "Coppel"
       },
       {
         "date": "2026-01-28",
         "price": 11499.0,
-        "store": "Elektra"
+        "store": "Amazon"
       },
       {
         "date": "2026-01-29",
         "price": 11499.0,
-        "store": "Elektra"
+        "store": "Amazon"
       },
       {
         "date": "2026-01-30",
         "price": 11499.0,
-        "store": "Elektra"
+        "store": "Amazon"
       },
       {
         "date": "2026-01-31",
@@ -1926,8 +1931,13 @@
       },
       {
         "date": "2026-06-16",
-        "price": 10650.0,
-        "store": "Amazon"
+        "price": 10499.0,
+        "store": "Coppel"
+      },
+      {
+        "date": "2026-06-17",
+        "price": 12390.0,
+        "store": "Soriana"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -3927,6 +3937,11 @@
         "date": "2026-06-16",
         "price": 5899.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-06-17",
+        "price": 5990.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -4043,7 +4058,7 @@
       {
         "date": "2025-12-26",
         "price": 8459.0,
-        "store": "Coppel"
+        "store": "Amazon"
       },
       {
         "date": "2025-12-27",
@@ -4842,8 +4857,13 @@
       },
       {
         "date": "2026-06-16",
-        "price": 14999.0,
-        "store": "Walmart"
+        "price": 9989.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-06-17",
+        "price": 9990.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -5834,8 +5854,13 @@
       },
       {
         "date": "2026-06-16",
-        "price": 21999.0,
-        "store": "Walmart"
+        "price": 13999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-06-17",
+        "price": 20690.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -7911,52 +7936,52 @@
       {
         "date": "2025-12-03",
         "price": 10999.0,
-        "store": "Walmart"
+        "store": "Amazon"
       },
       {
         "date": "2025-12-04",
         "price": 10999.0,
-        "store": "Walmart"
+        "store": "Amazon"
       },
       {
         "date": "2025-12-05",
         "price": 10999.0,
-        "store": "Walmart"
+        "store": "Amazon"
       },
       {
         "date": "2025-12-06",
         "price": 10999.0,
-        "store": "Walmart"
+        "store": "Amazon"
       },
       {
         "date": "2025-12-07",
         "price": 10999.0,
-        "store": "Walmart"
+        "store": "Amazon"
       },
       {
         "date": "2025-12-08",
         "price": 10999.0,
-        "store": "Walmart"
+        "store": "Amazon"
       },
       {
         "date": "2025-12-09",
         "price": 10999.0,
-        "store": "Walmart"
+        "store": "Amazon"
       },
       {
         "date": "2025-12-10",
         "price": 10999.0,
-        "store": "Walmart"
+        "store": "Amazon"
       },
       {
         "date": "2025-12-11",
         "price": 10999.0,
-        "store": "Walmart"
+        "store": "Amazon"
       },
       {
         "date": "2025-12-12",
         "price": 10999.0,
-        "store": "Walmart"
+        "store": "Amazon"
       },
       {
         "date": "2025-12-13",
@@ -8651,32 +8676,32 @@
       {
         "date": "2026-05-05",
         "price": 13999.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-05-06",
         "price": 13999.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-05-07",
         "price": 13999.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-05-08",
         "price": 13999.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-05-09",
         "price": 13999.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-05-10",
         "price": 13999.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-05-11",
@@ -8686,22 +8711,22 @@
       {
         "date": "2026-05-12",
         "price": 13999.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-05-13",
         "price": 13999.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-05-14",
         "price": 13999.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-05-15",
         "price": 13999.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-05-16",
@@ -8711,7 +8736,7 @@
       {
         "date": "2026-05-17",
         "price": 13999.0,
-        "store": "Sears"
+        "store": "Liverpool"
       },
       {
         "date": "2026-05-18",
@@ -9827,8 +9852,13 @@
       },
       {
         "date": "2026-06-16",
-        "price": 16599.0,
-        "store": "Walmart"
+        "price": 14299.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-06-17",
+        "price": 15690.0,
+        "store": "Soriana"
       }
     ]
   }
