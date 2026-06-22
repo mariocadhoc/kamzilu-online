@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T01:10:03",
+  "generatedAt": "2026-06-22T01:10:02",
   "series": {
     "nintendo-switch-2": [
       {
@@ -944,7 +944,12 @@
       },
       {
         "date": "2026-06-21",
-        "price": 9290.0,
+        "price": 8999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-06-22",
+        "price": 10339.0,
         "store": "Amazon"
       }
     ],
@@ -1976,7 +1981,12 @@
       },
       {
         "date": "2026-06-21",
-        "price": 10605.0,
+        "price": 10495.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-06-22",
+        "price": 10485.0,
         "store": "Amazon"
       }
     ],
@@ -2998,6 +3008,11 @@
       },
       {
         "date": "2026-06-21",
+        "price": 2899.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-06-22",
         "price": 2899.0,
         "store": "Walmart"
       }
@@ -4027,6 +4042,11 @@
         "date": "2026-06-21",
         "price": 5899.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-06-22",
+        "price": 5899.0,
+        "store": "Amazon"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -4967,8 +4987,13 @@
       },
       {
         "date": "2026-06-21",
-        "price": 9999.0,
-        "store": "Elektra"
+        "price": 9990.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-06-22",
+        "price": 9990.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -5984,8 +6009,13 @@
       },
       {
         "date": "2026-06-21",
-        "price": 20199.0,
-        "store": "Elektra"
+        "price": 13999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-06-22",
+        "price": 20499.0,
+        "store": "Walmart"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -7001,6 +7031,11 @@
       },
       {
         "date": "2026-06-21",
+        "price": 8999.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-06-22",
         "price": 8999.0,
         "store": "Walmart"
       }
@@ -8030,6 +8065,11 @@
         "date": "2026-06-21",
         "price": 6999.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-06-22",
+        "price": 6999.0,
+        "store": "Walmart"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -9052,6 +9092,11 @@
         "date": "2026-06-21",
         "price": 12003.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-06-22",
+        "price": 12519.0,
+        "store": "Walmart"
       }
     ],
     "xbox-series-x-negro-1tb": [
@@ -10077,6 +10122,11 @@
       },
       {
         "date": "2026-06-21",
+        "price": 8599.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-06-22",
         "price": 8599.0,
         "store": "Walmart"
       }
