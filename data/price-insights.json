@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T01:10:03",
+  "generatedAt": "2026-06-30T01:10:03",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -30,7 +30,7 @@
       "yearMaxPrice": 11919.2,
       "yearMaxDate": "2025-11-18",
       "yearMaxStore": "Desconocida",
-      "yearAvgPrice": 10762.41,
+      "yearAvgPrice": 10761.24,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-lite-yellow": {
@@ -72,7 +72,7 @@
       "yearMaxPrice": 11999.99,
       "yearMaxDate": "2026-03-25",
       "yearMaxStore": "GamePlanet",
-      "yearAvgPrice": 9934.87,
+      "yearAvgPrice": 9929.76,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "playstation-5-pro-digital-2tb": {

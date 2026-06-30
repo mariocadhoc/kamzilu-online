@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T01:10:02",
+  "generatedAt": "2026-06-30T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -2056,8 +2056,8 @@
       },
       {
         "date": "2026-06-29",
-        "price": 10249.0,
-        "store": "Amazon"
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -5167,8 +5167,8 @@
       },
       {
         "date": "2026-06-29",
-        "price": 10999.99,
-        "store": "GamePlanet"
+        "price": 9999.0,
+        "store": "Elektra"
       }
     ],
     "playstation-5-pro-digital-2tb": [
