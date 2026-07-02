@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T01:10:03",
+  "generatedAt": "2026-07-02T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -994,8 +994,13 @@
       },
       {
         "date": "2026-07-01",
-        "price": 11299.0,
-        "store": "Amazon"
+        "price": 8999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-07-02",
+        "price": 10499.0,
+        "store": "Walmart"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -2076,7 +2081,12 @@
       },
       {
         "date": "2026-07-01",
-        "price": 10899.0,
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-07-02",
+        "price": 10365.0,
         "store": "Amazon"
       }
     ],
@@ -3148,6 +3158,11 @@
       },
       {
         "date": "2026-07-01",
+        "price": 2899.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-07-02",
         "price": 2899.0,
         "store": "Walmart"
       }
@@ -4225,7 +4240,12 @@
       },
       {
         "date": "2026-07-01",
-        "price": 5649.0,
+        "price": 5646.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-07-02",
+        "price": 5646.0,
         "store": "Amazon"
       }
     ],
@@ -5217,8 +5237,13 @@
       },
       {
         "date": "2026-07-01",
-        "price": 14999.0,
-        "store": "Walmart"
+        "price": 10019.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-07-02",
+        "price": 10019.0,
+        "store": "Elektra"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -6284,6 +6309,11 @@
       },
       {
         "date": "2026-07-01",
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-07-02",
         "price": 19599.0,
         "store": "Walmart"
       }
@@ -7351,6 +7381,11 @@
       },
       {
         "date": "2026-07-01",
+        "price": 8999.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-07-02",
         "price": 8999.0,
         "store": "Walmart"
       }
@@ -8430,6 +8465,11 @@
         "date": "2026-07-01",
         "price": 6999.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-07-02",
+        "price": 6999.0,
+        "store": "Walmart"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -9497,6 +9537,16 @@
         "date": "2026-06-30",
         "price": 13299.99,
         "store": "GamePlanet"
+      },
+      {
+        "date": "2026-07-01",
+        "price": 13299.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-07-02",
+        "price": 13999.0,
+        "store": "Sears"
       }
     ],
     "xbox-series-x-negro-1tb": [
@@ -10572,6 +10622,11 @@
       },
       {
         "date": "2026-07-01",
+        "price": 8599.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-07-02",
         "price": 8599.0,
         "store": "Walmart"
       }
