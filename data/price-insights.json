@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T01:10:03",
+  "generatedAt": "2026-07-03T01:10:03",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -16,7 +16,7 @@
       "yearMaxPrice": 10879.0,
       "yearMaxDate": "2026-01-14",
       "yearMaxStore": "Sanborns",
-      "yearAvgPrice": 9764.67,
+      "yearAvgPrice": 9757.17,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+mario-kart-bundle": {
@@ -30,7 +30,7 @@
       "yearMaxPrice": 11919.2,
       "yearMaxDate": "2025-11-18",
       "yearMaxStore": "Desconocida",
-      "yearAvgPrice": 10752.4,
+      "yearAvgPrice": 10750.72,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-lite-yellow": {
@@ -83,10 +83,10 @@
       "yearMinPrice": 9999.99,
       "yearMinDate": "2026-06-24",
       "yearMinStore": "GamePlanet",
-      "yearMaxPrice": 19599.0,
-      "yearMaxDate": "2026-07-02",
-      "yearMaxStore": "Walmart",
-      "yearAvgPrice": 17417.79,
+      "yearMaxPrice": 19299.99,
+      "yearMaxDate": "2026-02-02",
+      "yearMaxStore": "GamePlanet",
+      "yearAvgPrice": 17372.93,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "playstation-5-slim-blanco-estandar-1tb": {
@@ -122,13 +122,13 @@
       "windowStartDate": "2025-07-03",
       "windowEndDate": "2026-07-02",
       "windowPointCount": 215,
-      "yearMinPrice": 9882.0,
-      "yearMinDate": "2026-05-11",
+      "yearMinPrice": 7444.0,
+      "yearMinDate": "2026-07-02",
       "yearMinStore": "Amazon",
       "yearMaxPrice": 13999.0,
       "yearMaxDate": "2025-11-18",
       "yearMaxStore": "Desconocida",
-      "yearAvgPrice": 11687.39,
+      "yearAvgPrice": 11656.9,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "xbox-series-x-negro-1tb": {

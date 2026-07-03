@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T01:10:03",
+  "generatedAt": "2026-07-03T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -999,8 +999,8 @@
       },
       {
         "date": "2026-07-02",
-        "price": 10499.0,
-        "store": "Walmart"
+        "price": 8999.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -2086,8 +2086,8 @@
       },
       {
         "date": "2026-07-02",
-        "price": 10365.0,
-        "store": "Amazon"
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -6314,8 +6314,8 @@
       },
       {
         "date": "2026-07-02",
-        "price": 19599.0,
-        "store": "Walmart"
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -9545,8 +9545,8 @@
       },
       {
         "date": "2026-07-02",
-        "price": 13999.0,
-        "store": "Sears"
+        "price": 7444.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-x-negro-1tb": [
