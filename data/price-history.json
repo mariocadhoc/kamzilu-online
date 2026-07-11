@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T01:10:03",
+  "generatedAt": "2026-07-11T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1039,8 +1039,13 @@
       },
       {
         "date": "2026-07-10",
-        "price": 11290.0,
-        "store": "Soriana"
+        "price": 8999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-07-11",
+        "price": 9248.0,
+        "store": "Walmart"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -2166,8 +2171,13 @@
       },
       {
         "date": "2026-07-10",
-        "price": 12390.0,
-        "store": "Soriana"
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-07-11",
+        "price": 11699.0,
+        "store": "Coppel"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -3278,6 +3288,16 @@
       },
       {
         "date": "2026-07-09",
+        "price": 2899.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-07-10",
+        "price": 2899.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-07-11",
         "price": 2899.0,
         "store": "Walmart"
       }
@@ -4400,8 +4420,13 @@
       },
       {
         "date": "2026-07-10",
-        "price": 5990.0,
-        "store": "Soriana"
+        "price": 5646.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-07-11",
+        "price": 5646.0,
+        "store": "Amazon"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -5437,8 +5462,13 @@
       },
       {
         "date": "2026-07-10",
-        "price": 11590.0,
-        "store": "Soriana"
+        "price": 9999.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-07-11",
+        "price": 14699.0,
+        "store": "Walmart"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -6549,8 +6579,13 @@
       },
       {
         "date": "2026-07-10",
-        "price": 20690.0,
-        "store": "Soriana"
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-07-11",
+        "price": 19599.0,
+        "store": "Walmart"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -7656,6 +7691,16 @@
       },
       {
         "date": "2026-07-09",
+        "price": 8999.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-07-10",
+        "price": 8999.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-07-11",
         "price": 8999.0,
         "store": "Walmart"
       }
@@ -8775,6 +8820,16 @@
         "date": "2026-07-09",
         "price": 6999.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-07-10",
+        "price": 6999.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-07-11",
+        "price": 6999.0,
+        "store": "Walmart"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -9887,6 +9942,16 @@
         "date": "2026-07-09",
         "price": 13999.0,
         "store": "Sears"
+      },
+      {
+        "date": "2026-07-10",
+        "price": 13999.0,
+        "store": "Sears"
+      },
+      {
+        "date": "2026-07-11",
+        "price": 14959.0,
+        "store": "Walmart"
       }
     ],
     "xbox-series-x-negro-1tb": [
@@ -11007,8 +11072,13 @@
       },
       {
         "date": "2026-07-10",
-        "price": 15690.0,
-        "store": "Soriana"
+        "price": 14299.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-07-11",
+        "price": 15119.0,
+        "store": "Walmart"
       }
     ]
   }
