@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T01:10:02",
+  "generatedAt": "2026-07-27T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -2326,8 +2326,8 @@
       },
       {
         "date": "2026-07-26",
-        "price": 13757.0,
-        "store": "Amazon"
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -4725,8 +4725,8 @@
       },
       {
         "date": "2026-07-26",
-        "price": 5999.0,
-        "store": "Amazon"
+        "price": 5990.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -5842,8 +5842,8 @@
       },
       {
         "date": "2026-07-26",
-        "price": 14699.0,
-        "store": "Walmart"
+        "price": 10999.0,
+        "store": "Elektra"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -7034,8 +7034,8 @@
       },
       {
         "date": "2026-07-26",
-        "price": 19599.0,
-        "store": "Walmart"
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -11827,8 +11827,8 @@
       },
       {
         "date": "2026-07-26",
-        "price": 14499.0,
-        "store": "Walmart"
+        "price": 14299.0,
+        "store": "Elektra"
       }
     ]
   }
