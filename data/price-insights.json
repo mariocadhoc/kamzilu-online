@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T01:10:03",
+  "generatedAt": "2026-08-09T01:10:03",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -27,10 +27,10 @@
       "yearMinPrice": 9649.0,
       "yearMinDate": "2026-02-16",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 13753.0,
-      "yearMaxDate": "2026-08-08",
-      "yearMaxStore": "Amazon",
-      "yearAvgPrice": 10684.48,
+      "yearMaxPrice": 11919.2,
+      "yearMaxDate": "2025-11-18",
+      "yearMaxStore": "Desconocida",
+      "yearAvgPrice": 10672.07,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-lite-yellow": {
@@ -58,7 +58,7 @@
       "yearMaxPrice": 7299.99,
       "yearMaxDate": "2026-04-24",
       "yearMaxStore": "GamePlanet",
-      "yearAvgPrice": 5810.62,
+      "yearAvgPrice": 5809.79,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "playstation-5-digital-1tb-astrobot-gt7": {
@@ -69,10 +69,10 @@
       "yearMinPrice": 7954.0,
       "yearMinDate": "2026-01-05",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 14699.0,
-      "yearMaxDate": "2026-08-08",
-      "yearMaxStore": "Walmart",
-      "yearAvgPrice": 10033.62,
+      "yearMaxPrice": 11999.99,
+      "yearMaxDate": "2026-03-25",
+      "yearMaxStore": "GamePlanet",
+      "yearAvgPrice": 10017.94,
       "yearMostFrequentLowestStore": "Elektra"
     },
     "playstation-5-pro-digital-2tb": {
@@ -83,10 +83,10 @@
       "yearMinPrice": 9999.99,
       "yearMinDate": "2026-06-24",
       "yearMinStore": "GamePlanet",
-      "yearMaxPrice": 19599.0,
-      "yearMaxDate": "2026-08-08",
-      "yearMaxStore": "Walmart",
-      "yearAvgPrice": 16324.33,
+      "yearMaxPrice": 19299.99,
+      "yearMaxDate": "2026-02-02",
+      "yearMaxStore": "GamePlanet",
+      "yearAvgPrice": 16286.08,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "playstation-5-slim-blanco-estandar-1tb": {
@@ -142,7 +142,7 @@
       "yearMaxPrice": 15699.0,
       "yearMaxDate": "2025-11-18",
       "yearMaxStore": "Desconocida",
-      "yearAvgPrice": 12522.66,
+      "yearAvgPrice": 12521.87,
       "yearMostFrequentLowestStore": "Amazon"
     }
   },
