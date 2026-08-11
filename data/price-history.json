@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T01:10:03",
+  "generatedAt": "2026-08-11T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1196,6 +1196,11 @@
         "date": "2026-08-10",
         "price": 8999.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-08-11",
+        "price": 10799.0,
+        "store": "Elektra"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -2476,8 +2481,13 @@
       },
       {
         "date": "2026-08-10",
-        "price": 13753.0,
-        "store": "Amazon"
+        "price": 10599.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-08-11",
+        "price": 11499.0,
+        "store": "Elektra"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -5025,8 +5035,13 @@
       },
       {
         "date": "2026-08-10",
-        "price": 6199.0,
-        "store": "Walmart"
+        "price": 5990.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-08-11",
+        "price": 8299.0,
+        "store": "Sears"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -6217,8 +6232,13 @@
       },
       {
         "date": "2026-08-10",
-        "price": 14699.0,
-        "store": "Walmart"
+        "price": 10999.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-08-11",
+        "price": 10999.0,
+        "store": "Elektra"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -7484,8 +7504,13 @@
       },
       {
         "date": "2026-08-10",
-        "price": 19599.0,
-        "store": "Walmart"
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-08-11",
+        "price": 20499.0,
+        "store": "Elektra"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -8753,6 +8778,11 @@
         "date": "2026-08-10",
         "price": 8999.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-08-11",
+        "price": 9269.0,
+        "store": "Elektra"
       }
     ],
     "xbox-series-s": [
@@ -10030,6 +10060,11 @@
         "date": "2026-08-10",
         "price": 6999.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-08-11",
+        "price": 8999.0,
+        "store": "Elektra"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -11302,6 +11337,11 @@
         "date": "2026-08-10",
         "price": 10999.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-08-11",
+        "price": 15999.0,
+        "store": "Elektra"
       }
     ],
     "xbox-series-x-negro-1tb": [
@@ -12577,8 +12617,13 @@
       },
       {
         "date": "2026-08-10",
-        "price": 14499.0,
-        "store": "Walmart"
+        "price": 14299.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-08-11",
+        "price": 14299.0,
+        "store": "Elektra"
       }
     ]
   }
