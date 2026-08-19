@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T01:10:03",
+  "generatedAt": "2026-08-19T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1236,6 +1236,11 @@
         "date": "2026-08-18",
         "price": 8999.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-08-19",
+        "price": 9999.0,
+        "store": "Amazon"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -2556,8 +2561,8 @@
       },
       {
         "date": "2026-08-18",
-        "price": 12390.0,
-        "store": "Soriana"
+        "price": 10599.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -6417,8 +6422,8 @@
       },
       {
         "date": "2026-08-18",
-        "price": 11590.0,
-        "store": "Soriana"
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -7724,8 +7729,8 @@
       },
       {
         "date": "2026-08-18",
-        "price": 19599.0,
-        "store": "Walmart"
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -9033,6 +9038,11 @@
         "date": "2026-08-18",
         "price": 8999.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-08-19",
+        "price": 10851.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-s": [
@@ -12977,8 +12987,8 @@
       },
       {
         "date": "2026-08-18",
-        "price": 14499.0,
-        "store": "Walmart"
+        "price": 14299.0,
+        "store": "Elektra"
       }
     ]
   }
