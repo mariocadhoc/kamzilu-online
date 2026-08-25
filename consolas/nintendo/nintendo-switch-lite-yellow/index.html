@@ -88,11 +88,57 @@
         "@type": "AggregateOffer",
         "priceCurrency": "MXN",
         "lowPrice": 2899.0,
-        "highPrice": 7410.0,
+        "highPrice": 7410,
         "offerCount": 4,
         "availability": "https://schema.org/InStock",
         "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-lite-yellow/",
-        "priceValidUntil": "2026-08-26T23:59:59-06:00"
+        "priceValidUntil": "2026-08-26T23:59:59-06:00",
+        "offers": [
+          {
+            "@type": "Offer",
+            "url": "https://www.walmart.com.mx/ip/consola-nintendo-switch-lite-amarilla/00004549688230",
+            "priceCurrency": "MXN",
+            "price": 2899.0,
+            "seller": {
+              "@type": "Organization",
+              "name": "Walmart"
+            },
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "url": "https://gameplanet.com/producto/consola-nintendo-switch-lite-32gb-amarillo-nsw/",
+            "priceCurrency": "MXN",
+            "price": 2999.99,
+            "seller": {
+              "@type": "Organization",
+              "name": "GamePlanet"
+            },
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "url": "https://www.mercadolibre.com.mx/nintendo-liteswitch-lite-32gb-standard-color-amarillo-2019/p/MLM15191029",
+            "priceCurrency": "MXN",
+            "price": 5199.0,
+            "seller": {
+              "@type": "Organization",
+              "name": "MercadoLibre"
+            },
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "url": "https://www.amazon.com.mx/Nintendo-Switch-Lite-Amarillo-Est%C3%A1ndar/dp/B07V3G6C1F",
+            "priceCurrency": "MXN",
+            "price": 7410,
+            "seller": {
+              "@type": "Organization",
+              "name": "Amazon"
+            },
+            "availability": "https://schema.org/InStock"
+          }
+        ]
       }
     },
     {
@@ -124,11 +170,24 @@
       "url": "https://kamzilu.com/consolas/nintendo/nintendo-switch-lite-yellow/",
       "name": "Nintendo Switch Lite Yellow - Precio en México | Kamzilu",
       "inLanguage": "es-MX",
-      "dateModified": "2026-06-03",
+      "dateModified": "2026-08-25",
       "isPartOf": {
         "@type": "WebSite",
         "url": "https://kamzilu.com/"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Dónde está más barata la Nintendo Switch Lite - Yellow hoy en México?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Al momento de esta actualización, el precio más bajo de la Nintendo Switch Lite - Yellow en México es de $2,899.00 MXN en Walmart. Kamzilu compara 4 tiendas en tiempo real; los precios pueden cambiar, así que el precio final válido es siempre el que aparece en la tienda al momento de pagar."
+          }
+        }
+      ]
     }
   ]
 }
@@ -266,16 +325,16 @@
   </div>
 
   <!-- HERO MEJOR PRECIO -->
-  <div class="pdp-hero-price-block scrollup delay-1" id="hero-price-container" style="display:none;" itemprop="offers"
+  <div class="pdp-hero-price-block scrollup delay-1 visible" id="hero-price-container" itemprop="offers"
     itemscope itemtype="https://schema.org/AggregateOffer">
 
     <!-- Col Store -->
     <div class="col-store">
-      <img id="hero-store-logo" src="" alt="Tienda con mejor precio" class="store-logo-img">
+      <img id="hero-store-logo" src="/img/resources/stores/walmart_logo-mobile.webp" alt="Logo de Walmart" class="store-logo-img">
 
       <div class="store-meta">
-        <span id="hero-store-name" class="store-name-text"></span>
-        <span id="hero-update-time" class="update-time"></span>
+        <span id="hero-store-name" class="store-name-text">Walmart <span class="freq-badge" data-tooltip="⚡️ El precio de esta tienda cambia varias veces al día." style="cursor: help; font-size: 1.1em;">⚡</span></span>
+        <span id="hero-update-time" class="update-time status-fresh">Hace 2 h</span>
       </div>
     </div>
 
@@ -287,7 +346,7 @@
 
       <div class="hero-price-wrapper">
         <span class="currency">$</span>
-        <span id="hero-best-price-val" class="big-number" itemprop="lowPrice">---</span>
+        <span id="hero-best-price-val" class="big-number" itemprop="lowPrice">2,899<span class="price-decimals">00</span></span>
       </div>
 
       <meta itemprop="priceCurrency" content="MXN">
@@ -295,13 +354,15 @@
 
     <!-- Col CTA -->
     <div class="col-action">
-      <a href="#" id="hero-btn-link" target="_blank" rel="nofollow noopener" class="hero-cta-btn"
+      <a href="https://www.walmart.com.mx/ip/consola-nintendo-switch-lite-amarilla/00004549688230" id="hero-btn-link" target="_blank" rel="nofollow noopener" class="hero-cta-btn"
         aria-label="Ir a la tienda para ver la oferta">
         VER <span class="arrow">→</span>
       </a>
     </div>
 
   </div>
+
+    <p class="pdp-geo-price-sentence" style="margin:8px 0 0; font-size:0.95rem; color:var(--text-muted, inherit);">El precio más bajo detectado para la Nintendo Switch Lite - Yellow es $2,899.00 MXN en <strong>Walmart</strong> (hace 2 h).</p>
 
   <!-- LISTA DE PRECIOS -->
   <div class="pdp-prices-section scrollup delay-2">
@@ -310,7 +371,67 @@
     </h2>
 
     <div id="price-cards" class="pdp-price-list">
-      <!-- Inyectado por JS -->
+      <div class="price-row recent">
+        <div class="col-store">
+          <img src="/img/resources/stores/gameplanet_logo-mobile.webp" alt="Logo de GamePlanet" class="store-logo-img" width="100" height="50" loading="lazy">
+          <div class="store-meta">
+            <span class="store-name-text">GamePlanet</span>
+            <span class="update-time status-fresh">Hace 1 h</span>
+          </div>
+        </div>
+        <div class="col-price">
+          <span class="price-val-row">$2,999<span class="price-decimals">99</span></span>
+        </div>
+        <div class="col-action">
+          <a href="https://gameplanet.com/producto/consola-nintendo-switch-lite-32gb-amarillo-nsw/" target="_blank" class="btn-go-store">Ver &gt;</a>
+        </div>
+      </div>
+      <div class="price-row recent">
+        <div class="col-store">
+          <img src="/img/resources/stores/mercado-libre-logo-mobile.webp" alt="Logo de MercadoLibre" class="store-logo-img" width="100" height="50" loading="lazy">
+          <div class="store-meta">
+            <span class="store-name-text">MercadoLibre <span class="freq-badge" data-tooltip="⚡️ El precio de esta tienda cambia varias veces al día." style="cursor: help; font-size: 1.1em;">⚡</span></span>
+            <span class="update-time status-fresh">Hace 1 h</span>
+          </div>
+        </div>
+        <div class="col-price">
+          <span class="price-val-row">$5,199<span class="price-decimals">00</span></span>
+        </div>
+        <div class="col-action">
+          <a href="https://www.mercadolibre.com.mx/nintendo-liteswitch-lite-32gb-standard-color-amarillo-2019/p/MLM15191029" target="_blank" class="btn-go-store">Ver &gt;</a>
+        </div>
+      </div>
+      <div class="price-row recent">
+        <div class="col-store">
+          <img src="/img/resources/stores/amazon-com-mx-logo-mobile.webp" alt="Logo de Amazon" class="store-logo-img" width="100" height="50" loading="lazy">
+          <div class="store-meta">
+            <span class="store-name-text">Amazon <span class="freq-badge" data-tooltip="⚡️ El precio de esta tienda cambia varias veces al día." style="cursor: help; font-size: 1.1em;">⚡</span></span>
+            <span class="update-time status-fresh">Hace 59 min</span>
+          </div>
+        </div>
+        <div class="col-price">
+          <span class="price-val-row">$7,410<span class="price-decimals">00</span></span>
+        </div>
+        <div class="col-action">
+          <a href="https://www.amazon.com.mx/Nintendo-Switch-Lite-Amarillo-Est%C3%A1ndar/dp/B07V3G6C1F" target="_blank" class="btn-go-store">Ver &gt;</a>
+        </div>
+      </div>
+      <div class="separator-text">Sin disponibilidad detectada</div>
+      <div class="price-row unavailable">
+        <div class="col-store">
+          <img src="/img/resources/stores/elektra_logo-mobile.webp" alt="Logo de Elektra" class="store-logo-img" width="100" height="50" loading="lazy">
+          <div class="store-meta">
+            <span class="store-name-text">Elektra</span>
+            <span class="update-time status-unavailable">Podría no haber en stock</span>
+          </div>
+        </div>
+        <div class="col-price">
+          <span class="price-val-row">Stock No Detectado</span>
+        </div>
+        <div class="col-action">
+          <a href="https://www.elektra.mx/nintendo-switch-lite-mini-nsl-amarilla-1300390889/p" target="_blank" class="btn-go-store">Ver &gt;</a>
+        </div>
+      </div>
     </div>
   </div>
 
