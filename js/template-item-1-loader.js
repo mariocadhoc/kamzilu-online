@@ -69,7 +69,14 @@ function getUpdateTimeInfo(lastUpdated, category) {
 // =========================================================
 
 async function loadConsoleData() {
-  const RECENT_THRESHOLD_MS = 7 * 24 * 60 * 60 * 1000; // 7 días de vigencia
+  // El scraper más lento (Coppel) actualiza cada 12h como máximo (ver
+  // backend/scrapers/core/store_config.py). 48h = 4x ese intervalo: da
+  // margen de sobra para un ciclo fallido, un reintento, o un fin de semana
+  // lento, sin dejar pasar semanas de datos congelados como "recientes".
+  // Antes esto eran 7 días — una tienda podía llevar 6 días completos rota
+  // y aun así contar como "reciente" aquí (ni siquiera se le ponía la
+  // etiqueta de viejo), justo el problema que se quería evitar.
+  const RECENT_THRESHOLD_MS = 48 * 60 * 60 * 1000;
 
   try {
     function getSlug() {
@@ -190,7 +197,24 @@ async function loadConsoleData() {
 
     valid.sort((a, b) => a.price - b.price);
 
-    const heroItem = valid.length > 0 ? valid[0] : null;
+    // El "hero" (el precio grande y prominente) debe ser el más barato entre
+    // los precios RECIENTES. Antes se tomaba el más barato de TODOS los
+    // precios sin importar su antigüedad — el sistema de frescura (_isRecent)
+    // ya calculaba y hasta mostraba la etiqueta "Hace 3 meses", pero nada
+    // impedía que ese precio congelado ganara el lugar principal si resultaba
+    // ser el más bajo. Una tienda que llevara meses sin actualizarse podía así
+    // "ganarle" el hero a una tienda con datos frescos de hoy mismo.
+    //
+    // Con esto: si hay al menos un precio reciente, el hero sale de ahí
+    // (valid ya está ordenado por precio, así que el filtro preserva el
+    // orden). Solo si TODAS las tiendas están desactualizadas se recurre al
+    // precio más barato general — y como ya se muestra con su etiqueta
+    // "status-old" real, sigue siendo honesto con el usuario, nunca oculta
+    // que el dato es viejo.
+    const recentValid = valid.filter(p => p._isRecent);
+    const heroItem = recentValid.length > 0
+      ? recentValid[0]
+      : (valid.length > 0 ? valid[0] : null);
 
     // =====================================================
     // RENDER HERO
