@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T15:05:13",
+  "generatedAt": "2026-08-25T15:06:52",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -165,6 +165,22 @@
         "changeVsPreEventAvgPercent": -4.28
       },
       {
+        "eventId": "prime-day-2026",
+        "eventName": "Prime Day 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-06-16",
+        "preEventBaselineEnd": "2026-06-22",
+        "preEventBaselinePointCount": 7,
+        "status": "relevant_drop",
+        "eventMinPrice": 8499.0,
+        "eventMinDate": "2026-06-23",
+        "eventMinStore": "Amazon",
+        "preEventAvgPrice": 8999.99,
+        "changeVsPreEventAvgPercent": -5.57
+      },
+      {
         "eventId": "hot-sale-2025",
         "eventName": "Hot Sale 2025",
         "start": "2025-05-26",
@@ -261,6 +277,22 @@
         "eventMinStore": "Soriana",
         "preEventAvgPrice": 10567.0,
         "changeVsPreEventAvgPercent": -5.46
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Prime Day 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-06-16",
+        "preEventBaselineEnd": "2026-06-22",
+        "preEventBaselinePointCount": 7,
+        "status": "relevant_drop",
+        "eventMinPrice": 10199.0,
+        "eventMinDate": "2026-06-23",
+        "eventMinStore": "Amazon",
+        "preEventAvgPrice": 10518.28,
+        "changeVsPreEventAvgPercent": -3.04
       },
       {
         "eventId": "hot-sale-2025",
@@ -361,6 +393,22 @@
         "changeVsPreEventAvgPercent": -22.84
       },
       {
+        "eventId": "prime-day-2026",
+        "eventName": "Prime Day 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-06-16",
+        "preEventBaselineEnd": "2026-06-22",
+        "preEventBaselinePointCount": 7,
+        "status": "no_relevant_change",
+        "eventMinPrice": 2899.0,
+        "eventMinDate": "2026-06-23",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 2899.0,
+        "changeVsPreEventAvgPercent": 0.0
+      },
+      {
         "eventId": "hot-sale-2025",
         "eventName": "Hot Sale 2025",
         "start": "2025-05-26",
@@ -457,6 +505,22 @@
         "eventMinStore": "Amazon",
         "preEventAvgPrice": 6150.0,
         "changeVsPreEventAvgPercent": -8.37
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Prime Day 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-06-16",
+        "preEventBaselineEnd": "2026-06-22",
+        "preEventBaselinePointCount": 7,
+        "status": "relevant_drop",
+        "eventMinPrice": 5649.0,
+        "eventMinDate": "2026-06-24",
+        "eventMinStore": "Amazon",
+        "preEventAvgPrice": 5870.43,
+        "changeVsPreEventAvgPercent": -3.77
       },
       {
         "eventId": "hot-sale-2025",
@@ -557,6 +621,22 @@
         "changeVsPreEventAvgPercent": -17.2
       },
       {
+        "eventId": "prime-day-2026",
+        "eventName": "Prime Day 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-06-16",
+        "preEventBaselineEnd": "2026-06-22",
+        "preEventBaselinePointCount": 7,
+        "status": "no_relevant_change",
+        "eventMinPrice": 9999.0,
+        "eventMinDate": "2026-06-23",
+        "eventMinStore": "Elektra",
+        "preEventAvgPrice": 9991.14,
+        "changeVsPreEventAvgPercent": 0.08
+      },
+      {
         "eventId": "hot-sale-2025",
         "eventName": "Hot Sale 2025",
         "start": "2025-05-26",
@@ -653,6 +733,22 @@
         "eventMinStore": "GamePlanet",
         "preEventAvgPrice": 13999.99,
         "changeVsPreEventAvgPercent": -0.0
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Prime Day 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-06-16",
+        "preEventBaselineEnd": "2026-06-22",
+        "preEventBaselinePointCount": 7,
+        "status": "strong_drop",
+        "eventMinPrice": 9999.99,
+        "eventMinDate": "2026-06-24",
+        "eventMinStore": "GamePlanet",
+        "preEventAvgPrice": 13714.28,
+        "changeVsPreEventAvgPercent": -27.08
       },
       {
         "eventId": "hot-sale-2025",
@@ -753,6 +849,22 @@
         "changeVsPreEventAvgPercent": -15.39
       },
       {
+        "eventId": "prime-day-2026",
+        "eventName": "Prime Day 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-06-16",
+        "preEventBaselineEnd": "2026-06-22",
+        "preEventBaselinePointCount": 7,
+        "status": "no_relevant_change",
+        "eventMinPrice": 8999.0,
+        "eventMinDate": "2026-06-23",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 8999.0,
+        "changeVsPreEventAvgPercent": 0.0
+      },
+      {
         "eventId": "hot-sale-2025",
         "eventName": "Hot Sale 2025",
         "start": "2025-05-26",
@@ -849,6 +961,22 @@
         "eventMinStore": "Coppel",
         "preEventAvgPrice": 7587.57,
         "changeVsPreEventAvgPercent": -7.76
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Prime Day 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-06-16",
+        "preEventBaselineEnd": "2026-06-22",
+        "preEventBaselinePointCount": 7,
+        "status": "no_relevant_change",
+        "eventMinPrice": 6799.99,
+        "eventMinDate": "2026-06-24",
+        "eventMinStore": "GamePlanet",
+        "preEventAvgPrice": 6999.0,
+        "changeVsPreEventAvgPercent": -2.84
       },
       {
         "eventId": "hot-sale-2025",
@@ -949,6 +1077,22 @@
         "changeVsPreEventAvgPercent": -15.39
       },
       {
+        "eventId": "prime-day-2026",
+        "eventName": "Prime Day 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-06-16",
+        "preEventBaselineEnd": "2026-06-22",
+        "preEventBaselinePointCount": 7,
+        "status": "strong_drop",
+        "eventMinPrice": 10549.0,
+        "eventMinDate": "2026-06-23",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 11601.0,
+        "changeVsPreEventAvgPercent": -9.07
+      },
+      {
         "eventId": "hot-sale-2025",
         "eventName": "Hot Sale 2025",
         "start": "2025-05-26",
@@ -1045,6 +1189,22 @@
         "eventMinStore": "Amazon",
         "preEventAvgPrice": 13092.57,
         "changeVsPreEventAvgPercent": -7.96
+      },
+      {
+        "eventId": "prime-day-2026",
+        "eventName": "Prime Day 2026",
+        "start": "2026-06-23",
+        "end": "2026-06-26",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-06-16",
+        "preEventBaselineEnd": "2026-06-22",
+        "preEventBaselinePointCount": 7,
+        "status": "strong_drop",
+        "eventMinPrice": 8599.0,
+        "eventMinDate": "2026-06-23",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 10227.57,
+        "changeVsPreEventAvgPercent": -15.92
       },
       {
         "eventId": "hot-sale-2025",
