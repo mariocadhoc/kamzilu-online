@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T15:30:36",
+  "generatedAt": "2026-08-25T15:30:52",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
