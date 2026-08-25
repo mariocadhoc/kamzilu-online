@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T01:10:03",
+  "generatedAt": "2026-08-25T13:50:57",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -16,7 +16,7 @@
       "yearMaxPrice": 10879.0,
       "yearMaxDate": "2026-01-14",
       "yearMaxStore": "Sanborns",
-      "yearAvgPrice": 9599.0,
+      "yearAvgPrice": 9596.05,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+mario-kart-bundle": {
@@ -27,10 +27,10 @@
       "yearMinPrice": 9649.0,
       "yearMinDate": "2026-02-16",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 12390.0,
-      "yearMaxDate": "2026-08-25",
-      "yearMaxStore": "Soriana",
-      "yearAvgPrice": 10674.15,
+      "yearMaxPrice": 11919.2,
+      "yearMaxDate": "2025-11-18",
+      "yearMaxStore": "Desconocida",
+      "yearAvgPrice": 10667.49,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-lite-yellow": {
@@ -72,7 +72,7 @@
       "yearMaxPrice": 11999.99,
       "yearMaxDate": "2026-03-25",
       "yearMaxStore": "GamePlanet",
-      "yearAvgPrice": 10054.61,
+      "yearAvgPrice": 10045.79,
       "yearMostFrequentLowestStore": "Elektra"
     },
     "playstation-5-pro-digital-2tb": {
@@ -83,10 +83,10 @@
       "yearMinPrice": 9999.99,
       "yearMinDate": "2026-06-24",
       "yearMinStore": "GamePlanet",
-      "yearMaxPrice": 19599.0,
-      "yearMaxDate": "2026-08-25",
-      "yearMaxStore": "Walmart",
-      "yearAvgPrice": 15923.16,
+      "yearMaxPrice": 19299.99,
+      "yearMaxDate": "2026-02-02",
+      "yearMaxStore": "GamePlanet",
+      "yearAvgPrice": 15887.34,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "playstation-5-slim-blanco-estandar-1tb": {
@@ -114,7 +114,7 @@
       "yearMaxPrice": 8009.1,
       "yearMaxDate": "2025-11-18",
       "yearMaxStore": "Desconocida",
-      "yearAvgPrice": 6943.23,
+      "yearAvgPrice": 6943.19,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "xbox-series-x-blanco-1tb": {

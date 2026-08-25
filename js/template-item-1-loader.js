@@ -80,14 +80,16 @@ async function loadConsoleData() {
 
     const productId = getSlug();
 
-    const isLocal =
-      location.hostname === "localhost" ||
-      location.hostname === "127.0.0.1" ||
-      location.protocol === "file:";
+    // Mismo criterio que fill-cards-home.js: la API en vivo solo acepta
+    // CORS desde el dominio real de producción, así que cualquier otra
+    // vista (local, IP de LAN, etc.) debe usar el JSON local.
+    const isProduction =
+      location.hostname === "kamzilu.com" ||
+      location.hostname === "www.kamzilu.com";
 
-    const API_URL = isLocal
-      ? "/data/consolas.json"
-      : "https://api.kamzilu.com/api/consolas";
+    const API_URL = isProduction
+      ? "https://api.kamzilu.com/api/consolas"
+      : "/data/consolas.json";
 
     const res = await fetch(API_URL);
     if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
