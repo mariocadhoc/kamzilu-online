@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T15:30:52",
+  "generatedAt": "2026-08-26T01:10:03",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -30,7 +30,7 @@
       "yearMaxPrice": 11919.2,
       "yearMaxDate": "2025-11-18",
       "yearMaxStore": "Desconocida",
-      "yearAvgPrice": 10667.49,
+      "yearAvgPrice": 10666.92,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-lite-yellow": {
