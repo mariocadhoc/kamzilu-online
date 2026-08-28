@@ -1117,6 +1117,18 @@ html, body {
   width: 100%;
 }
 
+/* Resumen del último año: vive fuera de .pdp-insights-section, justo debajo
+   de la gráfica. Se le da menos margen superior que al bloque estacional
+   porque cierra visualmente la gráfica en lugar de abrir un tema nuevo. */
+.pdp-insights-summary {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.pdp-insights-summary .insight-card--summary {
+  grid-column: auto;
+}
+
 .pdp-insights-section .section-label {
   margin-top: 0;
 }
@@ -1483,5 +1495,68 @@ html, body {
 
   .insight-metrics {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* ============================================================
+   Filtro de rango de la gráfica (1 mes / 3 meses / Máx.)
+   ============================================================ */
+
+.history-range-filter {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.history-range-filter[hidden] {
+  display: none;
+}
+
+.history-range-btn {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: transparent;
+  color: var(--text-muted, rgba(255, 255, 255, 0.65));
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.history-range-btn:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--text-main, #fff);
+}
+
+.history-range-btn[aria-pressed="true"] {
+  background: var(--accent, #7cf03d);
+  border-color: var(--accent, #7cf03d);
+  color: #0f0f0f;
+  font-weight: 600;
+}
+
+.history-range-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.history-range-btn:focus-visible {
+  outline: 2px solid var(--accent, #7cf03d);
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .history-range-filter {
+    justify-content: stretch;
+  }
+
+  .history-range-btn {
+    flex: 1;
+    padding: 9px 8px;
   }
 }

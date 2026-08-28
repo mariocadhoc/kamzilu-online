@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T01:10:03",
+  "generatedAt": "2026-08-27T18:31:44",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1279,8 +1279,8 @@
       },
       {
         "date": "2026-08-27",
-        "price": 9606.06,
-        "store": "MercadoLibre"
+        "price": 8999.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -4003,8 +4003,8 @@
       },
       {
         "date": "2026-08-27",
-        "price": 4999.0,
-        "store": "MercadoLibre"
+        "price": 2999.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-oled-blanco": [
@@ -5365,8 +5365,8 @@
       },
       {
         "date": "2026-08-27",
-        "price": 6199.0,
-        "store": "MercadoLibre"
+        "price": 5990.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -7994,8 +7994,8 @@
       },
       {
         "date": "2026-08-27",
-        "price": 20199.0,
-        "store": "Amazon"
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -9346,8 +9346,8 @@
       },
       {
         "date": "2026-08-27",
-        "price": 13712.89,
-        "store": "MercadoLibre"
+        "price": 10851.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-s": [
@@ -10708,8 +10708,8 @@
       },
       {
         "date": "2026-08-27",
-        "price": 8099.0,
-        "store": "MercadoLibre"
+        "price": 7679.0,
+        "store": "Coppel"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -12065,7 +12065,7 @@
       },
       {
         "date": "2026-08-27",
-        "price": 14354.0,
+        "price": 14349.0,
         "store": "MercadoLibre"
       }
     ],
@@ -13427,8 +13427,8 @@
       },
       {
         "date": "2026-08-27",
-        "price": 18999.0,
-        "store": "Amazon"
+        "price": 15690.0,
+        "store": "Soriana"
       }
     ]
   }

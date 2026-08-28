@@ -1,11 +1,12 @@
-# Kamzilu — Historial, estadísticas y comparador de precios de consolas en México
+# Kamzilu — Historial, estadísticas y comparador de precios de consolas y gift cards en México
 
 ## Descripción del sitio
 
-Kamzilu es un centro de información de precios de consolas de videojuegos para el mercado mexicano.
+Kamzilu es un centro de información de precios de videojuegos para el mercado mexicano: consolas
+y gift cards (membresías y saldo).
 Opera exclusivamente en México. Todos los precios están expresados en pesos mexicanos (MXN).
 
-Va más allá de comparar precios actuales: registra el historial de precios de cada consola en cada tienda
+Va más allá de comparar precios actuales: registra el historial de precios de cada producto en cada tienda
 monitoreada, presenta estadísticas (precio mínimo histórico, precio promedio, evolución reciente) y permite
 al usuario detectar si una oferta es genuina o fue precedida por un aumento artificial de precio.
 
@@ -50,6 +51,27 @@ Xbox:
 - Xbox Series S
 - Xbox Series X Negro 1TB
 - Xbox Series X Blanco 1TB
+
+---
+
+## Gift cards cubiertas
+
+Kamzilu solo publica gift cards cuyo precio varía realmente entre tiendas. Las tarjetas de saldo
+con monto fijo en pesos (por ejemplo Nintendo eShop de $500 MXN) NO se publican: cuestan lo mismo
+en toda tienda mexicana formal y una comparación entre tiendas no aportaría información.
+
+Sí se cubren las membresías de suscripción, que no son saldo sino un servicio al que cada tienda
+le pone su propio precio de venta, y que por eso varían de forma significativa:
+
+Xbox:
+- Xbox Game Pass Ultimate — 1 mes
+- Xbox Game Pass Ultimate — 3 meses
+
+Contexto de precio relevante: Microsoft cambió el precio oficial de Xbox Game Pass Ultimate en
+México dos veces en menos de un año — de $299 a $449 MXN mensuales en octubre de 2025, y de vuelta
+a $339 MXN en abril de 2026. Las tiendas no ajustan sus precios de tarjeta prepagada al mismo
+ritmo que el precio oficial, así que el mismo código puede costar bastante menos en una tienda que
+en otra el mismo día. Ese es exactamente el tipo de diferencia que Kamzilu registra y muestra.
 
 ---
 

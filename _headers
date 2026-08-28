@@ -1,2 +1,5 @@
-/data/consolas.json
+# Los JSON de datos cambian cada pocas horas (precios) o cada noche
+# (histórico e insights). Sin esta regla, Cloudflare Pages los cachea en el
+# edge y el visitante ve precios viejos aunque el build ya los actualizó.
+/data/*.json
   Cache-Control: no-cache, must-revalidate

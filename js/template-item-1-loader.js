@@ -27,6 +27,40 @@ function formatPrice(value) {
   );
 }
 
+/**
+ * Reescribe en relativo la marca de tiempo de la frase GEO estática.
+ *
+ * El build escribe esa frase con fecha ABSOLUTA ("según la última lectura del
+ * 27 de agosto de 2026 a las 17:30") porque el HTML generado vive hasta 24h y
+ * un "hace 1 h" horneado envejece mal: a las pocas horas afirma algo falso,
+ * tanto para el lector como para una IA que cite la página. Aquí, ya con JS y
+ * con la hora real del visitante, se cambia a la forma relativa de siempre.
+ * Si no hay JS, la fecha absoluta se queda — nunca caduca.
+ */
+function refreshGeoSentenceStamp(lastUpdated, category) {
+  const el = document.getElementById("pdp-geo-price-sentence");
+  if (!el) return;
+
+  const stamp = el.querySelector("time");
+  if (!stamp) return;
+
+  const iso = el.dataset.updated || lastUpdated;
+  if (!iso) return;
+
+  const info = getUpdateTimeInfo(iso, category);
+  if (!info || !info.text) return;
+
+  stamp.textContent = info.text.toLowerCase();
+  stamp.setAttribute("datetime", iso);
+
+  // "según la última lectura del hace 3 h" no se lee bien: con forma relativa
+  // sobra el artículo que el build dejó antes del <time>.
+  const before = stamp.previousSibling;
+  if (before && before.nodeType === Node.TEXT_NODE) {
+    before.textContent = before.textContent.replace(/\sdel\s*$/, " ");
+  }
+}
+
 function getUpdateTimeInfo(lastUpdated, category) {
   if (category === "unavailable")
     return { text: "Podría no haber en stock", class: "status-unavailable" };
@@ -87,18 +121,15 @@ async function loadConsoleData() {
 
     const productId = getSlug();
 
-    // Mismo criterio que fill-cards-home.js: la API en vivo solo acepta
-    // CORS desde el dominio real de producción, así que cualquier otra
-    // vista (local, IP de LAN, etc.) debe usar el JSON local.
-    const isProduction =
-      location.hostname === "kamzilu.com" ||
-      location.hostname === "www.kamzilu.com";
+    // La categoría sale del primer segmento de la URL (/consolas/… o
+    // /gift-cards/…) mediante el registro compartido en js/catalogs.js, que
+    // también resuelve si toca pegarle a la API en vivo o al JSON local.
+    const catalog = window.KamziluCatalogs
+      ? (window.KamziluCatalogs.fromPath() || window.KamziluCatalogs.byId("consolas"))
+      : null;
+    if (!catalog) return;
 
-    const API_URL = isProduction
-      ? "https://api.kamzilu.com/api/consolas"
-      : "/data/consolas.json";
-
-    const res = await fetch(API_URL);
+    const res = await fetch(window.KamziluCatalogs.sourceUrl(catalog));
     if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
     const data = await res.json();
 
@@ -125,11 +156,6 @@ async function loadConsoleData() {
     // Datos estáticos
     // ----------------------------
     if (ui.breadcrumb) ui.breadcrumb.textContent = product.name;
-    const brandLink = document.querySelector(".pdp-breadcrumb a[href='/consolas/']");
-    if (brandLink && product.brand) {
-      brandLink.textContent = product.brand.charAt(0).toUpperCase() + product.brand.slice(1);
-      brandLink.href = `/consolas/${product.brand}/`;
-    }
     if (ui.name) ui.name.textContent = product.name;
     if (ui.desc) ui.desc.textContent = product.description;
     if (ui.img) {
@@ -174,7 +200,9 @@ async function loadConsoleData() {
         if (sk) sk.remove();
       };
     }
-    if (ui.brand) ui.brand.textContent = product.brand || "VIDEOJUEGOS";
+    if (ui.brand) {
+      ui.brand.textContent = product.denomination || product.brand || catalog.labelSingular;
+    }
 
     // =====================================================
     // PROCESAMIENTO
@@ -241,6 +269,8 @@ async function loadConsoleData() {
       const info = getUpdateTimeInfo(heroItem.lastUpdated, cat);
       ui.heroUpdateTime.textContent = info.text;
       ui.heroUpdateTime.className = `update-time ${info.class}`;
+
+      refreshGeoSentenceStamp(heroItem.lastUpdated, cat);
     } else if (ui.heroBlock) {
       ui.heroBlock.style.display = "none";
     }
@@ -368,5 +398,5 @@ window.addEventListener("scroll", () => {
 if (document.getElementById("breadcrumb-product")) {
   loadConsoleData();
 } else {
-  document.addEventListener("consolas-main-loaded", loadConsoleData);
+  document.addEventListener("catalog-main-loaded", loadConsoleData, { once: true });
 }

@@ -238,16 +238,29 @@
     // Mostrar sección si hay stats o eventos con variación; ocultar si no hay nada
     if (!stats && !visible.length) {
       section.style.display = 'none';
+      const emptySummary = document.getElementById('price-insights-summary');
+      if (emptySummary) emptySummary.style.display = 'none';
       return;
     }
 
     const grid = document.getElementById('price-insights-grid');
     if (!grid) return;
 
+    // El resumen del último año vive en su propia sección, arriba del bloque
+    // estacional, para que se lea como cierre de la gráfica y no como un
+    // evento comercial más.
+    const summaryEl = document.getElementById('price-insights-summary');
     const summaryHtml = buildSummaryCard(stats);
-    grid.innerHTML = summaryHtml + visible.map(ins => buildCard(ins, stats)).join('');
+    if (summaryEl) {
+      summaryEl.innerHTML = summaryHtml;
+      summaryEl.style.display = summaryHtml ? '' : 'none';
+    }
 
-    section.style.display = '';
+    grid.innerHTML = visible.map(ins => buildCard(ins, stats)).join('');
+
+    // Si no quedó ningún evento estacional, no tiene caso mostrar el
+    // subtítulo de Hot Sale / Buen Fin con un grid vacío debajo.
+    section.style.display = visible.length ? '' : 'none';
   }
 
   // ── Punto de entrada ─────────────────────────────────────────────────────
@@ -278,7 +291,7 @@
 
   // Iniciamos tan pronto como el DOM esté listo.
   // El script es defer, así que DOMContentLoaded ya pasó o pasará pronto.
-  // Usamos consolas-main-loaded como señal principal y un fallback corto.
+  // Usamos catalog-main-loaded como señal principal y un fallback corto.
   var _initiated = false;
   function initOnce() {
     if (_initiated) return;
@@ -286,7 +299,7 @@
     init();
   }
 
-  document.addEventListener('consolas-main-loaded', initOnce, { once: true });
+  document.addEventListener('catalog-main-loaded', initOnce, { once: true });
 
   // Fallback: si el evento ya disparó antes de que este script cargara,
   // arrancamos igualmente después de un tick corto.

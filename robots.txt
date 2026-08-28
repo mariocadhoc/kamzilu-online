@@ -9,6 +9,8 @@ Disallow: /*tmp/
 Disallow: /consolas_main.html
 Disallow: /template-item-1.html
 Disallow: /consolas/template-item-1.html
+Disallow: /gift-cards/template-item-1.html
+Disallow: /giftcards_main.html
 Disallow: /*index.html$
 
 # Archivo de descripción para crawlers de IA

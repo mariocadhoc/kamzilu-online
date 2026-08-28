@@ -2,21 +2,44 @@ document.addEventListener("DOMContentLoaded", () => {
   // === Cargar componentes ===
   const includes = [
     { id: "header", url: "/components/header.html", event: "header-loaded" },
-    { id: "footer", url: "/components/footer.html", event: "footer-loaded" },
-    { id: "consolas_main", url: "/components/consolas_main.html", event: "consolas-main-loaded" }  ];
+    { id: "footer", url: "/components/footer.html", event: "footer-loaded" }
+  ];
+
+  // El <main> de cada categoría sale del registro (js/catalogs.js). Solo una
+  // de estas divs existe en cada página, así que las demás se ignoran solas.
+  //
+  // Cada categoría emite además "catalog-main-loaded", que es el evento que
+  // escuchan la gráfica y los insights. El evento viejo "consolas-main-loaded"
+  // se sigue emitiendo para no romper nada que aún dependa de él.
+  (window.KamziluCatalogs ? window.KamziluCatalogs.all : []).forEach(cat => {
+    includes.push({
+      id: cat.domId,
+      url: cat.componentUrl,
+      event: cat.id === "consolas" ? "consolas-main-loaded" : cat.id + "-main-loaded"
+    });
+  });
+
+  // El <main> de una categoría emite además "catalog-main-loaded", que es el
+  // evento genérico que escuchan la gráfica y los insights.
+  const announce = (event) => {
+    document.dispatchEvent(new Event(event));
+    if (event.endsWith("-main-loaded")) {
+      document.dispatchEvent(new Event("catalog-main-loaded"));
+    }
+  };
 
   includes.forEach(({ id, url, event }) => {
     const el = document.getElementById(id);
     if (el) {
       if (el.innerHTML.trim() !== "") {
         // content pre-inlined at build time — fire event, skip fetch
-        document.dispatchEvent(new Event(event));
+        announce(event);
       } else {
         fetch(url)
           .then(res => res.text())
           .then(html => {
             el.innerHTML = html;
-            document.dispatchEvent(new Event(event));
+            announce(event);
           });
       }
     }

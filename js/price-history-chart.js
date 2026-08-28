@@ -44,6 +44,30 @@ document.addEventListener("DOMContentLoaded", () => {
     })).sort((a, b) => a.timestamp - b.timestamp);
   }
   
+  // Mínimo de puntos para que una curva diga algo. Es el mismo umbral que ya
+  // usaba la sección completa: con menos de 5 lecturas la gráfica es ruido.
+  const MIN_POINTS = 5;
+
+  const RANGE_DAYS = { "30": 30, "90": 90 };
+
+  /**
+   * Recorta la serie a los últimos N días contados desde HOY.
+   * "max" devuelve todo (el histórico completo, que llega a un año).
+   *
+   * El corte es siempre contra la fecha actual, no contra el último dato
+   * registrado: "1 mes" significa el último mes calendario, y si en esa
+   * ventana faltan lecturas, la gráfica lo muestra tal cual. Anclarlo al
+   * último punto haría que la etiqueta mintiera — diría "1 mes" mientras
+   * enseña un mes que terminó hace tres semanas.
+   */
+  function filterByRange(points, range) {
+    const days = RANGE_DAYS[range];
+    if (!days || !points.length) return points;
+
+    const cutoff = Date.now() - days * 24 * 60 * 60 * 1000;
+    return points.filter(pt => new Date(pt.date).getTime() >= cutoff);
+  }
+
   function initChart() {
     // Solo ejecutar si el contenedor de la gráfica está en el DOM
     const container = document.getElementById("price-history-chart");
@@ -78,8 +102,17 @@ document.addEventListener("DOMContentLoaded", () => {
         // Mostrar sección
         section.style.display = "block";
 
-        const renderResponsiveChart = () => renderSVGChart(container, series);
+        // Arranca en "Máx." para no cambiar lo que el usuario ve hoy.
+        let activeRange = "max";
+
+        const renderResponsiveChart = () =>
+          renderSVGChart(container, filterByRange(series, activeRange));
         renderResponsiveChart();
+
+        setupRangeFilter(series, (range) => {
+          activeRange = range;
+          renderResponsiveChart();
+        });
 
         if (!container.dataset.responsiveChartBound) {
           let resizeTimer = null;
@@ -97,6 +130,53 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("[Chart] Error cargando histórico:", err);
         section.style.display = "none";
       });
+  }
+
+  /**
+   * Habilita los botones de rango y devuelve el control al callback.
+   *
+   * Un rango solo se ofrece si de verdad tiene suficientes puntos: con el
+   * histórico apenas arrancando, "1 mes" puede tener 2 lecturas, y ofrecer un
+   * botón que deja la gráfica vacía es peor que no ofrecerlo. Si ningún rango
+   * acotado califica, la barra entera se queda oculta y la gráfica se comporta
+   * exactamente como antes.
+   */
+  function setupRangeFilter(series, onChange) {
+    const bar = document.getElementById("history-range-filter");
+    if (!bar) return;
+
+    const buttons = Array.from(bar.querySelectorAll(".history-range-btn"));
+    if (!buttons.length) return;
+
+    let anyEnabled = false;
+    buttons.forEach((btn) => {
+      const range = btn.dataset.range;
+      const enough = range === "max"
+        ? series.length >= MIN_POINTS
+        : filterByRange(series, range).length >= MIN_POINTS;
+
+      btn.disabled = !enough;
+      if (enough && range !== "max") anyEnabled = true;
+    });
+
+    // Sin ningún rango acotado utilizable, la barra no aporta nada.
+    if (!anyEnabled) {
+      bar.hidden = true;
+      return;
+    }
+
+    bar.hidden = false;
+
+    if (bar.dataset.rangeFilterBound) return;
+    bar.dataset.rangeFilterBound = "true";
+
+    bar.addEventListener("click", (event) => {
+      const btn = event.target.closest(".history-range-btn");
+      if (!btn || btn.disabled) return;
+
+      buttons.forEach(b => b.setAttribute("aria-pressed", String(b === btn)));
+      onChange(btn.dataset.range);
+    });
   }
 
   // 3. Renderizador del SVG interactivo
@@ -717,6 +797,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.getElementById("price-history-chart")) {
     initChart();
   } else {
-    document.addEventListener("consolas-main-loaded", initChart);
+    document.addEventListener("catalog-main-loaded", initChart);
   }
 });

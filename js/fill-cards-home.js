@@ -29,23 +29,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   try {
-    // La API en vivo (api.kamzilu.com) solo permite CORS desde el dominio
-    // real de producción. Antes esto se detectaba al revés (solo
-    // localhost/127.0.0.1/file: se consideraban "local"), así que cualquier
-    // vista previa desde otra máquina en la red (IP del Pi, otro hostname,
-    // etc.) intentaba pegarle a la API en vivo y el navegador la bloqueaba
-    // por CORS. Ahora se asume JSON local salvo que estemos en el dominio
-    // real de producción.
-    const isProduction =
-      location.hostname === "kamzilu.com" ||
-      location.hostname === "www.kamzilu.com";
-
-    const API_URL = isProduction
-      ? "https://api.kamzilu.com/api/consolas"
-      : "/data/consolas.json";
-
-    const response = await fetch(API_URL);
-    const data = await response.json();
+    // El home puede mezclar tarjetas de cualquier categoría, así que carga
+    // todas y las combina por slug. El registro (js/catalogs.js) resuelve
+    // además si toca la API en vivo o el JSON local: la API solo permite
+    // CORS desde el dominio real de producción, y cualquier otra vista
+    // (localhost, IP de LAN, preview) debe usar el archivo local.
+    const data = await window.KamziluCatalogs.fetchAll();
 
     // Configuración de optimización de imágenes para Lighthouse
     const imgConfig = {
