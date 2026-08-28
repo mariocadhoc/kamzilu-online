@@ -413,3 +413,76 @@ ul, ol, li {
   text-decoration: underline;
   color: var(--primary-dark);
 }
+
+/* ============================================================
+   Índice de productos del hub
+   ------------------------------------------------------------
+   Lo inyecta la Fase 6 del build en los hubs cuyas tarjetas no
+   enlazan a cada ficha (hoy /consolas/). Sin estos estilos salía
+   como texto negro suelto con viñetas debajo de las tarjetas.
+   ============================================================ */
+
+.hub-index {
+  width: min(1100px, 92%);
+  margin: 8px auto 56px;
+}
+
+.hub-index-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-main, #f4f4f5);
+  margin: 0 0 18px;
+}
+
+.hub-index nav h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent, #7cf03d);
+  margin: 22px 0 10px;
+}
+
+.hub-index nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 8px;
+}
+
+.hub-index nav li {
+  margin: 0;
+}
+
+.hub-index nav a {
+  display: block;
+  padding: 11px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  color: var(--text-muted, rgba(255, 255, 255, 0.72));
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  transition: border-color 0.18s ease, color 0.18s ease, background-color 0.18s ease;
+}
+
+.hub-index nav a:hover,
+.hub-index nav a:focus-visible {
+  border-color: var(--accent, #7cf03d);
+  color: var(--text-main, #f4f4f5);
+  background: rgba(124, 240, 61, 0.06);
+}
+
+@media (max-width: 600px) {
+  .hub-index {
+    margin-bottom: 40px;
+  }
+
+  .hub-index nav ul {
+    grid-template-columns: 1fr;
+  }
+}
