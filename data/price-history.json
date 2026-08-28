@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T18:37:50",
+  "generatedAt": "2026-08-28T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1279,6 +1279,11 @@
       },
       {
         "date": "2026-08-27",
+        "price": 8999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-08-28",
         "price": 8999.99,
         "store": "GamePlanet"
       }
@@ -2648,6 +2653,11 @@
         "date": "2026-08-27",
         "price": 10423.39,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-08-28",
+        "price": 10441.77,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -4003,6 +4013,11 @@
       },
       {
         "date": "2026-08-27",
+        "price": 2999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-08-28",
         "price": 2999.99,
         "store": "GamePlanet"
       }
@@ -5365,6 +5380,11 @@
       },
       {
         "date": "2026-08-27",
+        "price": 5989.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-08-28",
         "price": 5990.0,
         "store": "Soriana"
       }
@@ -6642,6 +6662,11 @@
       },
       {
         "date": "2026-08-27",
+        "price": 9359.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-08-28",
         "price": 9359.0,
         "store": "MercadoLibre"
       }
@@ -7996,6 +8021,11 @@
         "date": "2026-08-27",
         "price": 9999.99,
         "store": "GamePlanet"
+      },
+      {
+        "date": "2026-08-28",
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -9348,6 +9378,11 @@
         "date": "2026-08-27",
         "price": 10851.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-08-28",
+        "price": 11999.99,
+        "store": "GamePlanet"
       }
     ],
     "xbox-series-s": [
@@ -10710,6 +10745,11 @@
         "date": "2026-08-27",
         "price": 7679.0,
         "store": "Coppel"
+      },
+      {
+        "date": "2026-08-28",
+        "price": 8299.99,
+        "store": "GamePlanet"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -12066,6 +12106,11 @@
       {
         "date": "2026-08-27",
         "price": 14349.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-08-28",
+        "price": 14999.0,
         "store": "MercadoLibre"
       }
     ],
@@ -13427,6 +13472,11 @@
       },
       {
         "date": "2026-08-27",
+        "price": 15690.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-08-28",
         "price": 15690.0,
         "store": "Soriana"
       }
