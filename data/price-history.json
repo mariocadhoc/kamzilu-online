@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T01:10:03",
+  "generatedAt": "2026-08-28T12:54:37",
   "series": {
     "nintendo-switch-2": [
       {
@@ -2658,6 +2658,13 @@
         "date": "2026-08-28",
         "price": 10441.77,
         "store": "MercadoLibre"
+      }
+    ],
+    "nintendo-switch-2+pokemon-legends-za-bundle": [
+      {
+        "date": "2026-08-28",
+        "price": 8999.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -9381,8 +9388,8 @@
       },
       {
         "date": "2026-08-28",
-        "price": 11999.99,
-        "store": "GamePlanet"
+        "price": 10851.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-s": [
@@ -10752,6 +10759,13 @@
         "store": "GamePlanet"
       }
     ],
+    "xbox-series-s-robot-white-1tb": [
+      {
+        "date": "2026-08-28",
+        "price": 10499.0,
+        "store": "Sanborns"
+      }
+    ],
     "xbox-series-x-blanco-1tb": [
       {
         "date": "2025-11-18",
@@ -12112,6 +12126,13 @@
         "date": "2026-08-28",
         "price": 14999.0,
         "store": "MercadoLibre"
+      }
+    ],
+    "xbox-series-x-galaxy-black-2tb": [
+      {
+        "date": "2026-08-28",
+        "price": 25999.0,
+        "store": "Coppel"
       }
     ],
     "xbox-series-x-negro-1tb": [
