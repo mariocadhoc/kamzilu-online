@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T01:10:02",
+  "generatedAt": "2026-08-30T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1289,8 +1289,13 @@
       },
       {
         "date": "2026-08-29",
-        "price": 9999.0,
-        "store": "Amazon"
+        "price": 8999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-08-30",
+        "price": 9115.0,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -2666,8 +2671,13 @@
       },
       {
         "date": "2026-08-29",
-        "price": 11989.0,
-        "store": "Amazon"
+        "price": 10599.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-08-30",
+        "price": 10930.0,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-2+pokemon-legends-za-bundle": [
@@ -2675,6 +2685,16 @@
         "date": "2026-08-28",
         "price": 8999.99,
         "store": "GamePlanet"
+      },
+      {
+        "date": "2026-08-29",
+        "price": 8999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-08-30",
+        "price": 13299.0,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -4040,7 +4060,12 @@
       },
       {
         "date": "2026-08-29",
-        "price": 7410.0,
+        "price": 2999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-08-30",
+        "price": 4170.0,
         "store": "Amazon"
       }
     ],
@@ -5412,8 +5437,13 @@
       },
       {
         "date": "2026-08-29",
-        "price": 6600.0,
-        "store": "Amazon"
+        "price": 5990.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-08-30",
+        "price": 6378.75,
+        "store": "MercadoLibre"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -6694,6 +6724,16 @@
       },
       {
         "date": "2026-08-28",
+        "price": 9359.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-08-29",
+        "price": 9359.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-08-30",
         "price": 9359.0,
         "store": "MercadoLibre"
       }
@@ -8056,6 +8096,11 @@
       },
       {
         "date": "2026-08-29",
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-08-30",
         "price": 20199.0,
         "store": "Amazon"
       }
@@ -9418,6 +9463,11 @@
       },
       {
         "date": "2026-08-29",
+        "price": 10851.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-08-30",
         "price": 10851.0,
         "store": "Amazon"
       }
@@ -10790,7 +10840,12 @@
       },
       {
         "date": "2026-08-29",
-        "price": 8999.0,
+        "price": 8299.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-08-30",
+        "price": 8299.0,
         "store": "Amazon"
       }
     ],
@@ -10802,6 +10857,11 @@
       },
       {
         "date": "2026-08-29",
+        "price": 10499.0,
+        "store": "Sanborns"
+      },
+      {
+        "date": "2026-08-30",
         "price": 11879.0,
         "store": "Amazon"
       }
@@ -12169,8 +12229,13 @@
       },
       {
         "date": "2026-08-29",
-        "price": 19590.0,
-        "store": "Amazon"
+        "price": 14999.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-08-30",
+        "price": 13079.0,
+        "store": "MercadoLibre"
       }
     ],
     "xbox-series-x-galaxy-black-2tb": [
@@ -12181,8 +12246,13 @@
       },
       {
         "date": "2026-08-29",
-        "price": 26999.0,
-        "store": "Amazon"
+        "price": 25999.0,
+        "store": "Coppel"
+      },
+      {
+        "date": "2026-08-30",
+        "price": 25999.0,
+        "store": "Coppel"
       }
     ],
     "xbox-series-x-negro-1tb": [
@@ -13553,6 +13623,11 @@
       },
       {
         "date": "2026-08-29",
+        "price": 15690.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-08-30",
         "price": 18999.0,
         "store": "Amazon"
       }
