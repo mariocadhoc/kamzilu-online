@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T01:10:03",
+  "generatedAt": "2026-09-11T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1349,8 +1349,13 @@
       },
       {
         "date": "2026-09-10",
-        "price": 10189.0,
-        "store": "Amazon"
+        "price": 9469.46,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-09-11",
+        "price": 8892.0,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -2786,8 +2791,13 @@
       },
       {
         "date": "2026-09-10",
-        "price": 10611.0,
-        "store": "Amazon"
+        "price": 10505.27,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-09-11",
+        "price": 10505.27,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-2+pokemon-legends-za-bundle": [
@@ -2858,8 +2868,13 @@
       },
       {
         "date": "2026-09-10",
-        "price": 15249.0,
-        "store": "Soriana"
+        "price": 10485.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-09-11",
+        "price": 10485.0,
+        "store": "Amazon"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -4285,8 +4300,13 @@
       },
       {
         "date": "2026-09-10",
-        "price": 6760.0,
-        "store": "Amazon"
+        "price": 2999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-11",
+        "price": 3999.0,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-oled-blanco": [
@@ -5717,8 +5737,13 @@
       },
       {
         "date": "2026-09-10",
-        "price": 5850.0,
-        "store": "Amazon"
+        "price": 5679.62,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-09-11",
+        "price": 5845.0,
+        "store": "MercadoLibre"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -7064,8 +7089,13 @@
       },
       {
         "date": "2026-09-10",
-        "price": 11590.0,
-        "store": "Soriana"
+        "price": 9419.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-09-11",
+        "price": 9419.0,
+        "store": "MercadoLibre"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -8486,8 +8516,13 @@
       },
       {
         "date": "2026-09-10",
-        "price": 20690.0,
-        "store": "Soriana"
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-11",
+        "price": 20599.0,
+        "store": "Coppel"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -9908,6 +9943,11 @@
       },
       {
         "date": "2026-09-10",
+        "price": 10851.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-09-11",
         "price": 10851.0,
         "store": "Amazon"
       }
@@ -11340,8 +11380,13 @@
       },
       {
         "date": "2026-09-10",
-        "price": 8599.0,
-        "store": "Amazon"
+        "price": 8099.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-09-11",
+        "price": 8099.0,
+        "store": "MercadoLibre"
       }
     ],
     "xbox-series-s-robot-white-1tb": [
@@ -11414,6 +11459,11 @@
         "date": "2026-09-10",
         "price": 10499.0,
         "store": "Sanborns"
+      },
+      {
+        "date": "2026-09-11",
+        "price": 11879.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -12839,7 +12889,12 @@
       },
       {
         "date": "2026-09-10",
-        "price": 15248.0,
+        "price": 14999.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-09-11",
+        "price": 15242.0,
         "store": "Amazon"
       }
     ],
@@ -12911,6 +12966,11 @@
       },
       {
         "date": "2026-09-10",
+        "price": 26999.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-09-11",
         "price": 26999.0,
         "store": "Amazon"
       }
@@ -14345,6 +14405,11 @@
         "date": "2026-09-10",
         "price": 15690.0,
         "store": "Soriana"
+      },
+      {
+        "date": "2026-09-11",
+        "price": 16261.0,
+        "store": "Amazon"
       }
     ]
   }
