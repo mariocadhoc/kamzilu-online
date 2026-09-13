@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T01:10:03",
+  "generatedAt": "2026-09-13T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1359,8 +1359,13 @@
       },
       {
         "date": "2026-09-12",
-        "price": 9519.74,
+        "price": 8892.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-09-13",
+        "price": 10189.0,
+        "store": "Amazon"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -2808,6 +2813,11 @@
         "date": "2026-09-12",
         "price": 10561.05,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-09-13",
+        "price": 13763.0,
+        "store": "Amazon"
       }
     ],
     "nintendo-switch-2+pokemon-legends-za-bundle": [
@@ -2888,8 +2898,13 @@
       },
       {
         "date": "2026-09-12",
-        "price": 13299.0,
-        "store": "MercadoLibre"
+        "price": 10485.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-09-13",
+        "price": 15249.0,
+        "store": "Soriana"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -4325,8 +4340,13 @@
       },
       {
         "date": "2026-09-12",
-        "price": 5199.0,
-        "store": "MercadoLibre"
+        "price": 2999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-13",
+        "price": 6760.0,
+        "store": "Amazon"
       }
     ],
     "nintendo-switch-oled-blanco": [
@@ -5767,8 +5787,13 @@
       },
       {
         "date": "2026-09-12",
-        "price": 5890.02,
-        "store": "MercadoLibre"
+        "price": 5799.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-09-13",
+        "price": 5799.0,
+        "store": "Amazon"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -7126,6 +7151,11 @@
         "date": "2026-09-12",
         "price": 9419.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-09-13",
+        "price": 11590.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -8556,8 +8586,13 @@
       },
       {
         "date": "2026-09-12",
-        "price": 20599.0,
-        "store": "Coppel"
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-13",
+        "price": 20690.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -9988,8 +10023,13 @@
       },
       {
         "date": "2026-09-12",
-        "price": 13712.89,
-        "store": "MercadoLibre"
+        "price": 10851.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-09-13",
+        "price": 10851.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-s": [
@@ -11430,8 +11470,13 @@
       },
       {
         "date": "2026-09-12",
-        "price": 9129.0,
-        "store": "MercadoLibre"
+        "price": 8599.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-09-13",
+        "price": 8599.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-s-robot-white-1tb": [
@@ -11507,6 +11552,16 @@
       },
       {
         "date": "2026-09-11",
+        "price": 10499.0,
+        "store": "Sanborns"
+      },
+      {
+        "date": "2026-09-12",
+        "price": 10499.0,
+        "store": "Sanborns"
+      },
+      {
+        "date": "2026-09-13",
         "price": 10499.0,
         "store": "Sanborns"
       }
@@ -12944,8 +12999,13 @@
       },
       {
         "date": "2026-09-12",
-        "price": 15999.0,
-        "store": "MercadoLibre"
+        "price": 15242.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-09-13",
+        "price": 15242.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-x-galaxy-black-2tb": [
@@ -13021,6 +13081,16 @@
       },
       {
         "date": "2026-09-11",
+        "price": 26999.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-09-12",
+        "price": 26999.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-09-13",
         "price": 26999.0,
         "store": "Amazon"
       }
@@ -14458,6 +14528,16 @@
       },
       {
         "date": "2026-09-11",
+        "price": 15690.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-09-12",
+        "price": 15690.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-09-13",
         "price": 15690.0,
         "store": "Soriana"
       }
