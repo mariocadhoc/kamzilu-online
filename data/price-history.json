@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T01:10:03",
+  "generatedAt": "2026-09-25T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1421,6 +1421,11 @@
         "date": "2026-09-24",
         "price": 9999.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 9999.0,
+        "store": "Elektra"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -2926,8 +2931,13 @@
       },
       {
         "date": "2026-09-24",
-        "price": 10999.0,
-        "store": "Amazon"
+        "price": 8999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 8999.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-2+pokemon-legends-za-bundle": [
@@ -3068,8 +3078,13 @@
       },
       {
         "date": "2026-09-24",
-        "price": 14500.0,
-        "store": "MercadoLibre"
+        "price": 11999.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 11999.0,
+        "store": "Elektra"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -4565,8 +4580,13 @@
       },
       {
         "date": "2026-09-24",
-        "price": 5199.0,
-        "store": "MercadoLibre"
+        "price": 2999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 2999.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-oled-blanco": [
@@ -6069,6 +6089,11 @@
         "date": "2026-09-24",
         "price": 5799.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 5799.0,
+        "store": "Amazon"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -7484,8 +7509,13 @@
       },
       {
         "date": "2026-09-24",
-        "price": 11000.0,
-        "store": "MercadoLibre"
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -8976,8 +9006,13 @@
       },
       {
         "date": "2026-09-24",
-        "price": 20599.0,
-        "store": "Coppel"
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -10468,8 +10503,13 @@
       },
       {
         "date": "2026-09-24",
-        "price": 16390.0,
-        "store": "Amazon"
+        "price": 11999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 11999.99,
+        "store": "GamePlanet"
       }
     ],
     "xbox-series-s": [
@@ -11972,6 +12012,11 @@
         "date": "2026-09-24",
         "price": 8599.0,
         "store": "Coppel"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 8799.99,
+        "store": "GamePlanet"
       }
     ],
     "xbox-series-s-robot-white-1tb": [
@@ -12114,6 +12159,11 @@
         "date": "2026-09-24",
         "price": 9479.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 13599.0,
+        "store": "Sears"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -13611,6 +13661,11 @@
         "date": "2026-09-24",
         "price": 15404.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 15772.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-x-galaxy-black-2tb": [
@@ -13753,6 +13808,11 @@
         "date": "2026-09-24",
         "price": 24999.0,
         "store": "Coppel"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 25799.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-x-negro-1tb": [
@@ -15253,7 +15313,12 @@
       },
       {
         "date": "2026-09-24",
-        "price": 16434.0,
+        "price": 15690.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-09-25",
+        "price": 16826.0,
         "store": "Amazon"
       }
     ]
