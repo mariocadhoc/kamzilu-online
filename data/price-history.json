@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T01:10:03",
+  "generatedAt": "2026-10-01T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1449,6 +1449,11 @@
       },
       {
         "date": "2026-09-30",
+        "price": 9088.2,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-10-01",
         "price": 10189.0,
         "store": "Amazon"
       }
@@ -2983,6 +2988,16 @@
         "date": "2026-09-29",
         "price": 8999.99,
         "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-30",
+        "price": 8999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 8999.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-2+pokemon-legends-za-bundle": [
@@ -3149,6 +3164,16 @@
       {
         "date": "2026-09-29",
         "price": 11999.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-09-30",
+        "price": 12599.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 12599.0,
         "store": "Elektra"
       }
     ],
@@ -4675,8 +4700,13 @@
       },
       {
         "date": "2026-09-30",
-        "price": 5318.0,
-        "store": "Amazon"
+        "price": 2999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 2999.99,
+        "store": "GamePlanet"
       }
     ],
     "nintendo-switch-oled-blanco": [
@@ -6207,6 +6237,11 @@
       },
       {
         "date": "2026-09-30",
+        "price": 4838.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-10-01",
         "price": 5799.0,
         "store": "Amazon"
       }
@@ -7649,6 +7684,16 @@
       },
       {
         "date": "2026-09-29",
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-30",
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-01",
         "price": 9999.99,
         "store": "GamePlanet"
       }
@@ -9166,6 +9211,16 @@
       },
       {
         "date": "2026-09-29",
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-09-30",
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-01",
         "price": 9999.99,
         "store": "GamePlanet"
       }
@@ -10688,8 +10743,13 @@
       },
       {
         "date": "2026-09-30",
-        "price": 16390.0,
-        "store": "Amazon"
+        "price": 9899.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 11999.99,
+        "store": "GamePlanet"
       }
     ],
     "xbox-series-s": [
@@ -12220,8 +12280,13 @@
       },
       {
         "date": "2026-09-30",
-        "price": 8999.0,
-        "store": "Amazon"
+        "price": 8299.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 8629.0,
+        "store": "MercadoLibre"
       }
     ],
     "xbox-series-s-robot-white-1tb": [
@@ -12392,8 +12457,13 @@
       },
       {
         "date": "2026-09-30",
-        "price": 10929.0,
-        "store": "Amazon"
+        "price": 10649.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 10799.0,
+        "store": "MercadoLibre"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -13921,6 +13991,11 @@
         "date": "2026-09-30",
         "price": 16157.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 16157.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-x-galaxy-black-2tb": [
@@ -14091,6 +14166,11 @@
       },
       {
         "date": "2026-09-30",
+        "price": 26999.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-10-01",
         "price": 26999.0,
         "store": "Amazon"
       }
@@ -15623,6 +15703,11 @@
       },
       {
         "date": "2026-09-30",
+        "price": 15690.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-10-01",
         "price": 17237.0,
         "store": "Amazon"
       }
