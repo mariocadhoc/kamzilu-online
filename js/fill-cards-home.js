@@ -28,6 +28,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
+  if (document.documentElement.hasAttribute('data-static-prices')) {
+    initMobileCardReveal();
+    return;
+  }
+
   try {
     // El home puede mezclar tarjetas de cualquier categoría, así que carga
     // todas y las combina por slug. El registro (js/catalogs.js) resuelve

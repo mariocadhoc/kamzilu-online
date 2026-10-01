@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T01:10:03",
+  "generatedAt": "2026-10-01T08:40:58",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -16,7 +16,7 @@
       "yearMaxPrice": 10879.0,
       "yearMaxDate": "2026-01-14",
       "yearMaxStore": "Sanborns",
-      "yearAvgPrice": 9588.72,
+      "yearAvgPrice": 9588.48,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+mario-kart-bundle": {
@@ -181,10 +181,10 @@
       "yearMinPrice": 8599.0,
       "yearMinDate": "2026-06-13",
       "yearMinStore": "Walmart",
-      "yearMaxPrice": 17237.0,
-      "yearMaxDate": "2026-10-01",
-      "yearMaxStore": "Amazon",
-      "yearAvgPrice": 13000.31,
+      "yearMaxPrice": 15699.0,
+      "yearMaxDate": "2025-11-18",
+      "yearMaxStore": "Desconocida",
+      "yearAvgPrice": 12995.27,
       "yearMostFrequentLowestStore": "Amazon"
     }
   },

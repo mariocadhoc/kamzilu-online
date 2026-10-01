@@ -103,6 +103,11 @@ function getUpdateTimeInfo(lastUpdated, category) {
 // =========================================================
 
 async function loadConsoleData() {
+  if (document.documentElement.hasAttribute('data-static-prices')) {
+    handleScrollAnimations();
+    document.dispatchEvent(new Event('ConsolaTemplateLoaded'));
+    return;
+  }
   // El scraper más lento (Coppel) actualiza cada 12h como máximo (ver
   // backend/scrapers/core/store_config.py). 48h = 4x ese intervalo: da
   // margen de sobra para un ciclo fallido, un reintento, o un fin de semana
