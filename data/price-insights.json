@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T11:36:43",
+  "generatedAt": "2026-10-01T13:09:53",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -136,13 +136,13 @@
       "windowStartDate": "2025-10-02",
       "windowEndDate": "2026-10-01",
       "windowPointCount": 1,
-      "yearMinPrice": 20699.0,
+      "yearMinPrice": 19393.0,
       "yearMinDate": "2026-10-01",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 20699.0,
+      "yearMaxPrice": 19393.0,
       "yearMaxDate": "2026-10-01",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 20699.0,
+      "yearAvgPrice": 19393.0,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "xbox-series-s": {
@@ -198,7 +198,7 @@
       "yearMaxPrice": 26999.0,
       "yearMaxDate": "2026-09-01",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 25925.34,
+      "yearAvgPrice": 25819.63,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "xbox-series-x-negro-1tb": {
