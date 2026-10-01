@@ -77,7 +77,7 @@
 }
 
 .header-nav-desktop a,
-.header-dropdown>span.nav-link {
+.header-dropdown>.nav-link {
   font-family: var(--font-tech);
   color: var(--text-main);
   text-decoration: none;
@@ -95,7 +95,7 @@
 
 /* Efecto Underline Tecnológico (SOLO NIVEL SUPERIOR) */
 .header-nav-desktop>a::after,
-.header-dropdown>span.nav-link::after {
+.header-dropdown>.nav-link::after {
   content: '';
   position: absolute;
   bottom: 24px;
@@ -109,12 +109,12 @@
 }
 
 .header-nav-desktop>a:hover::after,
-.header-dropdown>span.nav-link:hover::after {
+.header-dropdown>.nav-link:hover::after {
   width: 100%;
 }
 
 .header-nav-desktop>a:hover,
-.header-dropdown>span.nav-link:hover {
+.header-dropdown>.nav-link:hover {
   color: var(--primary);
 }
 
@@ -156,7 +156,8 @@
   background: transparent;
 }
 
-.header-dropdown:hover .header-submenu {
+.header-dropdown:hover .header-submenu,
+.header-dropdown:focus-within .header-submenu {
   display: flex;
   opacity: 1;
   transform: translateY(0);

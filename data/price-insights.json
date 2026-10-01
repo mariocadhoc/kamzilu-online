@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T13:09:53",
+  "generatedAt": "2026-10-01T17:46:50",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -153,10 +153,10 @@
       "yearMinPrice": 6199.0,
       "yearMinDate": "2026-04-24",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 8629.0,
-      "yearMaxDate": "2026-10-01",
-      "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 7086.19,
+      "yearMaxPrice": 8599.0,
+      "yearMaxDate": "2026-09-12",
+      "yearMaxStore": "Amazon",
+      "yearAvgPrice": 7084.79,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "xbox-series-s-robot-white-1tb": {
@@ -170,7 +170,7 @@
       "yearMaxPrice": 10889.0,
       "yearMaxDate": "2026-09-26",
       "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 10350.97,
+      "yearAvgPrice": 10348.11,
       "yearMostFrequentLowestStore": "Sanborns"
     },
     "xbox-series-x-blanco-1tb": {

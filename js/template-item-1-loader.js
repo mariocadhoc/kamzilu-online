@@ -218,11 +218,11 @@ async function loadConsoleData() {
     const unavailable = [];
 
     for (const p of product.prices) {
-      if (typeof p.price === "number" && !isNaN(p.price)) {
-        const d = p.lastUpdated ? new Date(p.lastUpdated) : new Date(0);
+      if (Number.isFinite(p.price) && p.price > 0 && p.store && p.logo && (p["link-a"] || p.link) && p.validationStatus === "accepted" && p.identityValid !== false && p.availabilityValid !== false) {
+        const d = p.acceptedAt ? new Date(p.acceptedAt) : new Date(0);
         p._date = d;
-        p._isRecent = now - d <= RECENT_THRESHOLD_MS;
-        valid.push(p);
+        p._isRecent = now - d >= 0 && now - d <= RECENT_THRESHOLD_MS;
+        if (p._isRecent) valid.push(p);
       } else {
         unavailable.push(p);
       }
@@ -247,7 +247,7 @@ async function loadConsoleData() {
     const recentValid = valid.filter(p => p._isRecent);
     const heroItem = recentValid.length > 0
       ? recentValid[0]
-      : (valid.length > 0 ? valid[0] : null);
+      : null;
 
     // =====================================================
     // RENDER HERO
@@ -271,11 +271,7 @@ async function loadConsoleData() {
       ui.heroLink.href = heroItem["link-a"] || heroItem.link;
 
       const cat = heroItem._isRecent ? "recent" : "outdated";
-      const info = getUpdateTimeInfo(heroItem.lastUpdated, cat);
-      ui.heroUpdateTime.textContent = info.text;
-      ui.heroUpdateTime.className = `update-time ${info.class}`;
 
-      refreshGeoSentenceStamp(heroItem.lastUpdated, cat);
     } else if (ui.heroBlock) {
       ui.heroBlock.style.display = "none";
     }
@@ -294,12 +290,7 @@ async function loadConsoleData() {
     if (outdated.length > 0) addSeparator(list, "Precios anteriores");
     outdated.forEach(p => list.appendChild(createPriceRow(p, "outdated")));
 
-    if (unavailable.length > 0) {
-      addSeparator(list, "Sin disponibilidad detectada");
-      unavailable.forEach(p =>
-        list.appendChild(createPriceRow(p, "unavailable"))
-      );
-    }
+
 
     handleScrollAnimations();
     document.dispatchEvent(new Event("ConsolaTemplateLoaded"));
@@ -341,7 +332,6 @@ function createPriceRow(price, category) {
            loading="lazy">
       <div class="store-meta">
         <span class="store-name-text">${price.store}${badgeHTML}</span>
-        <span class="update-time ${info.class}">${info.text}</span>
       </div>
     </div>
 
