@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T08:40:58",
+  "generatedAt": "2026-10-01T11:36:43",
   "series": {
     "nintendo-switch-2": [
       {
@@ -10750,6 +10750,20 @@
         "date": "2026-10-01",
         "price": 11999.99,
         "store": "GamePlanet"
+      }
+    ],
+    "rog-xbox-ally-512gb": [
+      {
+        "date": "2026-10-01",
+        "price": 12403.0,
+        "store": "Amazon"
+      }
+    ],
+    "rog-xbox-ally-x-1tb": [
+      {
+        "date": "2026-10-01",
+        "price": 20699.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-s": [
