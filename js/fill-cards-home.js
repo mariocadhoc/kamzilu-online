@@ -119,7 +119,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         card.innerHTML = `
           <a href="${href}">
-            <div class="deal-badge">Oferta</div>
             <div class="card-image-wrapper">
               <img ${imgAttrs}>
             </div>

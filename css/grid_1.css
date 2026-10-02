@@ -102,19 +102,9 @@
   line-height: 1;
 }
 
-/* Badge de "Mejor Oferta" (Opcional dinámico) */
+/* Badge de "Mejor Oferta" (Desactivado) */
 .deal-badge {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background-color: var(--accent);
-  color: #000;
-  font-family: var(--font-tech);
-  font-size: 0.7rem;
-  font-weight: 700;
-  padding: 4px 8px;
-  border-radius: 4px;
-  text-transform: uppercase;
+  display: none !important;
 }
 
 /* ===== Skeletons para Home ===== */
