@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T01:10:03",
+  "generatedAt": "2026-10-15T01:10:03",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -27,10 +27,10 @@
       "yearMinPrice": 7999.99,
       "yearMinDate": "2026-10-05",
       "yearMinStore": "GamePlanet",
-      "yearMaxPrice": 12023.79,
-      "yearMaxDate": "2026-10-14",
-      "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 10506.32,
+      "yearMaxPrice": 11919.2,
+      "yearMaxDate": "2025-11-18",
+      "yearMaxStore": "Desconocida",
+      "yearAvgPrice": 10493.79,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+pokemon-legends-za-bundle": {
@@ -41,10 +41,10 @@
       "yearMinPrice": 6103.0,
       "yearMinDate": "2026-09-07",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 14999.0,
-      "yearMaxDate": "2026-10-14",
-      "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 11393.35,
+      "yearMaxPrice": 12599.0,
+      "yearMaxDate": "2026-09-30",
+      "yearMaxStore": "Elektra",
+      "yearAvgPrice": 11343.35,
       "yearMostFrequentLowestStore": "Elektra"
     },
     "nintendo-switch-lite-yellow": {
@@ -58,7 +58,7 @@
       "yearMaxPrice": 4640.0,
       "yearMaxDate": "2026-05-26",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 3624.35,
+      "yearAvgPrice": 3619.56,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "nintendo-switch-oled-blanco": {
@@ -72,7 +72,7 @@
       "yearMaxPrice": 7299.99,
       "yearMaxDate": "2026-04-24",
       "yearMaxStore": "GamePlanet",
-      "yearAvgPrice": 5803.1,
+      "yearAvgPrice": 5801.34,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "playstation-5-digital-1tb-astrobot-gt7": {
@@ -83,10 +83,10 @@
       "yearMinPrice": 7954.0,
       "yearMinDate": "2026-01-05",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 12999.0,
-      "yearMaxDate": "2026-10-14",
-      "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 10011.04,
+      "yearMaxPrice": 11999.99,
+      "yearMaxDate": "2026-03-25",
+      "yearMaxStore": "GamePlanet",
+      "yearAvgPrice": 10001.15,
       "yearMostFrequentLowestStore": "Elektra"
     },
     "playstation-5-pro-digital-2tb": {
@@ -97,10 +97,10 @@
       "yearMinPrice": 9999.99,
       "yearMinDate": "2026-06-24",
       "yearMinStore": "GamePlanet",
-      "yearMaxPrice": 23229.0,
-      "yearMaxDate": "2026-10-14",
-      "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 15003.26,
+      "yearMaxPrice": 19299.99,
+      "yearMaxDate": "2026-02-02",
+      "yearMaxStore": "GamePlanet",
+      "yearAvgPrice": 14961.66,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "playstation-5-slim-blanco-estandar-1tb": {
@@ -111,10 +111,10 @@
       "yearMinPrice": 7225.0,
       "yearMinDate": "2026-03-24",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 14499.0,
-      "yearMaxDate": "2026-10-14",
-      "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 10196.72,
+      "yearMaxPrice": 11999.99,
+      "yearMaxDate": "2026-03-06",
+      "yearMaxStore": "GamePlanet",
+      "yearAvgPrice": 10188.87,
       "yearMostFrequentLowestStore": "Walmart"
     },
     "rog-xbox-ally-512gb": {
@@ -156,7 +156,7 @@
       "yearMaxPrice": 9000.0,
       "yearMaxDate": "2026-10-11",
       "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 7124.3,
+      "yearAvgPrice": 7123.99,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "xbox-series-s-robot-white-1tb": {
@@ -170,7 +170,7 @@
       "yearMaxPrice": 12625.95,
       "yearMaxDate": "2026-10-05",
       "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 10502.31,
+      "yearAvgPrice": 10467.34,
       "yearMostFrequentLowestStore": "Sanborns"
     },
     "xbox-series-x-blanco-1tb": {
@@ -198,7 +198,7 @@
       "yearMaxPrice": 26999.0,
       "yearMaxDate": "2026-09-01",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 25368.21,
+      "yearAvgPrice": 25311.96,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "xbox-series-x-negro-1tb": {
@@ -209,10 +209,10 @@
       "yearMinPrice": 8599.0,
       "yearMinDate": "2026-06-13",
       "yearMinStore": "Walmart",
-      "yearMaxPrice": 18110.0,
-      "yearMaxDate": "2026-10-14",
-      "yearMaxStore": "Amazon",
-      "yearAvgPrice": 13112.3,
+      "yearMaxPrice": 15699.0,
+      "yearMaxDate": "2025-11-18",
+      "yearMaxStore": "Desconocida",
+      "yearAvgPrice": 13104.74,
       "yearMostFrequentLowestStore": "Amazon"
     }
   },
