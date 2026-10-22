@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T01:10:03",
+  "generatedAt": "2026-10-22T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1556,6 +1556,11 @@
         "date": "2026-10-21",
         "price": 10898.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-10-22",
+        "price": 10898.0,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -3196,7 +3201,12 @@
       },
       {
         "date": "2026-10-21",
-        "price": 11392.0,
+        "price": 7999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-22",
+        "price": 10687.93,
         "store": "MercadoLibre"
       }
     ],
@@ -3473,6 +3483,11 @@
       },
       {
         "date": "2026-10-21",
+        "price": 12599.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-10-22",
         "price": 14999.0,
         "store": "MercadoLibre"
       }
@@ -5105,6 +5120,11 @@
       },
       {
         "date": "2026-10-21",
+        "price": 2999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-22",
         "price": 4525.64,
         "store": "MercadoLibre"
       }
@@ -6742,7 +6762,12 @@
       },
       {
         "date": "2026-10-21",
-        "price": 5649.0,
+        "price": 5295.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-10-22",
+        "price": 5295.0,
         "store": "MercadoLibre"
       }
     ],
@@ -8294,8 +8319,13 @@
       },
       {
         "date": "2026-10-21",
-        "price": 13900.0,
-        "store": "MercadoLibre"
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-22",
+        "price": 11590.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -9921,8 +9951,13 @@
       },
       {
         "date": "2026-10-21",
-        "price": 23299.0,
-        "store": "MercadoLibre"
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-22",
+        "price": 20690.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -11548,7 +11583,12 @@
       },
       {
         "date": "2026-10-21",
-        "price": 14999.0,
+        "price": 11999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-22",
+        "price": 12912.57,
         "store": "MercadoLibre"
       }
     ],
@@ -13401,6 +13441,11 @@
         "date": "2026-10-21",
         "price": 8599.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-10-22",
+        "price": 8599.0,
+        "store": "MercadoLibre"
       }
     ],
     "xbox-series-s-robot-white-1tb": [
@@ -13677,6 +13722,11 @@
       {
         "date": "2026-10-21",
         "price": 12499.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-10-22",
+        "price": 13499.0,
         "store": "MercadoLibre"
       }
     ],
@@ -15310,6 +15360,11 @@
         "date": "2026-10-21",
         "price": 16909.11,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-10-22",
+        "price": 16909.11,
+        "store": "MercadoLibre"
       }
     ],
     "xbox-series-x-galaxy-black-2tb": [
@@ -15585,7 +15640,7 @@
       },
       {
         "date": "2026-10-21",
-        "price": 25999.0,
+        "price": 23453.0,
         "store": "Amazon"
       }
     ],
@@ -17222,8 +17277,13 @@
       },
       {
         "date": "2026-10-21",
-        "price": 24680.0,
-        "store": "Amazon"
+        "price": 15690.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-10-22",
+        "price": 15690.0,
+        "store": "Soriana"
       }
     ]
   }
