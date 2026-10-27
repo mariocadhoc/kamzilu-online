@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T01:10:03",
+  "generatedAt": "2026-10-27T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1579,8 +1579,13 @@
       },
       {
         "date": "2026-10-26",
+        "price": 9752.05,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-10-27",
         "price": 10898.0,
-        "store": "Amazon"
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -3246,7 +3251,12 @@
       },
       {
         "date": "2026-10-26",
-        "price": 11999.0,
+        "price": 7999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-27",
+        "price": 11546.5,
         "store": "MercadoLibre"
       }
     ],
@@ -3548,7 +3558,12 @@
       },
       {
         "date": "2026-10-26",
-        "price": 14500.0,
+        "price": 12599.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-10-27",
+        "price": 14999.0,
         "store": "MercadoLibre"
       }
     ],
@@ -5205,6 +5220,11 @@
       },
       {
         "date": "2026-10-26",
+        "price": 2999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-27",
         "price": 4525.64,
         "store": "MercadoLibre"
       }
@@ -6868,6 +6888,11 @@
       {
         "date": "2026-10-26",
         "price": 5499.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-10-27",
+        "price": 5712.0,
         "store": "MercadoLibre"
       }
     ],
@@ -8444,7 +8469,12 @@
       },
       {
         "date": "2026-10-26",
-        "price": 15397.0,
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-27",
+        "price": 12999.0,
         "store": "MercadoLibre"
       }
     ],
@@ -10096,7 +10126,12 @@
       },
       {
         "date": "2026-10-26",
-        "price": 22499.0,
+        "price": 9999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-27",
+        "price": 22999.0,
         "store": "MercadoLibre"
       }
     ],
@@ -11748,7 +11783,12 @@
       },
       {
         "date": "2026-10-26",
-        "price": 14999.0,
+        "price": 11999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-10-27",
+        "price": 9999.0,
         "store": "MercadoLibre"
       }
     ],
@@ -13674,7 +13714,12 @@
       },
       {
         "date": "2026-10-26",
-        "price": 8999.0,
+        "price": 8799.0,
+        "store": "Coppel"
+      },
+      {
+        "date": "2026-10-27",
+        "price": 9952.0,
         "store": "MercadoLibre"
       }
     ],
@@ -13976,6 +14021,11 @@
       },
       {
         "date": "2026-10-26",
+        "price": 12359.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-10-27",
         "price": 12499.0,
         "store": "MercadoLibre"
       }
@@ -15633,7 +15683,12 @@
       },
       {
         "date": "2026-10-26",
-        "price": 17999.0,
+        "price": 16999.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-10-27",
+        "price": 18035.52,
         "store": "MercadoLibre"
       }
     ],
@@ -15935,8 +15990,8 @@
       },
       {
         "date": "2026-10-26",
-        "price": 26999.0,
-        "store": "Amazon"
+        "price": 24799.0,
+        "store": "Coppel"
       }
     ],
     "xbox-series-x-negro-1tb": [
@@ -17597,8 +17652,8 @@
       },
       {
         "date": "2026-10-26",
-        "price": 24678.0,
-        "store": "Amazon"
+        "price": 15690.0,
+        "store": "Soriana"
       }
     ]
   }
