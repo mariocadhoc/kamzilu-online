@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T01:10:03",
+  "generatedAt": "2026-10-30T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1594,8 +1594,8 @@
       },
       {
         "date": "2026-10-29",
-        "price": 10898.0,
-        "store": "Amazon"
+        "price": 9133.0,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -11868,8 +11868,8 @@
       },
       {
         "date": "2026-10-29",
-        "price": 11999.99,
-        "store": "GamePlanet"
+        "price": 9999.0,
+        "store": "MercadoLibre"
       }
     ],
     "rog-xbox-ally-512gb": [
@@ -13839,8 +13839,8 @@
       },
       {
         "date": "2026-10-29",
-        "price": 9799.0,
-        "store": "Amazon"
+        "price": 8789.0,
+        "store": "Coppel"
       }
     ],
     "xbox-series-s-robot-white-1tb": [
@@ -14156,8 +14156,8 @@
       },
       {
         "date": "2026-10-29",
-        "price": 12359.0,
-        "store": "Amazon"
+        "price": 10216.28,
+        "store": "MercadoLibre"
       }
     ],
     "xbox-series-x-blanco-1tb": [

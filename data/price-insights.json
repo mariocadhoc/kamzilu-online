@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T01:10:03",
+  "generatedAt": "2026-10-30T01:10:03",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -16,7 +16,7 @@
       "yearMaxPrice": 10898.0,
       "yearMaxDate": "2026-10-02",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 9653.29,
+      "yearAvgPrice": 9647.75,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+mario-kart-bundle": {
@@ -114,7 +114,7 @@
       "yearMaxPrice": 11999.99,
       "yearMaxDate": "2026-03-06",
       "yearMaxStore": "GamePlanet",
-      "yearAvgPrice": 10258.43,
+      "yearAvgPrice": 10252.42,
       "yearMostFrequentLowestStore": "Walmart"
     },
     "rog-xbox-ally-512gb": {
@@ -153,10 +153,10 @@
       "yearMinPrice": 6199.0,
       "yearMinDate": "2026-04-24",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 9799.0,
-      "yearMaxDate": "2026-10-29",
-      "yearMaxStore": "Amazon",
-      "yearAvgPrice": 7189.43,
+      "yearMaxPrice": 9000.0,
+      "yearMaxDate": "2026-10-11",
+      "yearMaxStore": "MercadoLibre",
+      "yearAvgPrice": 7186.41,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "xbox-series-s-robot-white-1tb": {
@@ -170,7 +170,7 @@
       "yearMaxPrice": 12625.95,
       "yearMaxDate": "2026-10-05",
       "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 10688.21,
+      "yearAvgPrice": 10654.2,
       "yearMostFrequentLowestStore": "MercadoLibre"
     },
     "xbox-series-x-blanco-1tb": {
