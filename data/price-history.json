@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T01:10:03",
+  "generatedAt": "2026-11-07T01:10:03",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1634,8 +1634,13 @@
       },
       {
         "date": "2026-11-06",
-        "price": 11499.0,
+        "price": 9499.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-07",
+        "price": 9999.0,
+        "store": "Amazon"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -3356,8 +3361,13 @@
       },
       {
         "date": "2026-11-06",
-        "price": 11670.46,
-        "store": "MercadoLibre"
+        "price": 7999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-11-07",
+        "price": 12799.0,
+        "store": "Amazon"
       }
     ],
     "nintendo-switch-2+pokemon-legends-za-bundle": [
@@ -3713,8 +3723,8 @@
       },
       {
         "date": "2026-11-06",
-        "price": 14999.0,
-        "store": "MercadoLibre"
+        "price": 12749.0,
+        "store": "Elektra"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -5425,8 +5435,13 @@
       },
       {
         "date": "2026-11-06",
-        "price": 4525.64,
-        "store": "MercadoLibre"
+        "price": 2999.99,
+        "store": "GamePlanet"
+      },
+      {
+        "date": "2026-11-07",
+        "price": 7710.0,
+        "store": "Amazon"
       }
     ],
     "nintendo-switch-oled-blanco": [
@@ -7144,6 +7159,11 @@
         "date": "2026-11-06",
         "price": 5499.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-07",
+        "price": 5799.0,
+        "store": "Amazon"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -8774,8 +8794,8 @@
       },
       {
         "date": "2026-11-06",
-        "price": 14999.0,
-        "store": "MercadoLibre"
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -10481,8 +10501,8 @@
       },
       {
         "date": "2026-11-06",
-        "price": 22899.0,
-        "store": "MercadoLibre"
+        "price": 9999.99,
+        "store": "GamePlanet"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -12188,8 +12208,8 @@
       },
       {
         "date": "2026-11-06",
-        "price": 14999.0,
-        "store": "MercadoLibre"
+        "price": 11999.99,
+        "store": "GamePlanet"
       }
     ],
     "rog-xbox-ally-512gb": [
@@ -12370,6 +12390,16 @@
       },
       {
         "date": "2026-11-05",
+        "price": 10999.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-11-06",
+        "price": 10999.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-11-07",
         "price": 10999.0,
         "store": "Amazon"
       }
@@ -12553,6 +12583,16 @@
       {
         "date": "2026-11-05",
         "price": 19799.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-11-06",
+        "price": 19999.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-11-07",
+        "price": 19999.0,
         "store": "Amazon"
       }
     ],
@@ -14269,8 +14309,13 @@
       },
       {
         "date": "2026-11-06",
-        "price": 9952.0,
-        "store": "MercadoLibre"
+        "price": 8789.0,
+        "store": "Coppel"
+      },
+      {
+        "date": "2026-11-07",
+        "price": 9799.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-s-robot-white-1tb": [
@@ -14626,8 +14671,13 @@
       },
       {
         "date": "2026-11-06",
-        "price": 12499.0,
-        "store": "MercadoLibre"
+        "price": 11559.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-11-07",
+        "price": 11559.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -16338,8 +16388,13 @@
       },
       {
         "date": "2026-11-06",
-        "price": 14199.0,
+        "price": 11999.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-07",
+        "price": 21550.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-x-galaxy-black-2tb": [
@@ -16692,6 +16747,11 @@
         "date": "2026-11-05",
         "price": 32999.0,
         "store": "Coppel"
+      },
+      {
+        "date": "2026-11-06",
+        "price": 27999.0,
+        "store": "Walmart"
       }
     ],
     "xbox-series-x-negro-1tb": [
@@ -18404,6 +18464,16 @@
         "date": "2026-11-05",
         "price": 15690.0,
         "store": "Soriana"
+      },
+      {
+        "date": "2026-11-06",
+        "price": 15690.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-11-07",
+        "price": 24678.0,
+        "store": "Amazon"
       }
     ]
   }
