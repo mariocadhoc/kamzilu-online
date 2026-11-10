@@ -37,11 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function normalizeSeries(points) {
     return points.map(pt => ({
-      date: new Date(pt.date),
-      timestamp: new Date(pt.date).getTime(),
+      date: new Date(pt.date + "T12:00:00"),
+      timestamp: new Date(pt.date + "T12:00:00").getTime(),
       price: parseFloat(pt.price),
       store: pt.store || null
-    })).sort((a, b) => a.timestamp - b.timestamp);
+    })).filter(pt => Number.isFinite(pt.timestamp) && Number.isFinite(pt.price) && pt.price > 0)
+      .sort((a, b) => a.timestamp - b.timestamp);
   }
   
   // Mínimo de puntos para que una curva diga algo. Es el mismo umbral que ya
@@ -188,15 +189,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileLandscape = isMobileLandscape();
 
     // Dimensiones lógicas (viewBox)
-    const width = mobile ? 800 : 800;
-    const height = mobile ? (mobileLandscape ? 340 : 430) : 300;
+    // Use CSS pixels as SVG units so axis labels retain their actual size.
+    const width = Math.max(240, wrapper.clientWidth);
+    const height = wrapper.clientHeight || 300;
     const padding = mobile
-      ? { top: 52, right: 18, bottom: 62, left: 68 }
-      : { top: 56, right: 30, bottom: 40, left: 60 };
+      ? { top: 62, right: 12, bottom: 42, left: 62 }
+      : { top: 56, right: 24, bottom: 40, left: 70 };
 
     // Mapear puntos a tipos correctos y ordenar
     const normalizedData = normalizeSeries(points);
-    const data = mobile && !mobileLandscape ? aggregateWeekly(normalizedData) : normalizedData;
+    const data = normalizedData;
+    if (data.length < 2) return;
 
     // Valores extremos
     const prices = data.map(d => d.price);
@@ -213,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const xMax = Math.max(...timestamps);
 
     // Funciones de mapeo a coordenadas SVG
-    const getX = (ts) => padding.left + ((ts - xMin) / (xMax - xMin)) * (width - padding.left - padding.right);
+    const getX = (ts) => padding.left + ((ts - xMin) / (xMax - xMin || 1)) * (width - padding.left - padding.right);
     const getY = (price) => height - padding.bottom - ((price - yMin) / (yMax - yMin)) * (height - padding.top - padding.bottom);
 
     // Crear elemento SVG
@@ -260,13 +263,13 @@ document.addEventListener("DOMContentLoaded", () => {
       text.setAttribute("text-anchor", "end");
       text.setAttribute("fill", "#64748b");
       text.style.fontFamily = "var(--font-barlow, sans-serif)";
-      text.style.fontSize = mobile ? "13px" : "11px";
+      text.style.fontSize = mobile ? "12px" : "13px";
       text.textContent = `$${Math.round(priceVal).toLocaleString("es-MX")}`;
       svg.appendChild(text);
     }
 
     // Dibujar etiquetas de tiempo (X) - 3 puntos equidistantes
-    const xLabelCount = mobile ? 4 : 3;
+    const xLabelCount = width < 450 ? 3 : 4;
     for (let i = 0; i < xLabelCount; i++) {
       const ts = xMin + (i / (xLabelCount - 1)) * (xMax - xMin);
       const x = getX(ts);
@@ -278,7 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
       text.setAttribute("text-anchor", i === 0 ? "start" : i === xLabelCount - 1 ? "end" : "middle");
       text.setAttribute("fill", "#64748b");
       text.style.fontFamily = "var(--font-barlow, sans-serif)";
-      text.style.fontSize = mobile ? "13px" : "11px";
+      text.style.fontSize = mobile ? "12px" : "13px";
 
       // Formato corto mes/año
       const months = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
@@ -636,7 +639,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Posicionar panel arriba-izquierda, fijo, sin seguir el mouse
       comparePanel.style.display = "block";
-      comparePanel.style.left = `${padding.left}px`;
+      comparePanel.style.left = `${mobile ? 4 : padding.left}px`;
 
       // Calcular top dinámico: borde inferior del panel queda ≥8px por encima del plot
       const panelH = comparePanel.offsetHeight;
