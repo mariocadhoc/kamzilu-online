@@ -44,6 +44,17 @@
     element.replaceChildren(document.createTextNode(parts.join(".")), decimals);
   }
 
+  function setStoreName(element, store) {
+    element.textContent = store;
+    if (["Amazon", "MercadoLibre", "Walmart"].includes(store)) {
+      const badge = document.createElement("span");
+      badge.className = "freq-badge";
+      badge.dataset.tooltip = "⚡️ El precio de esta tienda cambia varias veces al día.";
+      badge.textContent = " ⚡";
+      element.append(badge);
+    }
+  }
+
   function rowFor(offer) {
     const row = document.createElement("div");
     row.className = "price-row recent";
@@ -58,8 +69,11 @@
     logo.loading = "lazy";
     const name = document.createElement("span");
     name.className = "store-name-text";
-    name.textContent = offer.store;
-    store.append(logo, name);
+    setStoreName(name, offer.store);
+    const meta = document.createElement("div");
+    meta.className = "store-meta";
+    meta.append(name);
+    store.append(logo, meta);
     const price = document.createElement("div");
     price.className = "col-price";
     const value = document.createElement("span");
@@ -95,7 +109,7 @@
 
     if (best) {
       setPrice(document.getElementById("hero-best-price-val"), best.price);
-      document.getElementById("hero-store-name").textContent = best.store;
+      setStoreName(document.getElementById("hero-store-name"), best.store);
       const logo = document.getElementById("hero-store-logo");
       logo.src = best.logo;
       logo.alt = "Logo de " + best.store;
