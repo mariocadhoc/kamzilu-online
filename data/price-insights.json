@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T01:10:03",
+  "generatedAt": "2026-11-11T17:47:19",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -13,10 +13,10 @@
       "yearMinPrice": 8499.0,
       "yearMinDate": "2026-06-23",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 10990.0,
-      "yearMaxDate": "2026-11-11",
-      "yearMaxStore": "Soriana",
-      "yearAvgPrice": 9667.92,
+      "yearMaxPrice": 10898.0,
+      "yearMaxDate": "2026-10-02",
+      "yearMaxStore": "Amazon",
+      "yearAvgPrice": 9664.93,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+mario-kart-bundle": {
@@ -24,13 +24,13 @@
       "windowStartDate": "2025-11-12",
       "windowEndDate": "2026-11-11",
       "windowPointCount": 348,
-      "yearMinPrice": 7999.99,
-      "yearMinDate": "2026-10-05",
+      "yearMinPrice": 7999.01,
+      "yearMinDate": "2026-11-11",
       "yearMinStore": "GamePlanet",
       "yearMaxPrice": 11919.2,
       "yearMaxDate": "2025-11-18",
       "yearMaxStore": "Desconocida",
-      "yearAvgPrice": 10303.72,
+      "yearAvgPrice": 10295.13,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+pokemon-legends-za-bundle": {
@@ -41,10 +41,10 @@
       "yearMinPrice": 6103.0,
       "yearMinDate": "2026-09-07",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 14999.0,
-      "yearMaxDate": "2026-11-11",
-      "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 11838.85,
+      "yearMaxPrice": 12749.0,
+      "yearMaxDate": "2026-11-02",
+      "yearMaxStore": "Elektra",
+      "yearAvgPrice": 11809.25,
       "yearMostFrequentLowestStore": "Elektra"
     },
     "nintendo-switch-lite-yellow": {
@@ -58,7 +58,7 @@
       "yearMaxPrice": 4640.0,
       "yearMaxDate": "2026-05-26",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 3573.97,
+      "yearAvgPrice": 3569.57,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "nintendo-switch-oled-blanco": {
@@ -86,7 +86,7 @@
       "yearMaxPrice": 11999.99,
       "yearMaxDate": "2026-03-25",
       "yearMaxStore": "GamePlanet",
-      "yearAvgPrice": 10005.85,
+      "yearAvgPrice": 10001.04,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "playstation-5-pro-digital-2tb": {
@@ -94,13 +94,13 @@
       "windowStartDate": "2025-11-12",
       "windowEndDate": "2026-11-11",
       "windowPointCount": 346,
-      "yearMinPrice": 9999.99,
-      "yearMinDate": "2026-06-24",
+      "yearMinPrice": 9999.01,
+      "yearMinDate": "2026-11-11",
       "yearMinStore": "GamePlanet",
-      "yearMaxPrice": 20690.0,
-      "yearMaxDate": "2026-11-11",
-      "yearMaxStore": "Soriana",
-      "yearAvgPrice": 14591.03,
+      "yearMaxPrice": 19299.99,
+      "yearMaxDate": "2026-02-02",
+      "yearMaxStore": "GamePlanet",
+      "yearAvgPrice": 14560.13,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "playstation-5-slim-blanco-estandar-1tb": {
@@ -119,16 +119,16 @@
     },
     "rog-xbox-ally-512gb": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-11",
-      "windowEndDate": "2026-11-10",
-      "windowPointCount": 41,
+      "windowStartDate": "2025-11-12",
+      "windowEndDate": "2026-11-11",
+      "windowPointCount": 42,
       "yearMinPrice": 10999.0,
       "yearMinDate": "2026-10-02",
       "yearMinStore": "Amazon",
       "yearMaxPrice": 12403.0,
       "yearMaxDate": "2026-10-01",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 11392.8,
+      "yearAvgPrice": 11383.43,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "rog-xbox-ally-x-1tb": {
@@ -139,10 +139,10 @@
       "yearMinPrice": 19393.0,
       "yearMinDate": "2026-10-01",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 20491.0,
-      "yearMaxDate": "2026-11-11",
-      "yearMaxStore": "Walmart",
-      "yearAvgPrice": 19752.29,
+      "yearMaxPrice": 19999.0,
+      "yearMaxDate": "2026-11-06",
+      "yearMaxStore": "Amazon",
+      "yearAvgPrice": 19740.57,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "xbox-series-s": {
@@ -153,10 +153,10 @@
       "yearMinPrice": 6199.0,
       "yearMinDate": "2026-04-24",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 9952.0,
-      "yearMaxDate": "2026-11-11",
-      "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 7249.14,
+      "yearMaxPrice": 9799.0,
+      "yearMaxDate": "2026-11-02",
+      "yearMaxStore": "Amazon",
+      "yearAvgPrice": 7245.65,
       "yearMostFrequentLowestStore": "GamePlanet"
     },
     "xbox-series-s-robot-white-1tb": {
@@ -170,7 +170,7 @@
       "yearMaxPrice": 12625.95,
       "yearMaxDate": "2026-10-05",
       "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 10780.17,
+      "yearAvgPrice": 10767.8,
       "yearMostFrequentLowestStore": "MercadoLibre"
     },
     "xbox-series-x-blanco-1tb": {
@@ -189,16 +189,16 @@
     },
     "xbox-series-x-galaxy-black-2tb": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-11",
-      "windowEndDate": "2026-11-10",
-      "windowPointCount": 75,
+      "windowStartDate": "2025-11-12",
+      "windowEndDate": "2026-11-11",
+      "windowPointCount": 76,
       "yearMinPrice": 18951.0,
       "yearMinDate": "2026-09-25",
       "yearMinStore": "Amazon",
       "yearMaxPrice": 32999.0,
       "yearMaxDate": "2026-11-05",
       "yearMaxStore": "Coppel",
-      "yearAvgPrice": 25483.51,
+      "yearAvgPrice": 25516.61,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "xbox-series-x-negro-1tb": {
@@ -212,7 +212,7 @@
       "yearMaxPrice": 15699.0,
       "yearMaxDate": "2025-11-18",
       "yearMaxStore": "Desconocida",
-      "yearAvgPrice": 13170.11,
+      "yearAvgPrice": 13161.0,
       "yearMostFrequentLowestStore": "Amazon"
     }
   },

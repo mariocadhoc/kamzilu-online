@@ -85,15 +85,34 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const productId = getSlug();
+    let series = [];
+    let activeRange = "max";
+    const renderResponsiveChart = () =>
+      renderSVGChart(container, filterByRange(series, activeRange));
+    const production = window.KamziluCatalogs && window.KamziluCatalogs.isProduction();
+
+    async function loadHistory() {
+      const read = async (url) => {
+        const res = await fetch(url, { cache: "no-store", signal: AbortSignal.timeout(15000) });
+        if (!res.ok) throw new Error("No se pudo cargar el histórico.");
+        const data = await res.json();
+        if (!data.series || !Array.isArray(data.series[productId])) throw new Error("Histórico inválido.");
+        return data;
+      };
+      if (production) {
+        try { return await read("https://api.kamzilu.com/api/price-history"); }
+        catch (error) {
+          // Keep an already loaded live series if a later refresh fails.
+          if (series.length) throw error;
+        }
+      }
+      return read("/data/price-history.json");
+    }
 
     // 2. Cargar datos del JSON consolidado
-    fetch("/data/price-history.json")
-      .then(res => {
-        if (!res.ok) throw new Error("No se pudo cargar el histórico.");
-        return res.json();
-      })
+    const refreshHistory = () => loadHistory()
       .then(data => {
-        const series = data.series[productId];
+        series = data.series[productId];
         // Si no hay datos o hay menos de 5 puntos, no mostrar gráfico
         if (!series || series.length < 5) {
           section.style.display = "none";
@@ -103,11 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Mostrar sección
         section.style.display = "block";
 
-        // Arranca en "Máx." para no cambiar lo que el usuario ve hoy.
-        let activeRange = "max";
-
-        const renderResponsiveChart = () =>
-          renderSVGChart(container, filterByRange(series, activeRange));
         renderResponsiveChart();
 
         setupRangeFilter(series, (range) => {
@@ -129,8 +143,15 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .catch(err => {
         console.error("[Chart] Error cargando histórico:", err);
-        section.style.display = "none";
+        if (!series.length) section.style.display = "none";
       });
+    refreshHistory();
+    window.setInterval(() => {
+      if (document.visibilityState !== "hidden") refreshHistory();
+    }, 5 * 60 * 1000);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState !== "hidden") refreshHistory();
+    });
   }
 
   /**
