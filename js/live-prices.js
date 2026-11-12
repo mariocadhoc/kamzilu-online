@@ -19,6 +19,9 @@
       const accepted = observedTime(offer.acceptedAt);
       const updated = observedTime(offer.lastUpdated);
       const link = offer["link-a"] || offer.link;
+      if (offer.store === "GamePlanet" && !(offer.availabilityVersion === 1 &&
+          offer.availabilityValid === true && offer.availabilityEvidence &&
+          String(offer.availability || "").toLowerCase().split("/").pop() === "instock")) return false;
       return Number.isFinite(offer.price) && offer.price > 0 &&
         offer.validationStatus === "accepted" && !offer.error &&
         rejectedFlags.every(key => offer[key] !== false) &&

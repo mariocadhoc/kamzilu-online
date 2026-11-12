@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T17:47:19",
+  "generatedAt": "2026-11-11T18:17:50",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -16,7 +16,7 @@
       "yearMaxPrice": 10898.0,
       "yearMaxDate": "2026-10-02",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 9664.93,
+      "yearAvgPrice": 9731.21,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+mario-kart-bundle": {
@@ -24,13 +24,13 @@
       "windowStartDate": "2025-11-12",
       "windowEndDate": "2026-11-11",
       "windowPointCount": 348,
-      "yearMinPrice": 7999.01,
-      "yearMinDate": "2026-11-11",
-      "yearMinStore": "GamePlanet",
-      "yearMaxPrice": 11919.2,
-      "yearMaxDate": "2025-11-18",
-      "yearMaxStore": "Desconocida",
-      "yearAvgPrice": 10295.13,
+      "yearMinPrice": 9638.76,
+      "yearMinDate": "2026-11-09",
+      "yearMinStore": "MercadoLibre",
+      "yearMaxPrice": 12899.0,
+      "yearMaxDate": "2026-10-30",
+      "yearMaxStore": "Amazon",
+      "yearAvgPrice": 10906.86,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+pokemon-legends-za-bundle": {
@@ -44,22 +44,22 @@
       "yearMaxPrice": 12749.0,
       "yearMaxDate": "2026-11-02",
       "yearMaxStore": "Elektra",
-      "yearAvgPrice": 11809.25,
+      "yearAvgPrice": 11867.87,
       "yearMostFrequentLowestStore": "Elektra"
     },
     "nintendo-switch-lite-yellow": {
       "windowDays": 365,
       "windowStartDate": "2025-11-12",
       "windowEndDate": "2026-11-11",
-      "windowPointCount": 347,
+      "windowPointCount": 339,
       "yearMinPrice": 2799.0,
       "yearMinDate": "2025-11-25",
       "yearMinStore": "Walmart",
-      "yearMaxPrice": 4640.0,
-      "yearMaxDate": "2026-05-26",
-      "yearMaxStore": "Amazon",
-      "yearAvgPrice": 3569.57,
-      "yearMostFrequentLowestStore": "GamePlanet"
+      "yearMaxPrice": 7879.0,
+      "yearMaxDate": "2026-03-06",
+      "yearMaxStore": "Elektra",
+      "yearAvgPrice": 4087.98,
+      "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-oled-blanco": {
       "windowDays": 365,
@@ -69,10 +69,10 @@
       "yearMinPrice": 3999.0,
       "yearMinDate": "2026-10-30",
       "yearMinStore": "MercadoLibre",
-      "yearMaxPrice": 7299.99,
+      "yearMaxPrice": 9129.0,
       "yearMaxDate": "2026-04-24",
-      "yearMaxStore": "GamePlanet",
-      "yearAvgPrice": 5767.45,
+      "yearMaxStore": "Sanborns",
+      "yearAvgPrice": 5772.72,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "playstation-5-digital-1tb-astrobot-gt7": {
@@ -83,38 +83,38 @@
       "yearMinPrice": 7954.0,
       "yearMinDate": "2026-01-05",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 11999.99,
-      "yearMaxDate": "2026-03-25",
-      "yearMaxStore": "GamePlanet",
-      "yearAvgPrice": 10001.04,
-      "yearMostFrequentLowestStore": "GamePlanet"
+      "yearMaxPrice": 15940.0,
+      "yearMaxDate": "2026-10-18",
+      "yearMaxStore": "MercadoLibre",
+      "yearAvgPrice": 10675.86,
+      "yearMostFrequentLowestStore": "Elektra"
     },
     "playstation-5-pro-digital-2tb": {
       "windowDays": 365,
       "windowStartDate": "2025-11-12",
       "windowEndDate": "2026-11-11",
-      "windowPointCount": 346,
-      "yearMinPrice": 9999.01,
-      "yearMinDate": "2026-11-11",
-      "yearMinStore": "GamePlanet",
-      "yearMaxPrice": 19299.99,
-      "yearMaxDate": "2026-02-02",
-      "yearMaxStore": "GamePlanet",
-      "yearAvgPrice": 14560.13,
-      "yearMostFrequentLowestStore": "GamePlanet"
+      "windowPointCount": 345,
+      "yearMinPrice": 13924.0,
+      "yearMinDate": "2026-01-28",
+      "yearMinStore": "Amazon",
+      "yearMaxPrice": 20599.0,
+      "yearMaxDate": "2026-09-02",
+      "yearMaxStore": "Amazon",
+      "yearAvgPrice": 19306.87,
+      "yearMostFrequentLowestStore": "Elektra"
     },
     "playstation-5-slim-blanco-estandar-1tb": {
       "windowDays": 365,
       "windowStartDate": "2025-11-12",
       "windowEndDate": "2026-11-11",
-      "windowPointCount": 346,
+      "windowPointCount": 290,
       "yearMinPrice": 7225.0,
       "yearMinDate": "2026-03-24",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 11999.99,
-      "yearMaxDate": "2026-03-06",
-      "yearMaxStore": "GamePlanet",
-      "yearAvgPrice": 10248.69,
+      "yearMaxPrice": 16390.0,
+      "yearMaxDate": "2026-09-22",
+      "yearMaxStore": "Amazon",
+      "yearAvgPrice": 10316.54,
       "yearMostFrequentLowestStore": "Walmart"
     },
     "rog-xbox-ally-512gb": {
@@ -156,8 +156,8 @@
       "yearMaxPrice": 9799.0,
       "yearMaxDate": "2026-11-02",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 7245.65,
-      "yearMostFrequentLowestStore": "GamePlanet"
+      "yearAvgPrice": 7458.86,
+      "yearMostFrequentLowestStore": "Coppel"
     },
     "xbox-series-s-robot-white-1tb": {
       "windowDays": 365,
@@ -184,7 +184,7 @@
       "yearMaxPrice": 16999.0,
       "yearMaxDate": "2026-10-23",
       "yearMaxStore": "Elektra",
-      "yearAvgPrice": 12524.62,
+      "yearAvgPrice": 12887.75,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "xbox-series-x-galaxy-black-2tb": {
@@ -212,7 +212,7 @@
       "yearMaxPrice": 15699.0,
       "yearMaxDate": "2025-11-18",
       "yearMaxStore": "Desconocida",
-      "yearAvgPrice": 13161.0,
+      "yearAvgPrice": 13251.81,
       "yearMostFrequentLowestStore": "Amazon"
     }
   },
@@ -243,12 +243,12 @@
         "preEventBaselineStart": "2026-06-16",
         "preEventBaselineEnd": "2026-06-22",
         "preEventBaselinePointCount": 7,
-        "status": "relevant_drop",
+        "status": "strong_drop",
         "eventMinPrice": 8499.0,
         "eventMinDate": "2026-06-23",
         "eventMinStore": "Amazon",
-        "preEventAvgPrice": 8999.99,
-        "changeVsPreEventAvgPercent": -5.57
+        "preEventAvgPrice": 9391.29,
+        "changeVsPreEventAvgPercent": -9.5
       },
       {
         "eventId": "hot-sale-2025",
@@ -361,8 +361,8 @@
         "eventMinPrice": 10199.0,
         "eventMinDate": "2026-06-23",
         "eventMinStore": "Amazon",
-        "preEventAvgPrice": 10518.28,
-        "changeVsPreEventAvgPercent": -3.04
+        "preEventAvgPrice": 10529.0,
+        "changeVsPreEventAvgPercent": -3.13
       },
       {
         "eventId": "hot-sale-2025",
@@ -573,8 +573,8 @@
         "eventMinPrice": 2899.0,
         "eventMinDate": "2026-06-03",
         "eventMinStore": "Walmart",
-        "preEventAvgPrice": 3756.99,
-        "changeVsPreEventAvgPercent": -22.84
+        "preEventAvgPrice": 4313.86,
+        "changeVsPreEventAvgPercent": -32.8
       },
       {
         "eventId": "prime-day-2026",
@@ -653,8 +653,8 @@
         "eventMinPrice": 2799.0,
         "eventMinDate": "2025-11-28",
         "eventMinStore": "Walmart",
-        "preEventAvgPrice": 3775.57,
-        "changeVsPreEventAvgPercent": -25.87
+        "preEventAvgPrice": 4959.0,
+        "changeVsPreEventAvgPercent": -43.56
       },
       {
         "eventId": "cyber-monday-2025",
@@ -669,8 +669,8 @@
         "eventMinPrice": 2799.0,
         "eventMinDate": "2025-12-01",
         "eventMinStore": "Walmart",
-        "preEventAvgPrice": 3043.14,
-        "changeVsPreEventAvgPercent": -8.02
+        "preEventAvgPrice": 3339.0,
+        "changeVsPreEventAvgPercent": -16.17
       }
     ],
     "nintendo-switch-oled-blanco": [
@@ -801,8 +801,8 @@
         "eventMinPrice": 8990.0,
         "eventMinDate": "2026-06-03",
         "eventMinStore": "Soriana",
-        "preEventAvgPrice": 10857.13,
-        "changeVsPreEventAvgPercent": -17.2
+        "preEventAvgPrice": 12455.21,
+        "changeVsPreEventAvgPercent": -27.82
       },
       {
         "eventId": "prime-day-2026",
@@ -912,11 +912,11 @@
         "preEventBaselineEnd": "2026-05-25",
         "preEventBaselinePointCount": 7,
         "status": "no_relevant_change",
-        "eventMinPrice": 13999.99,
-        "eventMinDate": "2026-06-02",
-        "eventMinStore": "GamePlanet",
-        "preEventAvgPrice": 13999.99,
-        "changeVsPreEventAvgPercent": -0.0
+        "eventMinPrice": 19399.0,
+        "eventMinDate": "2026-06-03",
+        "eventMinStore": "Elektra",
+        "preEventAvgPrice": 19026.57,
+        "changeVsPreEventAvgPercent": 1.96
       },
       {
         "eventId": "prime-day-2026",
@@ -927,12 +927,12 @@
         "preEventBaselineStart": "2026-06-16",
         "preEventBaselineEnd": "2026-06-22",
         "preEventBaselinePointCount": 7,
-        "status": "strong_drop",
-        "eventMinPrice": 9999.99,
-        "eventMinDate": "2026-06-24",
-        "eventMinStore": "GamePlanet",
-        "preEventAvgPrice": 13714.28,
-        "changeVsPreEventAvgPercent": -27.08
+        "status": "no_relevant_change",
+        "eventMinPrice": 19599.0,
+        "eventMinDate": "2026-06-26",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 20170.43,
+        "changeVsPreEventAvgPercent": -2.83
       },
       {
         "eventId": "hot-sale-2025",
@@ -992,11 +992,11 @@
         "preEventBaselineEnd": "2025-11-27",
         "preEventBaselinePointCount": 7,
         "status": "no_relevant_change",
-        "eventMinPrice": 17755.99,
+        "eventMinPrice": 17999.0,
         "eventMinDate": "2025-11-28",
-        "eventMinStore": "GamePlanet",
-        "preEventAvgPrice": 17755.99,
-        "changeVsPreEventAvgPercent": 0.0
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 17871.86,
+        "changeVsPreEventAvgPercent": 0.71
       },
       {
         "eventId": "cyber-monday-2025",
@@ -1008,11 +1008,11 @@
         "preEventBaselineEnd": "2025-11-30",
         "preEventBaselinePointCount": 7,
         "status": "no_relevant_change",
-        "eventMinPrice": 17755.99,
+        "eventMinPrice": 17999.0,
         "eventMinDate": "2025-12-01",
-        "eventMinStore": "GamePlanet",
-        "preEventAvgPrice": 17755.99,
-        "changeVsPreEventAvgPercent": 0.0
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 17970.43,
+        "changeVsPreEventAvgPercent": 0.16
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -1024,13 +1024,13 @@
         "dateStatus": "official",
         "preEventBaselineStart": "2026-05-19",
         "preEventBaselineEnd": "2026-05-25",
-        "preEventBaselinePointCount": 7,
-        "status": "strong_drop",
+        "preEventBaselinePointCount": 4,
+        "status": "no_relevant_change",
         "eventMinPrice": 8299.0,
         "eventMinDate": "2026-06-02",
         "eventMinStore": "Amazon",
-        "preEventAvgPrice": 9808.57,
-        "changeVsPreEventAvgPercent": -15.39
+        "preEventAvgPrice": 8165.0,
+        "changeVsPreEventAvgPercent": 1.64
       },
       {
         "eventId": "prime-day-2026",
@@ -1109,8 +1109,8 @@
         "eventMinPrice": 7989.0,
         "eventMinDate": "2025-11-28",
         "eventMinStore": "Amazon",
-        "preEventAvgPrice": 8999.0,
-        "changeVsPreEventAvgPercent": -11.22
+        "preEventAvgPrice": 9607.57,
+        "changeVsPreEventAvgPercent": -16.85
       },
       {
         "eventId": "cyber-monday-2025",
@@ -1125,8 +1125,8 @@
         "eventMinPrice": 8999.0,
         "eventMinDate": "2025-12-01",
         "eventMinStore": "Elektra",
-        "preEventAvgPrice": 8854.71,
-        "changeVsPreEventAvgPercent": 1.63
+        "preEventAvgPrice": 9017.57,
+        "changeVsPreEventAvgPercent": -0.21
       }
     ],
     "rog-xbox-ally-512gb": [
@@ -1384,11 +1384,11 @@
         "preEventBaselineEnd": "2026-06-22",
         "preEventBaselinePointCount": 7,
         "status": "no_relevant_change",
-        "eventMinPrice": 6799.99,
-        "eventMinDate": "2026-06-24",
-        "eventMinStore": "GamePlanet",
+        "eventMinPrice": 6999.0,
+        "eventMinDate": "2026-06-23",
+        "eventMinStore": "Walmart",
         "preEventAvgPrice": 6999.0,
-        "changeVsPreEventAvgPercent": -2.84
+        "changeVsPreEventAvgPercent": 0.0
       },
       {
         "eventId": "hot-sale-2025",
@@ -1599,8 +1599,8 @@
         "eventMinPrice": 10999.0,
         "eventMinDate": "2026-06-03",
         "eventMinStore": "Walmart",
-        "preEventAvgPrice": 12999.99,
-        "changeVsPreEventAvgPercent": -15.39
+        "preEventAvgPrice": 13999.0,
+        "changeVsPreEventAvgPercent": -21.43
       },
       {
         "eventId": "prime-day-2026",
@@ -1823,12 +1823,12 @@
         "preEventBaselineStart": "2026-05-19",
         "preEventBaselineEnd": "2026-05-25",
         "preEventBaselinePointCount": 7,
-        "status": "relevant_drop",
+        "status": "strong_drop",
         "eventMinPrice": 12051.0,
         "eventMinDate": "2026-06-03",
         "eventMinStore": "Amazon",
-        "preEventAvgPrice": 13092.57,
-        "changeVsPreEventAvgPercent": -7.96
+        "preEventAvgPrice": 13292.29,
+        "changeVsPreEventAvgPercent": -9.34
       },
       {
         "eventId": "prime-day-2026",
