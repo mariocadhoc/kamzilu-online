@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T01:10:04",
+  "generatedAt": "2026-11-16T01:10:04",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1679,8 +1679,13 @@
       },
       {
         "date": "2026-11-15",
-        "price": 9997.0,
-        "store": "Amazon"
+        "price": 9990.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-11-16",
+        "price": 10669.0,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -3446,8 +3451,13 @@
       },
       {
         "date": "2026-11-15",
-        "price": 12499.0,
-        "store": "Elektra"
+        "price": 10990.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-11-16",
+        "price": 12699.0,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-2+pokemon-legends-za-bundle": [
@@ -3850,6 +3860,11 @@
         "date": "2026-11-15",
         "price": 12579.0,
         "store": "Elektra"
+      },
+      {
+        "date": "2026-11-16",
+        "price": 14999.0,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -5565,6 +5580,11 @@
       },
       {
         "date": "2026-11-15",
+        "price": 5199.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-16",
         "price": 5199.0,
         "store": "MercadoLibre"
       }
@@ -7327,7 +7347,12 @@
       },
       {
         "date": "2026-11-15",
-        "price": 5499.0,
+        "price": 5399.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-11-16",
+        "price": 5899.0,
         "store": "MercadoLibre"
       }
     ],
@@ -9005,6 +9030,11 @@
       {
         "date": "2026-11-15",
         "price": 13960.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-16",
+        "price": 12997.0,
         "store": "Walmart"
       }
     ],
@@ -10748,6 +10778,16 @@
         "date": "2026-11-14",
         "price": 19999.0,
         "store": "Elektra"
+      },
+      {
+        "date": "2026-11-15",
+        "price": 19599.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-16",
+        "price": 28342.0,
+        "store": "MercadoLibre"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -12218,6 +12258,11 @@
       },
       {
         "date": "2026-11-15",
+        "price": 8999.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-16",
         "price": 14999.0,
         "store": "MercadoLibre"
       }
@@ -12447,6 +12492,11 @@
         "date": "2026-11-14",
         "price": 10999.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-11-15",
+        "price": 11999.0,
+        "store": "Walmart"
       }
     ],
     "rog-xbox-ally-x-1tb": [
@@ -12677,7 +12727,7 @@
       },
       {
         "date": "2026-11-15",
-        "price": 28249.0,
+        "price": 19999.0,
         "store": "Amazon"
       }
     ],
@@ -14441,6 +14491,11 @@
         "date": "2026-11-15",
         "price": 9306.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-16",
+        "price": 9599.0,
+        "store": "MercadoLibre"
       }
     ],
     "xbox-series-s-robot-white-1tb": [
@@ -14841,6 +14896,11 @@
       },
       {
         "date": "2026-11-15",
+        "price": 11960.99,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-16",
         "price": 11960.99,
         "store": "MercadoLibre"
       }
@@ -16598,8 +16658,13 @@
       },
       {
         "date": "2026-11-15",
-        "price": 14999.0,
-        "store": "Elektra"
+        "price": 10999.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-16",
+        "price": 18999.0,
+        "store": "MercadoLibre"
       }
     ],
     "xbox-series-x-galaxy-black-2tb": [
@@ -16995,6 +17060,16 @@
       },
       {
         "date": "2026-11-14",
+        "price": 20499.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-15",
+        "price": 20499.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-16",
         "price": 20499.0,
         "store": "Walmart"
       }
@@ -18757,8 +18832,13 @@
       },
       {
         "date": "2026-11-15",
-        "price": 24680.0,
-        "store": "Amazon"
+        "price": 12999.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-16",
+        "price": 8599.0,
+        "store": "Walmart"
       }
     ]
   }
