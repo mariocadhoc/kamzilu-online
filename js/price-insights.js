@@ -231,9 +231,11 @@
     const section = document.getElementById('price-insights-section');
     if (!section) return;
 
-    // Solo mostrar eventos con variación real (bajó o subió). Sin cambio = sin valor para el usuario.
+    // Buen Fin 2026 se muestra en cada consola, también si no hubo una baja.
+    // Los demás eventos conservan el filtro de variación relevante.
     const SHOW_STATUSES = new Set(['strong_drop', 'relevant_drop', 'price_increase']);
-    const visible = insights.filter(ins => SHOW_STATUSES.has(ins.status));
+    const visible = insights.filter(ins =>
+      ins.eventId === 'buen-fin-2026' || SHOW_STATUSES.has(ins.status));
 
     // Mostrar sección si hay stats o eventos con variación; ocultar si no hay nada
     if (!stats && !visible.length) {

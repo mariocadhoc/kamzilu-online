@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T01:10:04",
+  "generatedAt": "2026-11-18T18:54:29",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1694,8 +1694,8 @@
       },
       {
         "date": "2026-11-18",
-        "price": 10999.0,
-        "store": "MercadoLibre"
+        "price": 9997.0,
+        "store": "Amazon"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -3893,8 +3893,8 @@
       },
       {
         "date": "2026-11-18",
-        "price": 14999.0,
-        "store": "MercadoLibre"
+        "price": 11049.0,
+        "store": "Elektra"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -10853,6 +10853,11 @@
         "date": "2026-11-17",
         "price": 19599.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-11-18",
+        "price": 20690.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -12335,6 +12340,11 @@
         "date": "2026-11-17",
         "price": 8999.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-11-18",
+        "price": 8999.0,
+        "store": "Walmart"
       }
     ],
     "rog-xbox-ally-512gb": [
@@ -12575,6 +12585,11 @@
       },
       {
         "date": "2026-11-17",
+        "price": 10999.0,
+        "store": "Coppel"
+      },
+      {
+        "date": "2026-11-18",
         "price": 10999.0,
         "store": "Coppel"
       }
@@ -18977,7 +18992,7 @@
       },
       {
         "date": "2026-11-18",
-        "price": 12999.0,
+        "price": 8599.0,
         "store": "Walmart"
       }
     ]

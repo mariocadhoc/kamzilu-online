@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T01:10:04",
+  "generatedAt": "2026-11-18T18:54:29",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -13,10 +13,10 @@
       "yearMinPrice": 8499.0,
       "yearMinDate": "2026-06-23",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 10999.0,
-      "yearMaxDate": "2026-11-18",
-      "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 9739.55,
+      "yearMaxPrice": 10898.0,
+      "yearMaxDate": "2026-10-02",
+      "yearMaxStore": "Amazon",
+      "yearAvgPrice": 9736.6,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+mario-kart-bundle": {
@@ -41,10 +41,10 @@
       "yearMinPrice": 6103.0,
       "yearMinDate": "2026-09-07",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 14999.0,
-      "yearMaxDate": "2026-11-18",
-      "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 11924.23,
+      "yearMaxPrice": 12749.0,
+      "yearMaxDate": "2026-11-02",
+      "yearMaxStore": "Elektra",
+      "yearAvgPrice": 11876.64,
       "yearMostFrequentLowestStore": "Elektra"
     },
     "nintendo-switch-lite-yellow": {
@@ -91,44 +91,44 @@
     },
     "playstation-5-pro-digital-2tb": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-18",
-      "windowEndDate": "2026-11-17",
-      "windowPointCount": 351,
+      "windowStartDate": "2025-11-19",
+      "windowEndDate": "2026-11-18",
+      "windowPointCount": 352,
       "yearMinPrice": 13924.0,
       "yearMinDate": "2026-01-28",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 20599.0,
-      "yearMaxDate": "2026-09-02",
-      "yearMaxStore": "Amazon",
-      "yearAvgPrice": 19315.28,
+      "yearMaxPrice": 20690.0,
+      "yearMaxDate": "2026-11-18",
+      "yearMaxStore": "Soriana",
+      "yearAvgPrice": 19319.19,
       "yearMostFrequentLowestStore": "Elektra"
     },
     "playstation-5-slim-blanco-estandar-1tb": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-18",
-      "windowEndDate": "2026-11-17",
-      "windowPointCount": 296,
+      "windowStartDate": "2025-11-19",
+      "windowEndDate": "2026-11-18",
+      "windowPointCount": 297,
       "yearMinPrice": 7225.0,
       "yearMinDate": "2026-03-24",
       "yearMinStore": "Amazon",
       "yearMaxPrice": 16390.0,
       "yearMaxDate": "2026-09-22",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 10330.37,
+      "yearAvgPrice": 10325.89,
       "yearMostFrequentLowestStore": "Walmart"
     },
     "rog-xbox-ally-512gb": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-18",
-      "windowEndDate": "2026-11-17",
-      "windowPointCount": 48,
+      "windowStartDate": "2025-11-19",
+      "windowEndDate": "2026-11-18",
+      "windowPointCount": 49,
       "yearMinPrice": 10999.0,
       "yearMinDate": "2026-10-02",
       "yearMinStore": "Amazon",
       "yearMaxPrice": 12403.0,
       "yearMaxDate": "2026-10-01",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 11356.21,
+      "yearAvgPrice": 11348.92,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "rog-xbox-ally-x-1tb": {
@@ -212,12 +212,28 @@
       "yearMaxPrice": 15699.0,
       "yearMaxDate": "2026-03-12",
       "yearMaxStore": "Liverpool",
-      "yearAvgPrice": 13215.04,
+      "yearAvgPrice": 13202.61,
       "yearMostFrequentLowestStore": "Amazon"
     }
   },
   "events": {
     "nintendo-switch-2": [
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "no_relevant_change",
+        "eventMinPrice": 9990.0,
+        "eventMinDate": "2026-11-13",
+        "eventMinStore": "Soriana",
+        "preEventAvgPrice": 9843.56,
+        "changeVsPreEventAvgPercent": 1.49
+      },
       {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
@@ -333,6 +349,22 @@
     ],
     "nintendo-switch-2+mario-kart-bundle": [
       {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "no_relevant_change",
+        "eventMinPrice": 10990.0,
+        "eventMinDate": "2026-11-13",
+        "eventMinStore": "Soriana",
+        "preEventAvgPrice": 10985.25,
+        "changeVsPreEventAvgPercent": 0.04
+      },
+      {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
         "start": "2026-05-26",
@@ -446,6 +478,22 @@
       }
     ],
     "nintendo-switch-2+pokemon-legends-za-bundle": [
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "strong_drop",
+        "eventMinPrice": 11049.0,
+        "eventMinDate": "2026-11-16",
+        "eventMinStore": "Elektra",
+        "preEventAvgPrice": 12570.43,
+        "changeVsPreEventAvgPercent": -12.1
+      },
       {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
@@ -561,6 +609,22 @@
     ],
     "nintendo-switch-lite-yellow": [
       {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "strong_drop",
+        "eventMinPrice": 2899.0,
+        "eventMinDate": "2026-11-14",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 4621.83,
+        "changeVsPreEventAvgPercent": -37.28
+      },
+      {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
         "start": "2026-05-26",
@@ -674,6 +738,22 @@
       }
     ],
     "nintendo-switch-oled-blanco": [
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "strong_drop",
+        "eventMinPrice": 4498.0,
+        "eventMinDate": "2026-11-17",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 5470.43,
+        "changeVsPreEventAvgPercent": -17.78
+      },
       {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
@@ -789,6 +869,22 @@
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
       {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "relevant_drop",
+        "eventMinPrice": 12722.0,
+        "eventMinDate": "2026-11-17",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 13339.86,
+        "changeVsPreEventAvgPercent": -4.63
+      },
+      {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
         "start": "2026-05-26",
@@ -902,6 +998,22 @@
       }
     ],
     "playstation-5-pro-digital-2tb": [
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "no_relevant_change",
+        "eventMinPrice": 19599.0,
+        "eventMinDate": "2026-11-15",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 19656.27,
+        "changeVsPreEventAvgPercent": -0.29
+      },
       {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
@@ -1017,6 +1129,22 @@
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
       {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "strong_drop",
+        "eventMinPrice": 8999.0,
+        "eventMinDate": "2026-11-14",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 11355.0,
+        "changeVsPreEventAvgPercent": -20.75
+      },
+      {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
         "start": "2026-05-26",
@@ -1130,6 +1258,22 @@
       }
     ],
     "rog-xbox-ally-512gb": [
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "no_relevant_change",
+        "eventMinPrice": 10999.0,
+        "eventMinDate": "2026-11-13",
+        "eventMinStore": "Amazon",
+        "preEventAvgPrice": 10999.0,
+        "changeVsPreEventAvgPercent": 0.0
+      },
       {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
@@ -1245,6 +1389,22 @@
     ],
     "rog-xbox-ally-x-1tb": [
       {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "no_relevant_change",
+        "eventMinPrice": 19999.0,
+        "eventMinDate": "2026-11-13",
+        "eventMinStore": "Amazon",
+        "preEventAvgPrice": 19999.0,
+        "changeVsPreEventAvgPercent": 0.0
+      },
+      {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
         "start": "2026-05-26",
@@ -1358,6 +1518,22 @@
       }
     ],
     "xbox-series-s": [
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "strong_drop",
+        "eventMinPrice": 5999.0,
+        "eventMinDate": "2026-11-13",
+        "eventMinStore": "Coppel",
+        "preEventAvgPrice": 8767.57,
+        "changeVsPreEventAvgPercent": -31.58
+      },
       {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
@@ -1473,6 +1649,22 @@
     ],
     "xbox-series-s-robot-white-1tb": [
       {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "no_relevant_change",
+        "eventMinPrice": 11559.0,
+        "eventMinDate": "2026-11-13",
+        "eventMinStore": "Amazon",
+        "preEventAvgPrice": 11559.0,
+        "changeVsPreEventAvgPercent": 0.0
+      },
+      {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
         "start": "2026-05-26",
@@ -1586,6 +1778,22 @@
       }
     ],
     "xbox-series-x-blanco-1tb": [
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "strong_drop",
+        "eventMinPrice": 10999.0,
+        "eventMinDate": "2026-11-13",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 15253.81,
+        "changeVsPreEventAvgPercent": -27.89
+      },
       {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
@@ -1701,6 +1909,22 @@
     ],
     "xbox-series-x-galaxy-black-2tb": [
       {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "strong_drop",
+        "eventMinPrice": 20499.0,
+        "eventMinDate": "2026-11-13",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 25141.86,
+        "changeVsPreEventAvgPercent": -18.47
+      },
+      {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
         "start": "2026-05-26",
@@ -1814,6 +2038,22 @@
       }
     ],
     "xbox-series-x-negro-1tb": [
+      {
+        "eventId": "buen-fin-2026",
+        "eventName": "Buen Fin 2026",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "dateStatus": "official",
+        "preEventBaselineStart": "2026-11-06",
+        "preEventBaselineEnd": "2026-11-12",
+        "preEventBaselinePointCount": 7,
+        "status": "strong_drop",
+        "eventMinPrice": 8599.0,
+        "eventMinDate": "2026-11-16",
+        "eventMinStore": "Walmart",
+        "preEventAvgPrice": 14921.14,
+        "changeVsPreEventAvgPercent": -42.37
+      },
       {
         "eventId": "hot-sale-2026",
         "eventName": "Hot Sale 2026",
