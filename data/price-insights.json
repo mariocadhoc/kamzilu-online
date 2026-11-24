@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T01:10:04",
+  "generatedAt": "2026-11-24T01:10:04",
   "sources": {
     "history": "frontend/data/price-history.json",
     "historicalJsonl": "backend/scrapers/*/data/*-historico.jsonl"
@@ -7,22 +7,22 @@
   "stats": {
     "nintendo-switch-2": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-24",
-      "windowEndDate": "2026-11-23",
-      "windowPointCount": 344,
+      "windowStartDate": "2025-11-25",
+      "windowEndDate": "2026-11-24",
+      "windowPointCount": 345,
       "yearMinPrice": 8499.0,
       "yearMinDate": "2026-06-23",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 10999.0,
-      "yearMaxDate": "2026-11-23",
-      "yearMaxStore": "Amazon",
-      "yearAvgPrice": 9746.11,
+      "yearMaxPrice": 10990.0,
+      "yearMaxDate": "2026-11-24",
+      "yearMaxStore": "Soriana",
+      "yearAvgPrice": 9748.55,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+mario-kart-bundle": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-24",
-      "windowEndDate": "2026-11-23",
+      "windowStartDate": "2025-11-25",
+      "windowEndDate": "2026-11-24",
       "windowPointCount": 354,
       "yearMinPrice": 9638.76,
       "yearMinDate": "2026-11-09",
@@ -30,21 +30,21 @@
       "yearMaxPrice": 12899.0,
       "yearMaxDate": "2026-10-30",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 10916.77,
+      "yearAvgPrice": 10915.98,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "nintendo-switch-2+pokemon-legends-za-bundle": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-24",
-      "windowEndDate": "2026-11-23",
-      "windowPointCount": 88,
+      "windowStartDate": "2025-11-25",
+      "windowEndDate": "2026-11-24",
+      "windowPointCount": 89,
       "yearMinPrice": 6103.0,
       "yearMinDate": "2026-09-07",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 14999.0,
-      "yearMaxDate": "2026-11-23",
-      "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 11874.5,
+      "yearMaxPrice": 15249.0,
+      "yearMaxDate": "2026-11-24",
+      "yearMaxStore": "Soriana",
+      "yearAvgPrice": 11868.03,
       "yearMostFrequentLowestStore": "Elektra"
     },
     "nintendo-switch-lite-yellow": {
@@ -63,8 +63,8 @@
     },
     "nintendo-switch-oled-blanco": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-24",
-      "windowEndDate": "2026-11-23",
+      "windowStartDate": "2025-11-25",
+      "windowEndDate": "2026-11-24",
       "windowPointCount": 354,
       "yearMinPrice": 3999.0,
       "yearMinDate": "2026-10-30",
@@ -72,7 +72,7 @@
       "yearMaxPrice": 9129.0,
       "yearMaxDate": "2026-04-24",
       "yearMaxStore": "Sanborns",
-      "yearAvgPrice": 5768.52,
+      "yearAvgPrice": 5771.35,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "playstation-5-digital-1tb-astrobot-gt7": {
@@ -83,16 +83,16 @@
       "yearMinPrice": 7954.0,
       "yearMinDate": "2026-01-05",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 19890.0,
-      "yearMaxDate": "2026-11-23",
+      "yearMaxPrice": 15940.0,
+      "yearMaxDate": "2026-10-18",
       "yearMaxStore": "MercadoLibre",
-      "yearAvgPrice": 10780.78,
+      "yearAvgPrice": 10759.89,
       "yearMostFrequentLowestStore": "Elektra"
     },
     "playstation-5-pro-digital-2tb": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-23",
-      "windowEndDate": "2026-11-22",
+      "windowStartDate": "2025-11-25",
+      "windowEndDate": "2026-11-24",
       "windowPointCount": 352,
       "yearMinPrice": 13924.0,
       "yearMinDate": "2026-01-28",
@@ -100,7 +100,7 @@
       "yearMaxPrice": 20690.0,
       "yearMaxDate": "2026-11-18",
       "yearMaxStore": "Soriana",
-      "yearAvgPrice": 19340.47,
+      "yearAvgPrice": 19353.88,
       "yearMostFrequentLowestStore": "Elektra"
     },
     "playstation-5-slim-blanco-estandar-1tb": {
@@ -142,7 +142,7 @@
       "yearMaxPrice": 28249.0,
       "yearMaxDate": "2026-11-18",
       "yearMaxStore": "Amazon",
-      "yearAvgPrice": 20409.11,
+      "yearAvgPrice": 20256.33,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "xbox-series-s": {
@@ -161,16 +161,16 @@
     },
     "xbox-series-s-robot-white-1tb": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-24",
-      "windowEndDate": "2026-11-23",
-      "windowPointCount": 88,
+      "windowStartDate": "2025-11-25",
+      "windowEndDate": "2026-11-24",
+      "windowPointCount": 89,
       "yearMinPrice": 7999.0,
       "yearMinDate": "2026-10-23",
       "yearMinStore": "MercadoLibre",
-      "yearMaxPrice": 14999.0,
-      "yearMaxDate": "2026-11-23",
-      "yearMaxStore": "Amazon",
-      "yearAvgPrice": 10977.29,
+      "yearMaxPrice": 13599.0,
+      "yearMaxDate": "2026-11-22",
+      "yearMaxStore": "Sanborns",
+      "yearAvgPrice": 10991.02,
       "yearMostFrequentLowestStore": "MercadoLibre"
     },
     "xbox-series-x-blanco-1tb": {
@@ -181,30 +181,30 @@
       "yearMinPrice": 9882.0,
       "yearMinDate": "2026-05-11",
       "yearMinStore": "Amazon",
-      "yearMaxPrice": 19999.0,
-      "yearMaxDate": "2026-11-23",
-      "yearMaxStore": "Amazon",
-      "yearAvgPrice": 12954.92,
+      "yearMaxPrice": 16999.0,
+      "yearMaxDate": "2026-10-23",
+      "yearMaxStore": "Elektra",
+      "yearAvgPrice": 12929.42,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "xbox-series-x-galaxy-black-2tb": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-23",
-      "windowEndDate": "2026-11-22",
-      "windowPointCount": 85,
+      "windowStartDate": "2025-11-24",
+      "windowEndDate": "2026-11-23",
+      "windowPointCount": 86,
       "yearMinPrice": 18951.0,
       "yearMinDate": "2026-09-25",
       "yearMinStore": "Amazon",
       "yearMaxPrice": 32999.0,
       "yearMaxDate": "2026-11-05",
       "yearMaxStore": "Coppel",
-      "yearAvgPrice": 24897.09,
+      "yearAvgPrice": 24845.95,
       "yearMostFrequentLowestStore": "Amazon"
     },
     "xbox-series-x-negro-1tb": {
       "windowDays": 365,
-      "windowStartDate": "2025-11-24",
-      "windowEndDate": "2026-11-23",
+      "windowStartDate": "2025-11-25",
+      "windowEndDate": "2026-11-24",
       "windowPointCount": 354,
       "yearMinPrice": 8599.0,
       "yearMinDate": "2026-06-13",
@@ -212,7 +212,7 @@
       "yearMaxPrice": 15699.0,
       "yearMaxDate": "2026-03-12",
       "yearMaxStore": "Liverpool",
-      "yearAvgPrice": 13148.94,
+      "yearAvgPrice": 13158.23,
       "yearMostFrequentLowestStore": "Amazon"
     }
   },
