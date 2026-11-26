@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T01:10:04",
+  "generatedAt": "2026-11-26T01:10:04",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1731,6 +1731,11 @@
         "date": "2026-11-25",
         "price": 10572.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-11-26",
+        "price": 11059.0,
+        "store": "MercadoLibre"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -3546,7 +3551,12 @@
       },
       {
         "date": "2026-11-25",
-        "price": 12299.0,
+        "price": 11990.0,
+        "store": "Soriana"
+      },
+      {
+        "date": "2026-11-26",
+        "price": 12500.0,
         "store": "MercadoLibre"
       }
     ],
@@ -3998,8 +4008,13 @@
       },
       {
         "date": "2026-11-25",
-        "price": 14999.0,
-        "store": "MercadoLibre"
+        "price": 11049.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-11-26",
+        "price": 11049.0,
+        "store": "Elektra"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -5765,6 +5780,11 @@
       },
       {
         "date": "2026-11-25",
+        "price": 5199.0,
+        "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-26",
         "price": 5199.0,
         "store": "MercadoLibre"
       }
@@ -7579,6 +7599,11 @@
         "date": "2026-11-25",
         "price": 5499.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-26",
+        "price": 5499.0,
+        "store": "MercadoLibre"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -9304,6 +9329,11 @@
       },
       {
         "date": "2026-11-25",
+        "price": 12722.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-26",
         "price": 18446.0,
         "store": "MercadoLibre"
       }
@@ -11096,6 +11126,16 @@
       },
       {
         "date": "2026-11-24",
+        "price": 19599.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-25",
+        "price": 19599.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-26",
         "price": 19599.0,
         "store": "Walmart"
       }
@@ -12902,6 +12942,11 @@
         "date": "2026-11-25",
         "price": 11499.0,
         "store": "Amazon"
+      },
+      {
+        "date": "2026-11-26",
+        "price": 12499.0,
+        "store": "Coppel"
       }
     ],
     "rog-xbox-ally-x-1tb": [
@@ -13182,7 +13227,7 @@
       },
       {
         "date": "2026-11-25",
-        "price": 28249.0,
+        "price": 20699.0,
         "store": "Amazon"
       }
     ],
@@ -14996,6 +15041,11 @@
         "date": "2026-11-25",
         "price": 8999.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-26",
+        "price": 9999.0,
+        "store": "MercadoLibre"
       }
     ],
     "xbox-series-s-robot-white-1tb": [
@@ -15446,8 +15496,13 @@
       },
       {
         "date": "2026-11-25",
-        "price": 14999.0,
-        "store": "Amazon"
+        "price": 13599.0,
+        "store": "Sanborns"
+      },
+      {
+        "date": "2026-11-26",
+        "price": 13599.0,
+        "store": "Sears"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -17253,8 +17308,13 @@
       },
       {
         "date": "2026-11-25",
-        "price": 19999.0,
-        "store": "Amazon"
+        "price": 16699.0,
+        "store": "Elektra"
+      },
+      {
+        "date": "2026-11-26",
+        "price": 16699.0,
+        "store": "Elektra"
       }
     ],
     "xbox-series-x-galaxy-black-2tb": [
@@ -19509,6 +19569,11 @@
         "date": "2026-11-25",
         "price": 8599.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-11-26",
+        "price": 23999.2,
+        "store": "MercadoLibre"
       }
     ]
   }
