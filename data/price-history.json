@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T01:10:04",
+  "generatedAt": "2026-11-27T01:10:04",
   "series": {
     "nintendo-switch-2": [
       {
@@ -1734,8 +1734,13 @@
       },
       {
         "date": "2026-11-26",
-        "price": 11059.0,
-        "store": "MercadoLibre"
+        "price": 10498.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-11-27",
+        "price": 10498.0,
+        "store": "Amazon"
       }
     ],
     "nintendo-switch-2+mario-kart-bundle": [
@@ -3558,6 +3563,11 @@
         "date": "2026-11-26",
         "price": 12500.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-27",
+        "price": 12799.0,
+        "store": "Amazon"
       }
     ],
     "nintendo-switch-2+pokemon-legends-za-bundle": [
@@ -4015,6 +4025,11 @@
         "date": "2026-11-26",
         "price": 11049.0,
         "store": "Elektra"
+      },
+      {
+        "date": "2026-11-27",
+        "price": 15249.0,
+        "store": "Soriana"
       }
     ],
     "nintendo-switch-lite-yellow": [
@@ -7604,6 +7619,11 @@
         "date": "2026-11-26",
         "price": 5499.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-27",
+        "price": 5799.0,
+        "store": "Amazon"
       }
     ],
     "playstation-5-digital-1tb-astrobot-gt7": [
@@ -9334,8 +9354,8 @@
       },
       {
         "date": "2026-11-26",
-        "price": 18446.0,
-        "store": "MercadoLibre"
+        "price": 12722.0,
+        "store": "Walmart"
       }
     ],
     "playstation-5-pro-digital-2tb": [
@@ -11138,6 +11158,11 @@
         "date": "2026-11-26",
         "price": 19599.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-11-27",
+        "price": 20690.0,
+        "store": "Soriana"
       }
     ],
     "playstation-5-slim-blanco-estandar-1tb": [
@@ -12660,6 +12685,11 @@
         "date": "2026-11-25",
         "price": 8999.0,
         "store": "Walmart"
+      },
+      {
+        "date": "2026-11-26",
+        "price": 8999.0,
+        "store": "Walmart"
       }
     ],
     "rog-xbox-ally-512gb": [
@@ -12945,8 +12975,8 @@
       },
       {
         "date": "2026-11-26",
-        "price": 12499.0,
-        "store": "Coppel"
+        "price": 11999.0,
+        "store": "Walmart"
       }
     ],
     "rog-xbox-ally-x-1tb": [
@@ -13228,6 +13258,16 @@
       {
         "date": "2026-11-25",
         "price": 20699.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-11-26",
+        "price": 28249.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-11-27",
+        "price": 28249.0,
         "store": "Amazon"
       }
     ],
@@ -15044,8 +15084,13 @@
       },
       {
         "date": "2026-11-26",
-        "price": 9999.0,
+        "price": 8899.0,
         "store": "MercadoLibre"
+      },
+      {
+        "date": "2026-11-27",
+        "price": 9799.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-s-robot-white-1tb": [
@@ -15501,8 +15546,13 @@
       },
       {
         "date": "2026-11-26",
+        "price": 11559.0,
+        "store": "Amazon"
+      },
+      {
+        "date": "2026-11-27",
         "price": 13599.0,
-        "store": "Sears"
+        "store": "Sanborns"
       }
     ],
     "xbox-series-x-blanco-1tb": [
@@ -17315,6 +17365,11 @@
         "date": "2026-11-26",
         "price": 16699.0,
         "store": "Elektra"
+      },
+      {
+        "date": "2026-11-27",
+        "price": 19999.0,
+        "store": "Amazon"
       }
     ],
     "xbox-series-x-galaxy-black-2tb": [
@@ -17755,6 +17810,11 @@
       },
       {
         "date": "2026-11-25",
+        "price": 20499.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-26",
         "price": 20499.0,
         "store": "Walmart"
       }
@@ -19572,8 +19632,13 @@
       },
       {
         "date": "2026-11-26",
-        "price": 23999.2,
-        "store": "MercadoLibre"
+        "price": 8599.0,
+        "store": "Walmart"
+      },
+      {
+        "date": "2026-11-27",
+        "price": 15690.0,
+        "store": "Soriana"
       }
     ]
   }
